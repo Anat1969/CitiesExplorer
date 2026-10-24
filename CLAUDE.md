@@ -30,14 +30,37 @@ The test serves the A&I menu from `tests/fixtures/ai-menu.js` (copy of AppOfApp-
 
 - `src/data/problems.ts`: 9 problems. Each has a planning question, a summary and "מהלכים שחוזרים" (the synthesis
   across cases, the core value of the app). Problem colors carry meaning: keep them.
-- `src/data/cases.ts`: 22 cases. Every case: Hebrew name + full original name (`nameEn`, Google-searchable), before,
+- `src/data/cases.json` (types in `cases.ts`): 54 cases, 8 in Israel. Every case: Hebrew name + full original name (`nameEn`, Google-searchable), before,
   intervention, result, transferable moves, cautions (what failed or is disputed: mandatory, no case without it),
-  Israel relevance, team, a parametric section (`before`/`after` bands) and related apps.
-- Facts: numbers only when well known; otherwise approximate wording. Each case links to Google search for
-  sources, and the footer says figures must be verified before official use.
+  Israel relevance, team, a parametric section (`before`/`after` bands), related apps, and for the tool:
+  coordinates, `yearStart`, `climate`, `context`, `approach`, `cost` (1-3), `duration` (1-3), `moves` (ids from
+  `moves.ts`), `sources` (URLs actually seen) and `facts` (each `verified` or `approx`, with its source).
+- `src/data/moves.ts`: 40 planning moves (the pattern language), each with phase (quick/medium/long) and cost.
+- Adding cases: research with web search, one JSON object per case in the same shape, then validate (ids of
+  problems and moves, band types, sources, no decorative symbols) before merging into `cases.json`.
+- Facts: every number and date was checked against web search results on 2026-10-24 (3 research agents).
+  Where sources disagree the wording is approximate and the fact is marked "משוער". The case page shows
+  "X מתוך Y עובדות אומתו מול מקור".
 - The section drawing (`src/components/Section.tsx`) is schematic. "שטח החתך לרכב" is computed from the bands and
   labeled as a schematic estimate, not a measurement.
 - Related apps (`src/data/apps.ts`): שכונה 360, פינוי בינוי, ביומימטיקה, סגנונות עיצוב פנים.
+
+## The tool ("הפרויקט שלי", `src/lib/match.ts`)
+
+- The planner enters problems (first = main), scale, climate, context, budget and draws the existing section.
+- Score out of 100, shown per component: problem 40, climate 15, section similarity 15 (cosine of band
+  profiles), scale 10, context 10, budget 10. Near climates and contexts get partial credit.
+- Strategy: moves of the top 8 matches (score 45+), weighted by score, grouped by phase. A phase left with
+  fewer than two moves is filled from all cases of the same problem and labeled "מתוך כל מקרי הבעיה".
+- "כיוון אפשרי לחתך": the site's own section re-divided in the proportions of the best match's "after".
+- Projects live in localStorage (`src/lib/projects.ts`), id in the address `?view=project&p=`.
+- Method shown in the UI: precedent library + pattern language (Christopher Alexander). Not a recommendation.
+
+## Views
+
+home, problem, case, all, board, moves (problem x move matrix), move, map (d3-geo + world-atlas, lazy loaded,
+same-city points fan out in a ring; timeline runs right to left), project, compare (`?ids=a,b,c`),
+present (`?view=present&s=`; keyboard arrows). Print stylesheet for project brief and board.
 
 ## UI rules
 
@@ -49,6 +72,7 @@ The test serves the A&I menu from `tests/fixtures/ai-menu.js` (copy of AppOfApp-
 - Square buttons and chips, depth and shadows, never flat.
 - Every clickable element lifts on hover and sinks on press (`:active`). The A&I menu closes on every page change.
 - Board notes save as you type, with a "נשמר במכשיר" status.
+- Board writes read storage fresh each time (a stale closure once kept only the last of three saves).
 
 ## Deviations from anat-app-builder (said up front)
 

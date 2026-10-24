@@ -37,10 +37,19 @@ export default function TopBar({ route }: { route: Route }) {
         <a {...linkProps({ view: 'home' })} aria-current={route.view === 'home' || route.view === 'problem' ? 'page' : undefined}>
           בעיות
         </a>
-        <a {...linkProps({ view: 'all' })} aria-current={route.view === 'all' || route.view === 'case' ? 'page' : undefined}>
+        <a {...linkProps({ view: 'moves' })} aria-current={route.view === 'moves' || route.view === 'move' ? 'page' : undefined}>
+          מהלכים
+        </a>
+        <a {...linkProps({ view: 'map' })} aria-current={route.view === 'map' ? 'page' : undefined}>
+          מפה
+        </a>
+        <a {...linkProps({ view: 'all' })} aria-current={route.view === 'all' || route.view === 'case' || route.view === 'compare' ? 'page' : undefined}>
           כל המקרים
         </a>
-        <a {...linkProps({ view: 'board' })} aria-current={route.view === 'board' ? 'page' : undefined}>
+        <a {...linkProps({ view: 'project' })} aria-current={route.view === 'project' ? 'page' : undefined}>
+          הפרויקט שלי
+        </a>
+        <a {...linkProps({ view: 'board' })} aria-current={route.view === 'board' || route.view === 'present' ? 'page' : undefined}>
           לוח השראה
           {board.items.length ? <span className="count">{board.items.length}</span> : null}
         </a>

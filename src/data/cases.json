@@ -1,0 +1,7285 @@
+[
+ {
+  "id": "cheonggyecheon",
+  "name": "נחל צ'ונגייצ'און",
+  "nameEn": "Cheonggyecheon Stream Restoration",
+  "city": "סיאול",
+  "cityEn": "Seoul",
+  "country": "דרום קוריאה",
+  "countryEn": "South Korea",
+  "lat": 37.5694,
+  "lon": 126.9784,
+  "years": "2003-2005",
+  "yearStart": 2003,
+  "scale": "city",
+  "problems": [
+   "dividing-road",
+   "heat",
+   "flooding"
+  ],
+  "climate": "temperate",
+  "context": "center",
+  "approach": "permanent",
+  "cost": 3,
+  "duration": 2,
+  "insight": "כביש מהיר מוגבה פורק, והנחל שכוסה מתחתיו חזר להיות ציר ירוק בלב העיר.",
+  "before": "נחל עירוני שכוסה בבטון אחרי מלחמת קוריאה, ומעליו נבנה כביש מוגבה באורך כ-5.6 ק\"מ שהושלם ב-1976. האזור סביבו היה רועש, מזוהם ומוזנח.",
+  "intervention": "בין 2003 ל-2005 פורק הכביש המוגבה, והנחל נחשף לאורך כ-5.8 ק\"מ במרכז העיר, עם טיילות במפלס המים, מדרגות ירידה וכ-22 גשרים. העלות הסופית הייתה יותר מ-386 מיליארד וון, כ-280 מיליון דולר.",
+  "result": "המקום הפך לאחד המרחבים הציבוריים המבוקרים בסיאול ולמודל עולמי לפירוק כבישים. דווח על טמפרטורות נמוכות יותר לאורך הנחל בהשוואה לרחובות סמוכים.",
+  "moves": [
+   "remove-road",
+   "daylight",
+   "cool-water",
+   "leadership",
+   "transit-first"
+  ],
+  "cautions": "רוב המים נשאבים מנהר האן וממי תהום, ולא מזרימה טבעית, ולכן נטען שזו תעלה הנדסית ולא שיקום אקולוגי. רוכלים ובעלי עסקים קטנים פונו ב-2003, חלקם בכוח, לשוק זמני באצטדיון דונגדמון, ושוב משם כשהאצטדיון נהרס.",
+  "israel": "רלוונטי לנחלים מכוסים ולכבישים עורקיים לאורכם, כמו נחל איילון או נחל הקישון בקטעים העירוניים. לבדוק מראש מקור מים אמיתי ולתכנן פתרון לעסקים הקיימים לפני הפירוק.",
+  "team": "עיריית סיאול, ראש העיר לי מיונג-באק",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "car",
+     3,
+     "up"
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     1.5
+    ],
+    [
+     "green",
+     1
+    ],
+    [
+     "water",
+     2,
+     "down"
+    ],
+    [
+     "green",
+     1
+    ],
+    [
+     "car",
+     1.5
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "biomimicry",
+   "renewal"
+  ],
+  "keywords": [
+   "נחל",
+   "פירוק כביש",
+   "daylighting",
+   "stream restoration",
+   "highway removal"
+  ],
+  "sources": [
+   {
+    "label": "Wikipedia: Cheonggyecheon",
+    "url": "https://en.wikipedia.org/wiki/Cheonggyecheon"
+   },
+   {
+    "label": "Seoul Museum of History: Cheonggyecheon Museum",
+    "url": "https://museum.seoul.go.kr/cgcmeng/exhibition/permanentExhibit.jsp"
+   },
+   {
+    "label": "Korea Times",
+    "url": "https://koreatimes.co.kr/www/nation/2025/03/123_68399.html"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הפרויקט התחיל ב-2003 והושלם ב-2005, בעלות של יותר מ-386 מיליארד וון.",
+    "status": "verified",
+    "source": "https://en.wikipedia.org/wiki/Cheonggyecheon"
+   },
+   {
+    "text": "הנחל המשוקם באורך כ-5.8 ק\"מ ועוברים מעליו 22 גשרים.",
+    "status": "verified",
+    "source": "https://koreatimes.co.kr/www/nation/2025/03/123_68399.html"
+   },
+   {
+    "text": "המבקרים טוענים שהנחל מתוחזק בשאיבת מים מנהר האן ולא ממקורותיו הטבעיים.",
+    "status": "verified",
+    "source": "https://museum.seoul.go.kr/cgcmeng/exhibition/permanentExhibit.jsp"
+   },
+   {
+    "text": "רוכלים שפונו ב-2003 הועברו לשוק באצטדיון דונגדמון שנפתח בינואר 2004.",
+    "status": "verified",
+    "source": "https://koreatimes.co.kr/www/nation/2025/03/123_68399.html"
+   }
+  ]
+ },
+ {
+  "id": "high-line",
+  "name": "ההיי ליין",
+  "nameEn": "The High Line",
+  "city": "ניו יורק",
+  "cityEn": "New York City",
+  "country": "ארצות הברית",
+  "countryEn": "United States",
+  "lat": 40.748,
+  "lon": -74.0048,
+  "years": "2009-2019",
+  "yearStart": 2009,
+  "scale": "street",
+  "problems": [
+   "derelict-infra",
+   "leisure"
+  ],
+  "climate": "temperate",
+  "context": "industrial",
+  "approach": "permanent",
+  "cost": 3,
+  "duration": 3,
+  "insight": "מסילת משא מוגבהת שעמדה להיהרס הפכה לפארק ליניארי, והשלד התעשייתי הפך לזהות של המקום.",
+  "before": "מסילת משא מוגבהת במערב מנהטן, שהרכבת האחרונה עברה עליה ב-1980. בעלי קרקעות לחצו להרוס אותה, וצמחייה פראית צמחה על הפסים.",
+  "intervention": "ב-1999 הקימו שני תושבים, רוברט האמונד וג'ושוע דייוויד, את עמותת Friends of the High Line ונאבקו נגד ההריסה. העירייה הצטרפה, ונבנה פארק שמשמר את הפסים ואת אופי הצמחייה הפראית. הפארק נפתח בשלבים ב-2009, 2011 ו-2014, והקטע האחרון, The Spur, נפתח ב-2019.",
+  "result": "פארק באורך כ-2.3 ק\"מ שהפך לאחד המרחבים המבוקרים בעיר ולמודל שהועתק בערים רבות. לאורכו נבנו מגדלים ופרויקטים גדולים, ובהם הדסון יארדס בקצה הצפוני.",
+  "moves": [
+   "keep-structure",
+   "citizen-led",
+   "heritage-layer",
+   "gradual",
+   "anti-displacement"
+  ],
+  "cautions": "הפארק הפך לסמל של עליית מחירים מהירה בשכונות שלאורכו, ונמתחה ביקורת שהתושבים הוותיקים, ובהם דיירי הדיור הציבורי הסמוך, לא נהנו ממנו. רוב המבקרים הם תיירים, והפארק צפוף מאוד בשעות השיא.",
+  "israel": "מתאים לקטעי מסילה ותשתית ישנה בתוך ערים, כמו קטעי המסילה הטורקית או מסילות נמל ישנות. ללמוד גם מהכישלון: לשלב דיור בר השגה ושמירה על עסקים קיימים מהיום הראשון.",
+  "team": "Friends of the High Line, James Corner Field Operations, Diller Scofidio + Renfro, Piet Oudolf",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "rail",
+     2,
+     "up"
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "green",
+     2,
+     "up"
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "renewal"
+  ],
+  "keywords": [
+   "פארק ליניארי",
+   "מסילה מוגבהת",
+   "rail trail",
+   "linear park",
+   "gentrification"
+  ],
+  "sources": [
+   {
+    "label": "Wikipedia: High Line",
+    "url": "https://en.wikipedia.org/wiki/High_Line"
+   },
+   {
+    "label": "The High Line: History",
+    "url": "https://thehighline.org/history/"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הרכבת האחרונה עברה על המסילה ב-1980.",
+    "status": "verified",
+    "source": "https://www.learningwithexperts.com/blogs/articles/the-history-of-high-line"
+   },
+   {
+    "text": "עמותת Friends of the High Line נוסדה ב-1999 על ידי רוברט האמונד וג'ושוע דייוויד.",
+    "status": "verified",
+    "source": "https://www.learningwithexperts.com/blogs/articles/the-history-of-high-line"
+   },
+   {
+    "text": "הפארק נפתח בשלבים ב-2009, 2011 ו-2014, וה-Spur נפתח ב-2019.",
+    "status": "verified",
+    "source": "https://en.wikipedia.org/wiki/High_Line"
+   },
+   {
+    "text": "אורך הפארק כ-1.45 מייל, כ-2.3 ק\"מ.",
+    "status": "verified",
+    "source": "https://thehighline.org/history/"
+   }
+  ]
+ },
+ {
+  "id": "superilles",
+  "name": "סופר בלוקים של ברצלונה",
+  "nameEn": "Superilles (Superblocks)",
+  "city": "ברצלונה",
+  "cityEn": "Barcelona",
+  "country": "ספרד",
+  "countryEn": "Spain",
+  "lat": 41.4036,
+  "lon": 2.1966,
+  "years": "2016 ואילך",
+  "yearStart": 2016,
+  "scale": "neighborhood",
+  "problems": [
+   "car-street",
+   "heat",
+   "leisure"
+  ],
+  "climate": "mediterranean",
+  "context": "residential",
+  "approach": "mixed",
+  "cost": 1,
+  "duration": 3,
+  "insight": "כמה בלוקים של הרשת הופכים ליחידה אחת: התנועה העוברת נשארת בהיקף, והצמתים הפנימיים הופכים לכיכרות.",
+  "before": "רשת הרחובות של ברצלונה, שבה רוב השטח הציבורי מוקדש לרכב. רמות רעש וזיהום אוויר גבוהות ומחסור חמור בשטחים ירוקים.",
+  "intervention": "הרעיון אומץ בתוכנית התחבורה העירונית של 2015. ברשת של כמה בלוקים, בדרך כלל שלושה על שלושה, התנועה העוברת מופנית לרחובות ההיקף. בפנים המהירות מוגבלת, והצמתים הופכים לכיכרות עם ספסלים, מתקני משחק ועצים, תחילה בצבע וריהוט זמני. הראשון נפתח בפובלנו בספטמבר 2016, ובסנט אנטוני נפתח שלב ראשון ב-2018 והורחב ב-2020.",
+  "result": "הצמתים הפנימיים התמלאו בשהייה, במשחק ובמסחר. בסנט אנטוני דווח על ירידה בזיהום האוויר שנה אחרי הביצוע, והשלב הזמני מוחלף בהדרגה בעיצוב קבוע.",
+  "moves": [
+   "perimeter",
+   "intersection-plaza",
+   "pilot",
+   "speed-limit",
+   "gradual"
+  ],
+  "cautions": "בפובלנו הייתה התנגדות חריפה של תושבים שלא שותפו מראש. התנועה גדלה ברחובות ההיקף. נמדדה עליית שכר דירה בשכונות שהשתפרו, בפובלנו כ-19% בתקופה שנבדקה, והמדיניות העירונית סביב התוכנית השתנתה עם חילופי השלטון.",
+  "israel": "מתאים לרשתות רחובות אורתוגונליות כמו בלב תל אביב, בהדר בחיפה ובעיר העתיקה של באר שבע. השלב הזמני מאפשר לבדוק לפני השקעה, אבל צריך לשתף את התושבים לפניו.",
+  "team": "עיריית ברצלונה, הסוכנות לאקולוגיה עירונית של ברצלונה, סלבדור רואדה",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     1
+    ],
+    [
+     "car",
+     3
+    ],
+    [
+     "car",
+     1
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1.5
+    ],
+    [
+     "green",
+     1
+    ],
+    [
+     "plaza",
+     2
+    ],
+    [
+     "play",
+     1
+    ],
+    [
+     "green",
+     1
+    ],
+    [
+     "walk",
+     1.5
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360"
+  ],
+  "keywords": [
+   "superblock",
+   "סופרבלוק",
+   "superilla",
+   "tactical urbanism",
+   "אישמפלה"
+  ],
+  "sources": [
+   {
+    "label": "Urban Land: Barcelona's Experiment with Superblocks",
+    "url": "https://urbanland.uli.org/planning-design/barcelonas-experiment-superblocks"
+   },
+   {
+    "label": "Barcelona: Superilla Sant Antoni",
+    "url": "https://barcelona.cat/surveyfotografic/en/project/superilla_sant_antoni.html"
+   },
+   {
+    "label": "NacióDigital",
+    "url": "https://naciodigital.cat/societat/oportunitats-i-amenaces-del-salt-descala-de-les-superilles.html"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הרעיון אומץ בתוכנית התחבורה של 2015, והמקרה הראשון נפתח בפובלנו בספטמבר 2016.",
+    "status": "verified",
+    "source": "https://urbanland.uli.org/planning-design/barcelonas-experiment-superblocks"
+   },
+   {
+    "text": "השלב הראשון בסנט אנטוני נפתח ב-2018, והשלב השני הושלם בינואר 2020.",
+    "status": "verified",
+    "source": "https://barcelona.cat/surveyfotografic/en/project/superilla_sant_antoni.html"
+   },
+   {
+    "text": "בפובלנו עלה שכר הדירה בכ-19% בתקופה שנבדקה אחרי פתיחת הסופר בלוק.",
+    "status": "approx",
+    "source": "https://naciodigital.cat/societat/oportunitats-i-amenaces-del-salt-descala-de-les-superilles.html"
+   }
+  ]
+ },
+ {
+  "id": "stroget",
+  "name": "סטרויט",
+  "nameEn": "Strøget",
+  "city": "קופנהגן",
+  "cityEn": "Copenhagen",
+  "country": "דנמרק",
+  "countryEn": "Denmark",
+  "lat": 55.6786,
+  "lon": 12.5747,
+  "years": "1962",
+  "yearStart": 1962,
+  "scale": "street",
+  "problems": [
+   "car-street"
+  ],
+  "climate": "cold",
+  "context": "center",
+  "approach": "mixed",
+  "cost": 1,
+  "duration": 1,
+  "insight": "אחד הרחובות הראשונים באירופה שנסגרו לרכב, ובהמשך המעבדה שבה יאן גל מדד חיים בין בניינים.",
+  "before": "רחוב הקניות המרכזי של קופנהגן, צר ועמוס במכוניות. הטענה הייתה ש\"לדנים אין תרבות של רחוב כמו באיטליה\".",
+  "intervention": "בנובמבר 1962 הרחוב נסגר לתנועה כניסוי זמני, והסגירה הפכה לקבועה ב-1964. לאורך השנים נסגרו רחובות וכיכרות נוספים סביבו, בהדרגה, וחניות במרכז העיר צומצמו.",
+  "result": "רחוב הולכי רגל באורך כ-1.1 ק\"מ שהתמלא באנשים, והעיר המשיכה להרחיב סביבו את רשת הרחובות להולכי רגל. מתחילת שנות השבעים מדדו יאן גל וצוותו את החיים ברחוב, והמדידה הפכה לכלי תכנון.",
+  "moves": [
+   "pilot",
+   "gradual",
+   "measure",
+   "close-road"
+  ],
+  "cautions": "היום הרחוב נשלט על ידי רשתות בינלאומיות ותיירות, ופחות על ידי חיי היומיום של התושבים.",
+  "israel": "מתאים לרחובות מסחר צרים במרכזי ערים ותיקים, כמו רחוב הרצל ברמלה או רחוב יפו בירושלים. ללמוד מהמדידה ומההדרגתיות, לא רק מהסגירה.",
+  "team": "עיריית קופנהגן, מחקר: יאן גל",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     0.7
+    ],
+    [
+     "car",
+     2.6
+    ],
+    [
+     "walk",
+     0.7
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1.3
+    ],
+    [
+     "plaza",
+     1.4
+    ],
+    [
+     "walk",
+     1.3
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360"
+  ],
+  "keywords": [
+   "מדרחוב",
+   "pedestrian street",
+   "Jan Gehl",
+   "יאן גל",
+   "life between buildings"
+  ],
+  "sources": [
+   {
+    "label": "Wikipedia: Strøget",
+    "url": "https://en.wikipedia.org/wiki/Str%C3%B8get"
+   },
+   {
+    "label": "Global Street Design Guide: Strøget",
+    "url": "https://globaldesigningcities.org/publication/global-street-design-guide/streets/pedestrian-priority-spaces/pedestrian-only-streets/pedestrian-streets-case-study-stroget-copenhagen/"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הרחוב נסגר לתנועה ב-17 בנובמבר 1962 כניסוי, והסגירה הפכה לקבועה ב-1964.",
+    "status": "verified",
+    "source": "https://en.wikipedia.org/wiki/Str%C3%B8get"
+   },
+   {
+    "text": "אורך הרחוב כ-1.1 ק\"מ.",
+    "status": "verified",
+    "source": "https://en.wikipedia.org/wiki/Str%C3%B8get"
+   },
+   {
+    "text": "מתחילת שנות השבעים מדד יאן גל את תנועת הולכי הרגל והאופניים בקופנהגן.",
+    "status": "approx",
+    "source": "https://rs.resalliance.org/?p=783"
+   }
+  ]
+ },
+ {
+  "id": "times-square",
+  "name": "כיכר טיימס",
+  "nameEn": "Times Square Pedestrian Plazas",
+  "city": "ניו יורק",
+  "cityEn": "New York City",
+  "country": "ארצות הברית",
+  "countryEn": "United States",
+  "lat": 40.758,
+  "lon": -73.9855,
+  "years": "2009-2016",
+  "yearStart": 2009,
+  "scale": "square",
+  "problems": [
+   "car-street"
+  ],
+  "climate": "temperate",
+  "context": "center",
+  "approach": "mixed",
+  "cost": 2,
+  "duration": 2,
+  "insight": "קטע מברודוויי נסגר לרכב בניסוי עם צבע וכיסאות מתקפלים, והנתונים שנאספו הפכו אותו לכיכר קבועה.",
+  "before": "צומת עמוס שבו הולכי הרגל נדחקו למדרכות צרות וירדו לכביש, עם שיעור גבוה של פגיעות.",
+  "intervention": "במאי 2009 סגרה מחלקת התחבורה של העיר קטעים מברודוויי לתנועה, בפרויקט הניסוי Green Light for Midtown, עם צבע, עציצים וכיסאות. אחרי תקופת מדידה הוחלט להפוך את הניסוי לקבוע. משרד Snøhetta תכנן את הכיכר הסופית בריצוף ובספסלי גרניט, השלב הראשון הושלם בסוף 2014 והפרויקט כולו ב-2016.",
+  "result": "דווח על ירידה ניכרת בפגיעות בהולכי רגל ובתאונות, והשטח להולכי רגל הוכפל. הניסוי הפך למודל לתוכנית כיכרות בכל העיר.",
+  "moves": [
+   "pilot",
+   "measure",
+   "reversible",
+   "leadership"
+  ],
+  "cautions": "המקום עמוס מאוד ומסחרי, ועולה שאלה אם כיכר כזו משרתת תושבים או רק תיירים. נתוני ההצלחה שפורסמו שונים ממקור למקור.",
+  "israel": "מתאים לצמתים עמוסים במרכזי ערים, כמו כיכר הדוידקה בירושלים או צומת אלנבי-רוטשילד בתל אביב. ניסוי בצבע ובריהוט נייד אפשרי גם בתקציב עירוני קטן.",
+  "team": "מחלקת התחבורה של ניו יורק (ג'נט סדיק-חאן), Snøhetta",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     0.8
+    ],
+    [
+     "car",
+     4
+    ],
+    [
+     "walk",
+     0.8
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     0.8
+    ],
+    [
+     "plaza",
+     3
+    ],
+    [
+     "car",
+     1.2
+    ],
+    [
+     "walk",
+     0.8
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360"
+  ],
+  "keywords": [
+   "ברודוויי",
+   "pedestrian plaza",
+   "Green Light for Midtown",
+   "Janette Sadik-Khan",
+   "פיילוט"
+  ],
+  "sources": [
+   {
+    "label": "Dezeen: Snøhetta completes phase one",
+    "url": "https://www.dezeen.com/?p=403974"
+   },
+   {
+    "label": "World Landscape Architect: Snøhetta Times Square",
+    "url": "https://worldlandscapearchitect.com/snohetta-redesign-doubles-the-amount-of-public-space-at-times-square/"
+   }
+  ],
+  "facts": [
+   {
+    "text": "ברודוויי נסגר לתנועה במאי 2009 בפרויקט הניסוי Green Light for Midtown, עם צבע, כיסאות ושולחנות זמניים.",
+    "status": "verified",
+    "source": "https://www.metalocus.es/en/news/first-phase-times-square-transformation-snohetta"
+   },
+   {
+    "text": "השלב הראשון של Snøhetta הושלם בסוף 2014, והפרויקט כולו ב-2016.",
+    "status": "verified",
+    "source": "https://worldlandscapearchitect.com/snohetta-redesign-doubles-the-amount-of-public-space-at-times-square/"
+   },
+   {
+    "text": "דווח על ירידה של כ-40% בפגיעות בהולכי רגל, אבל המקורות מביאים נתונים שונים.",
+    "status": "approx",
+    "source": "https://snohetta.prezly.com/snohetta-redesigns-times-square-doubling-the-amount-of-public-space"
+   }
+  ]
+ },
+ {
+  "id": "benthemplein",
+  "name": "כיכר המים בנטהמפליין",
+  "nameEn": "Waterplein Benthemplein",
+  "city": "רוטרדם",
+  "cityEn": "Rotterdam",
+  "country": "הולנד",
+  "countryEn": "Netherlands",
+  "lat": 51.9276,
+  "lon": 4.4733,
+  "years": "2013",
+  "yearStart": 2013,
+  "scale": "square",
+  "problems": [
+   "flooding",
+   "leisure"
+  ],
+  "climate": "temperate",
+  "context": "center",
+  "approach": "permanent",
+  "cost": 2,
+  "duration": 2,
+  "insight": "כיכר שהיא מגרש ספורט ותיאטרון ביום יבש, ומאגר מים בגשם עז.",
+  "before": "כיכר אפורה ולא בשימוש באזור צפוף, במקום שבו מערכת הניקוז לא עמדה בגשמים עזים.",
+  "intervention": "שלושה אגנים בגבהים שונים: שניים רדודים מתמלאים בכל גשם, והעמוק, שהוא גם מגרש ספורט, מתמלא רק בגשם עז. תעלות נירוסטה גלויות מובילות אליהם את המים מהכיכר ומהגגות. המאגר מכיל כ-1.7 מיליון ליטר. מהרעיון עד הביצוע עברו כשבע שנים.",
+  "result": "מודל עולמי לכיכרות מים. ביום יבש הכיכר משמשת מגרש כדורסל, משטח סקייטבורד ומושבי תיאטרון לבני הנוער של בתי הספר הסמוכים, והמים חוזרים בהדרגה למערכת אחרי הגשם.",
+  "moves": [
+   "dual-use",
+   "visible-water",
+   "participation",
+   "infiltration"
+  ],
+  "cautions": "דורש תחזוקה שוטפת וניקוי אחרי כל הצפה. המים המצטברים אינם נקיים, ולכן צריך לנהל את השימוש בזמן ההצפה. תהליך התכנון ארך שנים רבות.",
+  "israel": "מתאים לשכונות שמוצפות בכל חורף, בגוש דן ובשפלה, כמו בבני ברק או ברמת גן. מגרשי ספורט קיימים ליד בתי ספר הם המועמדים הטבעיים.",
+  "team": "De Urbanisten, עיריית רוטרדם",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "plaza",
+     4
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "water",
+     1,
+     "down"
+    ],
+    [
+     "play",
+     2.5,
+     "down"
+    ],
+    [
+     "water",
+     1,
+     "down"
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "biomimicry"
+  ],
+  "keywords": [
+   "water square",
+   "כיכר מים",
+   "climate adaptation",
+   "ניהול נגר",
+   "stormwater"
+  ],
+  "sources": [
+   {
+    "label": "World Landscape Architect: Waterplein",
+    "url": "https://worldlandscapearchitect.com/waterplein-rotterdam-netherlands-de-urbanisten/"
+   },
+   {
+    "label": "ASLA Dirt: Rotterdam's Water Square",
+    "url": "https://www.asla.org/news-insights/dirt/detours-obligatory-rotterdams-water-square"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הכיכר מכילה כ-1.7 מיליון ליטר, כ-1,700 מ\"ק מי גשם.",
+    "status": "verified",
+    "source": "https://worldlandscapearchitect.com/waterplein-rotterdam-netherlands-de-urbanisten/"
+   },
+   {
+    "text": "שני אגנים רדודים מתמלאים בכל גשם, ואגן עמוק נוסף מקבל את העודפים בסופות.",
+    "status": "verified",
+    "source": "https://nextcity.org/daily/entry/a-storm-water-drainage-system-cleverly-disguised-as-a-park"
+   },
+   {
+    "text": "הכיכר נפתחה בדצמבר 2013.",
+    "status": "approx",
+    "source": "https://www.dutchwatersector.com/node/577"
+   }
+  ]
+ },
+ {
+  "id": "madrid-rio",
+  "name": "מדריד ריו",
+  "nameEn": "Madrid Río",
+  "city": "מדריד",
+  "cityEn": "Madrid",
+  "country": "ספרד",
+  "countryEn": "Spain",
+  "lat": 40.4035,
+  "lon": -3.7211,
+  "years": "2004-2011",
+  "yearStart": 2004,
+  "scale": "city",
+  "problems": [
+   "dividing-road",
+   "leisure"
+  ],
+  "climate": "mediterranean",
+  "context": "waterfront",
+  "approach": "permanent",
+  "cost": 3,
+  "duration": 2,
+  "insight": "כביש הטבעת שחצץ בין העיר לנהר מנסנארס הוטמן במנהרות, ומעליו נבנה פארק ליניארי לאורך הנהר.",
+  "before": "כביש הטבעת M-30 עבר לאורך הנהר וניתק את השכונות בדרום מערב העיר מהנהר ומהמרכז.",
+  "intervention": "בתוכנית Calle 30 של ראש העיר אלברטו רואיס גאיירדון הוטמן הכביש לאורך הנהר במנהרות, מהארוכות באירופה. מעל השטח שהשתחרר נבנה פארק לפי תחרות מ-2005, עם גשרים חדשים להולכי רגל בין הגדות, ובהם גשר ארגנסואלה של דומיניק פרו. הפארק נחנך באפריל 2011.",
+  "result": "שכונות שהיו מנותקות קיבלו גישה לנהר ולפארק לאורך כ-10 ק\"מ. הפארק הפך למוקד פנאי של מחצית העיר.",
+  "moves": [
+   "bury-road",
+   "pedestrian-bridge",
+   "leadership",
+   "network"
+  ],
+  "cautions": "עלות העבודות על ה-M-30 כולו הוערכה בכ-6 מיליארד אירו, כמעט כפול מהתכנון, והותירה לעירייה חוב כבד לשנים. העצים נטועים על גג המנהרה בעומק אדמה מוגבל.",
+  "israel": "רלוונטי לכבישים לאורך נחלים, כמו נתיבי איילון. להשוות את עלות ההטמנה מול פירוק וצמצום נתיבים, ולבדוק עומק אדמה לעצים מעל מנהרה.",
+  "team": "Burgos & Garrido, Porras La Casta, Rubio & Álvarez-Sala, West 8 (MRIO arquitectos), עיריית מדריד",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     3
+    ],
+    [
+     "green",
+     0.5
+    ],
+    [
+     "water",
+     2,
+     "down"
+    ],
+    [
+     "green",
+     0.5
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "green",
+     3
+    ],
+    [
+     "car",
+     2,
+     "tunnel"
+    ],
+    [
+     "water",
+     2,
+     "down"
+    ],
+    [
+     "green",
+     2.5
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "renewal"
+  ],
+  "keywords": [
+   "M-30",
+   "מנהרה",
+   "river park",
+   "נהר",
+   "Manzanares"
+  ],
+  "sources": [
+   {
+    "label": "Wikipedia: M-30",
+    "url": "https://en.wikipedia.org/wiki/Autopista_de_Circunvalaci%C3%B3n_M-30"
+   },
+   {
+    "label": "esMADRID: Madrid Río",
+    "url": "https://www.esmadrid.com/en/node/65537"
+   },
+   {
+    "label": "Wikipedia: Arganzuela Footbridge",
+    "url": "https://en.wikipedia.org/wiki/Arganzuela_Footbridge"
+   }
+  ],
+  "facts": [
+   {
+    "text": "תכנון פני השטח נקבע בתחרות רעיונות מ-2005 שבה זכה צוות בראשות חינס גארידו, יחד עם West 8.",
+    "status": "verified",
+    "source": "https://blogs.ubc.ca/futureinfrastructure/files/2015/11/Ben-Reimer-Madrid-Rio-Park-Text.pdf"
+   },
+   {
+    "text": "הפארק נחנך באפריל 2011.",
+    "status": "verified",
+    "source": "https://www.esmadrid.com/en/node/65537"
+   },
+   {
+    "text": "עלות העבודות על ה-M-30 הוערכה בכ-6 מיליארד אירו, והמקורות חלוקים בחלוקה בין מנהרות לפארק.",
+    "status": "approx",
+    "source": "https://blogs.ubc.ca/futureinfrastructure/files/2015/11/Ben-Reimer-Madrid-Rio-Park-Text.pdf"
+   }
+  ]
+ },
+ {
+  "id": "berges-de-seine",
+  "name": "גדות הסן",
+  "nameEn": "Berges de Seine / Parc Rives de Seine",
+  "city": "פריז",
+  "cityEn": "Paris",
+  "country": "צרפת",
+  "countryEn": "France",
+  "lat": 48.8606,
+  "lon": 2.3376,
+  "years": "2013-2017",
+  "yearStart": 2013,
+  "scale": "city",
+  "problems": [
+   "dividing-road",
+   "leisure"
+  ],
+  "climate": "temperate",
+  "context": "waterfront",
+  "approach": "mixed",
+  "cost": 1,
+  "duration": 2,
+  "insight": "כבישים מהירים על גדות הסן נסגרו לתנועה והפכו לטיילת, כמעט בלי בנייה.",
+  "before": "כבישים מהירים לאורך שתי גדות הסן במרכז פריז, שנבנו בשנות השישים והשבעים, וניתקו את העיר מהנהר.",
+  "intervention": "ב-2013 נסגר הכביש בגדה השמאלית, בין מוזיאון אורסה לגשר אלמה. בסתיו 2016 נסגרו כ-3.3 ק\"מ בגדה הימנית, בהובלת ראשת העיר אן הידלגו, ובאפריל 2017 אוחדו הקטעים לפארק Rives de Seine. נוספו ריהוט, מתקני משחק, ספורט ואירועים, ברובם ניידים.",
+  "result": "הגדות הפכו לטיילת פעילה. בקיץ מתקיים עליהן גם אירוע \"פריז פלאז'\", חוף זמני.",
+  "moves": [
+   "close-road",
+   "reversible",
+   "leadership",
+   "time-not-space"
+  ],
+  "cautions": "בפברואר 2018 ביטל בית המשפט המנהלי את החלטת הסגירה של הגדה הימנית בשל פגם בהליך. העירייה הוציאה צו חדש, ובאוקטובר 2018 אישר בית המשפט את הסגירה בנימוק של הגנה על אתר מורשת עולמית. נהגים מהפרברים טענו שהעומס הועבר אליהם.",
+  "israel": "מתאים לרצועות חוף ונחל שעליהן עובר כביש, כמו רחוב הרברט סמואל בתל אביב או כביש החוף בבת ים. ההיפוך האפשרי מקל על ההחלטה, אבל צריך הליך תכנוני מוקפד מול ערעורים.",
+  "team": "עיריית פריז",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "walk",
+     0.6
+    ],
+    [
+     "car",
+     1.6,
+     "down"
+    ],
+    [
+     "water",
+     3,
+     "down"
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "walk",
+     0.6
+    ],
+    [
+     "plaza",
+     1.6,
+     "down"
+    ],
+    [
+     "water",
+     3,
+     "down"
+    ]
+   ]
+  },
+  "apps": [
+   "n360"
+  ],
+  "keywords": [
+   "Paris Plages",
+   "פריז פלאז'",
+   "riverfront",
+   "Rives de Seine",
+   "Anne Hidalgo"
+  ],
+  "sources": [
+   {
+    "label": "Paris.fr: la piétonnisation des rives de Seine validée par la justice",
+    "url": "https://www.paris.fr/pages/la-pietonnisation-des-rives-de-seine-validee-par-la-justice-6214"
+   },
+   {
+    "label": "Public Sénat",
+    "url": "https://www.publicsenat.fr/actualites/politique/pietonnisation-des-berges-annulee-a-paris-anne-hidalgo-fait-appel-83006"
+   },
+   {
+    "label": "Paris Zigzag",
+    "url": "https://www.pariszigzag.fr/paris-au-quotidien/tout-savoir-sur-la-pietonnisation-des-berges-de-seine/"
+   }
+  ],
+  "facts": [
+   {
+    "text": "ב-2013 הוחזר להולכי רגל הכביש בגדה השמאלית בין מוזיאון אורסה לגשר אלמה.",
+    "status": "verified",
+    "source": "https://www.pariszigzag.fr/paris-au-quotidien/tout-savoir-sur-la-pietonnisation-des-berges-de-seine/"
+   },
+   {
+    "text": "בסתיו 2016 נסגרו לתנועה כ-3.3 ק\"מ בגדה הימנית, ובאפריל 2017 נוצר פארק Rives de Seine.",
+    "status": "verified",
+    "source": "https://www.pariszigzag.fr/paris-au-quotidien/tout-savoir-sur-la-pietonnisation-des-berges-de-seine/"
+   },
+   {
+    "text": "ב-21 בפברואר 2018 ביטל בית המשפט המנהלי את החלטת המועצה, ובאוקטובר 2018 אושרה הסגירה מחדש.",
+    "status": "verified",
+    "source": "https://www.paris.fr/pages/la-pietonnisation-des-rives-de-seine-validee-par-la-justice-6214"
+   }
+  ]
+ },
+ {
+  "id": "seoullo",
+  "name": "סאולו 7017",
+  "nameEn": "Seoullo 7017",
+  "city": "סיאול",
+  "cityEn": "Seoul",
+  "country": "דרום קוריאה",
+  "countryEn": "South Korea",
+  "lat": 37.5563,
+  "lon": 126.9707,
+  "years": "2017",
+  "yearStart": 2017,
+  "scale": "street",
+  "problems": [
+   "derelict-infra",
+   "isolated"
+  ],
+  "climate": "temperate",
+  "context": "center",
+  "approach": "permanent",
+  "cost": 2,
+  "duration": 2,
+  "insight": "גשר כבישים ישן מעל תחנת הרכבת המרכזית הפך לגינה מוגבהת להולכי רגל, שמחברת שכונות שהמסילה ניתקה.",
+  "before": "גשר כבישים מ-1970 מעל תחנת סיאול, שנמצא לא בטוח לתנועה כבדה. התוכנית המקורית הייתה להרוס אותו.",
+  "intervention": "הגשר הוסב לשביל הולכי רגל באורך כקילומטר, עם עציצים עגולים בגדלים שונים ובהם כ-24,000 צמחים. משפחות הצמחים מסודרות לפי סדר האלפבית הקוריאני. נוספו מדרגות ומעליות לרחובות שמתחת. השם מציין את שנת הבנייה, 1970, ואת שנת הפתיחה מחדש, 2017.",
+  "result": "מסלול הולכי רגל רציף בין שכונות שהיו מופרדות על ידי מסילות הרכבת, שנפתח לציבור במאי 2017.",
+  "moves": [
+   "keep-structure",
+   "pedestrian-bridge",
+   "heritage-layer"
+  ],
+  "cautions": "נמתחה ביקורת על מיעוט הצל ועל ריבוי הבטון, והמקום חם מאוד בקיץ. הגינה בעציצים מגבילה את גודל העצים.",
+  "israel": "רלוונטי לגשרים מעל מסילות ונתיבי איילון, למשל באזור תחנת השלום או ההגנה בתל אביב. ללמוד מהביקורת: צל רציף כבר בתכנון.",
+  "team": "MVRDV, עיריית סיאול",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     2,
+     "up"
+    ],
+    [
+     "rail",
+     4
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "green",
+     2,
+     "up"
+    ],
+    [
+     "rail",
+     4
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360"
+  ],
+  "keywords": [
+   "skygarden",
+   "גשר",
+   "overpass",
+   "גינה מוגבהת",
+   "MVRDV"
+  ],
+  "sources": [
+   {
+    "label": "MVRDV: Seoullo 7017",
+    "url": "https://www.mvrdv.com/projects/208/seoullo-7017-"
+   },
+   {
+    "label": "World-Architects: Seoul Opens Its Own High Line",
+    "url": "https://www.world-architects.com/en/architecture-news/headlines/seoul-opens-its-own-high-line"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הפארק נפתח במאי 2017 ותוכנן על ידי MVRDV.",
+    "status": "verified",
+    "source": "https://www.world-architects.com/en/architecture-news/headlines/seoul-opens-its-own-high-line"
+   },
+   {
+    "text": "בפארק כ-24,000 צמחים, ומשפחות הצמחים מסודרות לפי האלפבית הקוריאני.",
+    "status": "verified",
+    "source": "https://www.mvrdv.com/projects/208/seoullo-7017-"
+   },
+   {
+    "text": "אורך המסלול כקילומטר, והמקורות נותנים בין 983 ל-1,024 מטר.",
+    "status": "approx",
+    "source": "https://www.mvrdv.com/projects/208/seoullo-7017-"
+   }
+  ]
+ },
+ {
+  "id": "railway-park-jerusalem",
+  "name": "פארק המסילה",
+  "nameEn": "Park HaMesila (Train Track Park)",
+  "city": "ירושלים",
+  "cityEn": "Jerusalem",
+  "country": "ישראל",
+  "countryEn": "Israel",
+  "lat": 31.7605,
+  "lon": 35.2192,
+  "years": "2010-2013",
+  "yearStart": 2010,
+  "scale": "neighborhood",
+  "problems": [
+   "derelict-infra",
+   "isolated",
+   "leisure"
+  ],
+  "climate": "mediterranean",
+  "context": "residential",
+  "approach": "permanent",
+  "cost": 2,
+  "duration": 2,
+  "insight": "תוואי מסילת הרכבת ההיסטורית יפו-ירושלים הפך לשביל ירוק שמחבר שכונות בדרום העיר.",
+  "before": "המסילה, שהונחה ב-1892, שימשה עד 1998. אחרי שהרכבת הפסיקה לעבור בה נשארה רצועה מוזנחת בין שכונות, ועלתה תוכנית לסלול בתוואי כביש.",
+  "intervention": "ועד תושבים שהוקם בשכונות לאורך התוואי פעל לפארק עירוני במקום כביש. נבנה פארק ליניארי עם שביל הליכה ואופניים מהתחנה הראשונה ליד המושבה הגרמנית ועד אצטדיון טדי במלחה, שמשמר את הפסים במקומות רבים.",
+  "result": "אחד המרחבים הציבוריים הפעילים בירושלים. השביל מחבר בין שכונות כמו המושבה הגרמנית, בקעה, קטמונים ומלחה.",
+  "moves": [
+   "citizen-led",
+   "keep-structure",
+   "heritage-layer",
+   "participation"
+  ],
+  "cautions": "נמתחה ביקורת על עליית מחירי הנדל\"ן בשכונות לאורך הפארק. ב-2012 נדרשו תושבים שתרמו לבנייתו לשלם היטלי סלילה. גם אחרי ההקמה עלו תוכניות לכביש ולגשר שיחצו חלק מהפארק, ותושבים נאבקים בהן.",
+  "israel": "מקרה ישראלי. מודל לתוואים נטושים נוספים בארץ, כמו קטעי המסילה הישנה בתל אביב. צריך להגן על התוואי בתוכנית סטטוטורית, אחרת הוא נשאר פתוח לכבישים חדשים.",
+  "team": "עיריית ירושלים, ועד תושבים, אדריכלי נוף יאיר אביגדור ושלומי זאבי",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     0.8
+    ],
+    [
+     "rail",
+     2
+    ],
+    [
+     "walk",
+     0.8
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "green",
+     1
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "bike",
+     1
+    ],
+    [
+     "green",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "renewal"
+  ],
+  "keywords": [
+   "המסילה",
+   "התחנה הראשונה",
+   "rail trail",
+   "קטמונים",
+   "בקעה"
+  ],
+  "sources": [
+   {
+    "label": "Wikipedia: Train Track Park",
+    "url": "https://en.wikipedia.org/wiki/Train_Track_Park"
+   },
+   {
+    "label": "מקור ראשון: תושבים יזמו את שיפוץ המסילה, ונדרשו לשלם",
+    "url": "https://www.makorrishon.co.il/nrg/online/1/ART2/425/458.html"
+   },
+   {
+    "label": "Globes: Planned Jerusalem highway angers local residents",
+    "url": "https://en.globes.co.il/en/article-1001442011"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הפארק עובר על תוואי מסילת יפו-ירושלים, שהונחה ב-1892 ושימשה עד 1998, מהתחנה הראשונה ועד אצטדיון טדי.",
+    "status": "verified",
+    "source": "https://en.wikipedia.org/wiki/Train_Track_Park"
+   },
+   {
+    "text": "ועד תושבים פעל לפארק עירוני במקום כביש בתוואי הנטוש.",
+    "status": "verified",
+    "source": "https://en.wikipedia.org/wiki/Train_Track_Park"
+   },
+   {
+    "text": "ב-2012 נדרשו תושבי רחוב הרכבת לשלם היטלי סלילה, למרות תרומות שגייסו לבניית הפארק.",
+    "status": "verified",
+    "source": "https://www.makorrishon.co.il/nrg/online/1/ART2/425/458.html"
+   },
+   {
+    "text": "הפארק נוצר ב-2010, ולפי מקורות אחרים נחנך רשמית ב-2013.",
+    "status": "approx",
+    "source": "https://en.wikipedia.org/wiki/Train_Track_Park"
+   }
+  ]
+ },
+ {
+  "id": "copenhagen-cloudburst",
+  "name": "תוכנית השטפונות של קופנהגן",
+  "nameEn": "Copenhagen Cloudburst Management Plan",
+  "city": "קופנהגן",
+  "cityEn": "Copenhagen",
+  "country": "דנמרק",
+  "countryEn": "Denmark",
+  "lat": 55.6667,
+  "lon": 12.5419,
+  "years": "2012 ואילך",
+  "yearStart": 2012,
+  "scale": "city",
+  "problems": [
+   "flooding",
+   "heat"
+  ],
+  "climate": "cold",
+  "context": "residential",
+  "approach": "policy",
+  "cost": 3,
+  "duration": 3,
+  "insight": "אחרי גשם קיצוני ב-2011 העיר תכננה מאות התערבויות ברחובות ובפארקים, במקום רק להגדיל את הצנרת.",
+  "before": "ב-2 ביולי 2011 ירדו על העיר יותר מ-100 מ\"מ גשם בתוך שעתיים בערך. הביוב עלה על גדותיו, מרתפים ורחובות הוצפו, והנזק עבר מיליארד דולר.",
+  "intervention": "כשנה אחרי השטפון אימצה העירייה תוכנית כלל עירונית של כ-300 פרויקטים לאורך כעשרים שנה, בעלות של כ-1.3 מיליארד דולר. העיר מחולקת לאגני ניקוז, ובכל אגן מתוכננים רחובות שמובילים מים, פארקים שאוגרים מים ושטחים ירוקים שסופגים, לצד מנהרות ניקוז גדולות. פארק Enghaveparken בווסטרברו תוכנן מחדש כך שיתמלא במים בשטפון.",
+  "result": "פרויקטים מבוצעים בהדרגה ברחבי העיר, והתוכנית הפכה לדוגמה בינלאומית לעיר ספוגית.",
+  "moves": [
+   "network",
+   "dual-use",
+   "visible-water",
+   "infiltration",
+   "gradual"
+  ],
+  "cautions": "הביצוע איטי ויקר ונפרש על עשורים, וחלק גדול מההשקעה הוא בכל זאת מנהרות תת קרקעיות. דורש תיאום מורכב בין העירייה לחברת המים HOFOR. התחזית היא לכ-30% יותר גשם עד סוף המאה, ולכן התוכנית צריכה להתעדכן.",
+  "israel": "רלוונטי לרשויות שמוצפות בכל חורף, כמו בני ברק, חולון ונהריה. מתאים לשילוב בתוכניות התחדשות עירונית ובשיפוץ רחובות, אגן אחרי אגן.",
+  "team": "עיריית קופנהגן, חברת המים HOFOR",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     1
+    ],
+    [
+     "car",
+     3
+    ],
+    [
+     "car",
+     1
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "green",
+     1.5
+    ],
+    [
+     "water",
+     1,
+     "down"
+    ],
+    [
+     "car",
+     1.5
+    ],
+    [
+     "green",
+     1.5
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "biomimicry",
+   "renewal"
+  ],
+  "keywords": [
+   "עיר ספוגית",
+   "sponge city",
+   "cloudburst",
+   "Enghaveparken",
+   "שטפון"
+  ],
+  "sources": [
+   {
+    "label": "NPR: Copenhagen is adapting to a warmer world",
+    "url": "https://www.npr.org/2025/06/13/nx-s1-5340710/copenhagen-climate-change-solutions-flooding"
+   }
+  ],
+  "facts": [
+   {
+    "text": "ב-2 ביולי 2011 ירדו יותר מ-100 מ\"מ גשם בתוך כשעתיים, והנזק לרכוש עבר מיליארד דולר.",
+    "status": "verified",
+    "source": "https://www.npr.org/2025/06/13/nx-s1-5340710/copenhagen-climate-change-solutions-flooding"
+   },
+   {
+    "text": "כשנה אחרי השטפון אומצה תוכנית של כ-300 פרויקטים לאורך כעשרים שנה, בעלות של כ-1.3 מיליארד דולר.",
+    "status": "verified",
+    "source": "https://www.npr.org/2025/06/13/nx-s1-5340710/copenhagen-climate-change-solutions-flooding"
+   },
+   {
+    "text": "פארק Enghaveparken תוכנן מחדש כך שישמש מאגר גדול בגשם עז.",
+    "status": "verified",
+    "source": "https://www.npr.org/2025/06/13/nx-s1-5340710/copenhagen-climate-change-solutions-flooding"
+   }
+  ]
+ },
+ {
+  "id": "catharijnesingel",
+  "name": "תעלת קתריינסינגל",
+  "nameEn": "Catharijnesingel",
+  "city": "אוטרכט",
+  "cityEn": "Utrecht",
+  "country": "הולנד",
+  "countryEn": "Netherlands",
+  "lat": 52.0889,
+  "lon": 5.1131,
+  "years": "2015-2020",
+  "yearStart": 2015,
+  "scale": "city",
+  "problems": [
+   "dividing-road",
+   "flooding",
+   "heat"
+  ],
+  "climate": "temperate",
+  "context": "center",
+  "approach": "permanent",
+  "cost": 3,
+  "duration": 3,
+  "insight": "תעלה היסטורית שיובשה כדי לפנות מקום לכביש חזרה להיות תעלה, אחרי שהתושבים בחרו בה במשאל עם.",
+  "before": "ב-1969 יובשה התעלה ההיסטורית שהקיפה את מרכז אוטרכט, ובמקומה נבנה כביש עירוני מהיר ליד תחנת הרכבת ומרכז הקניות הוג קתריינה.",
+  "intervention": "ב-2002 הצביעו תושבי העיר במשאל עם בעד החזרת התעלה. העבודות נעשו בשלבים: הקטעים הראשונים הוחזרו למים ב-2015, והקטע האחרון בדרום הושלם ב-2020 בתכנון OKRA. התנועה הוסטה, ועל הגדות קיבלו עדיפות הולכי רגל ורוכבי אופניים.",
+  "result": "כ-40,000 מ\"ק מים חזרו לתעלה, וטבעת המים סביב מרכז העיר, באורך של כמעט שישה ק\"מ, נסגרה מחדש. האזור הסואן ליד התחנה הפך למקום שהייה. הפרויקט זכה בפרס האירופי למרחב ציבורי עירוני ב-2022.",
+  "moves": [
+   "daylight",
+   "remove-road",
+   "citizen-led",
+   "visible-water",
+   "gradual"
+  ],
+  "cautions": "מהמשאל ועד השלמת הטבעת עברו כמעט עשרים שנה, והביצוע היה צמוד לפרויקט גדול של חידוש התחנה ומרכז הקניות. התנועה לא נעלמה: חלק מהכביש עדיין עובר לאורך התעלה, וסגירת קטע נוסף לרכב מ-2026 נתקלה בהתנגדות של ארגוני עסקים ובהליך משפטי.",
+  "israel": "רלוונטי לנחלים ותעלות שכוסו לטובת כבישים, כמו נחל איילון בתל אביב או נחל הקישון בחיפה. משאל ציבורי מוקדם יכול לתת לפרויקט ארוך גב פוליטי לאורך קדנציות.",
+  "team": "עיריית אוטרכט, OKRA Landschapsarchitecten",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "car",
+     3,
+     "down"
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     1.5
+    ],
+    [
+     "bike",
+     1
+    ],
+    [
+     "green",
+     1
+    ],
+    [
+     "water",
+     3,
+     "down"
+    ],
+    [
+     "walk",
+     1.5
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "biomimicry",
+   "renewal"
+  ],
+  "keywords": [
+   "תעלה",
+   "canal restoration",
+   "Utrecht",
+   "OKRA",
+   "החזרת מים לעיר"
+  ],
+  "sources": [
+   {
+    "label": "World Landscape Architect: Catharijnesingel",
+    "url": "https://worldlandscapearchitect.com/bringing-water-back-catharijnesingels-journey-back-from-highway-to-canal/"
+   },
+   {
+    "label": "Public Space: Catharijnesingel",
+    "url": "https://publicspace.org/works/-/project/m357-catharijnesingel"
+   },
+   {
+    "label": "OKRA",
+    "url": "https://www.okra.nl/?p=2200"
+   }
+  ],
+  "facts": [
+   {
+    "text": "התעלה יובשה ב-1969 לטובת כביש עירוני, וב-2002 הצביעו התושבים במשאל עם בעד החזרתה.",
+    "status": "verified",
+    "source": "https://publicspace.org/works/-/project/m357-catharijnesingel"
+   },
+   {
+    "text": "הקטעים הראשונים הוחזרו ב-2015, והקטע האחרון הושלם ב-2020 בתכנון OKRA.",
+    "status": "verified",
+    "source": "https://publicspace.org/works/-/project/m357-catharijnesingel"
+   },
+   {
+    "text": "הפרויקט זכה בפרס האירופי למרחב ציבורי עירוני ב-2022.",
+    "status": "verified",
+    "source": "https://aasarchitecture.com/2022/12/restoration-of-the-catharijnesingel-canal-by-studio-okra-wins-2022-european-prize-for-urban-public-space/?amp=1"
+   },
+   {
+    "text": "סגירת קטע הכביש בין Spoorstraat ל-Stationsstraat מספטמבר 2026 נתקלה בהתנגדות של ארגוני עסקים.",
+    "status": "verified",
+    "source": "https://khn.nl/nieuws/khn-utrecht-en-cmu-blijven-zich-verzetten-tegen-afsluiting-catharijnesingel-per-21-september"
+   }
+  ]
+ },
+ {
+  "id": "promenade-plantee",
+  "name": "הפרומנד פלנטה",
+  "nameEn": "Promenade Plantée / Coulée verte René-Dumont",
+  "city": "פריז",
+  "cityEn": "Paris",
+  "country": "צרפת",
+  "countryEn": "France",
+  "lat": 48.8484,
+  "lon": 2.3778,
+  "years": "1993",
+  "yearStart": 1993,
+  "scale": "neighborhood",
+  "problems": [
+   "derelict-infra",
+   "leisure"
+  ],
+  "climate": "temperate",
+  "context": "residential",
+  "approach": "permanent",
+  "cost": 2,
+  "duration": 2,
+  "insight": "הפארק המוגבה הראשון בעולם: מסילה ישנה הפכה לגינה מעל הרחוב, והקשתות שמתחתיה לבתי מלאכה.",
+  "before": "קו רכבת שנפתח ב-1859 בין כיכר הבסטיליה לפרברים במזרח, ונסגר ב-1969. הוויאדוקט והרצועה נשארו בלי שימוש ברובע ה-12, שאיבד את רוב התעשייה שלו.",
+  "intervention": "הוויאדוקט והתוואי הוסבו לטיילת ירוקה באורך כ-4.5 ק\"מ מאזור הבסטיליה ועד יער ונסן, מהם כ-1.5 ק\"מ מוגבהים והשאר במפלס הרחוב ובתעלה. הקשתות שמתחת לוויאדוקט הוסבו לחנויות, גלריות וסדנאות בשם \"ויאדוק דה זאר\".",
+  "result": "הפארק, שנפתח בתחילת שנות התשעים, היה מודל מוקדם לפארקים מוגבהים, וההיי ליין בניו יורק נשען עליו. הרובע סביבו עבר מאזור תעשייה מוזנח למרכז של תרבות בורגנית.",
+  "moves": [
+   "keep-structure",
+   "heritage-layer",
+   "housing-center",
+   "gradual"
+  ],
+  "cautions": "השינוי ברובע לווה בג'נטריפיקציה, והקשתות הפכו לשטח מסחרי מוסדר ויקר יחסית לאומנים ולמעצבים, ולא לבתי המלאכה הקטנים שהיו באזור. חלק מהתוואי צר ומוקף בבניינים, והקטע המוגבה פחות מוכר מהשם שהוא נתן לתופעה.",
+  "israel": "רלוונטי לקטעי מסילה ומבני תשתית ישנים בתוך שכונות, כמו מסילות נמל ישנות בחיפה. כדאי לתכנן מראש מנגנון שכירות שישמור מקום לעסקים מקומיים מתחת למבנה.",
+  "team": "אדריכל הנוף ז'אק ורז'לי והאדריכל פיליפ מתייה, ויאדוק דה זאר: פטריק ברז'ה, עיריית פריז",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "rail",
+     2,
+     "up"
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "green",
+     2,
+     "up"
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "renewal"
+  ],
+  "keywords": [
+   "פארק מוגבה",
+   "Coulée verte",
+   "Viaduc des Arts",
+   "rail trail",
+   "linear park"
+  ],
+  "sources": [
+   {
+    "label": "Britannica: Promenade Plantée",
+    "url": "https://www.britannica.com/print/article/1827196"
+   },
+   {
+    "label": "Lonely Planet: Promenade Plantée",
+    "url": "https://www.lonelyplanet.com/pois/372523"
+   },
+   {
+    "label": "Planetizen: How a Railway Near the Bastille Revolutionized...",
+    "url": "https://dev.planetizen.com/node/65524"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הקו נפתח ב-1859 בין כיכר הבסטיליה לפרברים במזרח, והשירות הופסק ב-1969.",
+    "status": "verified",
+    "source": "https://www.britannica.com/print/article/1827196"
+   },
+   {
+    "text": "אורך הטיילת כ-4.5 ק\"מ, מהם כ-1.5 ק\"מ מוגבהים.",
+    "status": "verified",
+    "source": "https://www.lonelyplanet.com/pois/372523"
+   },
+   {
+    "text": "הפארק נפתח ב-1993 לפי רוב המקורות, ובריטניקה מציינת 1994 להשלמת השלב הראשון.",
+    "status": "approx",
+    "source": "https://www.lonelyplanet.com/pois/372523"
+   },
+   {
+    "text": "הפרויקט עזר להפוך את אזור הבסטיליה מפינה מוזנחת למרכז של תרבות בורגנית.",
+    "status": "verified",
+    "source": "https://dev.planetizen.com/node/65524"
+   }
+  ]
+ },
+ {
+  "id": "the-606",
+  "name": "ה-606, שביל בלומינגדייל",
+  "nameEn": "The 606 / Bloomingdale Trail",
+  "city": "שיקגו",
+  "cityEn": "Chicago",
+  "country": "ארצות הברית",
+  "countryEn": "United States",
+  "lat": 41.9126,
+  "lon": -87.6936,
+  "years": "2015",
+  "yearStart": 2015,
+  "scale": "neighborhood",
+  "problems": [
+   "derelict-infra",
+   "isolated",
+   "leisure"
+  ],
+  "climate": "cold",
+  "context": "residential",
+  "approach": "permanent",
+  "cost": 3,
+  "duration": 2,
+  "insight": "מסילה מוגבהת שעוברת בין שכונות עשירות לעניות הפכה לשביל אופניים והליכה, ושם בדיוק נמדד מחיר ההצלחה.",
+  "before": "קו רכבת משא מוגבה ישן שחוצה ממזרח למערב שכונות בצפון מערב שיקגו, מבאקטאון וויקר פארק העשירות ועד לוגן סקוור והומבולדט פארק, שבהן גרו משפחות לטיניות רבות.",
+  "intervention": "הקו הוסב לשביל הולכי רגל ורוכבי אופניים באורך כ-4.3 ק\"מ, עם רמפות לרחוב ופארקים קטנים לאורכו. הפתיחה הייתה ב-6 ביוני 2015. העלות הייתה כ-95 מיליון דולר, ממענק פדרלי של כ-50 מיליון ומתרומות פרטיות.",
+  "result": "שביל רציף בלי צמתים שמשמש לתנועה יומיומית ולפנאי. מחקר של אוניברסיטת דה פול מצא שבקצה המערבי מחירי הבתים החציוניים עלו בכ-344% בין 2012 ל-2018.",
+  "moves": [
+   "keep-structure",
+   "pedestrian-bridge",
+   "anti-displacement",
+   "participation"
+  ],
+  "cautions": "בקצה המערבי, שבו גרו משפחות במעמד נמוך, השביל האיץ עליית מחירים חדה ודחיקה של דיירים ותיקים, וחוקרים המליצו לקבוע כלים נגד דחיקה כבר בתחילת התכנון. בקצה המזרחי, שהיה יקר ממילא, ההשפעה הייתה קטנה.",
+  "israel": "רלוונטי לרצועות תשתית שעוברות בין שכונות שונות במעמד, כמו לאורך המסילה בלוד או ביפו. לבחון מראש ייעוד קרקע לדיור בר השגה לאורך הפארק, לפני שהמחירים עולים.",
+  "team": "Chicago Park District, Trust for Public Land, עיריית שיקגו",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "rail",
+     2,
+     "up"
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "green",
+     0.5,
+     "up"
+    ],
+    [
+     "bike",
+     1,
+     "up"
+    ],
+    [
+     "green",
+     0.5,
+     "up"
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "renewal"
+  ],
+  "keywords": [
+   "The 606",
+   "Bloomingdale Trail",
+   "rail trail",
+   "gentrification",
+   "שביל אופניים מוגבה"
+  ],
+  "sources": [
+   {
+    "label": "Wikipedia: Bloomingdale Trail",
+    "url": "https://en.wikipedia.org/wiki/Bloomingdale_Trail"
+   },
+   {
+    "label": "DePaul Institute for Housing Studies: Lessons from The 606",
+    "url": "https://housingstudies.org/blog/lessons-from-the-606"
+   },
+   {
+    "label": "Block Club Chicago",
+    "url": "https://blockclubchicago.org/2020/01/15/home-prices-along-western-portion-of-606-skyrocketing-344-increase-since-2012-new-study-finds/"
+   }
+  ],
+  "facts": [
+   {
+    "text": "השביל, באורך 2.7 מייל, נפתח ב-6 ביוני 2015.",
+    "status": "verified",
+    "source": "https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2015/june/fw--mayor-emanuel-joins-senator-durbin--the-chicago-park-distric.html"
+   },
+   {
+    "text": "העלות הוערכה בכ-95 מיליון דולר, מהם כ-50 מיליון ממענק פדרלי.",
+    "status": "approx",
+    "source": "https://www.constructionequipmentguide.com/the-606-opens-with-fanfare/25746?markdown=1"
+   },
+   {
+    "text": "בקצה המערבי עלה המחיר החציוני של בתים מ-97,000 ל-462,000 דולר בין 2012 ל-2018.",
+    "status": "verified",
+    "source": "https://blockclubchicago.org/2020/01/15/home-prices-along-western-portion-of-606-skyrocketing-344-increase-since-2012-new-study-finds/"
+   }
+  ]
+ },
+ {
+  "id": "atlanta-beltline",
+  "name": "הבלטליין של אטלנטה",
+  "nameEn": "Atlanta BeltLine",
+  "city": "אטלנטה",
+  "cityEn": "Atlanta",
+  "country": "ארצות הברית",
+  "countryEn": "United States",
+  "lat": 33.7726,
+  "lon": -84.3655,
+  "years": "2005 ואילך",
+  "yearStart": 2005,
+  "scale": "city",
+  "problems": [
+   "derelict-infra",
+   "isolated",
+   "leisure"
+  ],
+  "climate": "temperate",
+  "context": "residential",
+  "approach": "mixed",
+  "cost": 3,
+  "duration": 3,
+  "insight": "טבעת של מסילות נטושות הפכה לשביל שמחבר עשרות שכונות, והלקח העיקרי הוא מה קורה כשההבטחה לדיור ולתחבורה מתעכבת.",
+  "before": "טבעת של קווי רכבת משא ישנים, רובם נטושים, סביב לב אטלנטה. הם עברו בין שכונות רבות, חלקן עניות ושחורות, וניתקו ביניהן.",
+  "intervention": "הרעיון נולד בעבודת גמר של הסטודנט ראיין גרייבל בג'ורג'יה טק. ב-2005 הוקם אזור מימון שמבוסס על עליית ערך הקרקע, והתוכנית כוללת טבעת של כ-35 ק\"מ של שבילים ורכבת קלה שתחבר 45 שכונות. הקטע הראשון והמוכר, השביל המזרחי, נפתח באוקטובר 2012, ושאר הקטעים נבנים בשלבים.",
+  "result": "השביל המזרחי הפך לאחד המקומות המבוקרים בעיר ולמנוע של פיתוח נדל\"ן לאורכו. ההשלמה של טבעת השבילים צפויה לא לפני 2030.",
+  "moves": [
+   "keep-structure",
+   "citizen-led",
+   "anti-displacement",
+   "transit-first",
+   "gradual"
+  ],
+  "cautions": "ערך הנכסים לאורך הקטעים שנבנו עלה, ודיירים ותיקים נדחקו. ב-2016 התפטר גרייבל עצמו מהנהלת השותפות בטענה שההתחייבות ל-5,600 יחידות דיור בר השגה לא מתקיימת. המימון נפגע במשבר 2008, והרכבת הקלה, חלק מרכזי מהחזון, לא נבנתה, והקטע המזרחי שלה הוקפא ב-2025.",
+  "israel": "רלוונטי לטבעות ורצועות תשתית סביב מרכזי ערים, כמו המסילה המזרחית בתל אביב או בבאר שבע. לחייב דיור בר השגה ותחבורה ציבורית כתנאי, לא כהבטחה לשלב מאוחר.",
+  "team": "Atlanta BeltLine Inc., עיריית אטלנטה, ראיין גרייבל (הרעיון המקורי)",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "green",
+     1
+    ],
+    [
+     "rail",
+     2
+    ],
+    [
+     "green",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "green",
+     1
+    ],
+    [
+     "bike",
+     1.5
+    ],
+    [
+     "transit",
+     1.5
+    ],
+    [
+     "green",
+     0.5
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "renewal"
+  ],
+  "keywords": [
+   "BeltLine",
+   "Ryan Gravel",
+   "rail trail",
+   "gentrification",
+   "דיור בר השגה"
+  ],
+  "sources": [
+   {
+    "label": "Wikipedia: Eastside Trail",
+    "url": "https://en.wikipedia.org/wiki/Eastside_Trail"
+   },
+   {
+    "label": "Metropolis: Atlanta BeltLine, Work in Progress",
+    "url": "https://metropolismag.com/projects/atlanta-beltline-work-in-progress/"
+   },
+   {
+    "label": "Atlanta Magazine",
+    "url": "https://www.atlantamagazine.com/news-culture-articles/beltline-officials-need-cash-to-finish-the-trail-network-what-will-it-cost-atlanta/"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הטבעת המתוכננת באורך כ-22 מייל, כ-35 ק\"מ, של שבילים ורכבת קלה על תוואי רכבת לשעבר.",
+    "status": "verified",
+    "source": "https://en.wikipedia.org/wiki/Eastside_Trail"
+   },
+   {
+    "text": "הקטע הראשון של השביל המזרחי, כשני מייל, נפתח באוקטובר 2012.",
+    "status": "verified",
+    "source": "https://en.wikipedia.org/wiki/Eastside_Trail"
+   },
+   {
+    "text": "ב-2016 התפטר ראיין גרייבל בטענה שאין התקדמות בדיור בר השגה מול התחייבות ל-5,600 יחידות.",
+    "status": "approx",
+    "source": "https://sites.gsu.edu/nskinner2/?p=140"
+   },
+   {
+    "text": "אזור המימון לפי עליית ערך הקרקע הוקם ב-2005, והכנסותיו נפגעו במיתון הגדול.",
+    "status": "verified",
+    "source": "https://www.fhwa.dot.gov/ipd/project_profiles/ga_atlanta_beltline.aspx"
+   }
+  ]
+ },
+ {
+  "id": "gyeongui-line-forest-park",
+  "name": "פארק היער של קו גיונגאי",
+  "nameEn": "Gyeongui Line Forest Park (Gyeongui Line Supgil)",
+  "city": "סיאול",
+  "cityEn": "Seoul",
+  "country": "דרום קוריאה",
+  "countryEn": "South Korea",
+  "lat": 37.5605,
+  "lon": 126.9245,
+  "years": "2016",
+  "yearStart": 2016,
+  "scale": "neighborhood",
+  "problems": [
+   "derelict-infra",
+   "leisure",
+   "isolated"
+  ],
+  "climate": "temperate",
+  "context": "residential",
+  "approach": "permanent",
+  "cost": 2,
+  "duration": 2,
+  "insight": "כשהרכבת ירדה למנהרה, הרצועה שנשארה מעליה הפכה לפארק ארוך וצר שחוצה שכונות צפופות.",
+  "before": "קו הרכבת גיונגאי עבר על פני הקרקע במערב סיאול וחצץ בין שכונות צפופות. הקו הוטמן בחלקו מתחת לאדמה, ונשארה רצועה ריקה מעליו.",
+  "intervention": "על הרצועה נבנה פארק ליניארי של כ-6 ק\"מ, ברוחב של עשרה עד שישים מטר, עם שבילים, עצים ושרידי פסים. הפארק נפתח במלואו ב-2016.",
+  "result": "הקטע ביונאם-דונג קיבל את הכינוי \"יונטרל פארק\", על משקל סנטרל פארק, והפך למוקד בילוי של צעירים.",
+  "moves": [
+   "keep-structure",
+   "heritage-layer",
+   "trees-first",
+   "anti-displacement"
+  ],
+  "cautions": "מחקרים מצאו שהפארק האיץ ג'נטריפיקציה, בעיקר בטווח של כ-600 מטר ממנו. בתים הפכו לבתי קפה ולמסחר, ושירותים יומיומיים לתושבים נדחקו החוצה.",
+  "israel": "רלוונטי למקומות שבהם הרכבת יורדת למנהרה ומשאירה רצועה פנויה, כמו בתוואי הרכבת הקלה ובקטעי מסילה שמוטמנים בערים. להחליט מראש מה ישמור על המסחר המקומי והדיור לאורך הרצועה.",
+  "team": "עיריית סיאול",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     0.8
+    ],
+    [
+     "rail",
+     3
+    ],
+    [
+     "walk",
+     0.8
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "green",
+     1.5
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "rail",
+     2,
+     "tunnel"
+    ],
+    [
+     "green",
+     1.5
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "renewal"
+  ],
+  "keywords": [
+   "Yeontral Park",
+   "Gyeongui Line",
+   "linear park",
+   "פארק ליניארי",
+   "gentrification"
+  ],
+  "sources": [
+   {
+    "label": "Wikipedia: Gyeongui Line Forest Park",
+    "url": "https://en.wikipedia.org/wiki/Gyeongui_Line_Forest_Park"
+   },
+   {
+    "label": "Sustainability (MDPI): gentrification near Gyeongui Line Forest Park",
+    "url": "https://www.mdpi.com/2071-1050/9/2/231"
+   },
+   {
+    "label": "The Soul of Seoul",
+    "url": "https://thesoulofseoul.net/gyeongui-line-forest-park-yeonnam-dong/"
+   }
+  ],
+  "facts": [
+   {
+    "text": "קו גיונגאי הוטמן בחלקו מתחת לאדמה, והפארק נבנה ברצועה שהתפנתה.",
+    "status": "verified",
+    "source": "https://en.wikipedia.org/wiki/Gyeongui_Line_Forest_Park"
+   },
+   {
+    "text": "הפארק נפתח במלואו ב-2016.",
+    "status": "verified",
+    "source": "https://thesoulofseoul.net/gyeongui-line-forest-park-yeonnam-dong/"
+   },
+   {
+    "text": "אורך הפארק כ-6.3 ק\"מ לפי מדריכים, ובמקורות אקדמיים כשלושה מייל.",
+    "status": "approx",
+    "source": "https://thesoulofseoul.net/gyeongui-line-forest-park-yeonnam-dong/"
+   },
+   {
+    "text": "מחקר מ-2017 מצא את הסיכוי הגבוה לג'נטריפיקציה בטווח של כ-600 מטר מהפארק.",
+    "status": "verified",
+    "source": "https://www.mdpi.com/2071-1050/9/2/231"
+   }
+  ]
+ },
+ {
+  "id": "berges-du-rhone",
+  "name": "גדות הרון",
+  "nameEn": "Berges du Rhône",
+  "city": "ליון",
+  "cityEn": "Lyon",
+  "country": "צרפת",
+  "countryEn": "France",
+  "lat": 45.7578,
+  "lon": 4.8432,
+  "years": "2005-2007",
+  "yearStart": 2005,
+  "scale": "city",
+  "problems": [
+   "leisure",
+   "dividing-road",
+   "car-street"
+  ],
+  "climate": "temperate",
+  "context": "waterfront",
+  "approach": "permanent",
+  "cost": 3,
+  "duration": 2,
+  "insight": "חניון פתוח שתפס את גדת הנהר במשך חמישים שנה הפך לטיילת ופארק לאורך כחמישה ק\"מ.",
+  "before": "משנות החמישים שימשה הגדה המזרחית של הרון במרכז ליון חניון פתוח של כ-1,600 מקומות, חלקם בחינם. העיר הייתה סמוכה לנהר אבל לא נגעה בו.",
+  "intervention": "העירייה והמטרופולין התחילו בתהליך ב-2002. אחרי כעשרים חודשי עבודה נחנכה הגדה במאי 2007: טיילת, שבילי אופניים, מדשאות, מדרגות למים ומתקני משחק לאורך כ-5 ק\"מ ועל שטח של כ-10 הקטאר, מפארק טט דור ועד פארק ז'רלאן. ההשקעה הייתה כ-44 מיליון אירו.",
+  "result": "הגדה הפכה למקום הפנאי המרכזי של העיר, ובתי הקפה על סירות שלאורכה התרחבו. היא מחברת שני פארקים גדולים ברצף ירוק אחד.",
+  "moves": [
+   "close-road",
+   "peripheral-parking",
+   "leadership",
+   "cool-water"
+  ],
+  "cautions": "השביל הפך לציר אופניים מהיר, ויש עימותים עם הולכי רגל, בעיקר ליד מעגן אוניות התיירים. אוטובוסים ורכבי שירות של השייט חזרו לגדה, והשיטפונות של הרון פוגעים בדק העץ ומחייבים סגירות ותחזוקה.",
+  "israel": "רלוונטי לרצועות חוף ונחל שמשמשות חניה פתוחה, כמו לאורך נחל הירקון או בטיילות החוף בבת ים ובנתניה. כדאי להפריד מההתחלה בין אופניים מהירים להולכי רגל.",
+  "team": "In Situ (אנני טרדיבון), Grand Lyon, עיריית ליון",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "walk",
+     0.8
+    ],
+    [
+     "car",
+     3,
+     "down"
+    ],
+    [
+     "water",
+     3,
+     "down"
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "walk",
+     0.8
+    ],
+    [
+     "bike",
+     1,
+     "down"
+    ],
+    [
+     "green",
+     1.5,
+     "down"
+    ],
+    [
+     "walk",
+     1,
+     "down"
+    ],
+    [
+     "water",
+     3,
+     "down"
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "biomimicry"
+  ],
+  "keywords": [
+   "Berges du Rhône",
+   "riverfront",
+   "חניון",
+   "waterfront park",
+   "Lyon"
+  ],
+  "sources": [
+   {
+    "label": "Wikipedia: Berges du Rhône",
+    "url": "https://en.wikipedia.org/wiki/Berges_du_Rh%C3%B4ne"
+   },
+   {
+    "label": "Lyon Capitale: Lyon retrouve son fleuve",
+    "url": "https://www.lyoncapitale.fr/actualite/berges-du-rhone-lyon-retrouve-son-fleuve"
+   },
+   {
+    "label": "LyonMag: conflits d'usages sur le quai Claude Bernard",
+    "url": "https://www.lyonmag.com/article/138665/cri-d-alerte-des-guides-rhone-saone-pour-la-securite-des-pietons-sur-le-quai-claude-bernard"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הגדות שימשו מאז שנות החמישים חניון פתוח של כ-1,600 מקומות.",
+    "status": "verified",
+    "source": "https://www.pss-archi.eu/forum/viewtopic.php?pid=248353"
+   },
+   {
+    "text": "הגדה נחנכה במאי 2007, אחרי כעשרים חודשי עבודה.",
+    "status": "verified",
+    "source": "https://www.lyoncapitale.fr/actualite/berges-du-rhone-lyon-retrouve-son-fleuve"
+   },
+   {
+    "text": "המקום משתרע לאורך כ-5 ק\"מ ועל כ-10 הקטאר.",
+    "status": "verified",
+    "source": "https://en.wikipedia.org/wiki/Berges_du_Rh%C3%B4ne"
+   },
+   {
+    "text": "ההשקעה הוערכה בכ-44.1 מיליון אירו.",
+    "status": "approx",
+    "source": "https://www.lyoncapitale.fr/actualite/berges-du-rhone-lyon-retrouve-son-fleuve"
+   }
+  ]
+ },
+ {
+  "id": "bishan-ang-mo-kio",
+  "name": "פארק בישאן-אנג מו קיו",
+  "nameEn": "Bishan-Ang Mo Kio Park (Kallang River)",
+  "city": "סינגפור",
+  "cityEn": "Singapore",
+  "country": "סינגפור",
+  "countryEn": "Singapore",
+  "lat": 1.3627,
+  "lon": 103.8434,
+  "years": "2012",
+  "yearStart": 2009,
+  "scale": "neighborhood",
+  "problems": [
+   "flooding",
+   "leisure",
+   "heat"
+  ],
+  "climate": "tropical",
+  "context": "residential",
+  "approach": "permanent",
+  "cost": 3,
+  "duration": 2,
+  "insight": "תעלת בטון ישרה הוחלפה בנהר מתפתל, והפארק כולו הפך לפשט הצפה שמכיל את המים בגשם.",
+  "before": "תעלת ניקוז ישרה מבטון באורך כ-2.7 ק\"מ לאורך שולי פארק שכונתי, בין שכונות דיור ציבורי צפופות.",
+  "intervention": "במסגרת תוכנית המים ABC Waters של סינגפור הוחלפה התעלה בנהר מתפתל באורך כ-3 ק\"מ, עם גדות צמחייה ושיטות של הנדסה ביולוגית. הפארק תוכנן כפשט הצפה: בגשם עז המים עולים ותופסים את השטח הסמוך לנהר.",
+  "result": "יכולת ההולכה של הנחל גדלה בכ-40%, והמגוון הביולוגי עלה בכ-30%. לפי ההגשה לפרס ASLA, הנהר המשוקם עלה כ-15% פחות מתעלת בטון מחודשת. הפרויקט זכה בתואר נוף השנה בפסטיבל האדריכלות העולמי 2012.",
+  "moves": [
+   "naturalize",
+   "dual-use",
+   "visible-water",
+   "cool-water"
+  ],
+  "cautions": "מפלס המים יכול לעלות עד כשלושה מטרים בגשם עז, ולכן הפארק תלוי במערכת התרעה עם חיישנים, אורות וצופרים. שיתוף הפעולה בין רשות המים לרשות הפארקים מורכב, ונתוני ההצלחה מגיעים בעיקר מהמתכננים ומהרשויות עצמן.",
+  "israel": "רלוונטי לתעלות ניקוז מבטון בתוך שכונות, כמו נחל איילון בקטעים מסוימים, נחל פולג או תעלות ניקוז בשפלה. צריך לתכנן מערכת התרעה ובטיחות כחלק מהפרויקט.",
+  "team": "רשות המים של סינגפור (PUB), NParks, Atelier Dreiseitl, CH2M HILL",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "green",
+     3
+    ],
+    [
+     "water",
+     1,
+     "down"
+    ],
+    [
+     "green",
+     3
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "green",
+     2
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "green",
+     1.5,
+     "down"
+    ],
+    [
+     "water",
+     2,
+     "down"
+    ],
+    [
+     "green",
+     1.5,
+     "down"
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "biomimicry"
+  ],
+  "keywords": [
+   "naturalization",
+   "Kallang River",
+   "ABC Waters",
+   "נטורליזציה",
+   "Atelier Dreiseitl"
+  ],
+  "sources": [
+   {
+    "label": "NParks: Bishan-Ang Mo Kio Park",
+    "url": "https://www.nparks.gov.sg/visit/parks/bishan-ang-mo-kio-park/special-features"
+   },
+   {
+    "label": "ASLA 2016 Professional Awards",
+    "url": "https://www.asla.org/2016awards/169669.html"
+   },
+   {
+    "label": "Water Online",
+    "url": "https://www.wateronline.com/doc/singapores-kallang-river-ang-mo-kio-park-excellence-honor-award-0001"
+   }
+  ],
+  "facts": [
+   {
+    "text": "תעלת בטון ישרה באורך כ-2.7 ק\"מ הוחלפה בנהר מתפתל באורך כ-3 ק\"מ.",
+    "status": "verified",
+    "source": "https://www.c40.org/wp-content/static/other_uploads/images/1963_AD-Ref_Singapore_Bishan-Park.original.pdf?1538133801"
+   },
+   {
+    "text": "יכולת ההולכה גדלה בכ-40%, והמגוון הביולוגי עלה בכ-30%.",
+    "status": "verified",
+    "source": "https://www.wateronline.com/doc/singapores-kallang-river-ang-mo-kio-park-excellence-honor-award-0001"
+   },
+   {
+    "text": "הנהר המשוקם עלה כ-15% פחות מתעלת בטון מחודשת.",
+    "status": "verified",
+    "source": "https://www.asla.org/2016awards/169669.html"
+   },
+   {
+    "text": "המים יכולים לעלות עד כשלושה מטרים, ומערכת התרעה פועלת ב-11 נקודות בטיחות.",
+    "status": "verified",
+    "source": "https://www.nparks.gov.sg/visit/parks/bishan-ang-mo-kio-park/special-features"
+   }
+  ]
+ },
+ {
+  "id": "qunli-stormwater-park",
+  "name": "פארק מי הגשם צ'ונלי",
+  "nameEn": "Qunli Stormwater Wetland Park",
+  "city": "חרבין",
+  "cityEn": "Harbin",
+  "country": "סין",
+  "countryEn": "China",
+  "lat": 45.7172,
+  "lon": 126.5653,
+  "years": "2009-2011",
+  "yearStart": 2009,
+  "scale": "neighborhood",
+  "problems": [
+   "flooding",
+   "leisure"
+  ],
+  "climate": "cold",
+  "context": "residential",
+  "approach": "permanent",
+  "cost": 2,
+  "duration": 2,
+  "insight": "ביצה מוגנת שנחנקה בין כבישים ומגדלים קיבלה טבעת של תלוליות ובריכות, שמנקה את מי הנגר של העיר החדשה ומזינה אותה.",
+  "before": "אזור ביצות מוגן באמצע העיר החדשה צ'ונלי בחרבין, מוקף מארבעה צדדים בכבישים ובבנייה צפופה. הפיתוח ניתק את הביצה ממקורות המים שלה והיא הלכה ונעלמה.",
+  "intervention": "ב-2009 הוזמן משרד טורנסקייפ לתכנן פארק של כ-34 הקטאר. סביב הביצה המרכזית נחפרה טבעת של בריכות, והעפר נערם לתלוליות, בעבודות עפר מינימליות. מי הנגר מהעיר נאספים בטבעת, מסוננים ומזינים את הביצה. בין התלוליות עוברים שבילים וגשרים מוגבהים.",
+  "result": "הפארק משלב אגירת מי שיטפון, טיפול במים, מגוון ביולוגי ופנאי. הוא זכה בפרס ההצטיינות של ASLA ב-2012 והפך לסמל של רעיון \"העיר הספוגית\".",
+  "moves": [
+   "dual-use",
+   "infiltration",
+   "naturalize",
+   "visible-water"
+  ],
+  "cautions": "רוב הנתונים על תפקוד הפארק מגיעים מהמתכננים עצמם, ולא נמצאה הערכה בלתי תלויה. הפארק הוא שארית של שטח ביצות גדול יותר שנבנה. אחרי ההצפות בג'נגג'ואו ב-2021 עלו שאלות על יעילות תוכנית \"העיר הספוגית\" כולה מול גשם קיצוני.",
+  "israel": "רלוונטי לשכונות חדשות שנבנות ליד אזורי הצפה וביצות, כמו בעמק חפר או סביב נחל שורק. להשאיר את שטח המים כחלק מהתוכנית ולא כשארית.",
+  "team": "Turenscape (קונגג'יאן יו), אוניברסיטת בייג'ינג",
+  "section": {
+   "before": [
+    [
+     "building",
+     4
+    ],
+    [
+     "car",
+     1.5
+    ],
+    [
+     "green",
+     3
+    ],
+    [
+     "water",
+     2,
+     "down"
+    ],
+    [
+     "green",
+     3
+    ],
+    [
+     "car",
+     1.5
+    ],
+    [
+     "building",
+     4
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     4
+    ],
+    [
+     "car",
+     1.5
+    ],
+    [
+     "water",
+     1.5,
+     "down"
+    ],
+    [
+     "green",
+     1.5
+    ],
+    [
+     "water",
+     3,
+     "down"
+    ],
+    [
+     "green",
+     1.5
+    ],
+    [
+     "water",
+     1.5,
+     "down"
+    ],
+    [
+     "car",
+     1.5
+    ],
+    [
+     "building",
+     4
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "biomimicry"
+  ],
+  "keywords": [
+   "sponge city",
+   "עיר ספוגית",
+   "Turenscape",
+   "Kongjian Yu",
+   "wetland"
+  ],
+  "sources": [
+   {
+    "label": "The Cultural Landscape Foundation: Qunli Stormwater Park",
+    "url": "https://www.tclf.org/landscapes/harbin-qunli-stormwater-park"
+   },
+   {
+    "label": "ASLA 2012 Award of Excellence",
+    "url": "https://asla.org/2012AWARDS/026.html"
+   },
+   {
+    "label": "ASLA Dirt: Kongjian Yu Defends His Sponge City Campaign",
+    "url": "https://www.asla.org/news-insights/dirt/kongjian-yu-defends-his-sponge-city-campaign"
+   }
+  ],
+  "facts": [
+   {
+    "text": "באמצע 2009 הוזמן המשרד לתכנן פארק של כ-34 הקטאר באזור ביצות מוגן בעיר החדשה.",
+    "status": "verified",
+    "source": "https://www.world-architects.com/en/projects/view/the-transformed-stormwater-park-qunli-national-urban-wetland"
+   },
+   {
+    "text": "הביצה הייתה מוקפת בכבישים ובבנייה ונותקה ממקורות המים שלה.",
+    "status": "verified",
+    "source": "https://www.world-architects.com/en/projects/view/the-transformed-stormwater-park-qunli-national-urban-wetland"
+   },
+   {
+    "text": "הפרויקט זכה בפרס ההצטיינות של ASLA ב-2012.",
+    "status": "verified",
+    "source": "https://asla.org/2012AWARDS/026.html"
+   },
+   {
+    "text": "אחרי הצפות ג'נגג'ואו ב-2021 עלו שאלות על יעילות רעיון העיר הספוגית.",
+    "status": "verified",
+    "source": "https://www.asla.org/news-insights/dirt/kongjian-yu-defends-his-sponge-city-campaign"
+   }
+  ]
+ },
+ {
+  "id": "tasinge-plads",
+  "name": "כיכר טוסינגה",
+  "nameEn": "Tåsinge Plads",
+  "city": "קופנהגן",
+  "cityEn": "Copenhagen",
+  "country": "דנמרק",
+  "countryEn": "Denmark",
+  "lat": 55.7066,
+  "lon": 12.5641,
+  "years": "2014",
+  "yearStart": 2014,
+  "scale": "square",
+  "problems": [
+   "flooding",
+   "identity",
+   "leisure"
+  ],
+  "climate": "cold",
+  "context": "residential",
+  "approach": "permanent",
+  "cost": 2,
+  "duration": 1,
+  "insight": "צומת אספלט שכונתי הפך לכיכר ירוקה שמחזיקה את מי הגשם מהגגות הסמוכים, והתושבים תכננו אותה יחד עם העירייה.",
+  "before": "שטח אספלט ומדשאה משעממת בשכונת סנט קילדס באוסטרברו, באזור שהוצף בשטפון של 2011.",
+  "intervention": "הכיכר נבחרה כראשונה מבין שלושה מרחבים ב\"רובע האקלים\" של אוסטרברו. העבודות התחילו במאי 2014 ונמשכו כחצי שנה. האספלט הוסר, והשטח עוצב בשיפועים, כך שמי הגשם מהכיכר ומהגגות סביבה זורמים לערוגות ולאגנים וחלחלים לאדמה. בכיכר יש ריהוט ומתקנים שמובילים את המים.",
+  "result": "הכיכר נחנכה בדצמבר 2014 ונחשבת למרחב העירוני המותאם אקלים הראשון בדנמרק. בספטמבר 2015 עמדה בגשם של 42 מ\"מ בחצי שעה. הפרויקט פותח בשיתוף צמוד עם התושבים.",
+  "moves": [
+   "infiltration",
+   "participation",
+   "visible-water",
+   "network"
+  ],
+  "cautions": "ההשפעה מקומית: הכיכר מנקזת רק שטח קטן סביבה, וכדי להשפיע על השכונה צריך עשרות פרויקטים כאלה. המקורות נותנים נתוני שטח שונים, וממצאי הבדיקה אחרי שנת התפעול הראשונה לא פורסמו באופן רחב. הערוגות דורשות תחזוקה שוטפת.",
+  "israel": "מתאים לצמתים ולכיכרות קטנות בשכונות ותיקות שמוצפות, כמו ברמת גן, בגבעתיים או בחולון. אפשר לשלב בתוכניות התחדשות עירונית ברמת המתחם.",
+  "team": "GHB Landskabsarkitekter, Orbicon, עיריית קופנהגן, התחדשות שכונתית סנט קילדס",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "plaza",
+     3
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     1.5
+    ],
+    [
+     "green",
+     1.5
+    ],
+    [
+     "water",
+     1,
+     "down"
+    ],
+    [
+     "plaza",
+     1.5
+    ],
+    [
+     "green",
+     1.5
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "biomimicry",
+   "renewal"
+  ],
+  "keywords": [
+   "Klimakvarter",
+   "climate adaptation",
+   "rain garden",
+   "כיכר ירוקה",
+   "Østerbro"
+  ],
+  "sources": [
+   {
+    "label": "Klimatilpasning.dk: Green rainwater solution",
+    "url": "https://eng.klimatilpasning.dk/examples-of-climate-adaptation/the-capital-region-of-denmark/green-rainwater-solution-creates-a-new-beautiful-urban-space-in-copenhagen"
+   },
+   {
+    "label": "State of Green: Tåsinge Square",
+    "url": "https://stateofgreen.com/en/solutions/tasinge-square-copenhagen-s-first-climate-adapted-urban-area/"
+   },
+   {
+    "label": "Boverket: Klimakvarteren",
+    "url": "https://www.boverket.se/sv/samhallsplanering/arkitektur-och-gestaltad-livsmiljo/natverk-och-samarbeten/nordiskt-samarbete/stadsgronska/exempel/klimakvarteren"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הכיכר נחנכה ב-6 בדצמבר 2014, אחרי כחצי שנת עבודה שהתחילה במאי 2014.",
+    "status": "verified",
+    "source": "https://eng.klimatilpasning.dk/examples-of-climate-adaptation/the-capital-region-of-denmark/green-rainwater-solution-creates-a-new-beautiful-urban-space-in-copenhagen"
+   },
+   {
+    "text": "בספטמבר 2015 עמדה הכיכר בגשם של 42 מ\"מ בתוך 30 דקות.",
+    "status": "verified",
+    "source": "https://eng.klimatilpasning.dk/examples-of-climate-adaptation/the-capital-region-of-denmark/green-rainwater-solution-creates-a-new-beautiful-urban-space-in-copenhagen"
+   },
+   {
+    "text": "הכיכר היא הראשונה משלושה מרחבים ברובע האקלים, לצד סנט קילדס פלאדס וברייגרוונגן.",
+    "status": "verified",
+    "source": "https://www.boverket.se/sv/samhallsplanering/arkitektur-och-gestaltad-livsmiljo/natverk-och-samarbeten/nordiskt-samarbete/stadsgronska/exempel/klimakvarteren"
+   }
+  ]
+ },
+ {
+  "id": "medellin-green-corridors",
+  "name": "המסדרונות הירוקים של מדיין",
+  "nameEn": "Corredores Verdes de Medellín",
+  "city": "מדיין",
+  "cityEn": "Medellín",
+  "country": "קולומביה",
+  "countryEn": "Colombia",
+  "lat": 6.2518,
+  "lon": -75.5636,
+  "years": "2016-2019",
+  "yearStart": 2016,
+  "scale": "city",
+  "problems": [
+   "heat",
+   "identity"
+  ],
+  "climate": "tropical",
+  "context": "center",
+  "approach": "mixed",
+  "cost": 2,
+  "duration": 2,
+  "insight": "שולי כבישים וגדות נחלים נשתלו כרשת אחת של צמחייה, והעיר כולה התקררה בכמה מעלות.",
+  "before": "מרכז עיר צפוף ובנוי, עם כבישים רחבים ומעט צל. החום העירוני וזיהום האוויר הלכו והחמירו.",
+  "intervention": "בין 2016 ל-2019 נשתלו יותר מ-30 מסדרונות ירוקים לאורך 18 כבישים ו-12 נחלים, ברשת אחת. נשתלו עצים, שיחים וצמחייה צפופה בשולי הכבישים ובגדות. חלק מהגננים הוכשרו מתוך אוכלוסיות מוחלשות בעיר.",
+  "result": "לפי העירייה ורשת C40, הטמפרטורה הממוצעת במסדרונות ירדה בכ-2 מעלות, ובמקומות מסוימים עד 10 מעלות. הפרויקט זכה בפרס אשדן ב-2019 ובפרס C40.",
+  "moves": [
+   "network",
+   "trees-first",
+   "cool-water",
+   "cheap-visible"
+  ],
+  "cautions": "נתוני הקירור מגיעים מהעירייה ומשותפיה, ומשתנים ממקור למקור. ב-2020 נחשד חוזה התחזוקה של הגינות בשחיתות, הצמחייה הוזנחה, והאחריות הוחזרה לגן הבוטני. מסדרון ירוק בלי תקציב תחזוקה קבוע מתייבש מהר.",
+  "israel": "רלוונטי לערים חמות עם כבישים עורקיים רחבים, כמו באר שבע, אילת או לאורך שדרות ראשיות בבת ים. כדאי לתקצב תחזוקה והשקיה לשנים קדימה כבר בשלב התכנון.",
+  "team": "עיריית מדיין, הגן הבוטני של מדיין",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     0.8
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "walk",
+     0.8
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "shade",
+     1
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "green",
+     1.5
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "shade",
+     1
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "biomimicry"
+  ],
+  "keywords": [
+   "green corridors",
+   "Corredores Verdes",
+   "urban heat",
+   "אי חום עירוני",
+   "מסדרון ירוק"
+  ],
+  "sources": [
+   {
+    "label": "Citego / C40 Cities100: Medellín's interconnected green corridors",
+    "url": "https://www.citego.org/bdf_fiche-document-4122_fr.html"
+   },
+   {
+    "label": "UNEP: Medellín se refresca",
+    "url": "https://www.unep.org/es/noticias-y-reportajes/reportajes/medellin-se-refresca-con-intervenciones-urbanas-basadas-en-la"
+   },
+   {
+    "label": "El Tiempo: contrato de jardines de Medellín",
+    "url": "https://www.eltiempo.com/colombia/medellin/funcionarios-de-la-alcaldia-de-daniel-quintero-en-juicio-por-contrato-de-5-000-millones-para-mantener-de-jardines-de-medellin-se-declararon-inocentes-3510096"
+   }
+  ],
+  "facts": [
+   {
+    "text": "יותר מ-30 מסדרונות ירוקים נבנו כרשת אחת בין 2016 ל-2019.",
+    "status": "verified",
+    "source": "https://www.citego.org/bdf_fiche-document-4122_fr.html"
+   },
+   {
+    "text": "המסדרונות נמצאים לאורך 18 כבישים ו-12 נחלים.",
+    "status": "verified",
+    "source": "https://www.unep.org/es/noticias-y-reportajes/reportajes/medellin-se-refresca-con-intervenciones-urbanas-basadas-en-la"
+   },
+   {
+    "text": "לפי C40 הטמפרטורה הממוצעת ירדה בכ-2 מעלות, ובמקומות מסוימים בכ-10 מעלות. מקורות אחרים נותנים נתונים שונים.",
+    "status": "approx",
+    "source": "https://www.citego.org/bdf_fiche-document-4122_fr.html"
+   },
+   {
+    "text": "חוזה תחזוקה של הגינות מ-2020 הגיע להליך פלילי בחשד להכוונה.",
+    "status": "verified",
+    "source": "https://www.eltiempo.com/colombia/medellin/funcionarios-de-la-alcaldia-de-daniel-quintero-en-juicio-por-contrato-de-5-000-millones-para-mantener-de-jardines-de-medellin-se-declararon-inocentes-3510096"
+   }
+  ]
+ },
+ {
+  "id": "metropol-parasol",
+  "name": "מטרופול פרסול",
+  "nameEn": "Metropol Parasol (Setas de Sevilla)",
+  "city": "סביליה",
+  "cityEn": "Seville",
+  "country": "ספרד",
+  "countryEn": "Spain",
+  "lat": 37.3933,
+  "lon": -5.9918,
+  "years": "2005-2011",
+  "yearStart": 2005,
+  "scale": "square",
+  "problems": [
+   "heat",
+   "identity"
+  ],
+  "climate": "mediterranean",
+  "context": "center",
+  "approach": "permanent",
+  "cost": 3,
+  "duration": 2,
+  "insight": "כשהחפירה לחניון חשפה עיר רומית, הכיכר קיבלה שלוש שכבות: העבר מתחת, השוק ברחוב והצל מעל.",
+  "before": "כיכר לה אנקרנסיון במרכז סביליה שימשה בעבר כשוק ואחר כך כחניון ושטח ריק. בחפירות לחניון תת קרקעי בתחילת שנות האלפיים נמצאו שרידים רומיים ומוסלמיים, והתוכנית המקורית נעצרה.",
+  "intervention": "אחרי תחרות אדריכלים נבנה מבנה עץ למינציה בצורת פטריות ענקיות שמצל על הכיכר. במפלס התת קרקעי מוזיאון לשרידים (אנטיקווריום), במפלס הרחוב שוק, ועל הגג טיילת תצפית.",
+  "result": "המבנה הפך לסמל מוכר של העיר ולמוקד מפגש ותיירות. הכיכר שהייתה ריקה מתפקדת כמרחב מוצל עם שימושים בכמה מפלסים.",
+  "moves": [
+   "shade-structure",
+   "heritage-layer",
+   "keep-structure"
+  ],
+  "cautions": "העלות כמעט הוכפלה, מכ-50 לכ-100 מיליון אירו, והביצוע נמשך כשש שנים במקום שנתיים, בין השאר כי מהנדסי הקונסטרוקציה פקפקו בהיתכנות המבנה. הפרויקט הושלם בזמן משבר כלכלי קשה בספרד ועורר ויכוח ציבורי, כולל טענות שאינו מתאים להקשר ההיסטורי.",
+  "israel": "מתאים לכיכרות חשופות בערים חמות, כמו מרכז באר שבע או אילת. כדאי לבחון גרסה צנועה ופשוטה יותר של צל בנוי גדול, עם בדיקת קונסטרוקציה ותקציב לפני התחרות.",
+  "team": "J. Mayer H. Architects, הנדסה: Arup",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "plaza",
+     5
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "shade",
+     5,
+     "up"
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "biomimicry"
+  ],
+  "keywords": [
+   "Las Setas",
+   "הפטריות",
+   "צל",
+   "shade",
+   "Plaza de la Encarnación",
+   "Antiquarium"
+  ],
+  "sources": [
+   {
+    "label": "Wikipedia: Metropol Parasol",
+    "url": "https://en.wikipedia.org/wiki/Metropol_Parasol"
+   },
+   {
+    "label": "Construction Digital: Metropol Parasol",
+    "url": "https://constructiondigital.com/top10/metropol-parasol-seville-spain"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הבנייה החלה ב-2005 והמבנה נפתח ב-2011.",
+    "status": "approx",
+    "source": "https://en.wikipedia.org/wiki/Metropol_Parasol"
+   },
+   {
+    "text": "העלות עלתה מהערכה של כ-50 מיליון אירו לכ-100 מיליון.",
+    "status": "approx",
+    "source": "https://constructiondigital.com/top10/metropol-parasol-seville-spain"
+   },
+   {
+    "text": "השרידים הרומיים והמוסלמיים נמצאו בחפירה לחניון, ומוצגים היום באנטיקווריום מתחת לכיכר.",
+    "status": "verified",
+    "source": "https://andalucia.com/cities/seville/museum-antiquarium.htm"
+   }
+  ]
+ },
+ {
+  "id": "medellin",
+  "name": "אורבניזם חברתי במדיין",
+  "nameEn": "Medellín Social Urbanism (Metrocable, Comuna 13 Escalators)",
+  "city": "מדיין",
+  "cityEn": "Medellín",
+  "country": "קולומביה",
+  "countryEn": "Colombia",
+  "lat": 6.2442,
+  "lon": -75.5812,
+  "years": "2004-2011",
+  "yearStart": 2004,
+  "scale": "neighborhood",
+  "problems": [
+   "isolated",
+   "identity"
+  ],
+  "climate": "tropical",
+  "context": "hillside",
+  "approach": "mixed",
+  "cost": 3,
+  "duration": 2,
+  "insight": "השכונה הכי ענייה קיבלה את התחבורה הכי חדשנית ואת המבנים הכי טובים בעיר, כהצהרה שהיא חלק מהעיר.",
+  "before": "שכונות לא מוסדרות על מדרונות תלולים, עם אלימות קשה, בלי תחבורה ציבורית ובלי מבני ציבור.",
+  "intervention": "קו הרכבל הראשון (קו K) שמחובר למטרו נפתח ב-2004, וקו J שמשרת את אזור קומונה 13 נפתח ב-2008. בקומונה 13 נפתחו בדצמבר 2011 מדרגות נעות חיצוניות על המדרון. לצד זה נבנו פארקים-ספריות ומרכזי ציבור בשכונות, בגישה שנקראה \"אורבניזם חברתי\".",
+  "result": "זמני ההגעה למרכז העיר התקצרו מאוד. המדרגות הנעות החליפו טיפוס של מאות מדרגות בנסיעה של דקות. קומונה 13 הפכה גם ליעד תיירותי.",
+  "moves": [
+   "topo-transit",
+   "best-building",
+   "transit-first",
+   "participation"
+  ],
+  "cautions": "פארק הספרייה España, סמל הגישה, נסגר ב-2015 בשל סדקים וכשלים מבניים, ונפתח מחדש בחלקו רק אחרי כעשור, בעלות גבוהה בהרבה מהמתוכנן. ב-2024 נפל תא בקו K ונהרג אדם, והקו נסגר לבדיקות. התיירות בקומונה 13 משנה את השכונה ומעוררת ויכוח.",
+  "israel": "רלוונטי לשכונות מדרון מנותקות, כמו בחיפה (הדר, חליסה) ובירושלים. חשוב לתכנן תחזוקה ופיקוח ביצוע לא פחות מהאדריכלות.",
+  "team": "עיריית מדיין (ראש העיר סרחיו פחרדו), EDU, Metro de Medellín; ספריית España: ג'אנקרלו מצנטי",
+  "section": {
+   "before": [
+    [
+     "building",
+     2,
+     "up"
+    ],
+    [
+     "walk",
+     1,
+     "up"
+    ],
+    [
+     "building",
+     2
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     2,
+     "down"
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     2,
+     "up"
+    ],
+    [
+     "transit",
+     1,
+     "up"
+    ],
+    [
+     "plaza",
+     2
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     2,
+     "down"
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "renewal"
+  ],
+  "keywords": [
+   "Metrocable",
+   "רכבל",
+   "Comuna 13",
+   "social urbanism",
+   "Parque Biblioteca España",
+   "מדרגות נעות"
+  ],
+  "sources": [
+   {
+    "label": "Alcaldía de Medellín: Comuna 13",
+    "url": "https://www.medellin.gov.co/es/sala-de-prensa/noticias/medellin-asciende-con-las-historias-que-dan-vida-a-la-comuna-13/"
+   },
+   {
+    "label": "El Espectador: Biblioteca España reabre",
+    "url": "https://www.elespectador.com/colombia/medellin/tras-11-anos-cerrada-la-antigua-biblioteca-espana-reabre-sus-puertas-en-medellin/"
+   },
+   {
+    "label": "Elevator World: Medellín's Outdoor Escalator",
+    "url": "https://elevatorworld.com/article/medellins-outdoor-escalator"
+   }
+  ],
+  "facts": [
+   {
+    "text": "קו K של הרכבל החל לפעול באוגוסט 2004.",
+    "status": "verified",
+    "source": "https://www.panamaamerica.com.pa/el-metrocable-de-medellin-se-erige-como-un-modelo-de-integracion-urbana-428763"
+   },
+   {
+    "text": "המדרגות הנעות בקומונה 13 נחנכו בדצמבר 2011.",
+    "status": "verified",
+    "source": "https://elevatorworld.com/article/medellins-outdoor-escalator"
+   },
+   {
+    "text": "ספריית España נסגרה ב-2015 בשל כשלים מבניים ונפתחה מחדש בחלקה ב-2026.",
+    "status": "verified",
+    "source": "https://www.elespectador.com/colombia/medellin/tras-11-anos-cerrada-la-antigua-biblioteca-espana-reabre-sus-puertas-en-medellin/"
+   }
+  ]
+ },
+ {
+  "id": "superkilen",
+  "name": "סופרקילן",
+  "nameEn": "Superkilen",
+  "city": "קופנהגן",
+  "cityEn": "Copenhagen",
+  "country": "דנמרק",
+  "countryEn": "Denmark",
+  "lat": 55.7006,
+  "lon": 12.5426,
+  "years": "2009-2012",
+  "yearStart": 2009,
+  "scale": "street",
+  "problems": [
+   "identity",
+   "leisure"
+  ],
+  "climate": "temperate",
+  "context": "residential",
+  "approach": "permanent",
+  "cost": 2,
+  "duration": 2,
+  "insight": "פארק שמורכב מחפצים שתושבי השכונה הביאו מארצות המוצא שלהם, כך שכל אחד מוצא בו משהו מוכר.",
+  "before": "רצועה עירונית בשכונת נורברו, שתושביה מגיעים מעשרות ארצות, בלי מרחב משותף ועם מתיחות חברתית.",
+  "intervention": "רצועה באורך של כ-750 מטר בשלושה אזורים: הכיכר האדומה לספורט ופעילות, השוק השחור כסלון חוץ, והפארק הירוק. בכל אזור ספסלים, פנסים, שלטי ניאון ומתקנים שתושבים הציעו מארצות המוצא שלהם, מכ-60 ארצות.",
+  "result": "הפארק נפתח ביוני 2012, זכה לפרסום עולמי ולפרסים, והפך לדוגמה מוכרת לשיתוף קהילה בעיצוב מרחב ציבורי.",
+  "moves": [
+   "participation",
+   "cheap-visible",
+   "network"
+  ],
+  "cautions": "יש מבקרים שטוענים שהשיתוף היה סמלי יותר מאשר אמיתי, ושהפארק משמש צלמים ותיירים לא פחות מתושבים. משטחים צבועים וחפצים מיובאים דורשים תחזוקה מתמשכת.",
+  "israel": "מתאים לשכונות עם אוכלוסייה מגוונת, כמו נווה שאנן בתל אביב או שכונות עלייה בערי הפריפריה. השיתוף צריך להיות אמיתי ולא קישוטי.",
+  "team": "BIG, Topotek 1, Superflex; יוזמים: עיריית קופנהגן וקרן Realdania",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "plaza",
+     3
+    ],
+    [
+     "bike",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "play",
+     1.5
+    ],
+    [
+     "plaza",
+     1.5
+    ],
+    [
+     "green",
+     1.5
+    ],
+    [
+     "bike",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "interior"
+  ],
+  "keywords": [
+   "Nørrebro",
+   "נורברו",
+   "participation",
+   "שיתוף ציבור",
+   "רב תרבותיות",
+   "BIG"
+  ],
+  "sources": [
+   {
+    "label": "Dezeen: Superkilen",
+    "url": "https://www.dezeen.com/?p=258000"
+   },
+   {
+    "label": "ASLA: Superkilen",
+    "url": "https://www.asla.org/news-insights/dirt/superkilen-global-mash-up-of-a-park"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הבנייה החלה ב-2009 והפארק נפתח לציבור ביוני 2012.",
+    "status": "verified",
+    "source": "https://www.asla.org/news-insights/dirt/superkilen-global-mash-up-of-a-park"
+   },
+   {
+    "text": "החפצים בפארק מגיעים מכ-60 ארצות.",
+    "status": "approx",
+    "source": "https://www.dezeen.com/?p=258000"
+   },
+   {
+    "text": "אורך הרצועה כ-750 מטר (מקורות אחרים נותנים מספרים שונים).",
+    "status": "approx",
+    "source": "https://www.dezeen.com/?p=258000"
+   }
+  ]
+ },
+ {
+  "id": "tirana",
+  "name": "החזיתות הצבעוניות של טירנה",
+  "nameEn": "Tirana Painted Facades",
+  "city": "טירנה",
+  "cityEn": "Tirana",
+  "country": "אלבניה",
+  "countryEn": "Albania",
+  "lat": 41.3275,
+  "lon": 19.8187,
+  "years": "2000-2011",
+  "yearStart": 2000,
+  "scale": "city",
+  "problems": [
+   "identity"
+  ],
+  "climate": "mediterranean",
+  "context": "center",
+  "approach": "tactical",
+  "cost": 1,
+  "duration": 2,
+  "insight": "צבע זול על בניינים אפורים היה הדרך המהירה ביותר להראות לתושבים שהעיר שלהם יכולה להשתנות.",
+  "before": "עיר אפורה ומוזנחת אחרי נפילת המשטר, עם בנייה לא חוקית בפארקים ולאורך נהר לאנה ותחושת חוסר ביטחון.",
+  "intervention": "מ-2000, בהובלת ראש העיר אדי ראמה, שהיה צייר, נצבעו חזיתות בלוקי מגורים בצבעים ובדוגמאות עזות. במקביל פונו מאות מבנים לא חוקיים מפארקים ומגדות הנהר, ושוקמו שטחים ירוקים.",
+  "result": "הצביעה, שעלתה מעט, שינתה את תחושת העיר וזכתה לתשומת לב בינלאומית. ראמה קיבל ב-2004 את פרס ראש העיר העולמי.",
+  "moves": [
+   "cheap-visible",
+   "leadership",
+   "enabling-policy"
+  ],
+  "cautions": "מבקרים טענו שהשינוי היה קוסמטי ושבעיות יסוד כמו מחסור במים ובחשמל נשארו. הצבע לא פותר בעיות מבניות ותשתיתיות, והריסת המבנים הלא חוקיים פגעה במי שגר ועבד בהם.",
+  "israel": "מתאים כשלב ראשון בשכונות לפני התחדשות עירונית, כמו בשיכוני שנות החמישים בערי הפיתוח. יוצר אמון לפני ההליך הארוך, אבל לא מחליף אותו.",
+  "team": "עיריית טירנה, ראש העיר אדי ראמה",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "green",
+     1
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "renewal",
+   "interior"
+  ],
+  "keywords": [
+   "צבע",
+   "Edi Rama",
+   "facades",
+   "חזיתות",
+   "אלבניה",
+   "Return to Identity"
+  ],
+  "sources": [
+   {
+    "label": "Wikipedia: Edi Rama",
+    "url": "https://en.wikipedia.org/wiki/Edi_Rama"
+   },
+   {
+    "label": "Princeton ISS: Tirana",
+    "url": "https://successfulsocieties.princeton.edu/document/882"
+   },
+   {
+    "label": "Metropolis: Colorful Revolution",
+    "url": "https://metropolismag.com/programs/colorful-revolution/"
+   }
+  ],
+  "facts": [
+   {
+    "text": "אדי ראמה נבחר לראשות עיריית טירנה באוקטובר 2000 וכיהן עד 2011.",
+    "status": "verified",
+    "source": "https://en.wikipedia.org/wiki/Edi_Rama"
+   },
+   {
+    "text": "בתקופתו נהרסו מאות מבנים לא חוקיים ליד מרכז העיר ונהר לאנה.",
+    "status": "approx",
+    "source": "https://en.wikipedia.org/wiki/Edi_Rama"
+   },
+   {
+    "text": "ב-2004 קיבל ראמה את פרס World Mayor הראשון.",
+    "status": "verified",
+    "source": "https://en.wikipedia.org/wiki/Edi_Rama"
+   }
+  ]
+ },
+ {
+  "id": "melbourne-laneways",
+  "name": "הסמטאות של מלבורן",
+  "nameEn": "Melbourne Laneways",
+  "city": "מלבורן",
+  "cityEn": "Melbourne",
+  "country": "אוסטרליה",
+  "countryEn": "Australia",
+  "lat": -37.8166,
+  "lon": 144.9653,
+  "years": "שנות התשעים ואילך",
+  "yearStart": 1993,
+  "scale": "street",
+  "problems": [
+   "identity",
+   "car-street"
+  ],
+  "climate": "temperate",
+  "context": "center",
+  "approach": "policy",
+  "cost": 1,
+  "duration": 3,
+  "insight": "העירייה לא בנתה את הסמטאות מחדש. היא הסירה מכשולים, והחיים נכנסו אליהן לבד.",
+  "before": "מרכז עיר שהתרוקן אחרי שעות העבודה, עם סמטאות אחוריות לפינוי אשפה ולחניה, חשוכות ולא בטוחות.",
+  "intervention": "מתחילת שנות התשעים העירייה עודדה מגורים במרכז, הקלה על היתרים לבתי קפה בסמטאות ופתחה מעברים. היא הזמינה מיאן גל סקרי חיים ציבוריים, \"Places for People\", ב-1994 ושוב ב-2004, ששימשו למדידת השינוי.",
+  "result": "מספר הסמטאות הפעילות והפתוחות לציבור גדל מאוד מאז 1993. הסמטאות הפכו לסמל העיר ולמוקד בילוי ותיירות.",
+  "moves": [
+   "enabling-policy",
+   "housing-center",
+   "measure",
+   "gradual"
+  ],
+  "cautions": "ההצלחה לא נבעה ממדיניות אחת: היו גם נסיבות כלכליות ותרבותיות ורפורמות של המדינה. הצלחה תיירותית עלולה להעלות שכר דירה ולדחוק את העסקים הקטנים שיצרו את האופי.",
+  "israel": "מתאים לסמטאות שירות במרכזי ערים ובאזורי תעשייה ותיקים, כמו מרכז חיפה או דרום תל אביב. עיקר העבודה במדיניות היתרים ולא בבנייה.",
+  "team": "עיריית מלבורן, סקרים: Gehl Architects",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "car",
+     1.5
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "plaza",
+     1.5
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "interior"
+  ],
+  "keywords": [
+   "laneways",
+   "סמטאות",
+   "Degraves Street",
+   "Hosier Lane",
+   "street art",
+   "Places for People"
+  ],
+  "sources": [
+   {
+    "label": "Gehl and the transformation of Melbourne CBD",
+    "url": "https://journals.vilniustech.lt/index.php/JAU/article/view/23036"
+   },
+   {
+    "label": "The Urbanist: Melbourne laneways",
+    "url": "https://www.theurbanist.org/2015/09/16/melbourne-a-case-study-in-the-revitalization-of-city-laneways-part-1/"
+   },
+   {
+    "label": "UW: Melbourne Lanes (PDF)",
+    "url": "https://sdstudio.be.uw.edu/wp-content/uploads/sites/51/downloads/Autumn2008/Melbourne_Lanes.pdf"
+   }
+  ],
+  "facts": [
+   {
+    "text": "עיריית מלבורן וגל פרסמו את \"Places for People\" ב-1994 ומעקב ב-2004.",
+    "status": "verified",
+    "source": "https://sdstudio.be.uw.edu/wp-content/uploads/sites/51/downloads/Autumn2008/Melbourne_Lanes.pdf"
+   },
+   {
+    "text": "מספר הסמטאות הפעילות והנגישות גדל באופן ניכר מאז 1993.",
+    "status": "approx",
+    "source": "https://sdstudio.be.uw.edu/wp-content/uploads/sites/51/downloads/Autumn2008/Melbourne_Lanes.pdf"
+   }
+  ]
+ },
+ {
+  "id": "vauban",
+  "name": "שכונת וובאן",
+  "nameEn": "Vauban, Freiburg im Breisgau",
+  "city": "פרייבורג",
+  "cityEn": "Freiburg im Breisgau",
+  "country": "גרמניה",
+  "countryEn": "Germany",
+  "lat": 47.9784,
+  "lon": 7.8323,
+  "years": "1998 ואילך",
+  "yearStart": 1998,
+  "scale": "neighborhood",
+  "problems": [
+   "car-neighborhood"
+  ],
+  "climate": "temperate",
+  "context": "residential",
+  "approach": "permanent",
+  "cost": 2,
+  "duration": 3,
+  "insight": "מי שרוצה רכב קונה חניה בקצה השכונה, ומי שלא, לא משלם עליה. זה מספיק כדי שהרחוב יחזור לילדים.",
+  "before": "מחנה צבא צרפתי לשעבר בשולי פרייבורג, שהתפנה בתחילת שנות התשעים. העירייה קנתה את רוב השטח.",
+  "intervention": "שכונה של כ-5,000 תושבים שנבנתה בחלקה הגדול על ידי קבוצות רכישה של תושבים. בעלי רכב חייבים לקנות מקום בחניון רב קומות בשולי השכונה, ומי שמצהיר שאין לו רכב פטור מכך. הרחובות הפנימיים משמשים למשחק, וקו חשמלית עובר ברחוב הראשי אל מרכז העיר.",
+  "result": "שיעור בעלות על רכב נמוך בהרבה מבשאר פרייבורג, לפי מקורות שונים בין 150 ל-220 רכבים לאלף תושבים. רוב המשפחות בלי רכב.",
+  "moves": [
+   "unbundle-parking",
+   "peripheral-parking",
+   "transit-first",
+   "participation"
+  ],
+  "cautions": "אוכלוסייה הומוגנית יחסית, משכילה ובעלת הכנסה גבוהה, ומקום חניה עולה עשרות אלפי אירו. קשה לשכפל בלי תרבות של קבוצות רכישה. חלק ממקומות החניה בחניונים לא מנוצלים, וחלק מהדיירים חונים מחוץ לשכונה כדי לחסוך.",
+  "israel": "רלוונטי לשכונות חדשות ולתוכניות פינוי בינוי עם קו רכבת קלה, למשל בירושלים או בגוש דן. דורש שינוי בתקן החניה ובמדיניות הרשות.",
+  "team": "עיריית פרייבורג, Forum Vauban",
+  "section": {
+   "before": [
+    [
+     "building",
+     2
+    ],
+    [
+     "car",
+     1
+    ],
+    [
+     "walk",
+     0.6
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "walk",
+     0.6
+    ],
+    [
+     "car",
+     1
+    ],
+    [
+     "building",
+     2
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     2
+    ],
+    [
+     "green",
+     1
+    ],
+    [
+     "play",
+     2
+    ],
+    [
+     "green",
+     1
+    ],
+    [
+     "building",
+     2
+    ]
+   ]
+  },
+  "apps": [
+   "renewal",
+   "n360"
+  ],
+  "keywords": [
+   "car-free",
+   "שכונה ללא רכב",
+   "Baugruppen",
+   "קבוצת רכישה",
+   "Freiburg",
+   "חניה"
+  ],
+  "sources": [
+   {
+    "label": "Wikipedia: Vauban, Freiburg",
+    "url": "https://en.wikipedia.org/wiki/Vauban,_Freiburg"
+   },
+   {
+    "label": "Vauban: District history",
+    "url": "https://vauban.de/en/topics"
+   },
+   {
+    "label": "SUTP: Vauban (PDF)",
+    "url": "https://sutp.org/download/8125/"
+   }
+  ],
+  "facts": [
+   {
+    "text": "המחנה הצבאי עבר לרשות הפדרלית ב-1992 אחרי נסיגת הצבא הצרפתי.",
+    "status": "approx",
+    "source": "https://vauban.de/en/topics"
+   },
+   {
+    "text": "בשכונה כ-5,000 תושבים ושיעור בעלות על רכב של כ-150 עד 220 לאלף, לעומת כ-430 עד 520 בפרייבורג.",
+    "status": "approx",
+    "source": "https://en.wikipedia.org/wiki/Vauban,_Freiburg"
+   },
+   {
+    "text": "בעלי רכב חייבים לקנות מקום בחניון בשולי השכונה, ותקן החניה המתוכנן היה כ-0.5 לדירה.",
+    "status": "verified",
+    "source": "https://sutp.org/download/8125/"
+   }
+  ]
+ },
+ {
+  "id": "hammarby",
+  "name": "המרבי שוסטד",
+  "nameEn": "Hammarby Sjöstad",
+  "city": "שטוקהולם",
+  "cityEn": "Stockholm",
+  "country": "שוודיה",
+  "countryEn": "Sweden",
+  "lat": 59.3036,
+  "lon": 18.103,
+  "years": "שנות התשעים ואילך",
+  "yearStart": 1995,
+  "scale": "neighborhood",
+  "problems": [
+   "car-neighborhood",
+   "flooding"
+  ],
+  "climate": "cold",
+  "context": "waterfront",
+  "approach": "permanent",
+  "cost": 3,
+  "duration": 3,
+  "insight": "אזור נמל מזוהם הפך לשכונה שבה פסולת, אנרגיה ומים של הבניינים מתוכננים כמערכת אחת.",
+  "before": "שטח תעשייה ונמל ישן ומזוהם בדרום שטוקהולם.",
+  "intervention": "שכונה צפופה לאורך המים, עם רכבת קלה ומעבורות. העירייה, חברת האנרגיה וחברת המים פיתחו יחד את \"מודל המרבי\": פסולת הופכת לחום ולחשמל, ביוב לביוגז, ומי גשם מטופלים בתעלות פתוחות.",
+  "result": "אחת השכונות המוכרות בעולם בתחום הקיימות העירונית. הערכות מצאו הפחתה ניכרת בפליטות, וחלק מהיעדים הושגו.",
+  "moves": [
+   "closed-loop",
+   "transit-first",
+   "visible-water",
+   "reclaim-waste"
+  ],
+  "cautions": "יעדי האנרגיה לא הושגו, והפחתת הפליטות, כ-30 עד 40 אחוז, נשארה מתחת ליעד של 50 אחוז. הערכות ציינו מעקב חלש אחרי היעדים בשלב התפעול. הדיור יקר ומשרת בעיקר מעמד ביניים גבוה.",
+  "israel": "רלוונטי לאזורי תעשייה ונמל ישנים שהופכים למגורים, כמו מפרץ חיפה או אזור התעשייה בחולון. לתאם בין תאגידי המים והאנרגיה כבר בשלב התכנון, ולקבוע מנגנון מעקב.",
+  "team": "עיריית שטוקהולם, Fortum, Stockholm Vatten",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "rail",
+     1.5
+    ],
+    [
+     "plaza",
+     2
+    ],
+    [
+     "water",
+     3,
+     "down"
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "transit",
+     1.5
+    ],
+    [
+     "green",
+     1.5
+    ],
+    [
+     "walk",
+     1.5
+    ],
+    [
+     "water",
+     3,
+     "down"
+    ]
+   ]
+  },
+  "apps": [
+   "renewal",
+   "biomimicry"
+  ],
+  "keywords": [
+   "Hammarby model",
+   "eco-district",
+   "קיימות",
+   "brownfield",
+   "ביוגז",
+   "מערכות סגורות"
+  ],
+  "sources": [
+   {
+    "label": "KTH: evaluation of the environmental profile",
+    "url": "https://www.kth.se/en/seed/tidigare-avdelningar/industriell-ekologi/forskning/finalized/hammarby-sjostad-evaluation-of-the-environmental-profile-of-an-new-urban-district-in-stockholm-1.77604"
+   },
+   {
+    "label": "European Construction Sector Observatory (PDF)",
+    "url": "https://single-market-economy.ec.europa.eu/system/files/2021-03/ecso_pfs_se_hssd_0.pdf"
+   },
+   {
+    "label": "UNU: Hammarby",
+    "url": "https://ourworld.unu.edu/en/hammarby-swedens-gold-medal-winning-eco-town"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הערכה של KTH מצאה שיעדי האנרגיה לא הושגו ושהמעקב אחרי יעדי התפעול היה חלש.",
+    "status": "verified",
+    "source": "https://www.kth.se/en/seed/tidigare-avdelningar/industriell-ekologi/forskning/finalized/hammarby-sjostad-evaluation-of-the-environmental-profile-of-an-new-urban-district-in-stockholm-1.77604"
+   },
+   {
+    "text": "הפחתת הפליטות נאמדה בכ-30 עד 40 אחוז, מתחת ליעד של 50 אחוז.",
+    "status": "approx",
+    "source": "https://ourworld.unu.edu/en/hammarby-swedens-gold-medal-winning-eco-town"
+   }
+  ]
+ },
+ {
+  "id": "ciclovia",
+  "name": "הסיקלוביה של בוגוטה",
+  "nameEn": "Ciclovía Bogotá",
+  "city": "בוגוטה",
+  "cityEn": "Bogotá",
+  "country": "קולומביה",
+  "countryEn": "Colombia",
+  "lat": 4.711,
+  "lon": -74.0721,
+  "years": "1974 ואילך",
+  "yearStart": 1974,
+  "scale": "city",
+  "problems": [
+   "leisure",
+   "car-street"
+  ],
+  "climate": "tropical",
+  "context": "center",
+  "approach": "tactical",
+  "cost": 1,
+  "duration": 3,
+  "insight": "העיר לא מצאה קרקע לפארק, אז היא לקחה את הכבישים שלה לכמה שעות בכל יום ראשון.",
+  "before": "עיר צפופה עם מחסור בפארקים ובמרחבי פנאי.",
+  "intervention": "האירוע התחיל בהפגנה של רוכבי אופניים בדצמבר 1974 ומוסד בצו עירוני ב-1976. בימי ראשון ובחגים, בערך בין 7:00 ל-14:00, נסגרים לתנועה כ-120 עד 130 ק\"מ של רחובות עורקיים. לאורך המסלול פועלים מדריכי ספורט, דוכנים ומתנדבים.",
+  "result": "מסורת עירונית שמשתתפים בה, לפי הערכות, יותר ממיליון אנשים בכל שבוע, ומודל שהועתק בערים רבות בעולם.",
+  "moves": [
+   "time-not-space",
+   "citizen-led",
+   "pilot",
+   "network"
+  ],
+  "cautions": "לא מחליף פארקים קבועים ולא משנה את הרחוב בשאר ימות השבוע. דורש ארגון וכוח אדם בכל שבוע. הערכות מספר המשתתפים משתנות מאוד בין מקורות.",
+  "israel": "מתאים לכל עיר, למשל בשבת או בבוקר יום שישי, על צירים כמו דרך נמיר או שדרות רגר. פתרון זול לבדיקת ביקוש לרחובות להולכי רגל.",
+  "team": "עיריית בוגוטה, IDRD (מאז 1995)",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     4
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "bike",
+     2
+    ],
+    [
+     "walk",
+     2
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360"
+  ],
+  "keywords": [
+   "open streets",
+   "רחובות פתוחים",
+   "יום ללא רכב",
+   "cycling",
+   "רכיבה",
+   "Ciclovía"
+  ],
+  "sources": [
+   {
+    "label": "Bogotá: mapa de la Ciclovía",
+    "url": "https://bogota.gov.co/mi-ciudad/movilidad/mapa-de-la-ciclovia-en-bogota-kilometros-y-corredores-habilitados"
+   },
+   {
+    "label": "IDEASS: Ciclovía Bogotá (PDF)",
+    "url": "https://www.ideassonline.org/public/pdf/CicloviaBogotaI-ENG.pdf"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הסיקלוביה צמחה מהפגנה של כ-5,000 רוכבים בדצמבר 1974 ומוסדה בצווים עירוניים ב-1976.",
+    "status": "verified",
+    "source": "https://www.ideassonline.org/public/pdf/CicloviaBogotaI-ENG.pdf"
+   },
+   {
+    "text": "אורך המסלול לפי העירייה כ-128 ק\"מ, בימי ראשון וחג בין 7:00 ל-14:00.",
+    "status": "approx",
+    "source": "https://bogota.gov.co/mi-ciudad/movilidad/mapa-de-la-ciclovia-en-bogota-kilometros-y-corredores-habilitados"
+   },
+   {
+    "text": "ההערכות למספר המשתתפים נעות בין כ-1.5 לכ-2 מיליון בשבוע.",
+    "status": "approx",
+    "source": "https://development.asia/case-study/car-free-days-can-give-big-cities-room-breathe"
+   }
+  ]
+ },
+ {
+  "id": "pontevedra",
+  "name": "פונטבדרה",
+  "nameEn": "Pontevedra",
+  "city": "פונטבדרה",
+  "cityEn": "Pontevedra",
+  "country": "ספרד",
+  "countryEn": "Spain",
+  "lat": 42.431,
+  "lon": -8.6444,
+  "years": "1999 ואילך",
+  "yearStart": 1999,
+  "scale": "city",
+  "problems": [
+   "car-street",
+   "car-neighborhood"
+  ],
+  "climate": "temperate",
+  "context": "center",
+  "approach": "mixed",
+  "cost": 2,
+  "duration": 3,
+  "insight": "הבעיה לא הייתה הנסיעה אלא החיפוש אחרי חניה. כשהחניה ברחוב נעלמה, נעלמה רוב התנועה.",
+  "before": "מרכז היסטורי פקוק ומלא בחניה, שהלך והתרוקן מתושבים.",
+  "intervention": "מ-1999, בהובלת ראש העיר מיגל אנשו פרננדס לורס, נסגר המרכז לרכב פרטי והחניה ברחוב בוטלה. אזור ללא רכב הורחב מהעיר העתיקה לרובע המאה ה-18, המהירות הוגבלה ל-30 קמ\"ש בשכונות החיצוניות, ונפתחו חניונים תת קרקעיים בשולי המרכז.",
+  "result": "לפי נתוני העירייה, תנועת הרכב במרכז ההיסטורי ירדה בכ-97 אחוז. המרכז התמלא מחדש בתושבים, ומאז תחילת העשור השני לא נרשמו בו הרוגים בתאונות דרכים.",
+  "moves": [
+   "speed-limit",
+   "peripheral-parking",
+   "shared-level",
+   "leadership",
+   "gradual"
+  ],
+  "cautions": "עיר קטנה וקומפקטית יחסית, ולכן לא כל מה שעבד בה מתאים למטרופולין. רוב הנתונים מגיעים מהעירייה עצמה. בשנים הראשונות הייתה התנגדות של סוחרים ונהגים.",
+  "israel": "מתאים לערים בינוניות ולמרכזים היסטוריים, כמו עכו, רמלה או מרכז נצרת. דורש חניונים בשולי המרכז לפני ביטול החניה ברחוב.",
+  "team": "עיריית פונטבדרה, ראש העיר מיגל אנשו פרננדס לורס",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     0.7
+    ],
+    [
+     "car",
+     1
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "car",
+     1
+    ],
+    [
+     "walk",
+     0.7
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     2
+    ],
+    [
+     "green",
+     0.8
+    ],
+    [
+     "walk",
+     2
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360"
+  ],
+  "keywords": [
+   "עיר ללא רכב",
+   "car-free city",
+   "traffic calming",
+   "מיתון תנועה",
+   "גליסיה",
+   "Lores"
+  ],
+  "sources": [
+   {
+    "label": "Eco-Business: How a city in Spain got rid of its cars",
+    "url": "https://www.eco-business.com/news/how-a-city-in-spain-got-rid-of-its-cars/"
+   },
+   {
+    "label": "Santé publique France: Pontevedra interview",
+    "url": "https://www.santepubliquefrance.fr/index.php/docs/article/pontevedra-spain-pedestrians-rule-roads-relegating-cars-sidelines-interview"
+   }
+  ],
+  "facts": [
+   {
+    "text": "לורס נבחר לראשות העיר ב-1999 והתחיל בהגבלת הרכב במרכז.",
+    "status": "verified",
+    "source": "https://www.eco-business.com/news/how-a-city-in-spain-got-rid-of-its-cars/"
+   },
+   {
+    "text": "לפי העירייה, תנועת הרכב במרכז ההיסטורי ירדה בכ-97 אחוז מאז 1999.",
+    "status": "verified",
+    "source": "https://www.eco-business.com/news/how-a-city-in-spain-got-rid-of-its-cars/"
+   },
+   {
+    "text": "לא נרשמו הרוגים בתאונות דרכים בעיר בין 2011 ל-2020.",
+    "status": "approx",
+    "source": "https://www.santepubliquefrance.fr/index.php/docs/article/pontevedra-spain-pedestrians-rule-roads-relegating-cars-sidelines-interview"
+   }
+  ]
+ },
+ {
+  "id": "place-republique",
+  "name": "כיכר הרפובליקה",
+  "nameEn": "Place de la République",
+  "city": "פריז",
+  "cityEn": "Paris",
+  "country": "צרפת",
+  "countryEn": "France",
+  "lat": 48.8674,
+  "lon": 2.3636,
+  "years": "2013",
+  "yearStart": 2010,
+  "scale": "square",
+  "problems": [
+   "car-street",
+   "identity"
+  ],
+  "climate": "temperate",
+  "context": "center",
+  "approach": "permanent",
+  "cost": 2,
+  "duration": 2,
+  "insight": "כשהתנועה רוכזה בשוליים, אי תנועה הפך לכיכר הולכי הרגל הגדולה בעיר.",
+  "before": "כיכר שבה התנועה הקיפה אי מרכזי עם פסל. עשרות אלפי נוסעי מטרו נאלצו לחצות תנועה כבדה כל יום כדי להגיע אליה.",
+  "intervention": "הסיבוב סביב הפסל בוטל, והתנועה המוטורית רוכזה לאורך הצד הדרומי ושני הצדדים הקצרים. רוב השטח הפך לרחבה אחידה עם עצי דולב, ביתן בית קפה ומשטחי מים רדודים.",
+  "result": "הכיכר נחנכה ביוני 2013 והפכה לכיכר הולכי הרגל הגדולה בפריז ולמקום התכנסות מרכזי, כולל אחרי הפיגועים ב-2015.",
+  "moves": [
+   "intersection-plaza",
+   "close-road",
+   "measure"
+  ],
+  "cautions": "משטח קשה וגדול שמתחמם בקיץ, ונטען שיש בו מחסור בצל ובירק. הכיכר היא מקום הפגנות מרכזי, והתחזוקה אחרי אירועים גדולים מורכבת.",
+  "israel": "מתאים לכיכרות תנועה גדולות במרכזי ערים, כמו כיכר פריז בחיפה או כיכר המדינה בתל אביב. בגרסה ישראלית צריך הרבה יותר צל.",
+  "team": "TVK (Trévelo & Viger-Kohler), עיריית פריז",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "green",
+     1.5
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     1.5
+    ],
+    [
+     "plaza",
+     4
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360"
+  ],
+  "keywords": [
+   "כיכר",
+   "square",
+   "Paris",
+   "התכנסות",
+   "רחבה",
+   "TVK"
+  ],
+  "sources": [
+   {
+    "label": "Dezeen: TVK transforms Place de la République",
+    "url": "https://www.dezeen.com/2014/01/04/tvk-place-de-la-republique-paris/amp/"
+   },
+   {
+    "label": "Landezine: Place de la République",
+    "url": "https://landezine.com/place-de-la-republique/"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הכיכר המחודשת נחנכה ביוני 2013.",
+    "status": "verified",
+    "source": "https://www.dezeen.com/2014/01/04/tvk-place-de-la-republique-paris/amp/"
+   },
+   {
+    "text": "התנועה המוטורית עוברת היום רק לאורך הצד הדרומי ושני הצדדים הקצרים.",
+    "status": "verified",
+    "source": "https://www.dezeen.com/2014/01/04/tvk-place-de-la-republique-paris/amp/"
+   }
+  ]
+ },
+ {
+  "id": "zollhallen-plaza",
+  "name": "כיכר צולהאלן",
+  "nameEn": "Zollhallen Plaza",
+  "city": "פרייבורג",
+  "cityEn": "Freiburg im Breisgau",
+  "country": "גרמניה",
+  "countryEn": "Germany",
+  "lat": 47.999,
+  "lon": 7.8421,
+  "years": "2011",
+  "yearStart": 2009,
+  "scale": "square",
+  "problems": [
+   "flooding",
+   "heat"
+  ],
+  "climate": "temperate",
+  "context": "industrial",
+  "approach": "permanent",
+  "cost": 2,
+  "duration": 2,
+  "insight": "כיכר שמנותקת לגמרי מהביוב: כל טיפת גשם שנופלת עליה חוזרת לאדמה.",
+  "before": "שטח תעשייתי אטום ליד מבנה מכס היסטורי באזור תחנת המטען לשעבר, שמי הגשם ממנו זרמו לביוב המשולב, שכבר עמוס בזמן סערות.",
+  "intervention": "האתר נותק ממערכת הביוב. הרחבה תוכננה עם ריצוף מחומרים ממוחזרים מהאתר, ערוגות שמשמשות נקודות חלחול, תעלות חצץ תת קרקעיות עם שכבת סינון, ושקעים קלים שאוגרים מים זמנית בגשם חזק.",
+  "result": "מי הגשם לא נכנסים לביוב אלא מעשירים את מי התהום. הרחבה נפתחה ב-2011 ומשמשת דוגמה לניהול מי נגר בכיכר עירונית.",
+  "moves": [
+   "infiltration",
+   "dual-use",
+   "visible-water"
+  ],
+  "cautions": "נתוני הביצוע מגיעים בעיקר מהמתכננים ומפרסומים מקצועיים, ולא נמצא ניטור עצמאי. מתאים לקרקע שמאפשרת חלחול, ודורש תחזוקה של השקעים ושכבות הסינון.",
+  "israel": "רלוונטי לרחבות חדשות ולחניונים, במיוחד מעל אקוויפר החוף בגוש דן ובשרון, שם החלחול מועיל במיוחד.",
+  "team": "Atelier Dreiseitl (היום Ramboll Studio Dreiseitl)",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "plaza",
+     5
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "plaza",
+     2
+    ],
+    [
+     "green",
+     1,
+     "down"
+    ],
+    [
+     "plaza",
+     2
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "biomimicry"
+  ],
+  "keywords": [
+   "חלחול",
+   "infiltration",
+   "ניקוז",
+   "rain garden",
+   "Dreiseitl",
+   "מי נגר"
+  ],
+  "sources": [
+   {
+    "label": "urbanNext: Zollhallen Plaza",
+    "url": "https://urbannext.net/zollhallen-plaza/"
+   },
+   {
+    "label": "World Landscape Architect: Zollhallen Plaza",
+    "url": "https://worldlandscapearchitect.com/zollhallen-plaza-freiburg-germany-atelier-dreiseitl/"
+   }
+  ],
+  "facts": [
+   {
+    "text": "האתר נותק מהביוב המשולב המקומי, ומי הגשם מחלחלים ומעשירים את מי התהום.",
+    "status": "verified",
+    "source": "https://urbannext.net/zollhallen-plaza/"
+   },
+   {
+    "text": "הרחבה נחנכה ביולי 2011.",
+    "status": "approx",
+    "source": "https://vimeo.com/53000609"
+   }
+  ]
+ },
+ {
+  "id": "curitiba-rua-xv",
+  "name": "רחוב ה-15 בנובמבר (רחוב הפרחים)",
+  "nameEn": "Rua XV de Novembro (Rua das Flores), Curitiba",
+  "city": "קוריטיבה",
+  "cityEn": "Curitiba",
+  "country": "ברזיל",
+  "countryEn": "Brazil",
+  "lat": -25.4316,
+  "lon": -49.2713,
+  "years": "1972",
+  "yearStart": 1972,
+  "scale": "street",
+  "problems": [
+   "car-street",
+   "identity"
+  ],
+  "climate": "temperate",
+  "context": "center",
+  "approach": "permanent",
+  "cost": 1,
+  "duration": 1,
+  "insight": "הרחוב נסגר בתוך ימים ספורים, לפני שההתנגדות הספיקה להתארגן, והתוצאה בשטח היא ששכנעה.",
+  "before": "הרחוב המסחרי הראשי של מרכז קוריטיבה, עמוס במכוניות, בעיר שתוכניות התנועה שלה עמדו להרחיב כבישים במרכז.",
+  "intervention": "במאי 1972, בקדנציה הראשונה של ראש העיר ז'איימה לרנר, נסגרו כמה רחובות של הרחוב לרכב והפכו למדרחוב. העבודות, ריצוף, תאורה, עציצים וריהוט, נעשו בתוך ימים ספורים.",
+  "result": "הרחוב נחשב לרחוב הראשון בברזיל שיועד להולכי רגל בלבד. הסוחרים שהתנגדו דיווחו על עלייה במכירות, ובהמשך ביקשו להרחיב את האזור ללא רכב.",
+  "moves": [
+   "close-road",
+   "leadership",
+   "gradual"
+  ],
+  "cautions": "הסגירה נעשתה בלי שיתוף ציבור של ממש, ועיתונות התקופה שאלה אם התושבים בכלל נשאלו. הסוחרים התנגדו בחריפות בהתחלה. שיטה של עובדות בשטח מהירות עובדת כשההנהגה חזקה, ופחות בהליך תכנוני פתוח.",
+  "israel": "רלוונטי לרחובות מסחר ראשיים במרכזי ערים, כמו רחוב הרצל בבאר שבע או רחוב ירושלים ביפו. מראה שאפשר להתחיל בסגירה מהירה ופשוטה ולהשלים אחר כך.",
+  "team": "עיריית קוריטיבה, ראש העיר ז'איימה לרנר, IPPUC",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     2
+    ],
+    [
+     "green",
+     1
+    ],
+    [
+     "walk",
+     2
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360"
+  ],
+  "keywords": [
+   "מדרחוב",
+   "pedestrian mall",
+   "Jaime Lerner",
+   "Curitiba",
+   "Rua das Flores",
+   "calçadão"
+  ],
+  "sources": [
+   {
+    "label": "Prefeitura de Curitiba: Calçadão da Rua XV",
+    "url": "https://www.curitiba.pr.gov.br/noticias/ha-54-anos-nascia-a-primeira-via-exclusiva-para-pedestres-do-brasil-o-calcadao-da-rua-xv/83122"
+   },
+   {
+    "label": "Tribuna PR: As caras da XV",
+    "url": "https://www.tribunapr.com.br/cacadores-de-noticias/curitiba/as-caras-da-xv/"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הפיכת הרחוב למדרחוב החלה ב-19 או ב-20 במאי 1972, בתקופת ראש העיר ז'איימה לרנר.",
+    "status": "verified",
+    "source": "https://www.curitiba.pr.gov.br/noticias/ha-54-anos-nascia-a-primeira-via-exclusiva-para-pedestres-do-brasil-o-calcadao-da-rua-xv/83122"
+   },
+   {
+    "text": "העירייה מתארת אותו כרחוב הראשון בברזיל שיועד להולכי רגל בלבד.",
+    "status": "verified",
+    "source": "https://www.curitiba.pr.gov.br/noticias/ha-54-anos-nascia-a-primeira-via-exclusiva-para-pedestres-do-brasil-o-calcadao-da-rua-xv/83122"
+   },
+   {
+    "text": "העבודות נעשו בתוך ימים ספורים, והסוחרים שהתנגדו ביקשו אחר כך להרחיב את האזור.",
+    "status": "approx",
+    "source": "https://actipedia.org/tag/urban-planning"
+   }
+  ]
+ },
+ {
+  "id": "groningen-circulation",
+  "name": "תוכנית התנועה של חרונינגן",
+  "nameEn": "Groningen Verkeerscirculatieplan (Traffic Circulation Plan)",
+  "city": "חרונינגן",
+  "cityEn": "Groningen",
+  "country": "הולנד",
+  "countryEn": "Netherlands",
+  "lat": 53.2194,
+  "lon": 6.5665,
+  "years": "1977",
+  "yearStart": 1977,
+  "scale": "city",
+  "problems": [
+   "car-street"
+  ],
+  "climate": "temperate",
+  "context": "center",
+  "approach": "policy",
+  "cost": 1,
+  "duration": 1,
+  "insight": "לא צריך לאסור על מכוניות להיכנס למרכז. מספיק לאסור עליהן לחצות אותו.",
+  "before": "מרכז עיר היסטורי שבו תנועה עוברת חצתה את הלב, ותוכניות התנועה דיברו על כבישים רחבים במרכז.",
+  "intervention": "בספטמבר 1977 חולק המרכז לארבע גזרות. רכב פרטי יכול להיכנס לכל גזרה ולצאת ממנה, אבל לעבור מגזרה לגזרה רק דרך כביש הטבעת. הולכי רגל, אופניים ואוטובוסים עוברים ישירות. השינוי נעשה בעיקר בשלטים, בחסימות ובשינוי כיווני נסיעה.",
+  "result": "לפי הערכות שפורסמו, תנועת הרכב במרכז ירדה בכ-44 אחוז ורמות הרעש ירדו. התוכנית נחשבת לבסיס לשיעור הרכיבה הגבוה מאוד בעיר.",
+  "moves": [
+   "sectors",
+   "perimeter",
+   "leadership",
+   "close-road"
+  ],
+  "cautions": "התוכנית עוררה התנגדות חזקה של סוחרים ובעלי עסקים במרכז, שחששו מאובדן לקוחות. ההובלה הפוליטית, של חבר מועצה צעיר, נשענה על רוב פוליטי ברור. עיר סטודנטים שטוחה וקומפקטית מקלה על הצלחה כזו.",
+  "israel": "רלוונטי למרכזי ערים עם כביש טבעת או דרך היקפית, כמו מרכז כפר סבא, רחובות או באר שבע. אפשר להתחיל בשילוט ובחסימות זולות.",
+  "team": "עיריית חרונינגן, חבר המועצה מקס ואן דן ברג",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1.5
+    ],
+    [
+     "bike",
+     1.5
+    ],
+    [
+     "transit",
+     1.5
+    ],
+    [
+     "walk",
+     1.5
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360"
+  ],
+  "keywords": [
+   "traffic circulation plan",
+   "חלוקה לגזרות",
+   "Groningen",
+   "תנועה עוברת",
+   "cycling city",
+   "sectors"
+  ],
+  "sources": [
+   {
+    "label": "SWOV: Groningen traffic circulation plan",
+    "url": "https://swov.nl/en/publicatie/planning-fundamental-urban-traffic-changes-experiences-groningen-traffic-circulation"
+   },
+   {
+    "label": "TRID: Groningen traffic plan",
+    "url": "https://trid.trb.org/View/187413"
+   },
+   {
+    "label": "Preventive Medicine 2017 (PDF)",
+    "url": "https://activelivingresearch.org/sites/activelivingresearch.org/files/3.PrevMed2017_PublicSpaces_Schipperijn.pdf"
+   }
+  ],
+  "facts": [
+   {
+    "text": "התוכנית הופעלה בספטמבר 1977 וחילקה את המרכז לארבע גזרות, עם מעבר ברכב ביניהן רק דרך כביש הטבעת.",
+    "status": "verified",
+    "source": "https://swov.nl/en/publicatie/planning-fundamental-urban-traffic-changes-experiences-groningen-traffic-circulation"
+   },
+   {
+    "text": "תנועת הרכב במרכז ירדה בכ-44 אחוז לפי מחקר שפורסם.",
+    "status": "approx",
+    "source": "https://trid.trb.org/View/187413"
+   },
+   {
+    "text": "את התוכנית הוביל מקס ואן דן ברג, אז בן 24.",
+    "status": "verified",
+    "source": "https://activelivingresearch.org/sites/activelivingresearch.org/files/3.PrevMed2017_PublicSpaces_Schipperijn.pdf"
+   }
+  ]
+ },
+ {
+  "id": "ghent-circulation",
+  "name": "תוכנית התנועה של חנט",
+  "nameEn": "Circulatieplan Gent (Ghent Circulation Plan)",
+  "city": "חנט",
+  "cityEn": "Ghent",
+  "country": "בלגיה",
+  "countryEn": "Belgium",
+  "lat": 51.0543,
+  "lon": 3.7174,
+  "years": "2017",
+  "yearStart": 2017,
+  "scale": "city",
+  "problems": [
+   "car-street"
+  ],
+  "climate": "temperate",
+  "context": "center",
+  "approach": "tactical",
+  "cost": 1,
+  "duration": 1,
+  "insight": "ארבעים שנה אחרי חרונינגן, אותו רעיון של גזרות הופעל בלילה אחד, בעזרת חסימות ומצלמות.",
+  "before": "כמעט 40 אחוז מהתנועה המוטורית במרכז העיר הייתה תנועה עוברת, שלא הייתה לה מטרה במרכז.",
+  "intervention": "באפריל 2017 חולקה העיר לגרעין כמעט ללא רכב ולשש גזרות סביבו. מעבר ברכב מגזרה לגזרה אפשרי רק דרך כביש טבעת, והגבולות נאכפים בחסימות בטון ובמצלמות. התוכנית עלתה לפי העירייה כחמישה מיליון אירו.",
+  "result": "לפי דיווחים לקראת שנתיים להפעלה, התנועה בשעות השיא ירדה בכ-12 אחוז ומספר הרוכבים עלה בכ-25 אחוז בשנה הראשונה. העיר דיווחה על שיעור רכיבה של כ-35 אחוז.",
+  "moves": [
+   "sectors",
+   "perimeter",
+   "reversible",
+   "pilot"
+  ],
+  "cautions": "ההתנגדות הייתה חריפה: סגן ראש העיר לתחבורה קיבל איומים על חייו ערב ההפעלה, וסוחרים חששו מירידה בפדיון. מתנגדים טענו שקשה לקשישים ולאנשים עם מוגבלות להגיע למרכז. חלק מנתוני ההצלחה מגיעים מארגוני סביבה ולא מבדיקה עצמאית.",
+  "israel": "מתאים לערים בינוניות עם מרכז היסטורי וטבעת, כמו כפר סבא, רעננה או מרכז חיפה. חסימות זולות ומצלמות מאפשרות לנסות לפני שמשקיעים.",
+  "team": "עיריית חנט, סגן ראש העיר לתחבורה פיליפ ואטאו, ראש העיר דניאל טרמונט",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1.5
+    ],
+    [
+     "bike",
+     2
+    ],
+    [
+     "car",
+     1
+    ],
+    [
+     "walk",
+     1.5
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360"
+  ],
+  "keywords": [
+   "circulation plan",
+   "Ghent",
+   "Gent",
+   "חלוקה לגזרות",
+   "תנועה עוברת",
+   "modal filter"
+  ],
+  "sources": [
+   {
+    "label": "Stad Gent: The Circulation Plan",
+    "url": "https://stad.gent/en/mobility-ghent/circulation-plan"
+   },
+   {
+    "label": "Transport & Environment: Ghent",
+    "url": "https://www.transportenvironment.org/articles/how-belgian-city-cutting-rush-hour-traffic"
+   },
+   {
+    "label": "VRT: death threats on eve of mobility plan",
+    "url": "https://www.vrt.be/vrtnws/en/2017/03/31/death_threats_oneveofbigmobilityplaninghent-1-2938418/"
+   }
+  ],
+  "facts": [
+   {
+    "text": "התוכנית הופעלה באפריל 2017 וחילקה את העיר לגרעין ולשש גזרות.",
+    "status": "verified",
+    "source": "https://stad.gent/en/mobility-ghent/circulation-plan"
+   },
+   {
+    "text": "כמעט 40 אחוז מהתנועה המוטורית במרכז הייתה תנועה עוברת.",
+    "status": "approx",
+    "source": "https://stad.gent/en/mobility-ghent/circulation-plan"
+   },
+   {
+    "text": "דווח על ירידה של כ-12 אחוז בתנועה בשעות השיא ועלייה של כ-25 אחוז ברוכבים בשנה הראשונה.",
+    "status": "approx",
+    "source": "https://www.transportenvironment.org/articles/how-belgian-city-cutting-rush-hour-traffic"
+   },
+   {
+    "text": "סגן ראש העיר פיליפ ואטאו קיבל איומים על חייו ימים לפני ההפעלה.",
+    "status": "verified",
+    "source": "https://www.vrt.be/vrtnws/en/2017/03/31/death_threats_oneveofbigmobilityplaninghent-1-2938418/"
+   }
+  ]
+ },
+ {
+  "id": "oslo-car-free",
+  "name": "תוכנית חיי עיר ללא רכב באוסלו",
+  "nameEn": "Bilfritt byliv (Car-Free City Life Programme), Oslo",
+  "city": "אוסלו",
+  "cityEn": "Oslo",
+  "country": "נורווגיה",
+  "countryEn": "Norway",
+  "lat": 59.9127,
+  "lon": 10.7461,
+  "years": "2017-2019",
+  "yearStart": 2015,
+  "scale": "neighborhood",
+  "problems": [
+   "car-street",
+   "leisure"
+  ],
+  "climate": "cold",
+  "context": "center",
+  "approach": "mixed",
+  "cost": 2,
+  "duration": 2,
+  "insight": "במקום לאסור על מכוניות, העיר הסירה את מקומות החניה, ונתנה לשטח שהתפנה שימוש אחר.",
+  "before": "מרכז עיר שבו רוב שטח הרחוב שימש לחניה ולנסיעה, אף שרוב התושבים במרכז עצמו לא מחזיקים רכב.",
+  "intervention": "ב-2015 הודיעה העירייה על כוונה למרכז ללא רכב. אחרי התנגדות של עסקים, האיסור המלא הוחלף בהסרה הדרגתית של חניה: בניסויים ב-2017 הוסרו כ-300 מקומות, ועד 2019 כ-700. במקומם באו נתיבי אופניים, ספסלים, צמחייה וגינות קטנות. גישה לנכים, לשירות ולחירום נשמרה.",
+  "result": "דווח על ירידה בתנועת הרכב במרכז ועל עלייה בתנועת הולכי רגל. אוסלו נבחרה לבירה הירוקה של אירופה לשנת 2019.",
+  "moves": [
+   "gradual",
+   "pilot",
+   "measure",
+   "enabling-policy"
+  ],
+  "cautions": "ארגוני עסקים טענו שהתוכנית מהירה ומקיפה מדי, וחנויות מסוימות, בעיקר חנויות מתמחות, דיווחו על ירידה ונסגרו, כשלקוחות עברו לקניונים מחוץ לעיר. תושבים הרגישו שהשינוי נכפה עליהם. נתוני ההצלחה מגיעים בעיקר מהעירייה ומגופים תומכים.",
+  "israel": "רלוונטי למרכזי ערים שבהם החניה ברחוב תופסת את רוב השטח, כמו מרכז תל אביב או מרכז העיר בירושלים. החלפת חניה בשימושים ציבוריים צריכה ללוות במדידה גלויה ובהידברות עם הסוחרים.",
+  "team": "עיריית אוסלו",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     1
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "car",
+     1
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1.5
+    ],
+    [
+     "green",
+     1
+    ],
+    [
+     "bike",
+     1
+    ],
+    [
+     "car",
+     1
+    ],
+    [
+     "walk",
+     1.5
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360"
+  ],
+  "keywords": [
+   "car-free",
+   "Oslo",
+   "הסרת חניה",
+   "parking removal",
+   "מרכז ללא רכב",
+   "Bilfritt byliv"
+  ],
+  "sources": [
+   {
+    "label": "Fast Company: Oslo car-free",
+    "url": "https://www.fastcompany.com/90294948/&"
+   },
+   {
+    "label": "The Local: Oslo dwellers divided",
+    "url": "https://www.thelocal.no/20180924/oslo-dwellers-divided-over-citys-drive-to-get-cars-off-the-streets"
+   },
+   {
+    "label": "City Changers: How Oslo hit reverse on street parking",
+    "url": "https://citychangers.org/how-oslo-hit-reverse-on-its-city-street-parking/"
+   }
+  ],
+  "facts": [
+   {
+    "text": "עד 2019 הוסרו כ-700 מקומות חניה ברחוב במרכז העיר והוחלפו בנתיבי אופניים, ספסלים וצמחייה.",
+    "status": "approx",
+    "source": "https://www.fastcompany.com/90294948/&"
+   },
+   {
+    "text": "ההצעה הראשונה לאיסור מלא על רכב פרטי הוחלפה בהסרת חניה אחרי התנגדות של עסקים.",
+    "status": "verified",
+    "source": "https://citychangers.org/how-oslo-hit-reverse-on-its-city-street-parking/"
+   },
+   {
+    "text": "ב-2018 דווח על חנויות באזור שנסגרו או שהפדיון שלהן קרס.",
+    "status": "verified",
+    "source": "https://www.thelocal.no/20180924/oslo-dwellers-divided-over-citys-drive-to-get-cars-off-the-streets"
+   }
+  ]
+ },
+ {
+  "id": "ljubljana-centre",
+  "name": "מרכז לובליאנה ללא רכב",
+  "nameEn": "Pedestrianisation of Ljubljana City Centre",
+  "city": "לובליאנה",
+  "cityEn": "Ljubljana",
+  "country": "סלובניה",
+  "countryEn": "Slovenia",
+  "lat": 46.0511,
+  "lon": 14.5051,
+  "years": "2007 ואילך",
+  "yearStart": 2007,
+  "scale": "neighborhood",
+  "problems": [
+   "car-street",
+   "identity"
+  ],
+  "climate": "temperate",
+  "context": "center",
+  "approach": "mixed",
+  "cost": 2,
+  "duration": 3,
+  "insight": "סגירת המרכז הוצגה כשירות ולא כאיסור: מי שלא יכול ללכת מקבל הסעה חשמלית חינם.",
+  "before": "עיר עתיקה ושפת הנהר ליובליאניצה שבהן עברה תנועת רכב וחניה, עד הכיכר המרכזית.",
+  "intervention": "ב-2007, בשנה הראשונה של ראש העיר זוראן ינקוביץ', נאסרה תנועת רכב בכיכר פרשרן ובסביבתה, והאזור הורחב בשלבים. רכב שירות נכנס רק בשעות הבוקר. מ-2008 פועלות במרכז מכוניות חשמליות קטנות וחינמיות (Kavalir) לקשישים ולמוגבלי תנועה. בשנים 2013-2015 הוסבה גם שדרת סלובנסקה הראשית.",
+  "result": "המרכז הפך לאזור הולכי רגל רחב, והעיר נבחרה לבירה הירוקה של אירופה לשנת 2016. ההחלטה על סגירת המרכז מתוארת כצעד המשמעותי והשנוי במחלוקת ביותר בדרך לכך.",
+  "moves": [
+   "gradual",
+   "leadership",
+   "enabling-policy",
+   "shared-level"
+  ],
+  "cautions": "תושבים התנגדו וחששו מאובדן גישה לבתיהם ומקושי לסחוב קניות. אזור הולכי רגל תיירותי עלול לדחוק תושבים ועסקים מקומיים. שירות ההסעה החשמלית קטן, כמה כלים בלבד.",
+  "israel": "רלוונטי לעיר העתיקה בירושלים, לעכו ולמרכזים היסטוריים קטנים. הסעה חשמלית חינמית לקשישים מקלה על ההתנגדות.",
+  "team": "עיריית לובליאנה, ראש העיר זוראן ינקוביץ', LPP",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "water",
+     2,
+     "down"
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     2.5
+    ],
+    [
+     "plaza",
+     1.5
+    ],
+    [
+     "water",
+     2,
+     "down"
+    ]
+   ]
+  },
+  "apps": [
+   "n360"
+  ],
+  "keywords": [
+   "pedestrian zone",
+   "Ljubljana",
+   "אזור הולכי רגל",
+   "Kavalir",
+   "European Green Capital",
+   "Prešeren Square"
+  ],
+  "sources": [
+   {
+    "label": "EU Urban Mobility Observatory: Pedestrianisation of Ljubljana",
+    "url": "https://urban-mobility-observatory.transport.ec.europa.eu/resources/case-studies/pedestrianisation-ljubljana-city-centre_en"
+   },
+   {
+    "label": "Visit Ljubljana: Kavalir",
+    "url": "https://visitljubljana.com/en/visitors/travel-information/getting-around/kavalir-getting-around-the-city-centre-by-electric-car"
+   },
+   {
+    "label": "Big Issue: Ljubljana went car-free",
+    "url": "https://bigissue.com/news/environment/people-protested-when-this-capital-city-went-car-free-now-they-love-it/"
+   }
+  ],
+  "facts": [
+   {
+    "text": "ב-2007 נאסרה לראשונה תנועת רכב בכיכר פרשרן וברחוב וולפובה.",
+    "status": "verified",
+    "source": "https://urban-mobility-observatory.transport.ec.europa.eu/resources/case-studies/pedestrianisation-ljubljana-city-centre_en"
+   },
+   {
+    "text": "שדרת סלובנסקה הוסבה להולכי רגל ולתחבורה ציבורית בשנים 2013-2015.",
+    "status": "verified",
+    "source": "https://urban-mobility-observatory.transport.ec.europa.eu/resources/case-studies/pedestrianisation-ljubljana-city-centre_en"
+   },
+   {
+    "text": "שירות Kavalir החינמי פועל מאז 2008.",
+    "status": "approx",
+    "source": "https://www.rtvslo.si/news-in-english/kavalir-has-transported-more-than-a-million-people-across-ljubljana/433154"
+   }
+  ]
+ },
+ {
+  "id": "aspern-seestadt",
+  "name": "זיסטאדט אספרן",
+  "nameEn": "Seestadt Aspern (aspern Seestadt), Vienna",
+  "city": "וינה",
+  "cityEn": "Vienna",
+  "country": "אוסטריה",
+  "countryEn": "Austria",
+  "lat": 48.2253,
+  "lon": 16.505,
+  "years": "2013 ואילך",
+  "yearStart": 2013,
+  "scale": "neighborhood",
+  "problems": [
+   "car-neighborhood"
+  ],
+  "climate": "temperate",
+  "context": "residential",
+  "approach": "permanent",
+  "cost": 3,
+  "duration": 3,
+  "insight": "המטרו הגיע לשדה ריק שנה לפני הדיירים הראשונים, כדי שההרגל הראשון יהיה רכבת ולא מכונית.",
+  "before": "שדה תעופה ישן בשולי וינה, ממזרח לדנובה, שנבחר לאחד ממיזמי הפיתוח העירוני הגדולים באירופה.",
+  "intervention": "הארכת קו המטרו U2 עד האתר נפתחה באוקטובר 2013, כשהשטח עוד היה ברובו אתר בנייה, והדיירים הראשונים נכנסו בספטמבר 2014. החניה מרוכזת בעיקר בחניונים משותפים ולא במגרשים, וקומות הקרקע לאורך רחוב המסחר מנוהלות על ידי חברה אחת שבוחרת את תמהיל החנויות.",
+  "result": "השכונה נבנית בשלבים ומאכלסת כבר אלפי תושבים, עם תחבורה ציבורית שפעלה מהיום הראשון.",
+  "moves": [
+   "transit-first",
+   "peripheral-parking",
+   "unbundle-parking",
+   "enabling-policy"
+  ],
+  "cautions": "ההארכה עלתה כ-320 עד 360 מיליון אירו ושירתה בשנה הראשונה שדה ריק, ורק חלק מהרכבות הגיעו לתחנה. חודשים אחרי האכלוס התלוננו תושבים על מחסור בחניה כי החניונים לא הושלמו. מסחר בקומת הקרקע התקשה, ומבקרים כינו את המקום שכונת שינה.",
+  "israel": "רלוונטי לשכונות חדשות גדולות לאורך קווי רכבת קלה ומטרו מתוכננים, כמו בגוש דן או בירושלים. ההחלטה להביא את הקו לפני האכלוס היא החלטה תקציבית שצריך לקבל מוקדם.",
+  "team": "עיריית וינה, Wien 3420 aspern Development AG, Wiener Linien",
+  "section": {
+   "before": [
+    [
+     "green",
+     4
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "green",
+     4
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1.5
+    ],
+    [
+     "bike",
+     1
+    ],
+    [
+     "transit",
+     1.5,
+     "up"
+    ],
+    [
+     "green",
+     1
+    ],
+    [
+     "walk",
+     1.5
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "renewal"
+  ],
+  "keywords": [
+   "Seestadt",
+   "Aspern",
+   "U2",
+   "transit-oriented development",
+   "שכונה חדשה",
+   "וינה"
+  ],
+  "sources": [
+   {
+    "label": "Wikipedia: Seestadt Aspern",
+    "url": "https://en.wikipedia.org/wiki/Seestadt_Aspern"
+   },
+   {
+    "label": "Railway Gazette: Wien metro extension opens",
+    "url": "https://railwaygazette.com/wien-metro-and-tram-extensions-open/38755.article"
+   },
+   {
+    "label": "ORF Wien: U2-Verlängerung eröffnet",
+    "url": "https://wien.orf.at/v2/news/stories/2607445/"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הארכת U2 לזיסטאדט נפתחה ב-5 באוקטובר 2013.",
+    "status": "verified",
+    "source": "https://railwaygazette.com/wien-metro-and-tram-extensions-open/38755.article"
+   },
+   {
+    "text": "הדיירים הראשונים נכנסו ב-2014.",
+    "status": "verified",
+    "source": "https://en.wikipedia.org/wiki/Seestadt_Aspern"
+   },
+   {
+    "text": "עלות ההארכה נאמדה בכ-320 עד 360 מיליון אירו.",
+    "status": "approx",
+    "source": "https://wien.orf.at/v2/news/stories/2607445/"
+   },
+   {
+    "text": "חודשים אחרי האכלוס דווח על מחסור בחניה כי החניונים המשותפים לא הושלמו.",
+    "status": "verified",
+    "source": "https://www.vienna.at/gibt-es-nicht-genuegend-parkplaetze-in-der-seestadt-aspern-in-wien/4209417"
+   }
+  ]
+ },
+ {
+  "id": "houten",
+  "name": "האוטן",
+  "nameEn": "Houten",
+  "city": "האוטן",
+  "cityEn": "Houten",
+  "country": "הולנד",
+  "countryEn": "Netherlands",
+  "lat": 52.0283,
+  "lon": 5.1681,
+  "years": "שנות השמונים ואילך",
+  "yearStart": 1980,
+  "scale": "city",
+  "problems": [
+   "car-neighborhood"
+  ],
+  "climate": "temperate",
+  "context": "residential",
+  "approach": "permanent",
+  "cost": 2,
+  "duration": 3,
+  "insight": "העיר תוכננה כך שבאופניים הכי קצר לנסוע ישר, וברכב צריך לצאת לטבעת ולהיכנס שוב.",
+  "before": "כפר קטן ליד אוטרכט שנבחר להתרחבות גדולה, כדי לקלוט חלק מהצמיחה של העיר.",
+  "intervention": "העיר נבנתה סביב ציר אופניים מרכזי ותחנת רכבת. כביש טבעת מקיף אותה, וכל שכונה מחוברת אליו ברחובות שאינם ממשיכים לשכונות אחרות. מעבר ברכב משכונה לשכונה עובר רק דרך הטבעת. שבילי האופניים חוצים את הטבעת במעברים תחתיים. בשנות התשעים נבנה חלק דרומי באותה שיטה.",
+  "result": "עיר של כמעט 50,000 תושבים שבה חלק גדול מהנסיעות נעשה באופניים וברגל. המקורות נותנים מספרים שונים, אבל כולם מראים שהרכב משמש פחות ממחצית הנסיעות.",
+  "moves": [
+   "sectors",
+   "perimeter",
+   "transit-first",
+   "speed-limit"
+  ],
+  "cautions": "בעלות על רכב בעיר עדיין גבוהה, ויש חניה ליד הבתים. העיר היא פרבר של אוטרכט, ונסיעות עבודה רבות יוצאות ממנה. מבקרים מתארים אותה כמלאכותית וכמודל שקשה להעביר לעיר קיימת.",
+  "israel": "רלוונטי לערים ולשכונות חדשות שמתוכננות מאפס, כמו חריש או שכונות חדשות ליד תחנות רכבת. את מבנה הרשת קובעים בתוכנית המתאר, לא אחריה.",
+  "team": "עיריית האוטן, מתכנן: רוב דרקס",
+  "section": {
+   "before": [
+    [
+     "green",
+     4
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "green",
+     4
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     2
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "bike",
+     1.5
+    ],
+    [
+     "green",
+     1.5
+    ],
+    [
+     "bike",
+     1.5
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     2
+    ]
+   ]
+  },
+  "apps": [
+   "n360"
+  ],
+  "keywords": [
+   "Houten",
+   "עיר אופניים",
+   "cycling town",
+   "כביש טבעת",
+   "ring road",
+   "Utrecht"
+  ],
+  "sources": [
+   {
+    "label": "Wikipedia: Houten",
+    "url": "https://en.wikipedia.org/wiki/Houten"
+   },
+   {
+    "label": "Planetizen: Houten",
+    "url": "https://planetizen.com/node/79083"
+   },
+   {
+    "label": "UCL: Houten (PDF)",
+    "url": "https://discovery-pp.ucl.ac.uk/10095989/1/RH_Houten_final_april2020.pdf"
+   }
+  ],
+  "facts": [
+   {
+    "text": "מעבר ברכב משכונה לשכונה אפשרי רק דרך כביש הטבעת שמקיף את העיר.",
+    "status": "verified",
+    "source": "https://en.wikipedia.org/wiki/Houten"
+   },
+   {
+    "text": "בהאוטן כמעט 50,000 תושבים.",
+    "status": "approx",
+    "source": "https://www.gov1.com/planning/articles/houten-the-bike-friendliest-suburb-6TRXvLFgAJXnMQen/"
+   },
+   {
+    "text": "לפי מחקר UCL, כ-28 אחוז מהנסיעות באופניים, כ-27 אחוז ברגל וכ-34 אחוז ברכב.",
+    "status": "approx",
+    "source": "https://discovery-pp.ucl.ac.uk/10095989/1/RH_Houten_final_april2020.pdf"
+   }
+  ]
+ },
+ {
+  "id": "seville-cycling",
+  "name": "רשת האופניים של סביליה",
+  "nameEn": "Red de Carriles Bici de Sevilla (Seville Bike Lane Network)",
+  "city": "סביליה",
+  "cityEn": "Seville",
+  "country": "ספרד",
+  "countryEn": "Spain",
+  "lat": 37.3891,
+  "lon": -5.9845,
+  "years": "2006-2011",
+  "yearStart": 2006,
+  "scale": "city",
+  "problems": [
+   "car-street"
+  ],
+  "climate": "mediterranean",
+  "context": "center",
+  "approach": "permanent",
+  "cost": 2,
+  "duration": 2,
+  "insight": "רשת שלמה ומחוברת נבנתה בבת אחת, ולא קטע אחרי קטע, ולכן אנשים התחילו לרכוב.",
+  "before": "עיר דרום אירופית חמה בלי תרבות רכיבה, עם קטעי שבילים מנותקים של קילומטרים ספורים.",
+  "intervention": "בתוך כחמש שנים נבנתה רשת של כ-120 ק\"מ של שבילי אופניים מופרדים, רציפים ומחוברים, בעיקר על חשבון חניה ונתיבי רכב, לצד מערך אופניים שיתופיים (Sevici). השבילים נבנו בגובה המדרכה, כך שגם יהיה קשה יותר להסיר אותם.",
+  "result": "הנסיעות היומיות באופניים עלו מכ-13,000 ב-2006 לכ-72,000 ב-2011, ושיעור הרכיבה הגיע לכ-6 אחוז מהנסיעות. מחקר מצא שהסיכון לרוכב ירד ככל שמספר הרוכבים עלה.",
+  "moves": [
+   "network",
+   "leadership",
+   "measure",
+   "transit-first"
+  ],
+  "cautions": "אחרי 2011 השימוש נעצר ונשאר בערך באותה רמה, בין השאר כי ההשקעה ברשת לא נמשכה באותו קצב. בזמן הבנייה היה ויכוח ציבורי חריף, ועיתונאים כינו את הרשת מיותרת. שבילים בגובה המדרכה יוצרים חיכוך עם הולכי רגל.",
+  "israel": "רלוונטי לערים חמות ושטוחות כמו באר שבע, אשדוד, נתניה ותל אביב. מראה שאקלים חם אינו מונע רכיבה כשהרשת רציפה ומוצלת.",
+  "team": "עיריית סביליה",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     1
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "car",
+     1
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "bike",
+     1
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "green",
+     1
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360"
+  ],
+  "keywords": [
+   "bike network",
+   "שבילי אופניים",
+   "Sevilla",
+   "Sevici",
+   "cycling",
+   "רשת רציפה"
+  ],
+  "sources": [
+   {
+    "label": "Euronews: Seville cycling hub",
+    "url": "https://www.euronews.com/2018/10/12/seville-how-a-small-spanish-city-became-a-cycling-hub-for-all-view"
+   },
+   {
+    "label": "Interreg Europe: Bicycle network in Seville",
+    "url": "https://interregeurope.eu/good-practices/bicycle-infrastructure-network-in-seville-urban-mobility"
+   },
+   {
+    "label": "People for Bikes: Seville's lightning bike network",
+    "url": "https://www.peopleforbikes.org/news/six-secrets-man-planned-sevillas-lightning-bike-network"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הרשת גדלה מכ-12 ק\"מ מנותקים בשנת 2005 לכ-120 ק\"מ ב-2010.",
+    "status": "approx",
+    "source": "https://www.euronews.com/2018/10/12/seville-how-a-small-spanish-city-became-a-cycling-hub-for-all-view"
+   },
+   {
+    "text": "הנסיעות היומיות באופניים עלו מכ-13,000 ב-2006 לכ-72,000 ב-2011, ומאז נשארו בערך יציבות.",
+    "status": "approx",
+    "source": "https://www.euronews.com/2018/10/12/seville-how-a-small-spanish-city-became-a-cycling-hub-for-all-view"
+   },
+   {
+    "text": "שיעור הרכיבה הגיע לכ-6 אחוז מהנסיעות.",
+    "status": "approx",
+    "source": "https://interregeurope.eu/good-practices/bicycle-infrastructure-network-in-seville-urban-mobility"
+   }
+  ]
+ },
+ {
+  "id": "paris-school-streets",
+  "name": "רחובות בתי הספר של פריז",
+  "nameEn": "Rues aux écoles, Paris",
+  "city": "פריז",
+  "cityEn": "Paris",
+  "country": "צרפת",
+  "countryEn": "France",
+  "lat": 48.8566,
+  "lon": 2.3522,
+  "years": "2020 ואילך",
+  "yearStart": 2020,
+  "scale": "city",
+  "problems": [
+   "car-street",
+   "leisure"
+  ],
+  "climate": "temperate",
+  "context": "residential",
+  "approach": "mixed",
+  "cost": 1,
+  "duration": 2,
+  "insight": "הרחוב שמול שער בית הספר נסגר קודם במחסום פשוט, ורק אחר כך הופך לגינה.",
+  "before": "רחובות צרים מול בתי ספר שבהם ילדים מתקבצים על מדרכה צרה, ליד תנועה וחניה.",
+  "intervention": "מ-2020 העירייה סוגרת לרכב, או מרגיעה, רחובות שבהם יש בתי ספר. בשלב הראשון בעזרת מחסומים ניידים שמאפשרים מעבר לחירום ולפינוי אשפה, ובשלב השני חלק מהרחובות מקבלים ריצוף, עצים וריהוט.",
+  "result": "עד 2022 הוסדרו 168 רחובות ליד יותר מ-200 מוסדות חינוך. ב-2025 דווח על יותר מ-200 רחובות כאלה, וחלק מהם כבר מגוננים.",
+  "moves": [
+   "school-street",
+   "pilot",
+   "reversible",
+   "network",
+   "trees-first"
+  ],
+  "cautions": "לא כל הרחובות סגורים לגמרי: רבים רק הורגעו בשלטים ובמחסומים, ורק חלק קטן גונן. משאל העם על הרחבת התוכנית ב-2025 זכה לרוב, אבל בהשתתפות של כ-4 אחוז בלבד. המספרים משתנים בין מקורות לפי ההגדרה.",
+  "israel": "מתאים לכל עיר בישראל, בעיקר ברחובות מגורים צרים מול בתי ספר יסודיים בגבעתיים, רמת גן או ירושלים. אפשר להתחיל במחסום בשעות הכניסה והיציאה.",
+  "team": "עיריית פריז, ראש העיר אן הידלגו",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     0.7
+    ],
+    [
+     "car",
+     1
+    ],
+    [
+     "car",
+     1.5
+    ],
+    [
+     "walk",
+     0.7
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "play",
+     1.5
+    ],
+    [
+     "green",
+     1
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360"
+  ],
+  "keywords": [
+   "school street",
+   "רחוב בית ספר",
+   "rues aux écoles",
+   "Paris",
+   "ילדים",
+   "rue aux enfants"
+  ],
+  "sources": [
+   {
+    "label": "Ville de Paris: dossier de presse 2022 (PDF)",
+    "url": "https://cdn.paris.fr/presse/2022/06/28/4bcda809de6545a1c9742504e8c42873.pdf"
+   },
+   {
+    "label": "Clean Cities Campaign: Paris rues scolaires (PDF)",
+    "url": "https://cleancitiescampaign.org/wp-content/uploads/2025/03/Paris_leader-sur-les-rues-scolaires-en-retard-sur-la-marche-et-les-espaces-verts.pdf"
+   },
+   {
+    "label": "Brut: rues-jardins vote",
+    "url": "https://www.brut.media/fr/articles/les-parisiens-disent-oui-aux-rues-jardin-une-participation-au-plus-bas"
+   }
+  ],
+  "facts": [
+   {
+    "text": "עד 2022 הוסדרו 168 רחובות בתי ספר ליד 204 מוסדות חינוך.",
+    "status": "verified",
+    "source": "https://cdn.paris.fr/presse/2022/06/28/4bcda809de6545a1c9742504e8c42873.pdf"
+   },
+   {
+    "text": "המחסומים הניידים מאפשרים מעבר לרכב חירום ושירות ואוסרים מעבר לרכב פרטי.",
+    "status": "verified",
+    "source": "https://cdn.paris.fr/presse/2022/06/28/4bcda809de6545a1c9742504e8c42873.pdf"
+   },
+   {
+    "text": "במשאל ב-2025 תמכו כשני שלישים מהמצביעים בהרחבה, בהשתתפות של כ-4 אחוז.",
+    "status": "approx",
+    "source": "https://www.brut.media/fr/articles/les-parisiens-disent-oui-aux-rues-jardin-une-participation-au-plus-bas"
+   }
+  ]
+ },
+ {
+  "id": "skanderbeg-square",
+  "name": "כיכר סקנדרבג",
+  "nameEn": "Sheshi Skënderbej (Skanderbeg Square), Tirana",
+  "city": "טירנה",
+  "cityEn": "Tirana",
+  "country": "אלבניה",
+  "countryEn": "Albania",
+  "lat": 41.3275,
+  "lon": 19.8189,
+  "years": "2017",
+  "yearStart": 2008,
+  "scale": "square",
+  "problems": [
+   "car-street",
+   "identity"
+  ],
+  "climate": "mediterranean",
+  "context": "center",
+  "approach": "permanent",
+  "cost": 3,
+  "duration": 3,
+  "insight": "כיכר תנועה ענקית הפכה לרחבה שמרוצפת באבנים מכל אזורי המדינה, כך שהכיכר הלאומית שייכת לכולם.",
+  "before": "כיכר מרכזית שבה תנועת רכב הקיפה שטח גדול במרכז, והולכי רגל נדחקו לשוליים.",
+  "intervention": "משרד 51N4E זכה בתחרות ב-2008. הפרויקט הוקפא ב-2010 וחודש ב-2015. הכיכר הפכה לרחבה להולכי רגל בלבד בצורת פירמידה שטוחה, כשני מטרים בשיאה, מרוצפת באבנים צבעוניות מאזורים שונים באלבניה, ומוקפת גינות ועצים.",
+  "result": "הכיכר נפתחה ב-2017 וזכתה ב-2018 בפרס האירופי למרחב ציבורי עירוני. היא משמשת למפגשים, לאירועים ולמעבר חופשי בין מבני הציבור סביבה.",
+  "moves": [
+   "intersection-plaza",
+   "close-road",
+   "heritage-layer",
+   "participation"
+  ],
+  "cautions": "משטח אבן גדול ופתוח שמתחמם מאוד בקיץ ויש בו מעט צל במרכז. חוקרים רואים בפרויקט חלק מתוכנית \"הרנסנס העירוני\" של הממשלה, שמבקרים קושרים לג'נטריפיקציה של מרכז העיר. הפרויקט נמשך כעשור בגלל הקפאה פוליטית.",
+  "israel": "רלוונטי לכיכרות מרכזיות שהתנועה חוצה אותן, כמו כיכר ציון בירושלים או כיכר העצמאות בנתניה. בגרסה ישראלית חובה לתכנן צל.",
+  "team": "51N4E עם האמן אנרי סאלה, עיריית טירנה",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "green",
+     2
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "green",
+     1
+    ],
+    [
+     "plaza",
+     6,
+     "up"
+    ],
+    [
+     "green",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "interior"
+  ],
+  "keywords": [
+   "Skanderbeg Square",
+   "כיכר",
+   "51N4E",
+   "Tirana",
+   "European Prize for Urban Public Space",
+   "אבן"
+  ],
+  "sources": [
+   {
+    "label": "Wikipedia: Skanderbeg Square",
+    "url": "https://en.wikipedia.org/wiki/Skanderbeg_Square"
+   },
+   {
+    "label": "Public Space: Skanderbeg Square",
+    "url": "https://publicspace.org/obres/-/project/k056-skanderbeg-square"
+   },
+   {
+    "label": "Metalocus: 51N4E wins European Prize 2018",
+    "url": "https://www.metalocus.es/en/news/renovation-skanderbeg-square-51n4e-winner-european-prize-public-space-2018"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הכיכר זכתה בפרס האירופי למרחב ציבורי עירוני ב-2018.",
+    "status": "verified",
+    "source": "https://www.metalocus.es/en/news/renovation-skanderbeg-square-51n4e-winner-european-prize-public-space-2018"
+   },
+   {
+    "text": "המרכז מעוצב כפירמידה שטוחה בשיפוע של כ-2.5 אחוז ובגובה של כשני מטרים בשיאה.",
+    "status": "verified",
+    "source": "https://publicspace.org/obres/-/project/k056-skanderbeg-square"
+   },
+   {
+    "text": "51N4E זכו בתחרות ב-2008, הפרויקט הוקפא ב-2010 וחודש ב-2015.",
+    "status": "approx",
+    "source": "https://en.wikipedia.org/wiki/Skanderbeg_Square"
+   }
+  ]
+ },
+ {
+  "id": "ariel-sharon-park",
+  "name": "פארק אריאל שרון וחיריה",
+  "nameEn": "Ariel Sharon Park and Hiriya Landfill Rehabilitation",
+  "city": "גוש דן",
+  "cityEn": "Tel Aviv metropolitan area",
+  "country": "ישראל",
+  "countryEn": "Israel",
+  "lat": 32.03,
+  "lon": 34.82,
+  "years": "2004 ואילך",
+  "yearStart": 2004,
+  "scale": "city",
+  "problems": [
+   "derelict-infra",
+   "leisure",
+   "flooding"
+  ],
+  "climate": "mediterranean",
+  "context": "industrial",
+  "approach": "permanent",
+  "cost": 3,
+  "duration": 3,
+  "insight": "הר הזבל הגדול של המטרופולין הפך לנקודת התצפית של הפארק, והמפגע עצמו נשאר הסיפור.",
+  "before": "מטמנת חיריה קלטה במשך עשרות שנים את פסולת גוש דן. ב-1998 הוחלט לסגור אותה להטמנה ולהשאיר בה תחנת מעבר בלבד, בגלל הנזק הסביבתי והסכנה לתעופה מלהקות ציפורים ליד נמל התעופה.",
+  "intervention": "ב-2005 החליטה הממשלה להקים פארק מטרופוליני לצד אזור מחזור. התכנון של אדריכל הנוף הגרמני פטר לאץ זכה בתחרות בינלאומית. ההר יוצב ומדרונותיו עוצבו מחדש, בין השאר בטרסה מעגלית בבסיסו שנבנתה מעודפי עפר ופסולת בניין, ומעליו נבנו שבילים ותצפית. סביבו מתוכנן פארק גדול עם אגם ומערכות ניקוז.",
+  "result": "הר חיריה נפתח למבקרים כמוקד חינוכי וסביבתי, ומתקני המחזור שלידו פתוחים לסיורים. חלקים אחרים של הפארק עדיין בפיתוח, והוא מתוכנן לכסות כ-8,000 דונם בין תל אביב, רמת גן, אזור וכביש 4.",
+  "moves": [
+   "reclaim-waste",
+   "heritage-layer",
+   "closed-loop",
+   "gradual",
+   "leadership"
+  ],
+  "cautions": "הפיתוח נמשך כבר כעשרים שנה ולוחות הזמנים נדחו שוב ושוב. ההר ממשיך לשקוע ולפלוט גזים ותשטיפים, ולכן נדרש ניטור וטיפול לאורך שנים. תחנת המעבר ומתקני הטיפול בפסולת ממשיכים לפעול באתר, והפארק תלוי בתקציבים ממשלתיים ובשיתוף פעולה בין כמה רשויות.",
+  "israel": "מקרה ישראלי, ותקדים למטמנות סגורות אחרות בארץ, כמו אתרי פסולת בשולי ערים בדרום ובצפון. הלקח: לתכנן מראש מנגנון מימון וניהול מטרופוליני, כי פרויקט כזה חוצה גבולות רשויות ונמשך עשרות שנים.",
+  "team": "Latz + Partner (פטר ותילמן לאץ), קרן פארק אריאל שרון, משרד הגנת הסביבה, רשויות גוש דן",
+  "section": {
+   "before": [
+    [
+     "car",
+     1
+    ],
+    [
+     "plaza",
+     1
+    ],
+    [
+     "building",
+     4,
+     "up"
+    ],
+    [
+     "plaza",
+     1
+    ],
+    [
+     "water",
+     1,
+     "down"
+    ],
+    [
+     "car",
+     1
+    ]
+   ],
+   "after": [
+    [
+     "car",
+     1
+    ],
+    [
+     "green",
+     2
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "green",
+     3,
+     "up"
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "water",
+     2,
+     "down"
+    ],
+    [
+     "green",
+     2
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "biomimicry"
+  ],
+  "keywords": [
+   "חיריה",
+   "מטמנה",
+   "landfill",
+   "Peter Latz",
+   "פארק מטרופוליני",
+   "מחזור"
+  ],
+  "sources": [
+   {
+    "label": "Wikipedia: Ariel Sharon Park",
+    "url": "https://en.wikipedia.org/wiki/Ariel_Sharon_Park"
+   },
+   {
+    "label": "המכלול: פארק אריאל שרון",
+    "url": "https://www.hamichlol.org.il/%D7%A4%D7%90%D7%A8%D7%A7_%D7%90%D7%A8%D7%99%D7%90%D7%9C_%D7%A9%D7%A8%D7%95%D7%9F"
+   },
+   {
+    "label": "Tilman Latz, Ri-Vista 2018",
+    "url": "https://oaj.fupress.net/index.php/ri-vista/article/view/2762"
+   }
+  ],
+  "facts": [
+   {
+    "text": "ב-1998 הוחלט לסגור את המטמנה להטמנה ולהשאיר בה תחנת מעבר.",
+    "status": "verified",
+    "source": "https://www.ynet.co.il/articles/mobile/0,7340,L-5195506,00.html"
+   },
+   {
+    "text": "הממשלה החליטה על הקמת הפארק ב-2005, ותכנון פטר לאץ זכה בתחרות בינלאומית.",
+    "status": "verified",
+    "source": "https://www.hamichlol.org.il/%D7%A4%D7%90%D7%A8%D7%A7_%D7%90%D7%A8%D7%99%D7%90%D7%9C_%D7%A9%D7%A8%D7%95%D7%9F"
+   },
+   {
+    "text": "שטח הפארק המתוכנן כ-8,000 דונם.",
+    "status": "approx",
+    "source": "https://en.wikipedia.org/wiki/Ariel_Sharon_Park"
+   },
+   {
+    "text": "בבסיס ההר נבנתה טרסה מעגלית מעודפי עפר ופסולת בניין לייצוב המדרון.",
+    "status": "verified",
+    "source": "https://oaj.fupress.net/index.php/ri-vista/article/view/2762"
+   }
+  ]
+ },
+ {
+  "id": "jaffa-slope-park",
+  "name": "פארק המדרון יפו",
+  "nameEn": "Jaffa Slope Park (Park HaMidron)",
+  "city": "תל אביב-יפו",
+  "cityEn": "Tel Aviv-Yafo",
+  "country": "ישראל",
+  "countryEn": "Israel",
+  "lat": 32.046,
+  "lon": 34.752,
+  "years": "2010",
+  "yearStart": 2010,
+  "scale": "neighborhood",
+  "problems": [
+   "derelict-infra",
+   "leisure",
+   "isolated"
+  ],
+  "climate": "mediterranean",
+  "context": "waterfront",
+  "approach": "permanent",
+  "cost": 2,
+  "duration": 2,
+  "insight": "שפך פסולת בניין שחסם את עג'מי מהים הונמך, והחוף חזר להיות של השכונה.",
+  "before": "משנות החמישים ועד 1988 שימש המדרון שבין נמל יפו לחוף גבעת עלייה אתר לשפיכת פסולת בניין. ערמת הפסולת הגיעה לגובה של כ-15 מטר וניתקה את שכונת עג'מי מקו החוף.",
+  "intervention": "כ-1.2 מיליון טון פסולת בניין פונו מהאתר ונשלחו למחזור כחומר גלם לבנייה. הגבעה הונמכה למדרון מתון עם מבט לים, ונבנו טיילת עם שביל אופניים, חוף דייגים, מצפורים, אמפיתיאטרון ומדשאות. שלושה צירים ירוקים מחברים את השכונה לפארק.",
+  "result": "פארק של כ-200 דונם שנחנך ב-2010, ומשמש את תושבי יפו ואת כל העיר. ב-2023 שופץ ונוספו בו עשרות עצי צל.",
+  "moves": [
+   "reclaim-waste",
+   "closed-loop",
+   "trees-first",
+   "participation"
+  ],
+  "cautions": "הפסולת שנשפכה כללה גם את הריסות בתי עג'מי ומנשייה, ולכן המקום טעון זיכרון שאינו מוצג בפארק. חוקרים טוענים שהפארק האיץ את הג'נטריפיקציה ביפו. בשנים הראשונות היה מחסור בצל, ונדרש שיפוץ מאוחר כדי לתקן זאת.",
+  "israel": "מקרה ישראלי. רלוונטי לרצועות חוף ולשולי שכונות שנחסמו במפגעים, כמו חופי בת ים, עכו וחיפה. הלקח: לשלב מראש צל, דיור בר השגה ועבודה עם התושבים הוותיקים, ולא רק לנקות את השטח.",
+  "team": "עיריית תל אביב-יפו, המשרד להגנת הסביבה",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "car",
+     1
+    ],
+    [
+     "plaza",
+     4,
+     "up"
+    ],
+    [
+     "water",
+     3,
+     "down"
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "car",
+     1
+    ],
+    [
+     "green",
+     2
+    ],
+    [
+     "play",
+     1
+    ],
+    [
+     "green",
+     2
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "bike",
+     0.8
+    ],
+    [
+     "water",
+     3,
+     "down"
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "renewal"
+  ],
+  "keywords": [
+   "עג'מי",
+   "פסולת בניין",
+   "חוף יפו",
+   "slope park",
+   "Jaffa",
+   "waterfront"
+  ],
+  "sources": [
+   {
+    "label": "וואלה: פארק המדרון ייחנך",
+    "url": "https://finance.walla.co.il/item/1668078"
+   },
+   {
+    "label": "טיים אאוט: פארק המדרון",
+    "url": "https://timeout.co.il/%D7%A4%D7%90%D7%A8%D7%A7-%D7%94%D7%9E%D7%93%D7%A8%D7%95%D7%9F-%D7%A0%D7%A4%D7%AA%D7%97/"
+   },
+   {
+    "label": "Urbane Ethiken, Meishar",
+    "url": "https://www.urbane-ethiken.uni-muenchen.de/2015---2018/konferenz_2016/contributors/meishar/index.html"
+   }
+  ],
+  "facts": [
+   {
+    "text": "המדרון שימש אתר לפסולת בניין משנות החמישים ועד 1988, והערמה הגיעה לכ-15 מטר.",
+    "status": "approx",
+    "source": "https://finance.walla.co.il/item/1668078"
+   },
+   {
+    "text": "כ-1.2 מיליון טון פסולת בניין פונו מהאתר.",
+    "status": "verified",
+    "source": "https://finance.walla.co.il/item/1668078"
+   },
+   {
+    "text": "הפארק משתרע על כ-200 דונם, ונחנך ב-2010.",
+    "status": "verified",
+    "source": "https://finance.walla.co.il/item/1668078"
+   }
+  ]
+ },
+ {
+  "id": "tel-aviv-port",
+  "name": "נמל תל אביב",
+  "nameEn": "Tel Aviv Port Public Space Regeneration",
+  "city": "תל אביב-יפו",
+  "cityEn": "Tel Aviv-Yafo",
+  "country": "ישראל",
+  "countryEn": "Israel",
+  "lat": 32.098,
+  "lon": 34.774,
+  "years": "2003-2008",
+  "yearStart": 2003,
+  "scale": "neighborhood",
+  "problems": [
+   "derelict-infra",
+   "leisure",
+   "identity"
+  ],
+  "climate": "mediterranean",
+  "context": "waterfront",
+  "approach": "permanent",
+  "cost": 2,
+  "duration": 2,
+  "insight": "דק עץ גלי ופתוח, בלי היררכיה ובלי שימוש מוכתב, הפך נמל מוזנח למרחב הפנאי האהוב בעיר.",
+  "before": "הנמל הפסיק לפעול כנמל ב-1965, ובמשך עשרות שנים המחסנים והרציפים היו מוזנחים ומגודרים, וחסמו את הגישה לים.",
+  "intervention": "הנהלת הנמל החדשה יזמה ב-2003 תחרות פתוחה, כחלק מתוכנית שכללה גם שיקום ההאנגרים. ההצעה הזוכה של מייזליץ כסיף אדריכלים עם גלילה יבין הייתה משטח עץ גלי לאורך החוף, שמזכיר את הדיונות שעליהן נבנה הנמל ומזמין שימוש חופשי.",
+  "result": "המבקרים הגיעו עוד לפני סיום הבנייה. הפרויקט הושלם ב-2008, זכה בפרסים בארץ ובחו\"ל, והפך לאחד המרחבים הפתוחים הפעילים במטרופולין.",
+  "moves": [
+   "keep-structure",
+   "heritage-layer",
+   "enabling-policy",
+   "cheap-visible"
+  ],
+  "cautions": "ההצלחה נשענת על מסחר ובילוי, והמרחב הציבורי משמש גם כחזית למסעדות ולאירועים, כך שקשה להבחין בו בין ציבורי למסחרי. בסופי שבוע הוא עמוס מאוד, והגישה אליו נשענת על רכב פרטי וחניונים. עץ במים ובשמש דורש תחזוקה שוטפת יקרה.",
+  "israel": "מקרה ישראלי. רלוונטי לנמלים ולרציפים ישנים, כמו נמל יפו, נמל חיפה ומתחם הנמל בעכו. הלקח: משטח פתוח ופשוט שמשאיר את השימוש לציבור, לצד דאגה לתחבורה ציבורית ולתחזוקה.",
+  "team": "Mayslits Kassif Architects, Galila Yavin, הנהלת נמל תל אביב",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "car",
+     1.5
+    ],
+    [
+     "plaza",
+     2
+    ],
+    [
+     "building",
+     2
+    ],
+    [
+     "water",
+     3,
+     "down"
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "plaza",
+     3,
+     "up"
+    ],
+    [
+     "play",
+     1
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "water",
+     3,
+     "down"
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "renewal",
+   "interior"
+  ],
+  "keywords": [
+   "נמל תל אביב",
+   "דק",
+   "Mayslits Kassif",
+   "waterfront",
+   "טיילת"
+  ],
+  "sources": [
+   {
+    "label": "Dezeen: Tel Aviv Port",
+    "url": "https://www.dezeen.com/2008/11/17/tel-aviv-port-by-mayslits-kassif-architects/amp/"
+   },
+   {
+    "label": "Divisare: Tel Aviv Port Public Space Regeneration",
+    "url": "https://divisare.com/projects/149072-mayslits-kassif-architects-iwan-baan-tel-aviv-port-public-space-regeneration"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הנמל ננטש כנמל פעיל ב-1965.",
+    "status": "verified",
+    "source": "https://www.dezeen.com/2008/11/17/tel-aviv-port-by-mayslits-kassif-architects/amp/"
+   },
+   {
+    "text": "התחרות נערכה ב-2003 והפרויקט הושלם ב-2008.",
+    "status": "verified",
+    "source": "https://www.dezeen.com/2008/11/17/tel-aviv-port-by-mayslits-kassif-architects/amp/"
+   },
+   {
+    "text": "שטח המשטח הציבורי כ-55 אלף מ\"ר.",
+    "status": "approx",
+    "source": "https://divisare.com/projects/149072-mayslits-kassif-architects-iwan-baan-tel-aviv-port-public-space-regeneration"
+   }
+  ]
+ },
+ {
+  "id": "dizengoff-square",
+  "name": "כיכר דיזנגוף",
+  "nameEn": "Dizengoff Square (Zina Dizengoff Square)",
+  "city": "תל אביב-יפו",
+  "cityEn": "Tel Aviv-Yafo",
+  "country": "ישראל",
+  "countryEn": "Israel",
+  "lat": 32.0778,
+  "lon": 34.7742,
+  "years": "2016-2018",
+  "yearStart": 2016,
+  "scale": "square",
+  "problems": [
+   "car-street",
+   "identity",
+   "leisure"
+  ],
+  "climate": "mediterranean",
+  "context": "center",
+  "approach": "permanent",
+  "cost": 2,
+  "duration": 2,
+  "insight": "הכיכר שהוגבהה כדי לפנות את הצומת לרכב הורדה בחזרה לרחוב, והפכה שוב למרכז של השכונה.",
+  "before": "הכיכר תוכננה בשנות השלושים בידי ג'ניה אוורבוך כגן עגול במפלס הרחוב. בשנות השבעים הוגבהה לגשר מעל הצומת, כדי להפריד הולכי רגל מתנועת רכב, והפכה למוזנחת וקשה לגישה לקשישים ולאנשים עם מוגבלות.",
+  "intervention": "בסוף 2016 פורקה מזרקת אגם, והגשר המוגבה נהרס. הכיכר נבנתה מחדש במפלס הרחוב כמעגל שלם עם גינה, עצים ושביל אופניים, ותנועת הרכב עוברת סביבה. התכנון נעשה במשרד מוריה סקלי אדריכלות נוף.",
+  "result": "הכיכר החדשה נפתחה בסוף 2018 וחזרה להיות מקום מפגש והליכה. ראש העיר הציג את ההורדה כאמירה ציבורית נגד תכנון שהעדיף את הרכב הפרטי.",
+  "moves": [
+   "intersection-plaza",
+   "remove-road",
+   "heritage-layer",
+   "trees-first"
+  ],
+  "cautions": "העבודות התארכו מעבר ליעד המקורי של סוף 2017, והעלות הוערכה בכ-60 מיליון ש\"ח. גורמים מקצועיים טענו שההסדר הקודם היה רחוק מאידיאלי אך עבד מבחינה תנועתית. מזרקת אגם פורקה ולא הוחזרה לאורך זמן, ושאלת מקומה נשארה פתוחה.",
+  "israel": "מקרה ישראלי. רלוונטי לכל כיכר או צומת שהופרדו במפלסים לטובת הרכב, כמו גשרים להולכי רגל מעל צמתים עירוניים בחיפה, בירושלים ובערים בגוש דן. הלקח: מחזירים את הולך הרגל למפלס הרחוב, ובודקים מראש את הסדרי התנועה מול משרד התחבורה.",
+  "team": "עיריית תל אביב-יפו, מוריה סקלי אדריכלות נוף",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "plaza",
+     3,
+     "up"
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "bike",
+     0.8
+    ],
+    [
+     "car",
+     1.5
+    ],
+    [
+     "green",
+     3
+    ],
+    [
+     "car",
+     1.5
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "interior"
+  ],
+  "keywords": [
+   "כיכר דיזנגוף",
+   "הנמכה",
+   "מפלס הרחוב",
+   "Dizengoff",
+   "public square",
+   "באוהאוס"
+  ],
+  "sources": [
+   {
+    "label": "Wikipedia: Dizengoff Square",
+    "url": "https://en.wikipedia.org/wiki/Dizengoff_Square"
+   },
+   {
+    "label": "Globes: Dizengoff Square reconfiguration begins",
+    "url": "https://en.globes.co.il/en/article-dizengoff-square-reconfiguration-begins-1001168334"
+   },
+   {
+    "label": "ynet: כך צפויה להיראות כיכר דיזנגוף",
+    "url": "https://www.ynet.co.il/articles/mobile/0,7340,L-4821949,00.html"
+   }
+  ],
+  "facts": [
+   {
+    "text": "ג'ניה אוורבוך זכתה ב-1934 בתחרות לתכנון הכיכר, שנפתחה ב-1938.",
+    "status": "verified",
+    "source": "https://en.wikipedia.org/wiki/Dizengoff_Square"
+   },
+   {
+    "text": "הכיכר הוגבהה בשנות השבעים (המקורות נותנים 1976 או 1978).",
+    "status": "approx",
+    "source": "https://en.wikipedia.org/wiki/Dizengoff_Square"
+   },
+   {
+    "text": "העבודות החלו בדצמבר 2016 בעלות מוערכת של כ-60 מיליון ש\"ח.",
+    "status": "verified",
+    "source": "https://en.globes.co.il/en/article-dizengoff-square-reconfiguration-begins-1001168334"
+   },
+   {
+    "text": "הכיכר הונמכה ונפתחה בסוף 2018.",
+    "status": "approx",
+    "source": "https://www.mako.co.il/travel-israel/Article-48dedbe35c0ba91027.htm"
+   }
+  ]
+ },
+ {
+  "id": "jaffa-road-light-rail",
+  "name": "רחוב יפו והרכבת הקלה",
+  "nameEn": "Jaffa Road and the Jerusalem Light Rail",
+  "city": "ירושלים",
+  "cityEn": "Jerusalem",
+  "country": "ישראל",
+  "countryEn": "Israel",
+  "lat": 31.783,
+  "lon": 35.217,
+  "years": "2011",
+  "yearStart": 2011,
+  "scale": "street",
+  "problems": [
+   "car-street",
+   "identity"
+  ],
+  "climate": "mediterranean",
+  "context": "center",
+  "approach": "permanent",
+  "cost": 3,
+  "duration": 3,
+  "insight": "ציר האוטובוסים הצפוף בעיר פונה מרכב, והרכבת הקלה עוברת ברחוב שהפך למדרחוב.",
+  "before": "רחוב יפו היה ציר האוטובוסים העמוס של ירושלים, ידוע בפקקים, ברעש ובזיהום אוויר, והמדרכות בו היו צרות.",
+  "intervention": "עם הנחת הקו הראשון של הרכבת הקלה, שהחל לפעול ב-2011, נסגר הרחוב לתנועת רכב. המדרכות הורחבו למשטח אבן אחד ממבנה למבנה, והמסילה עוברת במרכזו. במסגרת ההכנות הוסבו להולכי רגל גם רחובות נוספים במרכז העיר.",
+  "result": "הרחוב הפך למרחב הליכה רציף בין שער יפו לתחנה המרכזית, עם הרכבת כתחבורה העיקרית. מרכז העיר התחבר לאזורים שהיו רחוקים ממנו.",
+  "moves": [
+   "transit-first",
+   "close-road",
+   "shared-level",
+   "leadership"
+  ],
+  "cautions": "העבודות נמשכו שנים ארוכות ופגעו קשות בעסקים: היו חנויות שנסגרו, וסוחרים הפגינו נגד העירייה. אחרי הפתיחה נטען שחלק מהלקוחות לא חזרו. ברחוב כמעט אין עצים וצל, ורכבת שעוברת בתדירות גבוהה ברחוב הולכי רגל דורשת זהירות.",
+  "israel": "מקרה ישראלי, ושיעור ישיר לקווי הרכבת הקלה בגוש דן, בחיפה ובבאר שבע. הלקח: לתכנן מראש סיוע לעסקים בתקופת העבודות, לקצר אותה ככל האפשר, ולשלב עצים וצל ברחוב החדש.",
+  "team": "עיריית ירושלים, צוות תוכנית אב לתחבורה ירושלים, CityPass",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     0.8
+    ],
+    [
+     "transit",
+     1.5
+    ],
+    [
+     "car",
+     1.5
+    ],
+    [
+     "transit",
+     1.5
+    ],
+    [
+     "walk",
+     0.8
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     2
+    ],
+    [
+     "rail",
+     2
+    ],
+    [
+     "walk",
+     2
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "renewal"
+  ],
+  "keywords": [
+   "רחוב יפו",
+   "רכבת קלה",
+   "מדרחוב",
+   "light rail",
+   "Jerusalem",
+   "transit mall"
+  ],
+  "sources": [
+   {
+    "label": "Wikipedia: Jaffa Road",
+    "url": "https://en.wikipedia.org/wiki/Jaffa_Road"
+   },
+   {
+    "label": "Railway Journal: revolutionising transport in the holy city",
+    "url": "https://www.railjournal.com/in_depth/revolutionising-transport-in-the-holy-city/"
+   },
+   {
+    "label": "כאן: הנזק לעסקים ברחוב יפו",
+    "url": "https://www.kan.org.il/content/kan-news/economic/278501/"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הרכבת הקלה בירושלים החלה לפעול ב-2011.",
+    "status": "verified",
+    "source": "https://en.wikipedia.org/wiki/Jaffa_Road"
+   },
+   {
+    "text": "רחוב יפו היה ציר האוטובוסים העמוס בעיר, ובמסגרת ההכנות הוסבו להולכי רגל כ-12 רחובות במרכז העיר.",
+    "status": "approx",
+    "source": "https://www.railjournal.com/in_depth/revolutionising-transport-in-the-holy-city/"
+   },
+   {
+    "text": "העבודות גרמו לסגירת עסקים ולהפגנות של סוחרים.",
+    "status": "verified",
+    "source": "https://www.kan.org.il/content/kan-news/economic/278501/"
+   }
+  ]
+ },
+ {
+  "id": "beer-sheva-river-park",
+  "name": "פארק נחל באר שבע",
+  "nameEn": "Be'er Sheva River Park",
+  "city": "באר שבע",
+  "cityEn": "Beersheba",
+  "country": "ישראל",
+  "countryEn": "Israel",
+  "lat": 31.24,
+  "lon": 34.8,
+  "years": "שנות ה-2000 ואילך",
+  "yearStart": 2000,
+  "scale": "city",
+  "problems": [
+   "flooding",
+   "heat",
+   "leisure",
+   "derelict-infra"
+  ],
+  "climate": "hot-dry",
+  "context": "residential",
+  "approach": "permanent",
+  "cost": 3,
+  "duration": 3,
+  "insight": "ערוץ נחל שהיה אתר פסולת בשולי העיר הפך לפארק העירוני שלה, עם אגם של מים מושבים במדבר.",
+  "before": "ערוץ נחל באר שבע שימש במשך שנים אתר להשלכת פסולת, והעיר הפנתה אליו את גבה. בחורף זרמו בו שטפונות, ובשאר השנה זרמו בו לעיתים שפכים ממעלה הנחל.",
+  "intervention": "שיתוף פעולה בין עיריית באר שבע, קק\"ל, המשרד לפיתוח הנגב והגליל, מנהלת נחל באר שבע ורשות הניקוז שקמה-בשור. הוסדרו ערוץ הנחל וגדותיו נגד שיטפונות, פונתה פסולת רבה, ונבנו טיילות, גנים ושבילים. הקטע הראשון, טיילת לאורך הגדה הדרומית, נפתח בתחילת שנות ה-2000, ובשלב מאוחר נבנה אגם גדול של מים מושבים.",
+  "result": "פארק של כ-1,100 אקר (כ-4,500 דונם) לאורך כ-8 ק\"מ של ערוץ הנחל. האגם, שנפתח לציבור בסביבות 2019, הפך למוקד הפנאי של העיר.",
+  "moves": [
+   "naturalize",
+   "reclaim-waste",
+   "gradual",
+   "cool-water"
+  ],
+  "cautions": "הנחל סבל לאורך שנים מזיהום שפכים שמגיעים ממעלה האגן, מחוץ לשליטת העירייה. אגם מלאכותי במדבר דורש מים מושבים, אנרגיה ותחזוקה מתמדת, ונשאלת השאלה אם זה השימוש הנכון במים. הפיתוח נמשך עשרות שנים, וחלק מהשכונות הסמוכות קיבלו אותו מאוחר.",
+  "israel": "מקרה ישראלי, ותקדים לנחלים עירוניים אחרים בארץ, כמו נחל הבשור, נחל קישון ונחל אילון. הלקח: לטפל קודם במקור הזיהום ובניקוז האגן, ורק אחר כך בטיילת.",
+  "team": "עיריית באר שבע, קק\"ל, המשרד לפיתוח הנגב והגליל, מנהלת נחל באר שבע, רשות הניקוז שקמה-בשור",
+  "section": {
+   "before": [
+    [
+     "building",
+     2
+    ],
+    [
+     "car",
+     1
+    ],
+    [
+     "plaza",
+     2
+    ],
+    [
+     "water",
+     2,
+     "down"
+    ],
+    [
+     "plaza",
+     2
+    ],
+    [
+     "car",
+     1
+    ],
+    [
+     "building",
+     2
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     2
+    ],
+    [
+     "car",
+     1
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "green",
+     2
+    ],
+    [
+     "water",
+     2,
+     "down"
+    ],
+    [
+     "green",
+     2
+    ],
+    [
+     "bike",
+     1
+    ],
+    [
+     "building",
+     2
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "biomimicry"
+  ],
+  "keywords": [
+   "נחל באר שבע",
+   "פארק הנחל",
+   "אגם",
+   "river park",
+   "Beersheba",
+   "קולחין"
+  ],
+  "sources": [
+   {
+    "label": "KKL-JNF: parks in peripheral communities",
+    "url": "https://kkl-jnf.org:443/people-and-environment/community-development/parks-in-peripheral-communities/"
+   },
+   {
+    "label": "Jewish Press: lake inaugurated in Beersheba",
+    "url": "https://jewishpress.com/news/travel-news/israels-2nd-largest-lake-inaugurated-in-beersheba/2019/10/15"
+   },
+   {
+    "label": "Jewish Policy Center",
+    "url": "https://jewishpolicycenter.org/?p=18222"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הפארק משתרע על כ-1,100 אקר וכולל כ-8 ק\"מ של ערוץ הנחל, שהיה בעבר אתר פסולת של העיר.",
+    "status": "verified",
+    "source": "https://kkl-jnf.org:443/people-and-environment/community-development/parks-in-peripheral-communities/"
+   },
+   {
+    "text": "הטיילת הראשונה לאורך הגדה הדרומית נפתחה בתחילת שנות ה-2000.",
+    "status": "approx",
+    "source": "https://jewishpolicycenter.org/?p=18222"
+   },
+   {
+    "text": "האגם בפארק נפתח למבקרים בסביבות אוקטובר 2019.",
+    "status": "approx",
+    "source": "https://jewishpress.com/news/travel-news/israels-2nd-largest-lake-inaugurated-in-beersheba/2019/10/15"
+   }
+  ]
+ },
+ {
+  "id": "hatachana",
+  "name": "מתחם התחנה",
+  "nameEn": "HaTachana, Jaffa Railway Station Compound",
+  "city": "תל אביב-יפו",
+  "cityEn": "Tel Aviv-Yafo",
+  "country": "ישראל",
+  "countryEn": "Israel",
+  "lat": 32.0596,
+  "lon": 34.7643,
+  "years": "2004-2010",
+  "yearStart": 2004,
+  "scale": "neighborhood",
+  "problems": [
+   "derelict-infra",
+   "identity"
+  ],
+  "climate": "mediterranean",
+  "context": "center",
+  "approach": "permanent",
+  "cost": 2,
+  "duration": 2,
+  "insight": "תחנת הרכבת הראשונה בארץ, שהייתה סגורה עשרות שנים בתוך בסיס צבאי, נפתחה לעיר כמתחם פנאי.",
+  "before": "התחנה של מסילת יפו-ירושלים פעלה מ-1892 עד 1948. אחרי 1948 הפך המתחם לבסיס צבאי סגור לציבור, והמבנים, ביניהם בית החרושת וילנד לרעפים, הוזנחו.",
+  "intervention": "העירייה יזמה ב-2004 פרויקט שימור. המבנים ההיסטוריים שוקמו, חלק מהפסים והקרונות הוצגו מחדש, והמתחם הוסב למסחר, למסעדות ולתרבות בשולי נווה צדק.",
+  "result": "השימור הושלם בסביבות 2009-2010, והמתחם נפתח לציבור כמרחב פנאי פתוח. הוא מחבר את נווה צדק לחוף ולמנשייה דרך פארק המסילה.",
+  "moves": [
+   "heritage-layer",
+   "keep-structure",
+   "close-road"
+  ],
+  "cautions": "המתחם הפך בעיקר למרחב מסחרי ויקר יחסית, שפונה לתיירים ולמבלים ופחות לשכונה. חלק מהמבנים מושכרים לרשתות, ואופיו ההיסטורי נקרא לעיתים כתפאורה. הפעילות בו תלויה בשעות פתיחת העסקים.",
+  "israel": "מקרה ישראלי, ומודל למתחמי רכבת ותעשייה היסטוריים, כמו התחנה הראשונה בירושלים, תחנת חיפה מזרח ותחנות העמק. הלקח: לשמור שימוש ציבורי ותרבותי לצד המסחר, כדי שהמתחם לא יהפוך לקניון פתוח.",
+  "team": "עיריית תל אביב-יפו, מחלקת השימור",
+  "section": {
+   "before": [
+    [
+     "building",
+     2
+    ],
+    [
+     "car",
+     1
+    ],
+    [
+     "rail",
+     2
+    ],
+    [
+     "plaza",
+     2
+    ],
+    [
+     "building",
+     2
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     2
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "rail",
+     1
+    ],
+    [
+     "plaza",
+     2
+    ],
+    [
+     "shade",
+     1
+    ],
+    [
+     "building",
+     2
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "renewal",
+   "interior"
+  ],
+  "keywords": [
+   "התחנה",
+   "מסילת יפו ירושלים",
+   "שימור",
+   "נווה צדק",
+   "railway station",
+   "heritage"
+  ],
+  "sources": [
+   {
+    "label": "Wikipedia: Jaffa railway station",
+    "url": "https://en.wikipedia.org/wiki/Jaffa_railway_station"
+   },
+   {
+    "label": "Jerusalem Post: all change at Jaffa station",
+    "url": "https://m.jpost.com/local-israel/tel-aviv-and-center/all-change-at-jaffa-station"
+   },
+   {
+    "label": "המכלול: תחנת הרכבת יפו",
+    "url": "https://hamichlol.org.il/%D7%AA%D7%97%D7%A0%D7%AA_%D7%94%D7%A8%D7%9B%D7%91%D7%AA_%D7%99%D7%A4%D7%95"
+   }
+  ],
+  "facts": [
+   {
+    "text": "התחנה פעלה מ-1892 עד 1948, ואחר כך הייתה בסיס צבאי סגור.",
+    "status": "verified",
+    "source": "https://en.wikipedia.org/wiki/Jaffa_railway_station"
+   },
+   {
+    "text": "פרויקט השימור החל ב-2004 והושלם בסביבות 2009-2010.",
+    "status": "approx",
+    "source": "https://en.wikipedia.org/wiki/Jaffa_railway_station"
+   },
+   {
+    "text": "שוקמו כ-22 מבנים היסטוריים בהשקעה של יותר מ-100 מיליון ש\"ח.",
+    "status": "approx",
+    "source": "https://m.jpost.com/local-israel/tel-aviv-and-center/all-change-at-jaffa-station"
+   }
+  ]
+ },
+ {
+  "id": "favela-bairro",
+  "name": "פבלה-ביירו",
+  "nameEn": "Favela-Bairro Programme",
+  "city": "ריו דה ז'נרו",
+  "cityEn": "Rio de Janeiro",
+  "country": "ברזיל",
+  "countryEn": "Brazil",
+  "lat": -22.91,
+  "lon": -43.2,
+  "years": "אמצע שנות ה-90 עד 2008",
+  "yearStart": 1994,
+  "scale": "city",
+  "problems": [
+   "isolated",
+   "identity"
+  ],
+  "climate": "tropical",
+  "context": "hillside",
+  "approach": "mixed",
+  "cost": 3,
+  "duration": 3,
+  "insight": "במקום לפנות את הפבלות, העיר הביאה אליהן רחובות, מים, ביוב ומבני ציבור, והפכה אותן לשכונות.",
+  "before": "מאות פבלות בריו נבנו בלי תשתיות, על מדרונות ובשולי העיר. מדיניות של פינוי ושל פרויקטים נקודתיים לא שינתה את מצבן.",
+  "intervention": "תוכנית עירונית שהגה מזכיר התכנון לואיז פאולו קונדה. משרדי אדריכלים נבחרו בתחרות לתכנן כל פבלה, ובהם משרדו של חורחה מריו חאורגי. השלב הראשון מומן בהלוואה מהבנק הבין-אמריקאי לפיתוח בשילוב מימון עירוני, והתמקד במים, ביוב, ניקוז, רחובות וכיכרות. בשלב השני נוספו מעונות יום והסדרת זכויות בקרקע.",
+  "result": "הערכה של הבנק הבין-אמריקאי מצאה שיפור משמעותי בזמינות השירותים, במיוחד בשכונות העניות ביותר. התוכנית הפכה למודל עולמי לשדרוג במקום ולא פינוי.",
+  "moves": [
+   "participation",
+   "network",
+   "best-building",
+   "anti-displacement"
+  ],
+  "cautions": "מחקרים מצאו שהתוכנית שיפרה תשתיות אבל כמעט לא שינתה עוני, תעסוקה ואלימות. תחזוקת התשתיות אחרי סיום העבודות הייתה חלשה. הסדרת הקרקע הייתה חלקית, ולא נאספו נתוני בסיס לפני התחלת העבודה, כך שההערכה נעשתה בהשוואה לפבלות אחרות.",
+  "israel": "רלוונטי לשכונות ותיקות בלי תשתיות מלאות, ובמיוחד לכפרים ולשכונות ערביות ולפזורה הבדואית בנגב. הלקח: שדרוג במקום עם הסדרת קרקע ותחזוקה מתמשכת, לא רק עבודות פיתוח.",
+  "team": "עיריית ריו דה ז'נרו, לואיז פאולו קונדה, Jorge Mario Jáuregui ומשרדים נוספים, Inter-American Development Bank",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     0.5
+    ],
+    [
+     "building",
+     3
+    ],
+    [
+     "water",
+     0.5,
+     "down"
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "plaza",
+     1.5
+    ],
+    [
+     "play",
+     1
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "renewal"
+  ],
+  "keywords": [
+   "פבלה",
+   "שדרוג במקום",
+   "informal settlement",
+   "slum upgrading",
+   "Favela-Bairro",
+   "ריו"
+  ],
+  "sources": [
+   {
+    "label": "RioOnWatch: A History of Favela Upgrades, Favela-Bairro",
+    "url": "https://rioonwatch.org/?p=5931"
+   },
+   {
+    "label": "MIT Urban Upgrading: Favela-Bairro",
+    "url": "https://web.mit.edu/urbanUpgrading/upgrading/case-examples/ce-BL-fav.html"
+   },
+   {
+    "label": "IDB: improving living conditions in Rio",
+    "url": "https://www.iadb.org/en/news/improving-living-conditions-low-income-neighborhoods-rio-de-janeiro"
+   }
+  ],
+  "facts": [
+   {
+    "text": "השלב הראשון מומן בהלוואה של 180 מיליון דולר מהבנק הבין-אמריקאי, ועוד כ-120 מיליון דולר מהעירייה.",
+    "status": "verified",
+    "source": "https://rioonwatch.org/?p=5931"
+   },
+   {
+    "text": "השלב הראשון כלל כ-73 קהילות ונגע בכ-253 אלף תושבים.",
+    "status": "approx",
+    "source": "https://web.mit.edu/urbanUpgrading/upgrading/case-examples/ce-BL-fav.html"
+   },
+   {
+    "text": "הערכת הבנק מצאה עלייה משמעותית בזמינות השירותים בפבלות שבתוכנית.",
+    "status": "verified",
+    "source": "https://www.iadb.org/en/news/improving-living-conditions-low-income-neighborhoods-rio-de-janeiro"
+   }
+  ]
+ },
+ {
+  "id": "exhibition-road",
+  "name": "רחוב אקסהיביישן",
+  "nameEn": "Exhibition Road Shared Space",
+  "city": "לונדון",
+  "cityEn": "London",
+  "country": "בריטניה",
+  "countryEn": "United Kingdom",
+  "lat": 51.4975,
+  "lon": -0.1745,
+  "years": "2008-2011",
+  "yearStart": 2008,
+  "scale": "street",
+  "problems": [
+   "car-street",
+   "identity"
+  ],
+  "climate": "temperate",
+  "context": "center",
+  "approach": "permanent",
+  "cost": 3,
+  "duration": 2,
+  "insight": "רחוב המוזיאונים קיבל משטח אבן אחד מקיר לקיר, בלי מדרכה ובלי גבולות, והנהגים נאלצים להאט.",
+  "before": "רחוב רחב בין מוזיאון ויקטוריה ואלברט, מוזיאון המדע ומוזיאון הטבע, ומיליוני מבקרים בשנה הצטופפו על מדרכות צרות לצד נתיבי נסיעה וחניה.",
+  "intervention": "דיקסון ג'ונס זכו בתחרות התכנון. אבני השפה הוסרו, הרחוב רוצף במשטח גרניט אחיד לכל רוחבו, ושלטים ומעקות הוסרו. קו של ניקוז ופנסים מסמן אזור מוגן להולכי רגל, ונוסף ריצוף מישושי.",
+  "result": "הפרויקט נחנך בדצמבר 2011, והוא תכנית המרחב המשותף הגדולה בבריטניה. הרחוב זכה בפרסי עיצוב ומשמש כמרחב אירועים של המוזיאונים.",
+  "moves": [
+   "shared-level",
+   "speed-limit",
+   "heritage-layer"
+  ],
+  "cautions": "ארגון Guide Dogs נאבק בתכנון, כי עיוורים ולקויי ראייה מתמצאים לפי אבן השפה. העלות הייתה כ-29 מיליון ליש\"ט. נטען שהפגיעות בהולכי רגל עלו אחרי השינוי, והנתונים שנויים במחלוקת בין המועצה לבין מבקריה. מכוניות עדיין עוברות בו, ויש הדורשים להפוך אותו למדרחוב מלא.",
+  "israel": "רלוונטי לרחובות מוסדות ותרבות, כמו שדרות שאול המלך בתל אביב ורחובות מרכז העיר בחיפה ובירושלים. הלקח: מרחב משותף צריך פתרון נגיש לעיוורים מהיום הראשון, ומדידת תאונות לפני ואחרי.",
+  "team": "Dixon Jones, Royal Borough of Kensington and Chelsea, Transport for London",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     1
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "car",
+     1
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "plaza",
+     2
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "plaza",
+     2
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "interior"
+  ],
+  "keywords": [
+   "shared space",
+   "מרחב משותף",
+   "Exhibition Road",
+   "אבן שפה",
+   "נגישות",
+   "Dixon Jones"
+  ],
+  "sources": [
+   {
+    "label": "TransportXtra: Exhibition Road design reviewed",
+    "url": "https://www.transportxtra.com/publications/evolution/news/55661/exhibition-road-design-reviewed"
+   },
+   {
+    "label": "Dixon Jones: Exhibition Road Project",
+    "url": "https://jeremydixon-edwardjones.co.uk/projects/exhibition-road-project"
+   },
+   {
+    "label": "Dezeen: MP calls for pedestrianisation of Exhibition Road",
+    "url": "https://www.dezeen.com/?p=1143857"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הרחוב נפתח מחדש בטקס ב-8 בדצמבר 2011.",
+    "status": "verified",
+    "source": "https://www.rbkc.gov.uk/pdf/newsletter%20december%202011.pdf"
+   },
+   {
+    "text": "עלות התכנית כ-29 מיליון ליש\"ט (מקורות אחרים נותנים 25-30 מיליון).",
+    "status": "approx",
+    "source": "https://www.transportxtra.com/publications/evolution/news/55661/exhibition-road-design-reviewed"
+   },
+   {
+    "text": "ארגון Guide Dogs התנגד להסרת אבני השפה.",
+    "status": "verified",
+    "source": "https://www.mayorwatch.co.uk/guide-dog-owners-to-protest-at-city-hall/"
+   }
+  ]
+ },
+ {
+  "id": "drachten-shared-space",
+  "name": "מרחב משותף בדרכטן",
+  "nameEn": "Laweiplein Shared Space, Drachten",
+  "city": "דרכטן",
+  "cityEn": "Drachten",
+  "country": "הולנד",
+  "countryEn": "Netherlands",
+  "lat": 53.105,
+  "lon": 6.1,
+  "years": "תחילת שנות ה-2000",
+  "yearStart": 2003,
+  "scale": "square",
+  "problems": [
+   "car-street",
+   "identity"
+  ],
+  "climate": "temperate",
+  "context": "center",
+  "approach": "permanent",
+  "cost": 1,
+  "duration": 1,
+  "insight": "כשהרמזורים והשלטים הוסרו, הנהגים התחילו להסתכל על האנשים במקום על הסימנים.",
+  "before": "צומת מרכזי עמוס בעיר קטנה בפריסלנד, עם רמזורים, שלטים ונתיבים מופרדים, ותאונות חוזרות.",
+  "intervention": "מהנדס התנועה הנס מונדרמן הסיר כמעט את כל אמצעי הבקרה בצומת לאוויפליין: רמזורים, שלטים וסימונים. במקומם נבנתה כיכר תנועה רחבה עם אי מגונן ומזרקות, שבה הולכי רגל, אופניים ורכב חולקים את המרחב וקובעים קדימות בקשר עין.",
+  "result": "לפי דיווחים, מספר התאונות בצומת ירד וחומרתן פחתה, והתנועה זורמת ברציפות בלי עצירות ארוכות. המקרה הפך לסמל של גישת המרחב המשותף בעולם.",
+  "moves": [
+   "shared-level",
+   "intersection-plaza",
+   "speed-limit",
+   "measure"
+  ],
+  "cautions": "הנתונים על ירידת התאונות מגיעים בעיקר מדיווחים עיתונאיים ומשתנים בין מקורות, ולא נמצאה הערכה מחקרית מוסכמת. הגישה מתאימה לעיר קטנה עם תרבות רכיבה חזקה, ועלולה להיכשל בתנועה כבדה. עיוורים וילדים מתקשים במרחב שבו אין כללים ברורים.",
+  "israel": "רלוונטי לצמתים במרכזי מושבות ועיירות, כמו רחובות מרכז בזכרון יעקב, ראש פינה או מרכזי ערים קטנות. הלקח: להתחיל בצומת אחד עם נפח תנועה מתון ולמדוד לפני ואחרי, לא להעתיק את הרעיון לצירים עורקיים.",
+  "team": "Hans Monderman, עיריית סמלינגרלנד",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "bike",
+     1
+    ],
+    [
+     "car",
+     3
+    ],
+    [
+     "bike",
+     1
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "plaza",
+     2
+    ],
+    [
+     "car",
+     1.5
+    ],
+    [
+     "green",
+     1.5
+    ],
+    [
+     "car",
+     1.5
+    ],
+    [
+     "plaza",
+     2
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360"
+  ],
+  "keywords": [
+   "shared space",
+   "Monderman",
+   "רמזורים",
+   "Laweiplein",
+   "מרחב משותף",
+   "בטיחות"
+  ],
+  "sources": [
+   {
+    "label": "Wikipedia: Drachten",
+    "url": "https://en.wikipedia.org/wiki/Drachten"
+   },
+   {
+    "label": "Works That Work: Space for People, Not for Cars",
+    "url": "https://worksthatwork.com/1/shared-space"
+   },
+   {
+    "label": "Grist: shared space",
+    "url": "https://grist.org/article/shared-space/"
+   }
+  ],
+  "facts": [
+   {
+    "text": "בצומת לאוויפליין הוסרו הרמזורים וכמעט כל אמצעי הבקרה, והוא הפך לכיכר עם אי ירוק ומזרקות.",
+    "status": "verified",
+    "source": "https://en.wikipedia.org/wiki/Drachten"
+   },
+   {
+    "text": "מספר התאונות השנתי ירד לפי הדיווחים, אך המספרים משתנים בין המקורות.",
+    "status": "approx",
+    "source": "https://en.wikipedia.org/wiki/Drachten"
+   },
+   {
+    "text": "מהירות המעבר בעיר לא ירדה, כי הצמתים זורמים יותר.",
+    "status": "approx",
+    "source": "https://grist.org/article/shared-space/"
+   }
+  ]
+ },
+ {
+  "id": "islands-brygge-harbour-bath",
+  "name": "בריכת הנמל באיילנדס בריגה",
+  "nameEn": "Islands Brygge Harbour Bath (Havnebadet)",
+  "city": "קופנהגן",
+  "cityEn": "Copenhagen",
+  "country": "דנמרק",
+  "countryEn": "Denmark",
+  "lat": 55.6645,
+  "lon": 12.577,
+  "years": "2002-2003",
+  "yearStart": 2002,
+  "scale": "square",
+  "problems": [
+   "leisure",
+   "derelict-infra",
+   "heat"
+  ],
+  "climate": "cold",
+  "context": "waterfront",
+  "approach": "permanent",
+  "cost": 2,
+  "duration": 1,
+  "insight": "אחרי שהעיר ניקתה את מי הנמל, היא בנתה בתוכם בריכה, והנמל התעשייתי הפך לחוף רחצה עירוני.",
+  "before": "נמל קופנהגן היה נמל תעשייתי מזוהם, שאליו זרמו שפכים בגשם, והרחצה בו לא הייתה אפשרית.",
+  "intervention": "העירייה השקיעה במשך שנים בשיפור איכות המים, כולל מאגרי השהיה למי גלישת ביוב. בריכה זמנית באיילנדס בריגה הצליחה, ובעקבותיה נבנתה בריכה קבועה שתכנן משרד PLOT, שממנו יצאו BIG ו-JDS. הבריכה היא מזח עץ עם כמה בריכות ומקפצה בתוך מי הנמל.",
+  "result": "הבריכה נפתחה ב-2003 ומכילה עד כ-600 איש. היא פתחה עידן של בריכות נמל ומרחבי רחצה עירוניים לאורך הנמל.",
+  "moves": [
+   "cool-water",
+   "visible-water",
+   "reversible",
+   "pilot"
+  ],
+  "cautions": "אחרי גשם חזק גולש ביוב לנמל, והבריכה נסגרת לכמה ימים בגלל זיהום. איכות המים נבדקת כל יום, והבריכה תלויה בתשתית ביוב וניקוז יקרה שנבנתה במשך שנים. בקיץ היא עמוסה מאוד.",
+  "israel": "רלוונטי לנמלים ולשפכי נחלים, כמו נמל חיפה, נמל יפו ושפך הירקון. הלקח: קודם מטפלים בגלישות הביוב ובאיכות המים, ורק אז פותחים את המים לרחצה.",
+  "team": "PLOT (Bjarke Ingels, Julien De Smedt), עיריית קופנהגן",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     1
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "water",
+     4,
+     "down"
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "green",
+     2
+    ],
+    [
+     "plaza",
+     2,
+     "up"
+    ],
+    [
+     "water",
+     2,
+     "down"
+    ],
+    [
+     "water",
+     2,
+     "down"
+    ]
+   ]
+  },
+  "apps": [
+   "n360",
+   "biomimicry"
+  ],
+  "keywords": [
+   "בריכת נמל",
+   "harbour bath",
+   "Havnebadet",
+   "Copenhagen",
+   "איכות מים",
+   "BIG"
+  ],
+  "sources": [
+   {
+    "label": "Wikipedia: Copenhagen Harbour Baths",
+    "url": "https://en.wikipedia.org/wiki/Copenhagen_Harbour_Baths"
+   },
+   {
+    "label": "DAC: Havnebadet kicked off Copenhagen's transformation",
+    "url": "https://dac.dk/en/magazine/places/havnebadet-kicked-off-copenhagens-transformation-66"
+   },
+   {
+    "label": "Copenhagen Architecture: The Harbour Bath by Plot",
+    "url": "https://copenhagenarchitecture.dk/the-harbour-bath/"
+   }
+  ],
+  "facts": [
+   {
+    "text": "הבריכה הקבועה תוכננה בידי PLOT ב-2002-2003 ונפתחה ב-2003.",
+    "status": "verified",
+    "source": "https://copenhagenarchitecture.dk/the-harbour-bath/"
+   },
+   {
+    "text": "הבריכה מכילה עד כ-600 איש בכמה בריכות.",
+    "status": "approx",
+    "source": "https://dac.dk/en/magazine/places/havnebadet-kicked-off-copenhagens-transformation-66"
+   },
+   {
+    "text": "אחרי גשם חזק גלישות ביוב גורמות לסגירה זמנית של הבריכות.",
+    "status": "verified",
+    "source": "https://en.wikipedia.org/wiki/Copenhagen_Harbour_Baths"
+   }
+  ]
+ },
+ {
+  "id": "transmilenio",
+  "name": "טרנסמילניו",
+  "nameEn": "TransMilenio Bus Rapid Transit",
+  "city": "בוגוטה",
+  "cityEn": "Bogotá",
+  "country": "קולומביה",
+  "countryEn": "Colombia",
+  "lat": 4.65,
+  "lon": -74.08,
+  "years": "2000 ואילך",
+  "yearStart": 2000,
+  "scale": "city",
+  "problems": [
+   "car-street",
+   "isolated"
+  ],
+  "climate": "temperate",
+  "context": "center",
+  "approach": "mixed",
+  "cost": 3,
+  "duration": 3,
+  "insight": "במקום לחכות לרכבת תחתית, העיר נתנה לאוטובוס את מרכז השדרה ובנתה לו תחנות כמו של רכבת.",
+  "before": "בוגוטה סבלה מפקקים קשים ומאלפי אוטובוסים פרטיים לא מוסדרים שהתחרו על נוסעים, ותוכניות למטרו נדחו שוב ושוב.",
+  "intervention": "בתקופת ראש העיר אנריקה פניאלוסה נפתח בדצמבר 2000 מערך אוטובוסים מהירים: נתיבים בלעדיים במרכז השדרות הראשיות, תחנות סגורות עם תשלום מראש ועלייה במפלס הרצפה, אוטובוסים מפרקיים וקווי הזנה לשכונות. במקביל נבנו שבילי אופניים ומרחבים להולכי רגל.",
+  "result": "לפני הקורונה נסעו בו כ-2.4 מיליון נוסעים ביום. המערכת הפכה למודל עולמי, ומאות ערים העתיקו את הרעיון.",
+  "moves": [
+   "transit-first",
+   "leadership",
+   "gradual",
+   "network"
+  ],
+  "cautions": "הצפיפות באוטובוסים ובתחנות היא תלונה קבועה, ומ-2004 ירדה שביעות הרצון. ב-2012 התפרצו מהומות שבהן נהרסו תחנות, בגלל צפיפות ומחיר נסיעה. נטען שהקיבולת של אוטובוס מוגבלת לעומת מטרו, והעיר בונה כעת קו מטרו. התרחבות המערכת הייתה איטית מהתוכנית.",
+  "israel": "רלוונטי לנתיבי תחבורה ציבורית ולמהירים לעיר בגוש דן, בחיפה (המטרונית) ובבאר שבע. הלקח: נתיב במרכז הכביש עם תחנות סגורות ותשלום מראש, לצד תכנון קיבולת לעתיד כדי שהמערכת לא תקרוס מהצלחתה.",
+  "team": "עיריית בוגוטה, ראש העיר Enrique Peñalosa, TransMilenio S.A.",
+  "section": {
+   "before": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "car",
+     3
+    ],
+    [
+     "green",
+     0.5
+    ],
+    [
+     "car",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ],
+   "after": [
+    [
+     "building",
+     3
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "bike",
+     0.8
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "transit",
+     2
+    ],
+    [
+     "car",
+     2
+    ],
+    [
+     "walk",
+     1
+    ],
+    [
+     "building",
+     3
+    ]
+   ]
+  },
+  "apps": [
+   "n360"
+  ],
+  "keywords": [
+   "BRT",
+   "TransMilenio",
+   "אוטובוס מהיר",
+   "Peñalosa",
+   "נתיב תחבורה ציבורית",
+   "מטרונית"
+  ],
+  "sources": [
+   {
+    "label": "Wikipedia: TransMilenio",
+    "url": "https://en.wikipedia.org/wiki/TransMilenio"
+   },
+   {
+    "label": "World Bank blog: TransMilenio's overcrowding problem",
+    "url": "https://blogs.worldbank.org/en/transport/bogota-transmilenio-s-overcrowding-problem-and-professors-solution"
+   },
+   {
+    "label": "Planetizen: Bogotá's BRT under attack",
+    "url": "https://planetizen.com/node/55586"
+   }
+  ],
+  "facts": [
+   {
+    "text": "המערכת נפתחה בדצמבר 2000.",
+    "status": "verified",
+    "source": "https://en.wikipedia.org/wiki/TransMilenio"
+   },
+   {
+    "text": "לפני הקורונה נסעו בה כ-2.4 מיליון נוסעים ביום.",
+    "status": "approx",
+    "source": "https://en.wikipedia.org/wiki/TransMilenio"
+   },
+   {
+    "text": "ב-2012 התפרצו מהומות נגד הצפיפות ומחיר הנסיעה, ונהרסו כמה תחנות.",
+    "status": "verified",
+    "source": "https://planetizen.com/node/55586"
+   }
+  ]
+ }
+]

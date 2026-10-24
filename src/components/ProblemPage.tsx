@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { casesFor } from '../data/cases';
+import { MOVES, PHASE_LABEL } from '../data/moves';
 import { PROBLEMS, problemById } from '../data/problems';
 import { linkProps } from '../lib/route';
 import CaseCard from './CaseCard';
@@ -11,6 +12,10 @@ export default function ProblemPage({ id }: { id: string }) {
   const list = casesFor(p.id);
   const idx = PROBLEMS.indexOf(p);
   const next = PROBLEMS[(idx + 1) % PROBLEMS.length];
+  const counted = MOVES.map((m) => ({ m, n: list.filter((c) => c.moves.includes(m.id)).length }))
+    .filter((x) => x.n)
+    .sort((a, b) => b.n - a.n)
+    .slice(0, 8);
   return (
     <main className="page" style={{ '--c': p.color } as React.CSSProperties}>
       <nav className="crumbs" aria-label="מיקום">
@@ -39,6 +44,23 @@ export default function ProblemPage({ id }: { id: string }) {
                 <p>{m.text}</p>
               </div>
             </motion.li>
+          ))}
+        </ol>
+      </section>
+
+      <section className="block">
+        <div className="block-head">
+          <h2>המהלכים בנתונים</h2>
+          <p>כמה מהמקרים של הבעיה הזו השתמשו בכל מהלך.</p>
+        </div>
+        <ol className="tally">
+          {counted.map(({ m, n }) => (
+            <li key={m.id}>
+              <a {...linkProps({ view: 'move', move: m.id })}>{m.title}</a>
+              <span className="tally-bar"><i style={{ width: `${(n / list.length) * 100}%` }} /></span>
+              <span className="mono">{n} מתוך {list.length}</span>
+              <span className="mono muted">{PHASE_LABEL[m.phase]}</span>
+            </li>
           ))}
         </ol>
       </section>

@@ -1,13 +1,24 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { APPS } from '../data/apps';
-import { CASES, caseById, SCALES } from '../data/cases';
+import { APPROACHES, CASES, caseById, CLIMATES, CONTEXTS, DURATION_LABEL, SCALES, type Case } from '../data/cases';
+import { COST_LABEL, moveById, PHASE_LABEL } from '../data/moves';
 import { problemById } from '../data/problems';
 import { useBoard } from '../lib/board';
-import { linkProps } from '../lib/route';
+import { go, linkProps } from '../lib/route';
 import CaseCard from './CaseCard';
 import NotFound from './NotFound';
 import Section, { carShare, Legend } from './Section';
+
+/** Cases that share problems and moves with this one. */
+export function relatedTo(c: Case, n = 3) {
+  return CASES.filter((o) => o.id !== c.id)
+    .map((o) => ({ o, s: o.problems.filter((p) => c.problems.includes(p)).length * 2 + o.moves.filter((m) => c.moves.includes(m)).length }))
+    .filter((x) => x.s > 0)
+    .sort((a, b) => b.s - a.s)
+    .slice(0, n)
+    .map((x) => x.o);
+}
 
 export default function CasePage({ id, from }: { id: string; from?: string }) {
   const c = caseById(id);
@@ -16,13 +27,11 @@ export default function CasePage({ id, from }: { id: string; from?: string }) {
   useEffect(() => setMode('after'), [id]);
   if (!c) return <NotFound />;
   const ctx = problemById(from && c.problems.includes(from) ? from : c.problems[0])!;
-  const related = CASES.filter((o) => o.id !== c.id && o.problems.some((p) => c.problems.includes(p)))
-    .sort((a, b) => b.problems.filter((p) => c.problems.includes(p)).length - a.problems.filter((p) => c.problems.includes(p)).length)
-    .slice(0, 3);
+  const related = relatedTo(c);
   const saved = board.has(c.id);
   const share = { before: carShare(c.section.before), after: carShare(c.section.after) };
   const maps = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${c.nameEn} ${c.cityEn}`)}`;
-  const sources = `https://www.google.com/search?q=${encodeURIComponent(`${c.nameEn} ${c.cityEn} case study`)}`;
+  const verified = c.facts.filter((f) => f.status === 'verified').length;
 
   return (
     <main className="page case" style={{ '--c': ctx.color } as React.CSSProperties}>
@@ -41,16 +50,28 @@ export default function CasePage({ id, from }: { id: string; from?: string }) {
           <span>{SCALES.find((s) => s.id === c.scale)?.label}</span>
         </div>
         <h1>{c.name}</h1>
-        <p className="en">{c.nameEn}, {c.cityEn}</p>
+        <p className="en">{c.nameEn}, {c.cityEn}, {c.countryEn}</p>
         <p className="insight">{c.insight}</p>
         <div className="case-actions">
           <button type="button" className={`btn${saved ? ' on' : ''}`} aria-pressed={saved} onClick={() => board.toggle(c.id)}>
             {saved ? 'שמור בלוח ההשראה' : 'שמירה ללוח ההשראה'}
           </button>
+          {related[0] ? (
+            <button type="button" className="btn ghost" onClick={() => go({ view: 'compare', ids: [c.id, related[0].id] })}>
+              השוואה עם {related[0].name}
+            </button>
+          ) : null}
           <a className="btn ghost" href={maps} target="_blank" rel="noopener noreferrer">במפות Google</a>
-          <a className="btn ghost" href={sources} target="_blank" rel="noopener noreferrer">מקורות לבדיקה</a>
         </div>
       </header>
+
+      <dl className="profile">
+        <div><dt>אקלים</dt><dd>{CLIMATES.find((x) => x.id === c.climate)?.label}</dd></div>
+        <div><dt>הקשר</dt><dd>{CONTEXTS.find((x) => x.id === c.context)?.label}</dd></div>
+        <div><dt>גישה</dt><dd>{APPROACHES[c.approach]}</dd></div>
+        <div><dt>עלות</dt><dd>{COST_LABEL[c.cost]}</dd></div>
+        <div><dt>משך</dt><dd>{DURATION_LABEL[c.duration]}</dd></div>
+      </dl>
 
       <section className="section-block">
         <div className="toggle" role="tablist" aria-label="חתך">
@@ -87,11 +108,18 @@ export default function CasePage({ id, from }: { id: string; from?: string }) {
 
       <div className="two">
         <section className="panel">
-          <h2>מהלכים להעברה</h2>
+          <h2>המהלכים</h2>
           <ul className="takeaways">
-            {c.moves.map((m) => (
-              <li key={m}>{m}</li>
-            ))}
+            {c.moves.map((id) => {
+              const m = moveById(id);
+              if (!m) return null;
+              return (
+                <li key={id}>
+                  <a {...linkProps({ view: 'move', move: id })}>{m.title}</a>
+                  <span className="mono">{PHASE_LABEL[m.phase]}, {COST_LABEL[m.cost]}</span>
+                </li>
+              );
+            })}
           </ul>
         </section>
         <section className="panel warn">
@@ -106,6 +134,32 @@ export default function CasePage({ id, from }: { id: string; from?: string }) {
         <p className="team"><span className="mono">צוות ויוזמים</span> {c.team}</p>
       </section>
 
+      <section className="panel evidence">
+        <div className="evidence-head">
+          <h2>עובדות ומקורות</h2>
+          <span className="mono">{verified} מתוך {c.facts.length} עובדות אומתו מול מקור</span>
+        </div>
+        <ul className="facts">
+          {c.facts.map((f) => (
+            <li key={f.text} data-status={f.status}>
+              <span className="mono status-tag">{f.status === 'verified' ? 'מאומת' : 'משוער'}</span>
+              <span>{f.text}</span>
+              {f.source ? (
+                <a href={f.source} target="_blank" rel="noopener noreferrer" className="src">מקור</a>
+              ) : null}
+            </li>
+          ))}
+        </ul>
+        <ul className="sources">
+          {c.sources.map((s) => (
+            <li key={s.url}>
+              <a href={s.url} target="_blank" rel="noopener noreferrer">{s.label}</a>
+            </li>
+          ))}
+        </ul>
+        <p className="note">"מאומת" פירושו שהעובדה נמצאה במקור המצורף. "משוער" פירושו שהמקורות חלוקים, והנוסח מקורב. לפני שימוש במסמך רשמי יש לבדוק במקור.</p>
+      </section>
+
       <section className="block">
         <div className="block-head">
           <h2>הצעד הבא</h2>
@@ -117,6 +171,10 @@ export default function CasePage({ id, from }: { id: string; from?: string }) {
               <span>{APPS[k].why}</span>
             </a>
           ))}
+          <a className="app light" {...linkProps({ view: 'project' })}>
+            <b>הפרויקט שלי</b>
+            <span>להשוות את האתר שלך למקרה הזה ולמקרים דומים</span>
+          </a>
         </div>
       </section>
 

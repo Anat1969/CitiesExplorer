@@ -41,8 +41,16 @@ export function useBoard() {
   return {
     items,
     has: (id: string) => items.some((e) => e.id === id),
-    toggle: (id: string) => write(items.some((e) => e.id === id) ? items.filter((e) => e.id !== id) : [...items, { id, note: '', at: new Date().toISOString() }]),
-    setNote: (id: string, note: string) => write(items.map((e) => (e.id === id ? { ...e, note } : e))),
+    // Read storage fresh on every write, so several writes in a row do not overwrite each other.
+    toggle: (id: string) => {
+      const cur = read();
+      write(cur.some((e) => e.id === id) ? cur.filter((e) => e.id !== id) : [...cur, { id, note: '', at: new Date().toISOString() }]);
+    },
+    add: (ids: string[]) => {
+      const cur = read();
+      write([...cur, ...ids.filter((id) => !cur.some((e) => e.id === id)).map((id) => ({ id, note: '', at: new Date().toISOString() }))]);
+    },
+    setNote: (id: string, note: string) => write(read().map((e) => (e.id === id ? { ...e, note } : e))),
     clear: () => write([]),
   };
 }
