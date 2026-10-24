@@ -42,6 +42,9 @@ export function parse(search: string): Route {
   return r;
 }
 
+/** The app's base path: '/' on Vercel, '/CitiesExplorer/' on GitHub Pages. */
+export const BASE = import.meta.env.BASE_URL;
+
 export function href(r: Route): string {
   const p = new URLSearchParams();
   if (PLAIN_VIEWS.includes(r.view)) p.set('view', r.view);
@@ -55,7 +58,7 @@ export function href(r: Route): string {
   if (r.ids?.length) p.set('ids', r.ids.join(','));
   if (r.s) p.set('s', String(r.s));
   const s = p.toString().replace(/%2C/g, ',');
-  return s ? `/?${s}` : '/';
+  return s ? `${BASE}?${s}` : BASE;
 }
 
 export function go(r: Route, replace = false) {

@@ -81,7 +81,7 @@ await page.goto(BASE + '/');
 const problemIds = await page.locator('.problem').evaluateAll((els) => els.map((e) => new URL(e.href).searchParams.get('problem')));
 for (const id of problemIds) {
   await page.goto(BASE + '/');
-  await page.locator(`.problem[href="/?problem=${id}"]`).click();
+  await page.locator(`.problem[href$="?problem=${id}"]`).click();
   await page.waitForSelector('.problem-head');
   ok(page.url().includes(`problem=${id}`), `problem ${id} opens`);
   ok((await page.locator('.moves li').count()) >= 2, `problem ${id} has synthesis moves`);

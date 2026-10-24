@@ -1,6 +1,8 @@
 # ערים מעוררות השראה
 
-## [לפתיחת האפליקציה: cities-explorer-navy.vercel.app](https://cities-explorer-navy.vercel.app)
+## [לפתיחת האפליקציה ב-GitHub Pages](https://anat1969.github.io/CitiesExplorer/)
+
+כתובת חלופית ב-Vercel: [cities-explorer-navy.vercel.app](https://cities-explorer-navy.vercel.app)
 
 מקרי בוחן של רחובות, כיכרות ושכונות מהעולם ומישראל, מסודרים לפי הבעיה התכנונית שהם פתרו.
 מתארים את האתר שלך, ומקבלים את המקרים הקרובים, אסטרטגיה מדורגת והסיכונים שכדאי לבדוק.
