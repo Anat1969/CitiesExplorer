@@ -16,7 +16,7 @@ https://appofapp-gh.vercel.app (Supabase cultura-GH, table `aoa_apps`, id `app-c
 
 Vite + React 18 + TypeScript + framer-motion. Plain CSS (`src/styles.css`), Hebrew RTL, IBM Plex Sans Hebrew /
 IBM Plex Mono. Static: no Supabase (content is curated in code, the board is personal). Deployed on Vercel
-(project cities-explorer) from `main`.
+(project cities-explorer) from `main`: https://cities-explorer-navy.vercel.app
 
 ```bash
 npm run build
@@ -59,6 +59,10 @@ The test serves the A&I menu from `tests/fixtures/ai-menu.js` (copy of AppOfApp-
 
 - 2026-10-24: the repo was empty, so `main` was created from the first tested commit (nothing to merge yet).
   Later changes go through a branch, PR and merge to `main`.
+- The GitHub default branch is still the work branch (it was pushed first), so Vercel also deploys it as
+  production. Changing the default branch to `main` in GitHub settings removes this double deployment.
+- Vercel gave the project the address `cities-explorer-navy.vercel.app` (the plain name was taken). Read the
+  real domain with `list_project_domains` before writing it anywhere.
 - Full-page Playwright screenshots miss `whileInView` content and `background-attachment: fixed`: scroll the page
   before the shot, and keep the body background non-fixed.
 - IBM Plex Mono has no Hebrew glyphs. Hebrew labels in mono fall back to Plex Sans Hebrew; keep their letter-spacing
