@@ -1,4 +1,5 @@
 import { CASES, type Case } from '../data/cases';
+import { moveById } from '../data/moves';
 import { problemById } from '../data/problems';
 
 const norm = (s: string) => s.toLowerCase().replace(/[֑-ׇ"'׳״.,:;()-]/g, ' ');
@@ -7,7 +8,7 @@ const stems = (w: string) => (w.length > 3 && /^[הובלמשכ]/.test(w) ? [w, 
 
 function haystack(c: Case) {
   return norm(
-    [c.name, c.nameEn, c.city, c.cityEn, c.country, c.insight, c.before, c.intervention, c.result, c.team, ...c.moves, ...c.keywords, ...c.problems.map((p) => problemById(p)?.title ?? '')].join(' '),
+    [c.name, c.nameEn, c.city, c.cityEn, c.country, c.insight, c.before, c.intervention, c.result, c.team, c.countryEn, c.israel, ...c.moves.map((m) => moveById(m)?.title ?? ''), ...c.keywords, ...c.problems.map((p) => problemById(p)?.title ?? '')].join(' '),
   );
 }
 
