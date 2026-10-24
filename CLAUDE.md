@@ -47,3 +47,19 @@ The test serves the A&I menu from `tests/fixtures/ai-menu.js` (copy of AppOfApp-
 - State lives in the address: `?problem=`, `?case=` (+ `problem=` for context), `?view=all|board`, `?scale=`, `?q=`.
 - Board (`src/lib/board.ts`): saved cases + a note "מה לוקחים מכאן לפרויקט", localStorage, copied as a brief.
 - Square buttons and chips, depth and shadows, never flat.
+- Every clickable element lifts on hover and sinks on press (`:active`). The A&I menu closes on every page change.
+- Board notes save as you type, with a "נשמר במכשיר" status.
+
+## Deviations from anat-app-builder (said up front)
+
+- No Supabase and no in-page editing: the content is curated in code and the board is personal (localStorage).
+- No photos: each case is drawn as a parametric section, since no licensed images were available.
+
+## Learned while building
+
+- 2026-10-24: the repo was empty, so `main` was created from the first tested commit (nothing to merge yet).
+  Later changes go through a branch, PR and merge to `main`.
+- Full-page Playwright screenshots miss `whileInView` content and `background-attachment: fixed`: scroll the page
+  before the shot, and keep the body background non-fixed.
+- IBM Plex Mono has no Hebrew glyphs. Hebrew labels in mono fall back to Plex Sans Hebrew; keep their letter-spacing
+  small (0.02-0.04em) or the words fall apart.

@@ -1078,3 +1078,40 @@ textarea {
     animation: none !important;
   }
 }
+
+/* Pressed state: everything clickable sinks a little */
+.btn:active,
+.save:active,
+.filters button:active,
+.toggle button:active,
+a.chip:active,
+button.chip:active,
+.topnav a:active,
+.app:active,
+.problem:active,
+.next:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 2px 4px rgba(20, 22, 26, 0.18);
+}
+
+a.chip,
+button.chip,
+.filters button,
+.save {
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+a.chip:hover,
+button.chip:hover,
+.filters button:hover,
+.save:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px -8px rgba(20, 22, 26, 0.45);
+}
+
+.saved-hint {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--muted);
+  min-height: 1em;
+}

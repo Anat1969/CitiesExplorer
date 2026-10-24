@@ -165,6 +165,7 @@ await page.locator('.topnav a', { hasText: 'לוח השראה' }).click();
 await page.waitForSelector('.board-item');
 ok((await page.locator('.board-item').count()) === 3, 'board lists saved cases');
 await page.locator('.board-item textarea').first().fill('ניסוי בצבע בצומת ביאליק');
+ok((await page.locator('.saved-hint').first().textContent()).includes('נשמר'), 'note shows saved');
 await page.reload();
 await page.waitForSelector('.board-item');
 ok((await page.locator('.board-item textarea').first().inputValue()) === 'ניסוי בצבע בצומת ביאליק', 'note survives reload');
@@ -205,6 +206,26 @@ await m.keyboard.press('Escape');
 await shot(m, 'case-mobile');
 await m.goto(BASE + '/');
 await shot(m, 'home-mobile');
+
+// Reduced motion: content is visible without animation, before/after still switches
+const rctx = await browser.newContext({ viewport: { width: 1280, height: 900 }, reducedMotion: 'reduce' });
+await rctx.route('https://appofapp-gh.vercel.app/ai-menu.js', (r) => r.fulfill({ body: MENU, contentType: 'text/javascript' }));
+await rctx.route(/fonts\.(googleapis|gstatic)\.com/, (r) => r.fulfill({ body: '', contentType: 'text/css' }));
+const rp = await rctx.newPage();
+await rp.goto(BASE + '/?case=madrid-rio');
+await rp.getByRole('tab', { name: 'לפני' }).click();
+await rp.waitForSelector('.section-frame[data-mode="before"]');
+ok(true, 'reduced motion: section switches');
+await rp.goto(BASE + '/');
+await rp.waitForSelector('.problem');
+ok((await rp.locator('h1').evaluate((e) => getComputedStyle(e.closest('div')).opacity)) !== '0', 'reduced motion: hero visible');
+
+// The A&I menu closes on page change
+await page.goto(BASE + '/?view=all');
+await page.locator('ai-menu .logo').click();
+await page.locator('.brand').click();
+await page.waitForSelector('.hero');
+ok(await page.locator('ai-menu .panel').isHidden(), 'menu closes on page change');
 
 const real = errors.filter((e) => !/favicon|ERR_|Failed to load resource/.test(e));
 ok(real.length === 0, 'no console errors: ' + real.join(' | '));
