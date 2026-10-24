@@ -18,6 +18,8 @@ export default function TopBar({ route }: { route: Route }) {
   const [q, setQ] = useState(route.q ?? '');
   const t = useRef<number>();
   useEffect(() => setQ(route.q ?? ''), [route.q]);
+  const menu = useRef<HTMLElement & { close?: () => void }>(null);
+  useEffect(() => menu.current?.close?.(), [route]);
 
   const onSearch = (v: string) => {
     setQ(v);
@@ -47,7 +49,7 @@ export default function TopBar({ route }: { route: Route }) {
         <span className="sr">חיפוש</span>
         <input type="search" value={q} placeholder="חיפוש: עיר, בעיה, מהלך" onChange={(e) => onSearch(e.target.value)} />
       </label>
-      <ai-menu chat={DEV_SESSION_URL} />
+      <ai-menu ref={menu} chat={DEV_SESSION_URL} />
     </header>
   );
 }

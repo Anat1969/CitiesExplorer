@@ -8,6 +8,7 @@ import { linkProps } from '../lib/route';
 export default function Board() {
   const board = useBoard();
   const [copied, setCopied] = useState('');
+  const [savedId, setSavedId] = useState('');
   const entries = board.items.map((e) => ({ e, c: caseById(e.id) })).filter((x) => x.c);
 
   const brief = () =>
@@ -59,7 +60,13 @@ export default function Board() {
                   <p>{c!.insight}</p>
                   <label>
                     <span className="mono">מה לוקחים מכאן לפרויקט</span>
-                    <textarea value={e.note} rows={2} placeholder="למשל: ניסוי בצבע ועציצים לפני תכנון קבוע" onChange={(ev) => board.setNote(e.id, ev.target.value)} />
+                    <textarea value={e.note} rows={2} placeholder="למשל: ניסוי בצבע ועציצים לפני תכנון קבוע"
+                      onChange={(ev) => {
+                        board.setNote(e.id, ev.target.value);
+                        setSavedId(e.id);
+                      }}
+                    />
+                    <span className="saved-hint" role="status">{savedId === e.id ? 'נשמר במכשיר' : ''}</span>
                   </label>
                 </div>
                 <button type="button" className="btn ghost small" onClick={() => board.toggle(e.id)}>הסרה</button>
