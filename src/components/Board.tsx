@@ -24,7 +24,7 @@ export default function Board() {
         `לבדוק: ${c!.cautions}`,
         '',
       ]),
-      location.origin + '/?view=board',
+      location.origin + import.meta.env.BASE_URL + '?view=board',
     ].join('\n');
 
   const copy = async () => {

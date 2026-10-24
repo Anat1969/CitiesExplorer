@@ -79,7 +79,20 @@ present (`?view=present&s=`; keyboard arrows). Print stylesheet for project brie
 - No Supabase and no in-page editing: the content is curated in code and the board is personal (localStorage).
 - No photos: each case is drawn as a parametric section, since no licensed images were available.
 
+## Hosting
+
+- GitHub Pages: https://anat1969.github.io/CitiesExplorer/ , published by `.github/workflows/pages.yml` on every push
+  to `main` (build with `BASE_PATH=/CitiesExplorer/`). Does not use the Vercel quota.
+- Vercel: https://cities-explorer-navy.vercel.app , from `main`, base `/`.
+- The app must work under any base path: links go through `BASE` in `src/lib/route.ts`, the service worker reads
+  its scope, the manifest uses relative paths. The e2e test runs against both builds:
+  `BASE_PATH=/CitiesExplorer/ npm run build && BASE_PATH=/CitiesExplorer/ npx vite preview --port 4174 &`
+  then `BASE=http://localhost:4174/CitiesExplorer node tests/e2e.mjs`.
+
 ## Learned while building
+
+- 2026-10-24: Vercel's free limit of 100 deployments a day ran out (across all of Anat's projects). Anat asked
+  for a direct link through GitHub, so the app is also published on GitHub Pages.
 
 - 2026-10-24: the repo was empty, so `main` was created from the first tested commit (nothing to merge yet).
   Later changes go through a branch, PR and merge to `main`.
