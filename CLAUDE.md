@@ -83,8 +83,11 @@ present (`?view=present&s=`; keyboard arrows). Print stylesheet for project brie
 
 - 2026-10-24: the repo was empty, so `main` was created from the first tested commit (nothing to merge yet).
   Later changes go through a branch, PR and merge to `main`.
-- The GitHub default branch is still the work branch (it was pushed first), so Vercel also deploys it as
-  production. Changing the default branch to `main` in GitHub settings removes this double deployment.
+- The GitHub default branch is still the work branch (it was pushed first), so the repo page shows that
+  branch. Since PR #3 Vercel deploys it as preview only. Changing the default branch to `main` in GitHub
+  settings makes the repo page show `main`.
+- The direct link to the app is at the top of README.md. The repo's About > Website field cannot be set from
+  this environment (no tool for it); Anat sets it once in GitHub.
 - Vercel gave the project the address `cities-explorer-navy.vercel.app` (the plain name was taken). Read the
   real domain with `list_project_domains` before writing it anywhere.
 - Full-page Playwright screenshots miss `whileInView` content and `background-attachment: fixed`: scroll the page
