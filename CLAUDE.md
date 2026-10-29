@@ -52,19 +52,39 @@ The test serves the A&I menu from `tests/fixtures/ai-menu.js` (copy of AppOfApp-
   (Google Images search).
 - Related apps (`src/data/apps.ts`): שכונה 360, פינוי בינוי, ביומימטיקה, סגנונות עיצוב פנים.
 
-## The tool ("הפרויקט שלי", `src/lib/match.ts`)
+## The tool ("הפרויקט שלי", `ProjectPage.tsx`, `src/lib/match.ts`)
 
-- The planner enters problems (first = main), scale, climate, context, budget and draws the existing section.
-- Score out of 100, shown per component: problem 40, climate 15, section similarity 15 (cosine of band
-  profiles), scale 10, context 10, budget 10. Near climates and contexts get partial credit.
-- Strategy: moves of the top 8 matches (score 45+), weighted by score, grouped by phase. A phase left with
-  fewer than two moves is filled from all cases of the same problem and labeled "מתוך כל מקרי הבעיה".
-- "כיוון אפשרי לחתך": the site's own section re-divided in the proportions of the best match's "after".
-- Projects live in localStorage (`src/lib/projects.ts`), id in the address `?view=project&p=`.
-- "מסמך פתרונות למהנדס" (`?view=doc&p=`, `DocPage.tsx`): photo of the problem (resized to 1280 JPEG, stored with the
-  project), the chosen problems, the top solutions (score 35+) ranked by relevance with traffic-light blocks (what
-  worked, what to check here, what failed), phases, recommendation. Every text is editable in place and kept in
-  `site.doc`; printable to PDF.
+A flow from input to report, shown as a six-step pipeline at the top (מקום, בעיה, תמונה, חתך, בדיקה, דוח), each
+step green when done.
+- 01 המקום (`src/lib/gis.ts`, `SiteMap.tsx`, Leaflet, lazy loaded): address search (Nominatim) or a click on the map
+  (OpenStreetMap streets / Esri satellite). The point reads the nearest street from the Overpass API: road type,
+  lanes, carriageway width, sidewalks and their width, parking, cycleway, speed, mapped trees within 40 m, water
+  within 300 m. Every value is tagged "OSM" (mapped) or "משוער" (estimated from the road type). The location sets the
+  climate (rough rule, shown "לפי המיקום"), a waterfront context, and builds the section in meters while the section
+  is still the default.
+- 02 הבעיה: the problem in the planner's words (`src/lib/textProblem.ts`: word matching against a dictionary per
+  problem, shown in percent with the words that matched, never decides alone) plus cases described in similar words.
+  The photo is read by colour (`src/lib/imageAnalysis.ts`: Green View Index method, MIT Treepedia): green, hard
+  surface, sky, other in percent, with a traffic-light reading. Colour, not objects; reliability shown.
+- 03 המאפיינים: scale, climate, context, budget.
+- 04 החתך (`SectionCanvas.tsx`): drawn to scale in meters, edited on the drawing: dimension lines above each strip,
+  drag the boundary between two strips (total stays), click a strip to change use, width, level, move, split, delete,
+  or type the width between building lines. Older projects with relative widths are converted (`inMeters`).
+- 05 הבדיקה: five checks shown one after the other, each naming its tool and what it read and produced (photo,
+  location, problem from words, section vs all cases by cosine similarity, ranking). Results (06-09) appear after it.
+- Score in percent, per component: problem 40, climate 15, section similarity 15, scale 10, context 10, budget 10.
+  Strategy: moves of the top 8 matches (45+), by phase. "כיוון אפשרי לחתך": the site's section in the proportions of
+  the best match (`transform` in match.ts).
+- The report (`?view=doc&p=`, `DocPage.tsx`): two A4 pages (210 x 297 mm on screen and in print, `@page A4`).
+  Page 1: header, diagnosis (photo + colour bar, the problem in the planner's words highlighted, problems, site
+  facts with traffic light), "מהבעיה לפתרון": top 3 cases ranked by percent, each with the chain our problem, the
+  move, the insight, then pro (green), con (red), upgrade for this site (amber, computed from the section). The third
+  solution moves to page 2 only when page 1 would overflow. Page 2: section today and proposed, phases, recommendation,
+  what the report rests on (sources and reliability). Every text is editable in place (`site.doc`). The e2e test
+  checks both pages fit their sheet in print.
+- Projects live in localStorage (`src/lib/projects.ts`), id in the address `?view=project&p=`. A project with a
+  location appears on the globe (black diamond), on the timeline (square, in its main problem's lane) and at the top
+  of "כל המקרים".
 - Method shown in the UI: precedent library + pattern language (Christopher Alexander). Not a recommendation.
 
 ## Views
@@ -101,6 +121,9 @@ present (`?view=present&s=`; keyboard arrows). Print stylesheet for project brie
 8. Grid alignment (2026-10-29, Anat's correction): frames in one row share their top and bottom lines, frames in
    one column share one width. Use `align-items: stretch` and let the last frame in a column fill it; never leave a
    card at content width beside a full-width one. The e2e test measures this on the map row.
+9. The example project name is "רחוב הרצל, אשדוד" (Anat's correction, 2026-10-29), never Ramla.
+10. Show that the input drives the output: a visible pipeline, a check that runs step by step and names its tool,
+    results in percent, then a compact A4 report that links problem to solution with pros, cons and upgrades.
 
 ## Deviations from anat-app-builder (said up front)
 
@@ -135,6 +158,8 @@ present (`?view=present&s=`; keyboard arrows). Print stylesheet for project brie
   before the shot, and keep the body background non-fixed.
 - 2026-10-29: the flat map's case card covered Melbourne (bottom corner), so it could not be clicked. The card now
   sits beside the map, never over it.
+- OpenStreetMap services (Nominatim, Overpass, tiles) are called from the planner's browser, not from a server; the
+  e2e test stubs them. A sidewalk mapped as a separate way is not read: the sidewalk then shows as "משוער".
 - Wikimedia rate-limits this environment's shared IP (429, then "robot policy"). Query Commons through WebFetch
   (another egress) and never from curl in a loop.
 - IBM Plex Mono has no Hebrew glyphs. Hebrew labels in mono fall back to Plex Sans Hebrew; keep their letter-spacing

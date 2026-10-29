@@ -1,6 +1,8 @@
 import { CASES, SCALES, type Scale } from '../data/cases';
 import { PROBLEMS } from '../data/problems';
-import { go, type Route } from '../lib/route';
+import { rank } from '../lib/match';
+import { useProjects } from '../lib/projects';
+import { go, linkProps, type Route } from '../lib/route';
 import { search } from '../lib/search';
 import CaseCard from './CaseCard';
 
@@ -8,6 +10,7 @@ export default function AllCases({ route }: { route: Route }) {
   const scoped = route.scale ? CASES.filter((c) => c.scale === route.scale) : CASES;
   const list = search(route.q ?? '', scoped);
   const setScale = (s?: Scale) => go({ ...route, view: 'all', scale: s }, true);
+  const mine = useProjects().items.filter((p) => p.site.problems.length || p.site.problemText || p.site.lat != null);
   return (
     <main className="page">
       <header className="block-head page-head">
@@ -17,6 +20,28 @@ export default function AllCases({ route }: { route: Route }) {
           {list.length} מתוך {CASES.length} מקרי בוחן
         </p>
       </header>
+      {mine.length && !route.q ? (
+        <section className="mine-strip" aria-label="הפרויקטים שלך">
+          <span className="mono">הפרויקטים שלך, לצד המקרים</span>
+          <ul>
+            {mine.map((p) => {
+              const top = p.site.problems.length ? rank(p.site)[0] : undefined;
+              return (
+                <li key={p.id}>
+                  <a {...linkProps({ view: 'project', p: p.id })}>
+                    {p.site.photo ? <img src={p.site.photo} alt="" /> : <span className="ph" />}
+                    <span>
+                      <b>{p.site.name || 'פרויקט ללא שם'}</b>
+                      <span>{p.site.problems.map((x) => PROBLEMS.find((pr) => pr.id === x)?.title).join(', ') || 'הבעיה עוד לא נבחרה'}</span>
+                      {top ? <span className="mono">הקרוב ביותר: {top.c.name}, {top.score}%</span> : null}
+                    </span>
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      ) : null}
       <div className="filters" role="group" aria-label="קנה מידה">
         <button type="button" aria-pressed={!route.scale} onClick={() => setScale(undefined)}>הכול</button>
         {SCALES.map((s) => (
