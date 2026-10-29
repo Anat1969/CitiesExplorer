@@ -8,7 +8,10 @@ import { useBoard } from '../lib/board';
 import { go, linkProps } from '../lib/route';
 import CaseCard from './CaseCard';
 import NotFound from './NotFound';
+import Photos from './Photos';
+import Rich from './Rich';
 import Section, { carShare, Legend } from './Section';
+import Flag from './Flag';
 
 /** Cases that share problems and moves with this one. */
 export function relatedTo(c: Case, n = 3) {
@@ -49,11 +52,11 @@ export default function CasePage({ id, from }: { id: string; from?: string }) {
           <span>{c.years}</span>
           <span>{SCALES.find((s) => s.id === c.scale)?.label}</span>
         </div>
-        <h1>{c.name}</h1>
+        <h1><Flag country={c.countryEn} label={c.country} /> {c.name}</h1>
         <p className="en">{c.nameEn}, {c.cityEn}, {c.countryEn}</p>
-        <p className="insight">{c.insight}</p>
+        <p className="insight"><mark>{c.insight}</mark></p>
         <div className="case-actions">
-          <button type="button" className={`btn${saved ? ' on' : ''}`} aria-pressed={saved} onClick={() => board.toggle(c.id)}>
+          <button type="button" className={`save inline${saved ? ' on' : ''}`} aria-pressed={saved} title={saved ? 'שמור בלוח ההשראה. לחיצה מסירה אותו' : 'שומר את המקרה בלוח ההשראה שלך, במכשיר הזה בלבד, כדי לאסוף מקרים לפרויקט ולהעתיק אותם כתקציר'} onClick={() => board.toggle(c.id)}>
             {saved ? 'שמור בלוח ההשראה' : 'שמירה ללוח ההשראה'}
           </button>
           {related[0] ? (
@@ -72,6 +75,8 @@ export default function CasePage({ id, from }: { id: string; from?: string }) {
         <div><dt>עלות</dt><dd>{COST_LABEL[c.cost]}</dd></div>
         <div><dt>משך</dt><dd>{DURATION_LABEL[c.duration]}</dd></div>
       </dl>
+
+      <Photos c={c} />
 
       <section className="section-block">
         <div className="toggle" role="tablist" aria-label="חתך">
@@ -94,20 +99,20 @@ export default function CasePage({ id, from }: { id: string; from?: string }) {
 
       <div className="story">
         {[
-          ['לפני', c.before],
-          ['מה נעשה', c.intervention],
-          ['התוצאה', c.result],
-        ].map(([h, t], i) => (
-          <motion.section key={h} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }}>
+          ['לפני', c.before, 'neutral'],
+          ['מה נעשה', c.intervention, 'neutral'],
+          ['התוצאה', c.result, 'go'],
+        ].map(([h, t, tone], i) => (
+          <motion.section key={h} data-tone={tone} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }}>
             <span className="mono">{String(i + 1).padStart(2, '0')}</span>
             <h2>{h}</h2>
-            <p>{t}</p>
+            <p><Rich text={t} /></p>
           </motion.section>
         ))}
       </div>
 
       <div className="two">
-        <section className="panel">
+        <section className="panel" data-tone="go">
           <h2>המהלכים</h2>
           <ul className="takeaways">
             {c.moves.map((id) => {
@@ -122,15 +127,15 @@ export default function CasePage({ id, from }: { id: string; from?: string }) {
             })}
           </ul>
         </section>
-        <section className="panel warn">
+        <section className="panel warn" data-tone="stop">
           <h2>מה נכשל או שנוי במחלוקת</h2>
-          <p>{c.cautions}</p>
+          <p><Rich text={c.cautions} /></p>
         </section>
       </div>
 
-      <section className="panel israel">
+      <section className="panel israel" data-tone="wait">
         <h2>ובישראל</h2>
-        <p>{c.israel}</p>
+        <p><Rich text={c.israel} /></p>
         <p className="team"><span className="mono">צוות ויוזמים</span> {c.team}</p>
       </section>
 

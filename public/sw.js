@@ -1,5 +1,5 @@
-// Pages from the network (fall back to cache offline); images, fonts and built assets from the cache.
-const CACHE = 'cities-v2';
+// Pages from the network (fall back to cache offline); images (also the Commons photos), fonts and built assets from the cache.
+const CACHE = 'cities-v3';
 // The scope is the app's base path: '/' on Vercel, '/CitiesExplorer/' on GitHub Pages.
 const ROOT = new URL(self.registration.scope).pathname;
 
@@ -29,7 +29,7 @@ self.addEventListener('fetch', (e) => {
     );
     return;
   }
-  const cacheable = url.origin === location.origin ? url.pathname.startsWith(ROOT + 'assets/') || /\.(png|svg|webp|jpg)$/.test(url.pathname) : url.hostname.endsWith('gstatic.com') || url.hostname.endsWith('googleapis.com');
+  const cacheable = url.origin === location.origin ? url.pathname.startsWith(ROOT + 'assets/') || /\.(png|svg|webp|jpg)$/.test(url.pathname) : url.hostname.endsWith('gstatic.com') || url.hostname.endsWith('googleapis.com') || url.hostname === 'upload.wikimedia.org';
   if (!cacheable) return;
   e.respondWith(
     caches.match(req).then(

@@ -7,6 +7,7 @@ import { PROBLEMS, problemById } from '../data/problems';
 import { linkProps } from '../lib/route';
 import CaseCard from './CaseCard';
 import Section, { carShare } from './Section';
+import Flag from './Flag';
 
 const SHOWCASE = ['cheonggyecheon', 'superilles', 'dizengoff-square', 'high-line', 'benthemplein', 'madrid-rio'];
 
@@ -31,7 +32,7 @@ function Transform() {
       <AnimatePresence mode="wait">
         <motion.a key={c.id} className="transform-label" {...linkProps({ view: 'case', case: c.id })} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} style={{ '--c': p.color } as React.CSSProperties}>
           <span className="mono">{p.title}</span>
-          <b>{c.name}</b>
+          <b><Flag country={c.countryEn} label={c.country} /> {c.name}</b>
           <span className="en">{c.city}, {c.years}</span>
           <span className="mono share">
             {mode === 'before' && !reduce ? 'לפני' : 'אחרי'}: שטח לרכב {carShare(mode === 'before' && !reduce ? c.section.before : c.section.after)}%

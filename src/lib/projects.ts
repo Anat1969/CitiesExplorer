@@ -19,13 +19,16 @@ function read(): Project[] {
   }
 }
 
+/** False when the device refused to store (blocked or full, e.g. a large photo). */
 function write(v: Project[]) {
+  let ok = true;
   try {
     localStorage.setItem(KEY, JSON.stringify(v));
   } catch {
-    /* storage blocked: projects live for this visit only */
+    ok = false;
   }
   dispatchEvent(new Event('projects'));
+  return ok;
 }
 
 export function useProjects() {
@@ -47,7 +50,7 @@ export function useProjects() {
       return p;
     },
     save(id: string, site: Site) {
-      write(read().map((p) => (p.id === id ? { ...p, site, updatedAt: new Date().toISOString() } : p)));
+      return write(read().map((p) => (p.id === id ? { ...p, site, updatedAt: new Date().toISOString() } : p)));
     },
     remove(id: string) {
       write(read().filter((p) => p.id !== id));

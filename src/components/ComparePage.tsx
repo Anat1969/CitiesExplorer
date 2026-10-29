@@ -3,6 +3,7 @@ import { COST_LABEL, moveById } from '../data/moves';
 import { problemById } from '../data/problems';
 import { go, linkProps, type Route } from '../lib/route';
 import { carShare, MiniSection } from './Section';
+import Flag from './Flag';
 
 const ROWS: { label: string; get: (c: Case) => React.ReactNode }[] = [
   { label: 'מקום', get: (c) => `${c.city}, ${c.country}` },
@@ -45,7 +46,7 @@ export default function ComparePage({ route }: { route: Route }) {
           {list.map((c) => (
             <article key={c.id} className="compare-col" style={{ '--c': problemById(c.problems[0])?.color } as React.CSSProperties}>
               <header>
-                <a className="compare-title" {...linkProps({ view: 'case', case: c.id })}>{c.name}</a>
+                <a className="compare-title" {...linkProps({ view: 'case', case: c.id })}><Flag country={c.countryEn} label={c.country} /> {c.name}</a>
                 <span className="en">{c.nameEn}</span>
                 <button type="button" className="btn ghost small" onClick={() => set(list.filter((x) => x.id !== c.id).map((x) => x.id))}>הסרה מההשוואה</button>
               </header>

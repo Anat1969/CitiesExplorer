@@ -6,6 +6,14 @@ import fs from 'fs';
 const BASE = process.env.BASE || 'http://localhost:4173';
 const DATA = JSON.parse(fs.readFileSync(new URL('../src/data/cases.json', import.meta.url), 'utf8'));
 const MENU = fs.readFileSync(new URL('./fixtures/ai-menu.js', import.meta.url), 'utf8');
+const PHOTO = fs.readFileSync(new URL('./fixtures/photo.jpg', import.meta.url));
+// Photos come from Wikimedia Commons and the view from above from Google Maps: both stubbed, so the test runs offline.
+const stubExternal = async (ctx) => {
+  await ctx.route('https://appofapp-gh.vercel.app/ai-menu.js', (r) => r.fulfill({ body: MENU, contentType: 'text/javascript' }));
+  await ctx.route(/fonts\.(googleapis|gstatic)\.com/, (r) => r.fulfill({ body: '', contentType: 'text/css' }));
+  await ctx.route(/upload\.wikimedia\.org/, (r) => r.fulfill({ body: PHOTO, contentType: 'image/jpeg' }));
+  await ctx.route(/maps\.google\.com/, (r) => r.fulfill({ body: '<html><body style="background:#8a9a7a"></body></html>', contentType: 'text/html' }));
+};
 fs.mkdirSync(new URL('./shots/', import.meta.url), { recursive: true });
 const shot = async (p, n) => {
   await p.evaluate(async () => {
@@ -35,8 +43,7 @@ const errors = [];
 async function newPage(viewport = { width: 1360, height: 900 }) {
   const ctx = await browser.newContext({ viewport, locale: 'he-IL' });
   await ctx.grantPermissions(['clipboard-read', 'clipboard-write'], { origin: BASE });
-  await ctx.route('https://appofapp-gh.vercel.app/ai-menu.js', (r) => r.fulfill({ body: MENU, contentType: 'text/javascript' }));
-  await ctx.route(/fonts\.(googleapis|gstatic)\.com/, (r) => r.fulfill({ body: '', contentType: 'text/css' }));
+  await stubExternal(ctx);
   const page = await ctx.newPage();
   page.on('pageerror', (e) => errors.push(e.message));
   page.on('console', (m) => m.type() === 'error' && errors.push(m.text()));
@@ -100,9 +107,9 @@ for (const id of allIds) {
   await page.waitForSelector('.case-head h1');
   ok((await page.locator('.story section').count()) === 3, `case ${id} story`);
   ok((await page.locator('.section-frame .section-svg').count()) === 1, `case ${id} section drawing`);
-  await page.getByRole('tab', { name: 'לפני' }).click();
+  await page.getByRole('tab', { name: 'לפני', exact: true }).click();
   await page.waitForSelector('.section-frame[data-mode="before"]');
-  await page.getByRole('tab', { name: 'אחרי' }).click();
+  await page.getByRole('tab', { name: 'אחרי', exact: true }).click();
   await page.waitForSelector('.section-frame[data-mode="after"]');
   const maps = await page.locator('a', { hasText: 'במפות Google' }).getAttribute('href');
   ok(maps.startsWith('https://www.google.com/maps/search/'), `case ${id} maps link`);
@@ -112,7 +119,31 @@ for (const id of allIds) {
   ok((await page.locator('.sources a').count()) >= 1, `case ${id} sources`);
   ok((await page.locator('.takeaways li a').count()) >= 3, `case ${id} moves linked`);
   ok((await page.locator('.profile div').count()) === 5, `case ${id} profile`);
+  ok((await page.locator('h1 .flag').count()) === 1, `case ${id} flag`);
+  const c = DATA.find((x) => x.id === id);
+  if (c.photos?.length) {
+    await page.waitForSelector('.photo-frame img');
+    ok((await page.locator('.photo-thumbs img').count()) === c.photos.length, `case ${id} photos (${c.photos.length})`);
+    ok((await page.locator('.photo-credit a').getAttribute('href')).startsWith('https://commons.wikimedia.org/wiki/File:'), `case ${id} photo credit`);
+  }
+  ok((await page.locator('.photo-links a', { hasText: 'עוד תמונות' }).getAttribute('href')).startsWith('https://www.google.com/search?tbm=isch'), `case ${id} more photos link`);
+  ok((await page.locator('.photo-links a', { hasText: 'Street View' }).getAttribute('href')).includes('map_action=pano'), `case ${id} street view`);
 }
+const withPhotos = DATA.filter((c) => c.photos?.length).length;
+ok(withPhotos >= 45, `most cases have photos (${withPhotos} of ${DATA.length})`);
+
+// Photos: thumbnails switch, the view from above opens Google Maps
+await page.goto(BASE + '/?case=high-line');
+await page.waitForSelector('.photo-frame img');
+await page.locator('.photo-thumbs button').nth(1).click();
+ok((await page.locator('.photo-thumbs button').nth(1).getAttribute('aria-selected')) === 'true', 'photo thumbnail selects');
+await page.locator('.photo-thumbs .map-tab').click();
+ok((await page.locator('.photo-frame iframe').getAttribute('src')).includes('output=embed'), 'view from above embeds Google Maps');
+ok((await page.locator('.story section[data-tone="go"]').count()) === 1 && (await page.locator('.panel[data-tone="stop"]').count()) === 1, 'traffic light on result and cautions');
+ok((await page.locator('.case-head mark').count()) === 1, 'insight highlighted');
+ok((await page.locator('.story strong').count()) >= 1, 'key figures in bold');
+const saveH = await page.locator('.case-actions .save').evaluate((e) => e.getBoundingClientRect().height);
+ok(saveH <= 32 && (await page.locator('.case-actions .save').getAttribute('title')).length > 20, 'save button small and explained');
 
 // Case navigation from a problem keeps the context in the crumbs
 await page.goto(BASE + '/?problem=heat');
@@ -169,7 +200,7 @@ await page.locator('.card .save').nth(1).click();
 ok((await page.locator('.topnav .count').textContent()) === '2', 'board count in the bar');
 ok((await page.locator('.card .save').nth(0).getAttribute('aria-pressed')) === 'true', 'save toggles pressed');
 await page.goto(BASE + '/?case=benthemplein');
-await page.locator('.case-actions .btn', { hasText: 'שמירה ללוח' }).click();
+await page.locator('.case-actions .save', { hasText: 'שמירה ללוח' }).click();
 ok((await page.locator('.topnav .count').textContent()) === '3', 'save from case page');
 await page.locator('.topnav a', { hasText: 'לוח השראה' }).click();
 await page.waitForSelector('.board-item');
@@ -210,7 +241,7 @@ const s0 = await page.locator('.match-score').first().textContent();
 await page.locator('.problem-pick .chip', { hasText: 'הצפות ומי נגר' }).click();
 await page.waitForTimeout(150);
 ok((await page.locator('.problem-pick .chip', { hasText: 'הצפות' }).textContent()).includes('עיקרית'), 'first problem marked main');
-const firstFlood = await page.locator('.match b').first().textContent();
+const firstFlood = (await page.locator('.match b').first().textContent()).trim();
 ok(DATA.find((c) => c.name === firstFlood)?.problems.includes('flooding'), 'top match solved flooding: ' + firstFlood);
 for (const label of ['כיכר', 'חם ויבש', 'חזית מים', 'נמוך']) {
   await page.locator('.fields .filters button', { hasText: label }).first().click();
@@ -319,20 +350,71 @@ ok((await page.locator('.tally li').count()) >= 3, 'problem tally of moves');
 await page.goto(BASE + '/?view=map');
 await page.waitForSelector('.map a circle');
 ok((await page.locator('.map a').count()) === DATA.length, 'every case on the map');
-await page.locator('.map a').first().hover();
+ok((await page.locator('.map-legend li').count()) >= 10, 'map has a legend');
+await page.locator('.map a:not(.far)').first().focus();
 ok((await page.locator('.map-card b').count()) === 1, 'hover shows case card');
+const rot0 = await page.locator('.map path').nth(1).getAttribute('d');
+await page.mouse.move(10, 10);
+await page.waitForTimeout(600);
+ok((await page.locator('.map path').nth(1).getAttribute('d')) !== rot0, 'globe turns by itself');
+// Melbourne was hidden under the card on the flat map: now it is reachable
+await page.locator('.timeline a').nth(DATA.findIndex((c) => c.id === 'melbourne-laneways')).click();
+await page.waitForTimeout(1500);
+ok((await page.locator('.map-card b').textContent()).includes(DATA.find((c) => c.id === 'melbourne-laneways').name), 'timeline click picks Melbourne');
+const mel = page.locator(`.map a[href*="case=melbourne-laneways"]`);
+ok(!(await mel.getAttribute('class'))?.includes('far'), 'Melbourne faces the viewer after the turn');
+await mel.click();
+await page.waitForSelector('.case-head');
+ok(page.url().includes('melbourne-laneways'), 'Melbourne point opens its case');
+await page.goBack();
+await page.waitForSelector('.map a circle');
+await page.locator('.play-bar .btn').click();
+await page.waitForTimeout(700);
+const y1 = Number(await page.locator('.play-bar .year').textContent());
+ok(y1 < 2000, `timeline plays from the first year (${y1})`);
+await page.waitForTimeout(700);
+ok(Number(await page.locator('.play-bar .year').textContent()) > y1, 'playhead moves through the years');
+ok((await page.locator('.map a.future').count()) > 0, 'globe hides cases that had not started yet');
+await page.locator('.play-bar .btn').click();
+await page.locator('.play-bar input').fill('2026');
 await page.locator('.map-tools .filters button', { hasText: 'ישראל' }).click();
 ok((await page.locator('.map-tools .filters button', { hasText: 'ישראל' }).getAttribute('aria-pressed')) === 'true', 'zoom to Israel');
 await page.locator('.map-tools .chip', { hasText: 'הצפות ומי נגר' }).click();
 ok((await page.locator('.map a').count()) === DATA.filter((c) => c.problems.includes('flooding')).length, 'map problem filter');
 ok((await page.locator('.timeline a').count()) === DATA.length, 'timeline has every case');
 await page.locator('.timeline a').first().click();
+await page.locator('.map-card .btn').click();
 await page.waitForSelector('.case-head');
 ok(true, 'timeline opens case');
 
+// Solutions document: photo of the problem, chosen problem, ranked solutions, editable, kept
+await page.goto(BASE + '/?view=project');
+await page.waitForSelector('.match');
+await page.locator('.site-photo input[type=file]').setInputFiles(new URL('./fixtures/photo.jpg', import.meta.url).pathname);
+await page.waitForSelector('.site-photo img');
+ok(true, 'project photo uploads');
+await page.locator('.problem-pick .chip').first().click();
+await page.locator('.project-actions .btn', { hasText: 'מסמך פתרונות' }).click();
+await page.waitForSelector('.doc');
+ok(page.url().includes('view=doc'), 'document opens');
+ok((await page.locator('.doc .site-photo img').count()) === 1, 'document shows the photo of the problem');
+const sols = await page.locator('.doc-solutions > li').count();
+ok(sols >= 3, `document ranks solutions (${sols})`);
+const scores = await page.locator('.sol-score').allTextContents();
+ok(scores.every((v, i) => i === 0 || Number(v) <= Number(scores[i - 1])), 'solutions ordered by relevance');
+await page.locator('.doc-head h1').click();
+await page.keyboard.press('Control+A');
+await page.keyboard.type('רחוב הרצל, רמלה');
+await page.locator('.doc-to').click();
+await page.waitForTimeout(500);
+await page.reload();
+await page.waitForSelector('.doc');
+ok((await page.locator('.doc-head h1').textContent()) === 'רחוב הרצל, רמלה', 'document edits are kept');
+await shot(page, 'doc');
+
 // Mobile: no horizontal scroll on every view
 const m = await newPage({ width: 375, height: 800 });
-for (const u of ['/', '/?problem=car-street', '/?case=superilles', '/?case=dizengoff-square', '/?view=all', '/?view=board', '/?view=project', '/?view=moves', '/?view=map', '/?view=compare&ids=vauban,high-line', '/?view=present&ids=vauban,high-line&s=1', '/?move=pilot']) {
+for (const u of ['/', '/?view=doc', '/?problem=car-street', '/?case=superilles', '/?case=dizengoff-square', '/?view=all', '/?view=board', '/?view=project', '/?view=moves', '/?view=map', '/?view=compare&ids=vauban,high-line', '/?view=present&ids=vauban,high-line&s=1', '/?move=pilot']) {
   await m.goto(BASE + u);
   await m.waitForTimeout(250);
   ok(await noHScroll(m), `no horizontal scroll on mobile: ${u}`);
@@ -357,11 +439,10 @@ for (const [u, n] of [['/?view=project', 'project'], ['/?view=moves', 'moves'], 
 
 // Reduced motion: content is visible without animation, before/after still switches
 const rctx = await browser.newContext({ viewport: { width: 1280, height: 900 }, reducedMotion: 'reduce' });
-await rctx.route('https://appofapp-gh.vercel.app/ai-menu.js', (r) => r.fulfill({ body: MENU, contentType: 'text/javascript' }));
-await rctx.route(/fonts\.(googleapis|gstatic)\.com/, (r) => r.fulfill({ body: '', contentType: 'text/css' }));
+await stubExternal(rctx);
 const rp = await rctx.newPage();
 await rp.goto(BASE + '/?case=madrid-rio');
-await rp.getByRole('tab', { name: 'לפני' }).click();
+await rp.getByRole('tab', { name: 'לפני', exact: true }).click();
 await rp.waitForSelector('.section-frame[data-mode="before"]');
 ok(true, 'reduced motion: section switches');
 await rp.goto(BASE + '/');

@@ -4,6 +4,7 @@ import { moveById } from '../data/moves';
 import { problemById } from '../data/problems';
 import { useBoard } from '../lib/board';
 import { go, linkProps } from '../lib/route';
+import Flag from './Flag';
 
 /** The personal board: saved cases with a note on what to take from each, copied as a design brief. */
 export default function Board() {
@@ -61,7 +62,7 @@ export default function Board() {
               <li key={e.id} className="board-item">
                 <span className="mono">{String(i + 1).padStart(2, '0')}</span>
                 <div>
-                  <a className="board-title" {...linkProps({ view: 'case', case: c!.id })}>{c!.name}</a>
+                  <a className="board-title" {...linkProps({ view: 'case', case: c!.id })}><Flag country={c!.countryEn} label={c!.country} /> {c!.name}</a>
                   <p className="en">{c!.nameEn}, {c!.city}</p>
                   <p>{c!.insight}</p>
                   <label>

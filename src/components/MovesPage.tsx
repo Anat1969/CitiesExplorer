@@ -4,6 +4,7 @@ import { CASES } from '../data/cases';
 import { COST_LABEL, MOVES, PHASE_LABEL, type Phase } from '../data/moves';
 import { PROBLEMS } from '../data/problems';
 import { linkProps } from '../lib/route';
+import Flag from './Flag';
 
 /** Problem x move matrix: how many cases used each move for each problem. Empty cells are gaps worth noticing. */
 export default function MovesPage() {
@@ -89,7 +90,7 @@ export default function MovesPage() {
             <span>{PROBLEMS.find((p) => p.id === hover.p)?.title}</span>
             <ul>
               {cell.map((c) => (
-                <li key={c.id}><a {...linkProps({ view: 'case', case: c.id, problem: hover.p })}>{c.name}</a> <span className="en">{c.city}, {c.years}</span></li>
+                <li key={c.id}><a {...linkProps({ view: 'case', case: c.id, problem: hover.p })}><Flag country={c.countryEn} label={c.country} /> {c.name}</a> <span className="en">{c.city}, {c.years}</span></li>
               ))}
             </ul>
           </>
