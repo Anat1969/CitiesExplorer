@@ -98,6 +98,9 @@ present (`?view=present&s=`; keyboard arrows). Print stylesheet for project brie
    SVG from `country-flag-icons`, never emoji, which Windows shows as letters).
 6. A world map is a rotating globe (drag to turn); a timeline has a playhead that runs through the years.
 7. Every case shows a real photo inside its frame, plus a link to a site with more photos.
+8. Grid alignment (2026-10-29, Anat's correction): frames in one row share their top and bottom lines, frames in
+   one column share one width. Use `align-items: stretch` and let the last frame in a column fill it; never leave a
+   card at content width beside a full-width one. The e2e test measures this on the map row.
 
 ## Deviations from anat-app-builder (said up front)
 
