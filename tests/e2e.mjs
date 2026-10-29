@@ -7,11 +7,24 @@ const BASE = process.env.BASE || 'http://localhost:4173';
 const DATA = JSON.parse(fs.readFileSync(new URL('../src/data/cases.json', import.meta.url), 'utf8'));
 const MENU = fs.readFileSync(new URL('./fixtures/ai-menu.js', import.meta.url), 'utf8');
 const PHOTO = fs.readFileSync(new URL('./fixtures/photo.jpg', import.meta.url));
+const TILE = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGN49OAWAAVEAp2bl6lcAAAAAElFTkSuQmCC', 'base64');
+// A secondary street in Ashdod, as OpenStreetMap returns it: some values mapped, the rest left to estimate.
+const OVERPASS = {
+  elements: [
+    { type: 'way', tags: { highway: 'secondary', name: 'הרצל', lanes: '4', sidewalk: 'both', 'parking:both': 'lane', maxspeed: '50' }, geometry: [{ lat: 31.7965, lon: 34.6445 }, { lat: 31.7980, lon: 34.6462 }] },
+    { type: 'count', tags: { total: '2' } },
+    { type: 'count', tags: { total: '0' } },
+  ],
+};
 // Photos come from Wikimedia Commons and the view from above from Google Maps: both stubbed, so the test runs offline.
 const stubExternal = async (ctx) => {
   await ctx.route('https://appofapp-gh.vercel.app/ai-menu.js', (r) => r.fulfill({ body: MENU, contentType: 'text/javascript' }));
   await ctx.route(/fonts\.(googleapis|gstatic)\.com/, (r) => r.fulfill({ body: '', contentType: 'text/css' }));
   await ctx.route(/upload\.wikimedia\.org/, (r) => r.fulfill({ body: PHOTO, contentType: 'image/jpeg' }));
+  await ctx.route(/tile\.openstreetmap\.org|arcgisonline\.com/, (r) => r.fulfill({ body: TILE, contentType: 'image/png' }));
+  await ctx.route(/nominatim\.openstreetmap\.org\/search/, (r) => r.fulfill({ json: [{ lat: '31.7972', lon: '34.6453', display_name: 'הרצל, אשדוד, ישראל' }] }));
+  await ctx.route(/nominatim\.openstreetmap\.org\/reverse/, (r) => r.fulfill({ json: { display_name: 'הרצל 20, אשדוד, ישראל' } }));
+  await ctx.route(/overpass-api\.de/, (r) => r.fulfill({ json: OVERPASS }));
   await ctx.route(/maps\.google\.com/, (r) => r.fulfill({ body: '<html><body style="background:#8a9a7a"></body></html>', contentType: 'text/html' }));
 };
 fs.mkdirSync(new URL('./shots/', import.meta.url), { recursive: true });
@@ -233,57 +246,141 @@ await page.goto(BASE + '/?case=cheonggyecheon');
 await page.waitForSelector('.case-head');
 await shot(page, 'case-desktop');
 
-// Project tool
+// Project tool: place, problem in words, photo, section in meters, the check, results
 await page.goto(BASE + '/?view=project');
 await page.waitForURL(/p=/);
 const pid = new URL(page.url()).searchParams.get('p');
 ok(!!pid, 'project created with id in the address');
-ok((await page.locator('.match').count()) === 6, 'six matches shown');
-const s0 = await page.locator('.match-score').first().textContent();
+ok((await page.locator('.name-field input').getAttribute('placeholder')).includes('אשדוד'), 'example name is in Ashdod');
+ok((await page.locator('.pipeline li').count()) === 6, 'the process is shown as six steps');
+ok((await page.locator('.results-wait').count()) === 1, 'results wait for the check');
+// Place: address search reads the street from OpenStreetMap
+await page.locator('.place-search input').fill('הרצל אשדוד');
+await page.locator('.place-search .btn').click();
+await page.waitForSelector('.facts-grid');
+ok((await page.locator('.facts-grid').textContent()).includes('הרצל'), 'street read from OSM');
+ok((await page.locator('.facts-grid .src-tag.osm').count()) >= 3 && (await page.locator('.facts-grid .src-tag.est').count()) >= 1, 'each value says if it was mapped or estimated');
+ok((await page.locator('.fields .filters button[aria-pressed="true"]', { hasText: 'ים תיכוני' }).count()) === 1, 'climate set from the location');
+await page.waitForSelector('.site-map .leaflet-container, .site-map.leaflet-container');
+const mapBox = await page.locator('.site-map').boundingBox();
+await page.mouse.click(mapBox.x + mapBox.width / 2 + 30, mapBox.y + mapBox.height / 2 + 20);
+await page.waitForTimeout(400);
+ok((await page.locator('.place-data .address').count()) === 1, 'a click on the map sets the place');
+const carBands = await page.locator('.sc-dim').count();
+ok(carBands >= 7, `section built from the street data (${carBands} strips)`);
+// Problem in words
+await page.locator('#ptext').fill('הרחוב מלא ברכבים חונים, המדרכות צרות ואין צל. בקיץ חם מאוד ובגשם הצומת מוצף.');
+await page.waitForSelector('.guess');
+const g = await page.locator('.guess b').allTextContents();
+ok(g.some((t) => t.includes('הרכב')) && g.some((t) => t.includes('חום')), `words point to problems (${g.join(' | ')})`);
+await page.locator('.guess').first().click();
+ok((await page.locator('.guess').first().getAttribute('aria-pressed')) === 'true', 'a guess becomes a project problem');
 await page.locator('.problem-pick .chip', { hasText: 'הצפות ומי נגר' }).click();
-await page.waitForTimeout(150);
-ok((await page.locator('.problem-pick .chip', { hasText: 'הצפות' }).textContent()).includes('עיקרית'), 'first problem marked main');
-const firstFlood = (await page.locator('.match b').first().textContent()).trim();
-ok(DATA.find((c) => c.name === firstFlood)?.problems.includes('flooding'), 'top match solved flooding: ' + firstFlood);
-for (const label of ['כיכר', 'חם ויבש', 'חזית מים', 'נמוך']) {
+// Photo: colour reading
+await page.locator('.problem-photo input[type=file]').setInputFiles(new URL('./fixtures/photo.jpg', import.meta.url).pathname);
+await page.waitForSelector('.mix-legend');
+ok((await page.locator('.reading li').count()) >= 1, 'photo read: green, hard surface, sky');
+for (const label of ['רחוב', 'נמוך']) {
   await page.locator('.fields .filters button', { hasText: label }).first().click();
   ok((await page.locator('.fields .filters button', { hasText: label }).first().getAttribute('aria-pressed')) === 'true', `project choice ${label}`);
 }
-const bands0 = await page.locator('.band').count();
-await page.locator('button', { hasText: 'הוספת רצועה' }).click();
-ok((await page.locator('.band').count()) === bands0 + 1, 'band added');
-await page.locator('.band select').nth(2).selectOption('green');
-ok((await page.locator('.band select').nth(2).inputValue()) === 'green', 'band type changed');
-const w0 = await page.locator('.stepper .mono').nth(2).textContent();
-await page.locator('.stepper button', { hasText: 'רחב' }).nth(2).click();
-ok((await page.locator('.stepper .mono').nth(2).textContent()) !== w0, 'band widened');
-await page.locator('.stepper button', { hasText: 'צר' }).nth(2).click();
-await page.locator('.band select').nth(3).selectOption('up');
-await page.locator('.band-actions button', { hasText: 'ימינה' }).nth(3).click();
-ok((await page.locator('.band select').nth(2).inputValue()) !== 'green' || true, 'band moved');
-await page.locator('.band-actions button', { hasText: 'מחיקה' }).last().click();
-ok((await page.locator('.band').count()) === bands0, 'band deleted');
+// Section on the drawing: drag a boundary, click a strip, change use and width
+const handle = page.locator('.sc-handle').nth(1);
+await handle.scrollIntoViewIfNeeded();
+const before = await page.locator('.sc-dim span').allTextContents();
+const total0 = await page.locator('.sc-total input').inputValue();
+const hb = await handle.boundingBox();
+await page.mouse.move(hb.x + hb.width / 2, hb.y + hb.height / 2);
+await page.mouse.down();
+await page.mouse.move(hb.x + hb.width / 2 + 60, hb.y + hb.height / 2, { steps: 6 });
+await page.mouse.up();
+const after = await page.locator('.sc-dim span').allTextContents();
+ok(before.join() !== after.join(), 'dragging a boundary changes the widths');
+ok(Math.abs(Number(total0) - Number(await page.locator('.sc-total input').inputValue())) < 0.01, 'drag keeps the total width');
+await page.locator('.sc-hit').nth(2).click();
+await page.waitForSelector('.sc-panel');
+await page.locator('.sc-types button', { hasText: 'צמחייה' }).click();
+ok((await page.locator('.sc-panel b').textContent()).includes('צמחייה'), 'strip use changed on the drawing');
+await page.locator('.sc-fields input').fill('3.5');
+ok((await page.locator('.sc-dim span').nth(2).textContent()).startsWith('3.5'), 'strip width typed in meters');
+const n0 = await page.locator('.sc-hit').count();
+await page.locator('.sc-actions button', { hasText: 'פיצול' }).click();
+ok((await page.locator('.sc-hit').count()) === n0 + 1, 'strip split');
+await page.locator('.sc-actions button', { hasText: 'מחיקה' }).click();
+ok((await page.locator('.sc-hit').count()) === n0, 'strip deleted');
+await page.locator('.sc-total input').fill('30');
+ok(Math.abs(Number(await page.locator('.sc-total input').inputValue()) - 30) < 0.3, 'total width scales the section');
+// The check: five steps, then results in percent
+await page.locator('.btn.run').click();
+await page.waitForSelector('.checks li[data-state="run"]');
+ok(true, 'the check runs step by step');
+await page.waitForSelector('#results .match', { timeout: 8000 });
+ok((await page.locator('.checks li[data-state="done"]').count()) === 5, 'all five checks done');
+ok((await page.locator('.checks .tool').count()) === 5, 'every check names its tool');
+ok((await page.locator('.match').count()) === 6, 'six matches shown');
+ok((await page.locator('.match-score').first().textContent()).endsWith('%'), 'match in percent');
 ok((await page.locator('.phase li').count()) >= 3, 'strategy has moves');
 ok((await page.locator('.risks li').count()) === 3, 'three risks');
-await page.locator('.name-field input').fill('רחוב הרצל, רמלה');
+ok((await page.locator('.pipeline li[data-ok="true"]').count()) >= 5, 'pipeline shows the steps done');
+await page.locator('.name-field input').fill('רחוב הרצל, אשדוד');
 await page.waitForTimeout(500);
 ok((await page.locator('.project-bar .status').textContent()).includes('נשמר'), 'project saved status');
 await page.reload();
 await page.waitForSelector('.match');
-ok((await page.locator('.name-field input').inputValue()) === 'רחוב הרצל, רמלה', 'project survives reload');
-ok((await page.locator('.fields .filters button', { hasText: 'חם ויבש' }).getAttribute('aria-pressed')) === 'true', 'choices survive reload');
+ok((await page.locator('.name-field input').inputValue()) === 'רחוב הרצל, אשדוד', 'project survives reload');
+ok((await page.locator('.mix-legend').count()) === 1 && (await page.locator('.facts-grid').count()) === 1, 'photo reading and street data survive reload');
 await page.locator('button', { hasText: 'אימוץ החתך' }).click();
 await page.waitForTimeout(450);
-await page.locator('button', { hasText: 'העתקת התדריך' }).click();
+await page.locator('button', { hasText: 'העתקת תקציר' }).click();
 await page.waitForTimeout(150);
 const pbrief = await page.evaluate(() => navigator.clipboard.readText());
-ok(pbrief.includes('רחוב הרצל, רמלה') && pbrief.includes('אסטרטגיה מדורגת') && pbrief.includes('סיכונים'), 'project brief copied');
-await page.locator('button', { hasText: 'שלושת המקרים הקרובים ללוח' }).click();
+ok(pbrief.includes('רחוב הרצל, אשדוד') && pbrief.includes('התאמה'), 'project brief copied');
+await page.locator('button', { hasText: 'שלושת הקרובים ללוח' }).click();
 ok((await page.locator('.topnav .count').textContent()) === '3', 'top matches saved to board');
 await page.locator('.match').first().click();
 await page.waitForSelector('.case-head');
 ok(true, 'match opens case');
 await page.goBack();
+await page.waitForSelector('.match');
+await shot(page, 'project');
+// The A4 report
+await page.locator('.report-cta .btn').click();
+await page.waitForSelector('.a4');
+ok(page.url().includes('view=doc'), 'report opens');
+ok((await page.locator('.a4').count()) === 2, 'report is two A4 pages');
+const a4 = await page.locator('.a4').first().boundingBox();
+ok(Math.abs(a4.height / a4.width - 297 / 210) < 0.03, `page has A4 proportions (${(a4.height / a4.width).toFixed(3)})`);
+ok((await page.locator('.r-photo img').count()) === 1, 'report shows the photo of the problem');
+ok((await page.locator('.r-what blockquote mark').count()) === 1, 'the problem in the planner\'s words, highlighted');
+const rs = await page.locator('.r-score').allTextContents();
+ok(rs.length === 3 && rs.every((v, i) => i === 0 || parseInt(v) <= parseInt(rs[i - 1])), `three solutions ordered by match (${rs})`);
+ok((await page.locator('.r-cells [data-tone="go"]').count()) === 3 && (await page.locator('.r-cells [data-tone="stop"]').count()) === 3 && (await page.locator('.r-cells [data-tone="wait"]').count()) === 3, 'pro, con and upgrade for each solution');
+ok((await page.locator('.r-link mark').count()) === 3 && (await page.locator('.a4 b').count()) >= 10, 'highlights and bold key words');
+await page.locator('.r-head h1').click();
+await page.keyboard.press('Control+A');
+await page.keyboard.type('רחוב הרצל, אשדוד: חלופות');
+await page.locator('.r-to').click();
+await page.waitForTimeout(500);
+await page.reload();
+await page.waitForSelector('.a4');
+ok((await page.locator('.r-head h1').textContent()) === 'רחוב הרצל, אשדוד: חלופות', 'report edits are kept');
+await page.emulateMedia({ media: 'print' });
+const fits = await page.locator('.a4').evaluateAll((els) => els.map((e) => e.scrollHeight <= e.clientHeight + 2));
+ok(fits.every(Boolean), `each page fits its A4 sheet in print (${fits})`);
+await page.emulateMedia({ media: 'screen' });
+await shot(page, 'doc');
+// The project on the map, the timeline and the list of cases
+await page.goto(BASE + '/?view=all');
+await page.waitForSelector('.mine-strip');
+ok((await page.locator('.mine-strip li').count()) === 1, 'project listed beside the cases');
+await page.goto(BASE + '/?view=map');
+await page.waitForSelector('.map a circle');
+ok((await page.locator('.timeline a.mine').count()) === 1, 'project on the timeline');
+await page.locator('.timeline a.mine').focus();
+ok((await page.locator('.map-card .btn').textContent()) === 'לפרויקט', 'project card on the map');
+await page.waitForTimeout(1500);
+ok((await page.locator('.map a.mine').count()) === 1, 'project on the globe');
+await page.goto(BASE + '/?view=project&p=' + pid);
 await page.waitForSelector('.match');
 await page.locator('button', { hasText: 'פרויקט חדש' }).click();
 await page.waitForTimeout(200);
@@ -292,7 +389,8 @@ ok((await page.locator('.project-switch select option').count()) === 2, 'project
 page.once('dialog', (d) => d.accept());
 await page.locator('button', { hasText: 'מחיקת הפרויקט' }).click();
 await page.waitForTimeout(200);
-ok((await page.locator('.name-field input').inputValue()) === 'רחוב הרצל, רמלה', 'delete returns to remaining project');
+ok((await page.locator('.name-field input').inputValue()) === 'רחוב הרצל, אשדוד', 'delete returns to remaining project');
+await page.waitForSelector('.match');
 await page.locator('button', { hasText: 'השוואת שלושת הקרובים' }).click();
 await page.waitForSelector('.compare-col');
 ok((await page.locator('.compare-col').count()) === 3, 'compare three from project');
@@ -351,7 +449,7 @@ ok((await page.locator('.tally li').count()) >= 3, 'problem tally of moves');
 // Map
 await page.goto(BASE + '/?view=map');
 await page.waitForSelector('.map a circle');
-ok((await page.locator('.map a').count()) === DATA.length, 'every case on the map');
+ok((await page.locator('.map a:not(.mine)').count()) === DATA.length, 'every case on the map');
 ok((await page.locator('.map-legend li').count()) >= 10, 'map has a legend');
 // Grid: the side column shares the globe's top and bottom lines, and its frames share one width
 for (const w of [1920, 1360]) {
@@ -364,14 +462,14 @@ for (const w of [1920, 1360]) {
   ok(near(card.y, f.y) && near(leg.y + leg.height, f.y + f.height), `map side: frames fill the column (${w})`);
 }
 await page.setViewportSize({ width: 1360, height: 900 });
-await page.locator('.map a:not(.far)').first().focus();
+await page.locator('.map a:not(.far):not(.mine)').first().focus();
 ok((await page.locator('.map-card b').count()) === 1, 'hover shows case card');
 const rot0 = await page.locator('.map path').nth(1).getAttribute('d');
 await page.mouse.move(10, 10);
 await page.waitForTimeout(600);
 ok((await page.locator('.map path').nth(1).getAttribute('d')) !== rot0, 'globe turns by itself');
 // Melbourne was hidden under the card on the flat map: now it is reachable
-await page.locator('.timeline a').nth(DATA.findIndex((c) => c.id === 'melbourne-laneways')).click();
+await page.locator('.timeline a:not(.mine)').nth(DATA.findIndex((c) => c.id === 'melbourne-laneways')).click();
 await page.waitForTimeout(1500);
 ok((await page.locator('.map-card b').textContent()).includes(DATA.find((c) => c.id === 'melbourne-laneways').name), 'timeline click picks Melbourne');
 const mel = page.locator(`.map a[href*="case=melbourne-laneways"]`);
@@ -393,37 +491,12 @@ await page.locator('.play-bar input').fill('2026');
 await page.locator('.map-tools .filters button', { hasText: 'ישראל' }).click();
 ok((await page.locator('.map-tools .filters button', { hasText: 'ישראל' }).getAttribute('aria-pressed')) === 'true', 'zoom to Israel');
 await page.locator('.map-tools .chip', { hasText: 'הצפות ומי נגר' }).click();
-ok((await page.locator('.map a').count()) === DATA.filter((c) => c.problems.includes('flooding')).length, 'map problem filter');
-ok((await page.locator('.timeline a').count()) === DATA.length, 'timeline has every case');
-await page.locator('.timeline a').first().click();
+ok((await page.locator('.map a:not(.mine)').count()) === DATA.filter((c) => c.problems.includes('flooding')).length, 'map problem filter');
+ok((await page.locator('.timeline a:not(.mine)').count()) === DATA.length, 'timeline has every case');
+await page.locator('.timeline a:not(.mine)').first().click();
 await page.locator('.map-card .btn').click();
 await page.waitForSelector('.case-head');
 ok(true, 'timeline opens case');
-
-// Solutions document: photo of the problem, chosen problem, ranked solutions, editable, kept
-await page.goto(BASE + '/?view=project');
-await page.waitForSelector('.match');
-await page.locator('.site-photo input[type=file]').setInputFiles(new URL('./fixtures/photo.jpg', import.meta.url).pathname);
-await page.waitForSelector('.site-photo img');
-ok(true, 'project photo uploads');
-await page.locator('.problem-pick .chip').first().click();
-await page.locator('.project-actions .btn', { hasText: 'מסמך פתרונות' }).click();
-await page.waitForSelector('.doc');
-ok(page.url().includes('view=doc'), 'document opens');
-ok((await page.locator('.doc .site-photo img').count()) === 1, 'document shows the photo of the problem');
-const sols = await page.locator('.doc-solutions > li').count();
-ok(sols >= 3, `document ranks solutions (${sols})`);
-const scores = await page.locator('.sol-score').allTextContents();
-ok(scores.every((v, i) => i === 0 || Number(v) <= Number(scores[i - 1])), 'solutions ordered by relevance');
-await page.locator('.doc-head h1').click();
-await page.keyboard.press('Control+A');
-await page.keyboard.type('רחוב הרצל, רמלה');
-await page.locator('.doc-to').click();
-await page.waitForTimeout(500);
-await page.reload();
-await page.waitForSelector('.doc');
-ok((await page.locator('.doc-head h1').textContent()) === 'רחוב הרצל, רמלה', 'document edits are kept');
-await shot(page, 'doc');
 
 // Mobile: no horizontal scroll on every view
 const m = await newPage({ width: 375, height: 800 });
@@ -442,9 +515,9 @@ await shot(m, 'case-mobile');
 await m.goto(BASE + '/');
 await shot(m, 'home-mobile');
 await m.goto(BASE + '/?view=project');
-await m.waitForSelector('.match');
+await m.waitForSelector('.pipeline');
 await shot(m, 'project-mobile');
-for (const [u, n] of [['/?view=project', 'project'], ['/?view=moves', 'moves'], ['/?view=map', 'map'], ['/?view=compare&ids=vauban,high-line,superilles', 'compare'], ['/?view=present&ids=vauban,high-line&s=1', 'present'], ['/?case=dizengoff-square', 'case-israel']]) {
+for (const [u, n] of [['/?view=moves', 'moves'], ['/?view=map', 'map'], ['/?view=compare&ids=vauban,high-line,superilles', 'compare'], ['/?view=present&ids=vauban,high-line&s=1', 'present'], ['/?case=dizengoff-square', 'case-israel']]) {
   await page.goto(BASE + u);
   await page.waitForTimeout(500);
   await shot(page, n);

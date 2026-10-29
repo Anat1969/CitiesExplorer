@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { DEFAULT_SITE, type Site } from './match';
+import { DEFAULT_SITE, inMeters, type Site } from './match';
 
 /** Projects in "הפרויקט שלי": several sites, kept on this device. */
 export interface Project {
@@ -13,7 +13,7 @@ const KEY = 'cities-projects-v1';
 function read(): Project[] {
   try {
     const v = JSON.parse(localStorage.getItem(KEY) || '[]');
-    return Array.isArray(v) ? v : [];
+    return Array.isArray(v) ? v.map((p: Project) => ({ ...p, site: inMeters(p.site) })) : [];
   } catch {
     return [];
   }
@@ -45,7 +45,7 @@ export function useProjects() {
   return {
     items,
     create(site: Partial<Site> = {}) {
-      const p: Project = { id: Math.random().toString(36).slice(2, 9), site: { ...DEFAULT_SITE, ...site }, updatedAt: new Date().toISOString() };
+      const p: Project = { id: Math.random().toString(36).slice(2, 9), site: { ...DEFAULT_SITE, createdAt: new Date().toISOString(), ...site }, updatedAt: new Date().toISOString() };
       write([p, ...read()]);
       return p;
     },

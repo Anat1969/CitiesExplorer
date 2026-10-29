@@ -1,5 +1,7 @@
 import { CASES, type Band, type BandType, type Case, type Climate, type Context, type Scale } from '../data/cases';
 import { MOVES, type Move, type Phase } from '../data/moves';
+import type { StreetData } from './gis';
+import type { ImageMix } from './imageAnalysis';
 
 /** A planner's own site, as entered in "הפרויקט שלי". */
 export interface Site {
@@ -15,6 +17,21 @@ export interface Site {
   photo?: string;
   /** The planner's edits in the solutions document, by field key. */
   doc?: Record<string, string>;
+  /** The problem in the planner's own words. */
+  problemText?: string;
+  /** Location picked on the map or found by address. */
+  lat?: number;
+  lon?: number;
+  address?: string;
+  /** Street data read from OpenStreetMap at the location. */
+  street?: StreetData | null;
+  /** Colour reading of the photo. */
+  mix?: ImageMix;
+  /** Section widths are in meters (older projects kept relative widths). */
+  meters?: boolean;
+  createdAt?: string;
+  /** When the check last ran: the results stay visible after a reload. */
+  checkedAt?: string;
 }
 
 export const DEFAULT_SITE: Site = {
@@ -24,8 +41,17 @@ export const DEFAULT_SITE: Site = {
   climate: 'mediterranean',
   context: 'center',
   budget: 2,
-  section: [['building', 3], ['walk', 0.8], ['car', 1], ['car', 3], ['car', 1], ['walk', 0.8], ['building', 3]],
+  section: [['building', 4], ['walk', 2.5], ['car', 2.2], ['car', 3.25], ['car', 3.25], ['car', 2.2], ['walk', 2.5], ['building', 4]],
+  meters: true,
 };
+
+/** Older projects kept relative widths: scale the open part to 20 m, buildings to 4 m. */
+export function inMeters(site: Site): Site {
+  if (site.meters) return site;
+  const open = site.section.filter(([t]) => t !== 'building').reduce((s, [, w]) => s + w, 0) || 1;
+  const k = 20 / open;
+  return { ...site, meters: true, section: site.section.map(([t, w, lv]) => (t === 'building' ? [t, 4, lv] : [t, +(w * k).toFixed(2), lv]) as Band) };
+}
 
 /** Weights of the score, out of 100. Shown to the user as they are. */
 export const WEIGHTS = { problem: 40, climate: 15, section: 15, scale: 10, context: 10, budget: 10 } as const;
@@ -165,4 +191,14 @@ export function strategy(site: Site, matches: Match[], top = 8): Record<Phase, R
     out[ph].push(...[...extra.values()].sort((a, b) => b.weight - a.weight).slice(0, 2 - out[ph].length));
   }
   return out;
+}
+
+/** The site's own section, re-divided in the proportions of a case's "after". Buildings at the edges stay. */
+export function transform(section: Band[], c: Case): Band[] {
+  const lead = section[0]?.[0] === 'building' ? [section[0]] : [];
+  const tail = section.length > 1 && section[section.length - 1][0] === 'building' ? [section[section.length - 1]] : [];
+  const open = section.slice(lead.length, section.length - tail.length).reduce((s, [, w]) => s + w, 0);
+  const inner = c.section.after.filter(([t]) => t !== 'building');
+  const total = inner.reduce((s, [, w]) => s + w, 0) || 1;
+  return [...lead, ...inner.map(([t, w, lv]) => [t, +((w / total) * open).toFixed(2), lv] as Band), ...tail];
 }

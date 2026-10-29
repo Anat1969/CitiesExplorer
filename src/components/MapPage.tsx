@@ -4,6 +4,7 @@ import { feature } from 'topojson-client';
 import world from 'world-atlas/countries-110m.json';
 import { CASES, type Case } from '../data/cases';
 import { PROBLEMS, problemById } from '../data/problems';
+import { useProjects, type Project } from '../lib/projects';
 import { go, linkProps } from '../lib/route';
 import Flag from './Flag';
 
@@ -26,7 +27,7 @@ const YEARS = CASES.map((c) => c.yearStart).filter(Boolean);
 const FIRST = Math.min(...YEARS);
 const LAST = 2026;
 
-function Timeline({ onHover, onPick, active, year }: { onHover: (c: Case | null) => void; onPick: (c: Case) => void; active: string | null; year: number }) {
+function Timeline({ onHover, onPick, active, year, mine, onMine }: { onHover: (c: Case | null) => void; onPick: (c: Case) => void; active: string | null; year: number; mine: Project[]; onMine: (p: Project) => void }) {
   const from = Math.floor(FIRST / 10) * 10;
   const to = 2030;
   const TW = 960;
@@ -78,6 +79,15 @@ function Timeline({ onHover, onPick, active, year }: { onHover: (c: Case | null)
           </a>
         );
       })}
+      {mine.map((pr) => {
+        const i = Math.max(0, PROBLEMS.findIndex((p) => p.id === pr.site.problems[0]));
+        const y0 = new Date(pr.site.createdAt ?? pr.updatedAt).getFullYear();
+        return (
+          <a key={pr.id} className="mine" {...linkProps({ view: 'project', p: pr.id })} onMouseEnter={() => onMine(pr)} onFocus={() => onMine(pr)} aria-label={`הפרויקט שלך: ${pr.site.name || 'ללא שם'}`}>
+            <rect x={x(y0) - 8} y={22 + i * lane - 8} width={16} height={16} fill="#17191c" stroke="#fde98b" strokeWidth={3} />
+          </a>
+        );
+      })}
       <g className="playhead" transform={`translate(${x(year)},0)`}>
         <line y1={4} y2={TH - 24} stroke="#17191c" strokeWidth={2} />
         <rect x={-24} y={TH - 24} width={48} height={20} fill="#17191c" />
@@ -89,7 +99,17 @@ function Timeline({ onHover, onPick, active, year }: { onHover: (c: Case | null)
 
 export default function MapPage() {
   const [zoom, setZoom] = useState<Zoom>('world');
-  const [hover, setHover] = useState<Case | null>(null);
+  const [hover, setHoverCase] = useState<Case | null>(null);
+  const [mineOn, setMineOn] = useState<Project | null>(null);
+  const setHover = (c: Case | null) => {
+    setHoverCase(c);
+    if (c) setMineOn(null);
+  };
+  const showMine = (p: Project) => {
+    setMineOn(p);
+    setHoverCase(null);
+  };
+  const mine = useProjects().items.filter((p) => p.site.lat != null && p.site.lon != null);
   const [problem, setProblem] = useState<string | null>(null);
   const [year, setYear] = useState(LAST);
   const [playing, setPlaying] = useState(false);
@@ -287,11 +307,28 @@ export default function MapPage() {
                 </a>
               );
             })}
+            {mine.map((pr) => {
+              const ll: [number, number] = [pr.site.lon!, pr.site.lat!];
+              if (geoDistance(ll, center) > Math.PI / 2 - 0.02) return null;
+              const [px, py] = proj(ll) as [number, number];
+              return (
+                <a key={pr.id} className="mine" {...linkProps({ view: 'project', p: pr.id })} onMouseEnter={() => showMine(pr)} onFocus={() => showMine(pr)} aria-label={`הפרויקט שלך: ${pr.site.name || 'ללא שם'}`}>
+                  <rect x={px - 8} y={py - 8} width={16} height={16} fill="#17191c" stroke="#fde98b" strokeWidth={3} transform={`rotate(45 ${px} ${py})`} />
+                </a>
+              );
+            })}
           </svg>
         </div>
         <aside className="map-side">
           <div className="map-card" role="status">
-            {hover ? (
+            {mineOn ? (
+              <>
+                <span className="mono">הפרויקט שלך, {mineOn.site.address?.split(',').slice(0, 2).join(',') || 'מיקום על המפה'}</span>
+                <b>{mineOn.site.name || 'פרויקט ללא שם'}</b>
+                <p>{mineOn.site.problemText || mineOn.site.problems.map((p) => problemById(p)?.title).join(', ') || 'הבעיה עוד לא נוסחה.'}</p>
+                <button type="button" className="btn small" onClick={() => go({ view: 'project', p: mineOn.id })}>לפרויקט</button>
+              </>
+            ) : hover ? (
               <>
                 <span className="mono">{hover.city}, {hover.country}, {hover.years}</span>
                 <b><Flag country={hover.countryEn} label={hover.country} /> {hover.name}</b>
@@ -314,6 +351,10 @@ export default function MapPage() {
               <li>
                 <i className="ring-key" />
                 קו מהמרכז: כמה מקרים באותה עיר
+              </li>
+              <li>
+                <i className="mine-key" />
+                הפרויקט שלך{mine.length ? '' : ': מסמנים מיקום ב"הפרויקט שלי"'}
               </li>
               <li>
                 <i className="future-key" />
@@ -353,7 +394,10 @@ export default function MapPage() {
           <span className="mono year">{year}</span>
         </div>
         <div className="timeline-wrap">
-          <Timeline onHover={setHover} onPick={pickCase} active={hover?.id ?? null} year={year} />
+          <Timeline onHover={setHover} onPick={pickCase} active={hover?.id ?? null} year={year} mine={mine} onMine={(p) => {
+            showMine(p);
+            flyTo(p.site.lon!, p.site.lat!, Math.max(view.k, 2.4));
+          }} />
         </div>
       </section>
     </main>
