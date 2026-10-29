@@ -143,7 +143,9 @@ ok((await page.locator('.story section[data-tone="go"]').count()) === 1 && (awai
 ok((await page.locator('.case-head mark').count()) === 1, 'insight highlighted');
 ok((await page.locator('.story strong').count()) >= 1, 'key figures in bold');
 const saveH = await page.locator('.case-actions .save').evaluate((e) => e.getBoundingClientRect().height);
-ok(saveH <= 32 && (await page.locator('.case-actions .save').getAttribute('title')).length > 20, 'save button small and explained');
+const rowH = await page.locator('.case-actions > *').evaluateAll((els) => els.map((e) => Math.round(e.getBoundingClientRect().height)));
+ok(new Set(rowH).size === 1, `case actions share one height (${rowH})`);
+ok(saveH <= 36 && (await page.locator('.case-actions .save').getAttribute('title')).length > 20, 'save button small and explained');
 
 // Case navigation from a problem keeps the context in the crumbs
 await page.goto(BASE + '/?problem=heat');
@@ -351,6 +353,17 @@ await page.goto(BASE + '/?view=map');
 await page.waitForSelector('.map a circle');
 ok((await page.locator('.map a').count()) === DATA.length, 'every case on the map');
 ok((await page.locator('.map-legend li').count()) >= 10, 'map has a legend');
+// Grid: the side column shares the globe's top and bottom lines, and its frames share one width
+for (const w of [1920, 1360]) {
+  await page.setViewportSize({ width: w, height: 1000 });
+  await page.waitForTimeout(200);
+  const [f, side, card, leg] = await Promise.all(['.map-frame', '.map-side', '.map-card', '.map-legend'].map((q) => page.locator(q).boundingBox()));
+  const near = (a, b) => Math.abs(a - b) < 1.5;
+  ok(near(f.y, side.y) && near(f.y + f.height, side.y + side.height), `map row: top and bottom lines align (${w})`);
+  ok(near(card.x, leg.x) && near(card.width, leg.width), `map side: card and legend share one width (${w})`);
+  ok(near(card.y, f.y) && near(leg.y + leg.height, f.y + f.height), `map side: frames fill the column (${w})`);
+}
+await page.setViewportSize({ width: 1360, height: 900 });
 await page.locator('.map a:not(.far)').first().focus();
 ok((await page.locator('.map-card b').count()) === 1, 'hover shows case card');
 const rot0 = await page.locator('.map path').nth(1).getAttribute('d');
