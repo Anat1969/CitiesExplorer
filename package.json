@@ -10,6 +10,7 @@
     "test": "node tests/e2e.mjs"
   },
   "dependencies": {
+    "country-flag-icons": "^1.6.20",
     "d3-geo": "^3.1.1",
     "framer-motion": "11.11.17",
     "react": "18.3.1",

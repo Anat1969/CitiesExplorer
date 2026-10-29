@@ -51,7 +51,7 @@ export default function TopBar({ route }: { route: Route }) {
         </a>
         <a {...linkProps({ view: 'board' })} aria-current={route.view === 'board' || route.view === 'present' ? 'page' : undefined}>
           לוח השראה
-          {board.items.length ? <span className="count">{board.items.length}</span> : null}
+          {board.items.length ? <span className="count" title="מספר המקרים ששמרת בלוח">{board.items.length}</span> : null}
         </a>
       </nav>
       <label className="search">

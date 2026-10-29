@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import type { Scale } from '../data/cases';
 
-export type View = 'home' | 'problem' | 'case' | 'all' | 'board' | 'moves' | 'move' | 'map' | 'project' | 'compare' | 'present';
+export type View = 'home' | 'problem' | 'case' | 'all' | 'board' | 'moves' | 'move' | 'map' | 'project' | 'compare' | 'present' | 'doc';
 
 export interface Route {
   view: View;
@@ -18,7 +18,7 @@ export interface Route {
   s?: number;
 }
 
-const PLAIN_VIEWS: View[] = ['board', 'moves', 'map', 'project', 'compare', 'present'];
+const PLAIN_VIEWS: View[] = ['board', 'moves', 'map', 'project', 'compare', 'present', 'doc'];
 
 export function parse(search: string): Route {
   const p = new URLSearchParams(search);

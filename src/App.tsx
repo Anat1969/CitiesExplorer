@@ -2,6 +2,7 @@ import { lazy, Suspense, useEffect } from 'react';
 import AllCases from './components/AllCases';
 import Board from './components/Board';
 import CasePage from './components/CasePage';
+import DocPage from './components/DocPage';
 import ComparePage from './components/ComparePage';
 import Home from './components/Home';
 import MovePage from './components/MovePage';
@@ -26,6 +27,7 @@ const TITLES: Partial<Record<Route['view'], string>> = {
   project: 'הפרויקט שלי',
   compare: 'השוואה',
   present: 'מצגת',
+  doc: 'מסמך פתרונות',
 };
 
 function Page({ route }: { route: Route }) {
@@ -52,6 +54,8 @@ function Page({ route }: { route: Route }) {
       return <ProjectPage route={route} />;
     case 'compare':
       return <ComparePage route={route} />;
+    case 'doc':
+      return <DocPage route={route} />;
     case 'present':
       return <PresentPage route={route} />;
     default:

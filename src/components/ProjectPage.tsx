@@ -7,6 +7,8 @@ import { useBoard } from '../lib/board';
 import { PART_LABEL, rank, strategy, WEIGHTS, type Part, type Site } from '../lib/match';
 import { useProjects } from '../lib/projects';
 import { go, linkProps, type Route } from '../lib/route';
+import Flag from './Flag';
+import SitePhoto from './SitePhoto';
 import { BAND_COLOR, BAND_LABEL, carShare, MiniSection } from './Section';
 
 const PART_COLOR: Record<Part, string> = {
@@ -149,8 +151,7 @@ export default function ProjectPage({ route }: { route: Route }) {
     setStatus('שומר...');
     clearTimeout(timer.current);
     timer.current = window.setTimeout(() => {
-      projects.save(current.id, next);
-      setStatus('נשמר במכשיר');
+      setStatus(projects.save(current.id, next) ? 'נשמר במכשיר' : 'המכשיר לא שמר: האחסון מלא או חסום. נסו תמונה קטנה יותר');
     }, 350);
   };
 
@@ -204,6 +205,15 @@ export default function ProjectPage({ route }: { route: Route }) {
           ) : null}
         </div>
       </header>
+
+      <section className="step">
+        <div className="step-head">
+          <span className="mono">00</span>
+          <h2>תמונה של הבעיה</h2>
+          <p>צילום של המצב הקיים. הוא נכנס לראש מסמך הפתרונות שמכינים להצגה בפני המהנדס.</p>
+        </div>
+        <SitePhoto photo={site.photo} onChange={(photo) => update({ photo })} />
+      </section>
 
       <section className="step">
         <div className="step-head">
@@ -267,7 +277,7 @@ export default function ProjectPage({ route }: { route: Route }) {
               <a className="match" {...linkProps({ view: 'case', case: m.c.id })}>
                 <span className="match-score">{m.score}</span>
                 <div className="match-body">
-                  <b>{m.c.name}</b>
+                  <b><Flag country={m.c.countryEn} label={m.c.country} /> {m.c.name}</b>
                   <span className="en">{m.c.nameEn}, {m.c.city}</span>
                   <div className="stack" aria-label={`פירוט הציון של ${m.c.name}`}>
                     {(Object.keys(WEIGHTS) as Part[]).map((k) => (
@@ -344,7 +354,7 @@ export default function ProjectPage({ route }: { route: Route }) {
         <ul className="risks">
           {matches.slice(0, 3).map((m) => (
             <li key={m.c.id}>
-              <b>{m.c.name}</b>
+              <b><Flag country={m.c.countryEn} label={m.c.country} /> {m.c.name}</b>
               <p>{m.c.cautions}</p>
             </li>
           ))}
@@ -352,7 +362,15 @@ export default function ProjectPage({ route }: { route: Route }) {
       </section>
 
       <div className="board-actions project-actions">
-        <button type="button" className="btn" onClick={copy}>העתקת התדריך</button>
+        <button type="button" className="btn" onClick={() => {
+            // Save now, so the document opens with the latest photo and problem.
+            clearTimeout(timer.current);
+            projects.save(current.id, site);
+            go({ view: 'doc', p: current.id });
+          }} disabled={!site.problems.length} title={site.problems.length ? 'מסמך ערוך עם הפתרונות מדורגים לפי רלוונטיות, להצגה בפני המהנדס' : 'בחרו קודם בעיה'}>
+          מסמך פתרונות למהנדס
+        </button>
+        <button type="button" className="btn ghost" onClick={copy}>העתקת התדריך</button>
         <button type="button" className="btn ghost" onClick={() => board.add(matches.slice(0, 3).map((m) => m.c.id))}>שלושת המקרים הקרובים ללוח</button>
         <button type="button" className="btn ghost" onClick={() => go({ view: 'compare', ids: matches.slice(0, 3).map((m) => m.c.id) })}>השוואת שלושת הקרובים</button>
         <button type="button" className="btn ghost" onClick={() => print()}>הדפסה</button>

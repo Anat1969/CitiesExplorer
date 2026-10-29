@@ -43,6 +43,13 @@ The test serves the A&I menu from `tests/fixtures/ai-menu.js` (copy of AppOfApp-
   "X מתוך Y עובדות אומתו מול מקור".
 - The section drawing (`src/components/Section.tsx`) is schematic. "שטח החתך לרכב" is computed from the bands and
   labeled as a schematic estimate, not a measurement.
+- Photos (`photos` in each case): 146 freely licensed photos from Wikimedia Commons for 52 cases (Favela-Bairro and
+  Drachten have none usable). Hotlinked from upload.wikimedia.org in standard thumbnail widths only (500, 960, 1280,
+  1920; other widths are refused), `hash` = first two hex digits of md5 of the file name. Every photo shows author,
+  license and a link to its Commons page. Captions are Hebrew. File names were checked to exist via the Commons API;
+  the images themselves were chosen from titles and descriptions (this environment is blocked by Wikimedia, 429).
+- The case page also has a satellite view (Google Maps embed by coordinates, no key), Street View and "עוד תמונות"
+  (Google Images search).
 - Related apps (`src/data/apps.ts`): שכונה 360, פינוי בינוי, ביומימטיקה, סגנונות עיצוב פנים.
 
 ## The tool ("הפרויקט שלי", `src/lib/match.ts`)
@@ -54,12 +61,18 @@ The test serves the A&I menu from `tests/fixtures/ai-menu.js` (copy of AppOfApp-
   fewer than two moves is filled from all cases of the same problem and labeled "מתוך כל מקרי הבעיה".
 - "כיוון אפשרי לחתך": the site's own section re-divided in the proportions of the best match's "after".
 - Projects live in localStorage (`src/lib/projects.ts`), id in the address `?view=project&p=`.
+- "מסמך פתרונות למהנדס" (`?view=doc&p=`, `DocPage.tsx`): photo of the problem (resized to 1280 JPEG, stored with the
+  project), the chosen problems, the top solutions (score 35+) ranked by relevance with traffic-light blocks (what
+  worked, what to check here, what failed), phases, recommendation. Every text is editable in place and kept in
+  `site.doc`; printable to PDF.
 - Method shown in the UI: precedent library + pattern language (Christopher Alexander). Not a recommendation.
 
 ## Views
 
-home, problem, case, all, board, moves (problem x move matrix), move, map (d3-geo + world-atlas, lazy loaded,
-same-city points fan out in a ring; timeline runs right to left), project, compare (`?ids=a,b,c`),
+home, problem, case, all, board, moves (problem x move matrix), move, map (a rotating orthographic globe, d3-geo +
+world-atlas, lazy loaded; drag to turn; same-city points fan out in a ring; legend beside it; the timeline runs right to
+left with a playhead that plays through the years and fades cases not yet started; a timeline click turns the globe
+to the case), doc, project, compare (`?ids=a,b,c`),
 present (`?view=present&s=`; keyboard arrows). Print stylesheet for project brief and board.
 
 ## UI rules
@@ -74,10 +87,22 @@ present (`?view=present&s=`; keyboard arrows). Print stylesheet for project brie
 - Board notes save as you type, with a "נשמר במכשיר" status.
 - Board writes read storage fresh each time (a stale closure once kept only the last of three saves).
 
+## Anat's standing rules (2026-10-29, apply to every app)
+
+1. Traffic light: positive in green, conditional in amber, negative or failed in red, so the eye sees for and against.
+2. Visual reading: important words in bold, insights in a yellow highlighter.
+3. Management buttons (save, board, copy) are small and quiet; content leads. Every button whose role is not
+   obvious from its label gets a short explanation (`title` plus clear wording).
+4. Every map has a legend.
+5. Places around the world: the country's flag next to the project name (flags are the exception to "no icons";
+   SVG from `country-flag-icons`, never emoji, which Windows shows as letters).
+6. A world map is a rotating globe (drag to turn); a timeline has a playhead that runs through the years.
+7. Every case shows a real photo inside its frame, plus a link to a site with more photos.
+
 ## Deviations from anat-app-builder (said up front)
 
 - No Supabase and no in-page editing: the content is curated in code and the board is personal (localStorage).
-- No photos: each case is drawn as a parametric section, since no licensed images were available.
+- Photos come from Wikimedia Commons under free licenses, with credit; the parametric section stays as the analysis.
 
 ## Hosting
 
@@ -105,5 +130,9 @@ present (`?view=present&s=`; keyboard arrows). Print stylesheet for project brie
   real domain with `list_project_domains` before writing it anywhere.
 - Full-page Playwright screenshots miss `whileInView` content and `background-attachment: fixed`: scroll the page
   before the shot, and keep the body background non-fixed.
+- 2026-10-29: the flat map's case card covered Melbourne (bottom corner), so it could not be clicked. The card now
+  sits beside the map, never over it.
+- Wikimedia rate-limits this environment's shared IP (429, then "robot policy"). Query Commons through WebFetch
+  (another egress) and never from curl in a loop.
 - IBM Plex Mono has no Hebrew glyphs. Hebrew labels in mono fall back to Plex Sans Hebrew; keep their letter-spacing
   small (0.02-0.04em) or the words fall apart.

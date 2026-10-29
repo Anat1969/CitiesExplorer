@@ -6,6 +6,7 @@ import { problemById } from '../data/problems';
 import { useBoard } from '../lib/board';
 import { go, linkProps, type Route } from '../lib/route';
 import Section, { carShare } from './Section';
+import Flag from './Flag';
 
 /** The board as a presentation for a committee or a class: one case per slide, keyboard and buttons. */
 export default function PresentPage({ route }: { route: Route }) {
@@ -55,7 +56,7 @@ export default function PresentPage({ route }: { route: Route }) {
             <>
               <div className="slide-text">
                 <span className="mono">{p?.title}</span>
-                <h1>{c.name}</h1>
+                <h1><Flag country={c.countryEn} label={c.country} /> {c.name}</h1>
                 <p className="en">{c.nameEn}, {c.city}, {c.years}</p>
                 <p className="slide-insight">{c.insight}</p>
                 <ul className="takeaways">

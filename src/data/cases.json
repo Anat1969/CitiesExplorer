@@ -155,6 +155,38 @@
     "status": "verified",
     "source": "https://koreatimes.co.kr/www/nation/2025/03/123_68399.html"
    }
+  ],
+  "photos": [
+   {
+    "file": "Cheonggyecheon stream with flowers and bridge at sunrise near Cheonggye Plaza in Seoul.jpg",
+    "hash": "90",
+    "width": 6653,
+    "height": 4435,
+    "author": "Basile Morin",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "הנחל המשוקם, צמחייה וגשר הולכי רגל ליד כיכר צ'ונגייה"
+   },
+   {
+    "file": "Cheonggyecheon Seoul 1.jpg",
+    "hash": "7a",
+    "width": 4910,
+    "height": 3280,
+    "author": "kallerna",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "טיילת הנחל, מתחת למפלס הרחוב במרכז סיאול"
+   },
+   {
+    "file": "Cheonggyecheon supports.jpg",
+    "hash": "47",
+    "width": 3456,
+    "height": 2304,
+    "author": "Bcody80",
+    "license": "Public domain",
+    "when": "after",
+    "caption": "עמודי הכביש המוגבה שפורק, שהושארו ליד הנחל, 2006"
+   }
   ]
  },
  {
@@ -298,6 +330,38 @@
     "text": "אורך הפארק כ-1.45 מייל, כ-2.3 ק\"מ.",
     "status": "verified",
     "source": "https://thehighline.org/history/"
+   }
+  ],
+  "photos": [
+   {
+    "file": "High Line (New York City) 2014.jpg",
+    "hash": "59",
+    "width": 6000,
+    "height": 3375,
+    "author": "Marco Nürnberger",
+    "license": "CC BY 2.0",
+    "when": "after",
+    "caption": "שביל מגונן על הפארק המוגבה, 2014"
+   },
+   {
+    "file": "High Line looking north past 19th Street Manhattan.jpeg",
+    "hash": "9a",
+    "width": 5712,
+    "height": 4284,
+    "author": "Dough4872",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "הפארק במבט צפונה, מעבר לרחוב 19"
+   },
+   {
+    "file": "High Line (48808498).jpg",
+    "hash": "f3",
+    "width": 2272,
+    "height": 1704,
+    "author": "Geoff Stearns",
+    "license": "CC BY 2.0",
+    "when": "before",
+    "caption": "גשר הרכבת הנטוש והמוצמח ב-2005, לפני הפארק"
    }
   ]
  },
@@ -444,6 +508,38 @@
     "status": "approx",
     "source": "https://naciodigital.cat/societat/oportunitats-i-amenaces-del-salt-descala-de-les-superilles.html"
    }
+  ],
+  "photos": [
+   {
+    "file": "Superilla Poblenou - Carrer Almogàvers.jpg",
+    "hash": "b6",
+    "width": 5312,
+    "height": 2988,
+    "author": "Toniher",
+    "license": "CC BY-SA 3.0",
+    "when": "after",
+    "caption": "רחוב אלמוגאוורס בתוך הסופרבלוק של פובלנו"
+   },
+   {
+    "file": "Superilla del barri de Sant Antoni, Barcelona.jpg",
+    "hash": "d8",
+    "width": 3648,
+    "height": 2736,
+    "author": "Cataleirxs",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "רחוב מרוסן בסופרבלוק של סנט אנטוני"
+   },
+   {
+    "file": "Carrer Consell de Cent de Barcelona, tram de la Superilla de l'Eixample 2.jpg",
+    "hash": "60",
+    "width": 3648,
+    "height": 2736,
+    "author": "Cataleirxs",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "רחוב קונסל דה סנט, שהפך לציר ירוק באישמפלה"
+   }
   ]
  },
  {
@@ -561,6 +657,38 @@
     "text": "מתחילת שנות השבעים מדד יאן גל את תנועת הולכי הרגל והאופניים בקופנהגן.",
     "status": "approx",
     "source": "https://rs.resalliance.org/?p=783"
+   }
+  ],
+  "photos": [
+   {
+    "file": "Amagertorv (37848125536).jpg",
+    "hash": "2a",
+    "width": 5520,
+    "height": 3680,
+    "author": "Jorge Láscar",
+    "license": "CC BY 2.0",
+    "when": "after",
+    "caption": "כיכר אמגרטורב, חלק ממדרחוב סטרויט"
+   },
+   {
+    "file": "Amagertorv - Strøget.jpg",
+    "hash": "54",
+    "width": 4205,
+    "height": 2848,
+    "author": "Axel Kuhlmann",
+    "license": "CC BY 2.0",
+    "when": "after",
+    "caption": "הולכי רגל בסטרויט, באמגרטורב"
+   },
+   {
+    "file": "Amagers torg København - Copenhagen april 17 a.jpg",
+    "hash": "3c",
+    "width": 5472,
+    "height": 3648,
+    "author": "Øyvind Holmstad",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "כיכר אמגרטורב על סטרויט, קופנהגן"
    }
   ]
  },
@@ -683,6 +811,28 @@
     "text": "דווח על ירידה של כ-40% בפגיעות בהולכי רגל, אבל המקורות מביאים נתונים שונים.",
     "status": "approx",
     "source": "https://snohetta.prezly.com/snohetta-redesigns-times-square-doubling-the-amount-of-public-space"
+   }
+  ],
+  "photos": [
+   {
+    "file": "Furniture in Time Square jeh.jpg",
+    "hash": "8c",
+    "width": 4000,
+    "height": 2999,
+    "author": "Jim.henderson",
+    "license": "CC BY 4.0",
+    "when": "after",
+    "caption": "ריהוט נייד במדרחוב טיימס סקוור"
+   },
+   {
+    "file": "2024-06-17 10 13 52 View north from near the intersection of Broadway and 43rd Street in Times Square, Manhattan, New York City, New York.jpg",
+    "hash": "d0",
+    "width": 4032,
+    "height": 3024,
+    "author": "Famartin",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "המדרחוב בברודוויי, במבט צפונה מרחוב 43"
    }
   ]
  },
@@ -814,6 +964,28 @@
     "text": "הכיכר נפתחה בדצמבר 2013.",
     "status": "approx",
     "source": "https://www.dutchwatersector.com/node/577"
+   }
+  ],
+  "photos": [
+   {
+    "file": "Benthemplein terrain basket gestion eau.jpg",
+    "hash": "7c",
+    "width": 2592,
+    "height": 1944,
+    "author": "Cathrotterdam",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "מגרש כדורסל שקוע שמשמש גם אגן מי נגר"
+   },
+   {
+    "file": "Benthemplein terrain skate gestion eau.jpg",
+    "hash": "06",
+    "width": 2592,
+    "height": 1944,
+    "author": "Cathrotterdam",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "אגן המשחק המדורג, שמתמלא בגשם חזק"
    }
   ]
  },
@@ -962,6 +1134,38 @@
     "status": "approx",
     "source": "https://blogs.ubc.ca/futureinfrastructure/files/2015/11/Ben-Reimer-Madrid-Rio-Park-Text.pdf"
    }
+  ],
+  "photos": [
+   {
+    "file": "Paseos por Madrid-río (33124761558).jpg",
+    "hash": "7b",
+    "width": 4000,
+    "height": 3000,
+    "author": "manuel m. v.",
+    "license": "CC BY 2.0",
+    "when": "after",
+    "caption": "טיילת עצים בפארק מדריד ריו"
+   },
+   {
+    "file": "Connections- Madrid Rio (6382191729).jpg",
+    "hash": "c6",
+    "width": 4000,
+    "height": 3000,
+    "author": "La Citta Vita",
+    "license": "CC BY-SA 2.0",
+    "when": "after",
+    "caption": "שבילים וגשרים לאורך נהר המנסנארס"
+   },
+   {
+    "file": "Madrid - Obras M-30 - Puente de Toledo - 20070210b.jpg",
+    "hash": "6b",
+    "width": 3880,
+    "height": 2184,
+    "author": "Barcex",
+    "license": "CC BY-SA 3.0",
+    "when": "before",
+    "caption": "עבודות כביש M-30 ליד גשר טולדו, 2007, לפני הפארק"
+   }
   ]
  },
  {
@@ -1088,6 +1292,38 @@
     "text": "ב-21 בפברואר 2018 ביטל בית המשפט המנהלי את החלטת המועצה, ובאוקטובר 2018 אושרה הסגירה מחדש.",
     "status": "verified",
     "source": "https://www.paris.fr/pages/la-pietonnisation-des-rives-de-seine-validee-par-la-justice-6214"
+   }
+  ],
+  "photos": [
+   {
+    "file": "Parc Rives de Seine @ Seine @ Paris (33570390694).jpg",
+    "hash": "27",
+    "width": 5472,
+    "height": 3648,
+    "author": "Guilhem Vellut",
+    "license": "CC BY 2.0",
+    "when": "after",
+    "caption": "הפארק לאורך הסן, בלי מכוניות"
+   },
+   {
+    "file": "Les Berges de Seine, Port des Invalides, Paris 2020.jpg",
+    "hash": "3e",
+    "width": 5988,
+    "height": 3324,
+    "author": "jean-michel dromard",
+    "license": "CC BY 2.0",
+    "when": "after",
+    "caption": "הטיילת ליד פור דז אנווליד"
+   },
+   {
+    "file": "Children, Les Berges de Seine, Paris 27 June 2013 002.jpg",
+    "hash": "f5",
+    "width": 3579,
+    "height": 2433,
+    "author": "Martin Greslou",
+    "license": "CC BY-SA 3.0",
+    "when": "after",
+    "caption": "ילדים משחקים על הגדה השמאלית, 2013"
    }
   ]
  },
@@ -1216,6 +1452,38 @@
     "text": "אורך המסלול כקילומטר, והמקורות נותנים בין 983 ל-1,024 מטר.",
     "status": "approx",
     "source": "https://www.mvrdv.com/projects/208/seoullo-7017-"
+   }
+  ],
+  "photos": [
+   {
+    "file": "Seoullo 7017 Overview.jpg",
+    "hash": "6b",
+    "width": 4160,
+    "height": 2340,
+    "author": "Christian Bolz",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "מבט על השביל המגונן על גשר הכביש לשעבר"
+   },
+   {
+    "file": "Seoullo 7017 01.jpg",
+    "hash": "1d",
+    "width": 6000,
+    "height": 4000,
+    "author": "분당선M",
+    "license": "CC BY-SA 3.0",
+    "when": "after",
+    "caption": "סאולו 7017 ועציצי הענק העגולים ליד תחנת סיאול"
+   },
+   {
+    "file": "Seoullo 7017 plants (2).jpg",
+    "hash": "31",
+    "width": 4160,
+    "height": 2340,
+    "author": "Christian Bolz",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "עציצים ושביל על הגשר"
    }
   ]
  },
@@ -1350,6 +1618,38 @@
     "text": "הפארק נוצר ב-2010, ולפי מקורות אחרים נחנך רשמית ב-2013.",
     "status": "approx",
     "source": "https://en.wikipedia.org/wiki/Train_Track_Park"
+   }
+  ],
+  "photos": [
+   {
+    "file": "ParkHaMesilaJerusalemMay302023 01.jpg",
+    "hash": "c1",
+    "width": 4000,
+    "height": 3000,
+    "author": "Hagai Agmon-Snir",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "שביל פארק המסילה לאורך תוואי הרכבת הישן"
+   },
+   {
+    "file": "149907 jerusalem-hamesila park PikiWiki Israel.jpg",
+    "hash": "ce",
+    "width": 5712,
+    "height": 4284,
+    "author": "שלמה רודד",
+    "license": "CC BY 2.5",
+    "when": "after",
+    "caption": "הפארק הלינארי על תוואי מסילת יפו-ירושלים מ-1892"
+   },
+   {
+    "file": "HaMessila Park P1140274.JPG",
+    "hash": "93",
+    "width": 4000,
+    "height": 3000,
+    "author": "Deror_avi",
+    "license": "CC BY-SA 3.0",
+    "when": "after",
+    "caption": "פארק המסילה בשכונת בקעה"
    }
   ]
  },
@@ -1489,6 +1789,28 @@
     "text": "פארק Enghaveparken תוכנן מחדש כך שישמש מאגר גדול בגשם עז.",
     "status": "verified",
     "source": "https://www.npr.org/2025/06/13/nx-s1-5340710/copenhagen-climate-change-solutions-flooding"
+   }
+  ],
+  "photos": [
+   {
+    "file": "Tåsinge Plads 01.jpg",
+    "hash": "3c",
+    "width": 2560,
+    "height": 1920,
+    "author": "Leif Jørgensen",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "כיכר טוזינגה, כיכר מותאמת אקלים שאוגרת מי גשם"
+   },
+   {
+    "file": "Skybrud July 2011 2.JPG",
+    "hash": "ef",
+    "width": 5184,
+    "height": 3456,
+    "author": "Thue",
+    "license": "CC0",
+    "when": "before",
+    "caption": "כביש מהיר מוצף אחרי סערת השבר ביולי 2011"
    }
   ]
  },
@@ -1644,6 +1966,38 @@
     "status": "verified",
     "source": "https://khn.nl/nieuws/khn-utrecht-en-cmu-blijven-zich-verzetten-tegen-afsluiting-catharijnesingel-per-21-september"
    }
+  ],
+  "photos": [
+   {
+    "file": "Catharijnsesingel Utrecht.jpg",
+    "hash": "c4",
+    "width": 5472,
+    "height": 3648,
+    "author": "Steven Lek",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "תעלת קתרינה שנפתחה מחדש באוטרכט, 2017"
+   },
+   {
+    "file": "De vernieuwde Catharijnesingel in de stad Utrecht.jpg",
+    "hash": "71",
+    "width": 4770,
+    "height": 3177,
+    "author": "Jan dijkstra",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "טיילת לאורך התעלה המשוקמת"
+   },
+   {
+    "file": "Catharijnesingel 2.jpg",
+    "hash": "1c",
+    "width": 2816,
+    "height": 2112,
+    "author": "Luctor",
+    "license": "Public domain",
+    "when": "before",
+    "caption": "התעלה ככביש של ארבעה נתיבים ב-2008, לפני שהמים חזרו"
+   }
   ]
  },
  {
@@ -1790,6 +2144,38 @@
     "text": "הפרויקט עזר להפוך את אזור הבסטיליה מפינה מוזנחת למרכז של תרבות בורגנית.",
     "status": "verified",
     "source": "https://dev.planetizen.com/node/65524"
+   }
+  ],
+  "photos": [
+   {
+    "file": "Coulée verte René-Dumont - Paris.jpg",
+    "hash": "41",
+    "width": 4288,
+    "height": 2848,
+    "author": "André ALLIOT",
+    "license": "CC0",
+    "when": "after",
+    "caption": "השביל המגונן של קולה ורט רנה-דימון"
+   },
+   {
+    "file": "Coulée Verte René-Dumont @ Paris (29233975406).jpg",
+    "hash": "3a",
+    "width": 5472,
+    "height": 3648,
+    "author": "Guilhem Vellut",
+    "license": "CC BY 2.0",
+    "when": "after",
+    "caption": "שביל ירוק על המסילה לשעבר, הרובע ה-12"
+   },
+   {
+    "file": "Coulée verte René-Dumont 2017 1.jpg",
+    "hash": "a9",
+    "width": 3648,
+    "height": 2736,
+    "author": "Smiley.toerist",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "מסלול ההליכה על גשר המסילה ליד הבסטיליה"
    }
   ]
  },
@@ -1944,6 +2330,38 @@
     "status": "verified",
     "source": "https://blockclubchicago.org/2020/01/15/home-prices-along-western-portion-of-606-skyrocketing-344-increase-since-2012-new-study-finds/"
    }
+  ],
+  "photos": [
+   {
+    "file": "Bloomingdale Trail, the 606, Chicago 2015-45.jpg",
+    "hash": "d0",
+    "width": 5760,
+    "height": 3840,
+    "author": "Victor Grigas",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "שביל בלומינגדייל על המסילה המוגבהת לשעבר, 2015"
+   },
+   {
+    "file": "Bloomingdale Trail (18739347583).jpg",
+    "hash": "ad",
+    "width": 3840,
+    "height": 2160,
+    "author": "Payton Chung",
+    "license": "CC BY 2.0",
+    "when": "after",
+    "caption": "השביל מעל רשת הרחובות"
+   },
+   {
+    "file": "Bloomingdale Trail below the CTA Blue Line - Chicago, IL - April 2023.jpg",
+    "hash": "53",
+    "width": 3375,
+    "height": 2250,
+    "author": "AlphaBeta135",
+    "license": "CC BY 4.0",
+    "when": "after",
+    "caption": "השביל עובר מתחת לקו הרכבת הכחול"
+   }
   ]
  },
  {
@@ -2083,6 +2501,38 @@
     "status": "verified",
     "source": "https://www.fhwa.dot.gov/ipd/project_profiles/ga_atlanta_beltline.aspx"
    }
+  ],
+  "photos": [
+   {
+    "file": "Eastside Trail of the Atlanta BeltLine in October 2026 01.jpg",
+    "hash": "7e",
+    "width": 4000,
+    "height": 2252,
+    "author": "TomasVial",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "השביל המזרחי של הבלטליין, מסדרון רכבת שהפך לשביל הליכה ואופניים"
+   },
+   {
+    "file": "Atlanta Beltline Eastside Trail, Inman Park GA.jpg",
+    "hash": "a9",
+    "width": 4032,
+    "height": 3024,
+    "author": "John Phelan",
+    "license": "CC BY 4.0",
+    "when": "after",
+    "caption": "השביל המזרחי עובר באינמן פארק"
+   },
+   {
+    "file": "Gathering space beneath Freedom Parkway along the Atlanta BeltLine Eastside Trail.jpg",
+    "hash": "f8",
+    "width": 5609,
+    "height": 3155,
+    "author": "Marc Merlin",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "מרחב התכנסות מתחת לגשר, לאורך השביל המזרחי"
+   }
   ]
  },
  {
@@ -2217,6 +2667,38 @@
     "text": "מחקר מ-2017 מצא את הסיכוי הגבוה לג'נטריפיקציה בטווח של כ-600 מטר מהפארק.",
     "status": "verified",
     "source": "https://www.mdpi.com/2071-1050/9/2/231"
+   }
+  ],
+  "photos": [
+   {
+    "file": "Gyeonguiseon Forest Trail Park and Ttaeng-ttaeng Street in Seoul (near Hongdae, 1).jpg",
+    "hash": "a5",
+    "width": 4160,
+    "height": 2340,
+    "author": "Christian Bolz",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "פארק היער של קו גיונגאוי ליד הונגדה, על תוואי הרכבת לשעבר"
+   },
+   {
+    "file": "Gyeonguiseon Forest Trail Park and Ttaeng-ttaeng Street in Seoul (near Hongdae, 4).jpg",
+    "hash": "9b",
+    "width": 4160,
+    "height": 2340,
+    "author": "Christian Bolz",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "שביל וצמחייה בפארק ליד הונגדה"
+   },
+   {
+    "file": "Yeontral Park, Hongdae.png",
+    "hash": "5c",
+    "width": 3264,
+    "height": 2437,
+    "author": "Brit in Seoul",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "קטע יונאם-דונג של הפארק, עם מדשאה ומבקרים"
    }
   ]
  },
@@ -2361,6 +2843,38 @@
     "text": "ההשקעה הוערכה בכ-44.1 מיליון אירו.",
     "status": "approx",
     "source": "https://www.lyoncapitale.fr/actualite/berges-du-rhone-lyon-retrouve-son-fleuve"
+   }
+  ],
+  "photos": [
+   {
+    "file": "Berges du Rhône côté 6e arrondissement en 2012.jpg",
+    "hash": "6b",
+    "width": 4272,
+    "height": 2848,
+    "author": "Patrick Nouhailler",
+    "license": "CC BY-SA 3.0",
+    "when": "after",
+    "caption": "טיילת גדת הרון שהוחזרה לציבור, 2012"
+   },
+   {
+    "file": "Berges du Rhône @ Lyon (35552718174).jpg",
+    "hash": "68",
+    "width": 5472,
+    "height": 3648,
+    "author": "Guilhem Vellut",
+    "license": "CC BY 2.0",
+    "when": "after",
+    "caption": "הליכה לאורך גדות הרון בליון"
+   },
+   {
+    "file": "Parc des berges du Rhône 2.jpg",
+    "hash": "ff",
+    "width": 3968,
+    "height": 2240,
+    "author": "Blueberry-026",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "טיילת בפארק גדות הרון"
    }
   ]
  },
@@ -2507,6 +3021,38 @@
     "text": "המים יכולים לעלות עד כשלושה מטרים, ומערכת התרעה פועלת ב-11 נקודות בטיחות.",
     "status": "verified",
     "source": "https://www.nparks.gov.sg/visit/parks/bishan-ang-mo-kio-park/special-features"
+   }
+  ],
+  "photos": [
+   {
+    "file": "Singapore Bishan Park Aerial.jpg",
+    "hash": "0d",
+    "width": 4000,
+    "height": 2667,
+    "author": "Atelier Dreiseitl",
+    "license": "CC BY-SA 3.0",
+    "when": "after",
+    "caption": "מבט אוויר על הפארק ועל נהר קאלאנג המשוקם"
+   },
+   {
+    "file": "Bishan-Ang Mo Kio Park, Singapore (Unsplash).jpg",
+    "hash": "bf",
+    "width": 5760,
+    "height": 3840,
+    "author": "Alex wong",
+    "license": "CC0",
+    "when": "after",
+    "caption": "פארק בישאן-אנג מו קיו, סינגפור"
+   },
+   {
+    "file": "Bishan Park vor Umbau.jpg",
+    "hash": "bb",
+    "width": 8076,
+    "height": 2934,
+    "author": "Atelier Dreiseitl",
+    "license": "CC BY-SA 3.0",
+    "when": "before",
+    "caption": "הפארק לפני השינוי, והנהר בתעלת בטון"
    }
   ]
  },
@@ -2665,6 +3211,18 @@
     "status": "verified",
     "source": "https://www.asla.org/news-insights/dirt/kongjian-yu-defends-his-sponge-city-campaign"
    }
+  ],
+  "photos": [
+   {
+    "file": "群力国家湿地公园2015.jpg",
+    "hash": "20",
+    "width": 1936,
+    "height": 768,
+    "author": "SD hehua",
+    "license": "Public domain",
+    "when": "after",
+    "caption": "פארק הביצה העירוני קונלי בחרבין, 2015"
+   }
   ]
  },
  {
@@ -2815,6 +3373,38 @@
     "text": "הכיכר היא הראשונה משלושה מרחבים ברובע האקלים, לצד סנט קילדס פלאדס וברייגרוונגן.",
     "status": "verified",
     "source": "https://www.boverket.se/sv/samhallsplanering/arkitektur-och-gestaltad-livsmiljo/natverk-och-samarbeten/nordiskt-samarbete/stadsgronska/exempel/klimakvarteren"
+   }
+  ],
+  "photos": [
+   {
+    "file": "Tåsinge Plads 01.jpg",
+    "hash": "3c",
+    "width": 2560,
+    "height": 1920,
+    "author": "Leif Jørgensen",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "כיכר טוזינגה המותאמת אקלים באוסטרברו"
+   },
+   {
+    "file": "Tåsinge Plads 04.jpg",
+    "hash": "64",
+    "width": 2560,
+    "height": 1920,
+    "author": "Leif Jørgensen",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "ערוגות הגשם בפינת הרחובות אורוגאדה ולאנגוגאדה"
+   },
+   {
+    "file": "Tåsinge Plads.JPG",
+    "hash": "37",
+    "width": 2560,
+    "height": 1920,
+    "author": "Leif Jørgensen",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "הכיכר זמן קצר אחרי סיום העבודות, דצמבר 2014"
    }
   ]
  },
@@ -2969,6 +3559,28 @@
     "status": "verified",
     "source": "https://www.eltiempo.com/colombia/medellin/funcionarios-de-la-alcaldia-de-daniel-quintero-en-juicio-por-contrato-de-5-000-millones-para-mantener-de-jardines-de-medellin-se-declararon-inocentes-3510096"
    }
+  ],
+  "photos": [
+   {
+    "file": "Corredor verde La Picacha - transversal 32B.jpg",
+    "hash": "18",
+    "width": 5120,
+    "height": 3840,
+    "author": "XalD",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "המסדרון הירוק לה פיקצ'ה, חלק מרשת המסדרונות הירוקים של מדיין"
+   },
+   {
+    "file": "Corredor verde La Picacha - carrera 76.jpg",
+    "hash": "9f",
+    "width": 5120,
+    "height": 3840,
+    "author": "XalD",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "המסדרון הירוק לה פיקצ'ה, ליד קררה 76"
+   }
   ]
  },
  {
@@ -3089,6 +3701,38 @@
     "text": "השרידים הרומיים והמוסלמיים נמצאו בחפירה לחניון, ומוצגים היום באנטיקווריום מתחת לכיכר.",
     "status": "verified",
     "source": "https://andalucia.com/cities/seville/museum-antiquarium.htm"
+   }
+  ],
+  "photos": [
+   {
+    "file": "19633864166 973ce1dfb0 Setas de Sevilla.jpg",
+    "hash": "a4",
+    "width": 5616,
+    "height": 3744,
+    "author": "Sevilla Congress & Convention Bureau",
+    "license": "CC BY-SA 2.0",
+    "when": "after",
+    "caption": "מטרופול פרסול מעל כיכר לה אנקרנסיון"
+   },
+   {
+    "file": "El Parasol (8283699840).jpg",
+    "hash": "a0",
+    "width": 4052,
+    "height": 2771,
+    "author": "Nicolas Vollmer",
+    "license": "CC BY 2.0",
+    "when": "after",
+    "caption": "גגון העץ והכיכר שמתחתיו"
+   },
+   {
+    "file": "Las Setas de la Encarnación 01-11-2024.jpg",
+    "hash": "b8",
+    "width": 4032,
+    "height": 3024,
+    "author": "Azulino",
+    "license": "CC BY 4.0",
+    "when": "after",
+    "caption": "הפטריות של סביליה, 2024"
    }
   ]
  },
@@ -3221,6 +3865,38 @@
     "status": "verified",
     "source": "https://www.elespectador.com/colombia/medellin/tras-11-anos-cerrada-la-antigua-biblioteca-espana-reabre-sus-puertas-en-medellin/"
    }
+  ],
+  "photos": [
+   {
+    "file": "Línea K (Medellín Metrocable) 01.jpg",
+    "hash": "c1",
+    "width": 5386,
+    "height": 3585,
+    "author": "Bernard Gagnon",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "קרונות הרכבל של קו K מעל שכונות המדרון"
+   },
+   {
+    "file": "Escaleras eléctricas de la comuna 13, Medellín - 04.jpg",
+    "hash": "cf",
+    "width": 3991,
+    "height": 1710,
+    "author": "Juan Gómez",
+    "license": "CC BY 2.0",
+    "when": "after",
+    "caption": "מדרגות נעות פתוחות בקומונה 13"
+   },
+   {
+    "file": "Escaleras eléctricas de la comuna 13, Medellín - 03.jpg",
+    "hash": "c9",
+    "width": 14022,
+    "height": 4916,
+    "author": "Juan Gómez",
+    "license": "CC BY 2.0",
+    "when": "after",
+    "caption": "מבט רחב על המדרגות הנעות והמדרון בקומונה 13"
+   }
   ]
  },
  {
@@ -3344,6 +4020,38 @@
     "text": "אורך הרצועה כ-750 מטר (מקורות אחרים נותנים מספרים שונים).",
     "status": "approx",
     "source": "https://www.dezeen.com/?p=258000"
+   }
+  ],
+  "photos": [
+   {
+    "file": "København - Superkilen (30998975095).jpg",
+    "hash": "49",
+    "width": 5184,
+    "height": 3456,
+    "author": "Fred Romero",
+    "license": "CC BY 2.0",
+    "when": "after",
+    "caption": "הכיכר האדומה של סופרקילן"
+   },
+   {
+    "file": "København - Superkilen (30697532790).jpg",
+    "hash": "9f",
+    "width": 5184,
+    "height": 3456,
+    "author": "Fred Romero",
+    "license": "CC BY 2.0",
+    "when": "after",
+    "caption": "החלק הירוק של הפארק"
+   },
+   {
+    "file": "Superkilen2.JPG",
+    "hash": "1c",
+    "width": 2816,
+    "height": 2112,
+    "author": "Orf3us",
+    "license": "Public domain",
+    "when": "after",
+    "caption": "סופרקילן, ושולחנות פיקניק מירוואן בחזית"
    }
   ]
  },
@@ -3472,6 +4180,38 @@
     "status": "verified",
     "source": "https://en.wikipedia.org/wiki/Edi_Rama"
    }
+  ],
+  "photos": [
+   {
+    "file": "Colourful Buildings in Tirana.jpg",
+    "hash": "08",
+    "width": 3888,
+    "height": 2592,
+    "author": "quinn.anya",
+    "license": "CC BY-SA 2.0",
+    "when": "after",
+    "caption": "בנייני מגורים צבועים בטירנה, 2010"
+   },
+   {
+    "file": "Apartment building in Tirana.JPG",
+    "hash": "84",
+    "width": 3072,
+    "height": 2304,
+    "author": "Gertjan R.",
+    "license": "CC BY-SA 3.0",
+    "when": "after",
+    "caption": "בניין עם חזית צבעונית מהמהלך של ראש העיר אדי ראמה"
+   },
+   {
+    "file": "Tirana - Colourful houses at Lana.jpg",
+    "hash": "8b",
+    "width": 1600,
+    "height": 786,
+    "author": "Albinfo",
+    "license": "CC BY-SA 3.0",
+    "when": "after",
+    "caption": "בתים צבועים לאורך נהר לאנה, 2005"
+   }
   ]
  },
  {
@@ -3575,6 +4315,38 @@
     "text": "מספר הסמטאות הפעילות והנגישות גדל באופן ניכר מאז 1993.",
     "status": "approx",
     "source": "https://sdstudio.be.uw.edu/wp-content/uploads/sites/51/downloads/Autumn2008/Melbourne_Lanes.pdf"
+   }
+  ],
+  "photos": [
+   {
+    "file": "Degraves Street, Melbourne, February 2022.jpg",
+    "hash": "0c",
+    "width": 5184,
+    "height": 3456,
+    "author": "Philip Mallis",
+    "license": "CC BY-SA 2.0",
+    "when": "after",
+    "caption": "ישיבת בתי קפה בסמטת דגרייבס"
+   },
+   {
+    "file": "Hosier Lane, Melbourne, Victoria, Australia.JPG",
+    "hash": "51",
+    "width": 4000,
+    "height": 3000,
+    "author": "Coekon",
+    "license": "CC BY-SA 3.0",
+    "when": "after",
+    "caption": "סמטת הוזייר ואמנות הרחוב שלה"
+   },
+   {
+    "file": "AUS Melbourne, Central Business District, Degraves Street 001.jpg",
+    "hash": "e0",
+    "width": 3929,
+    "height": 2947,
+    "author": "-wuppertaler",
+    "license": "CC BY 4.0",
+    "when": "after",
+    "caption": "רחוב דגרייבס במרכז העסקים, 2023"
    }
   ]
  },
@@ -3708,6 +4480,38 @@
     "status": "verified",
     "source": "https://sutp.org/download/8125/"
    }
+  ],
+  "photos": [
+   {
+    "file": "Straßenraum Vauban.jpg",
+    "hash": "55",
+    "width": 2816,
+    "height": 2112,
+    "author": "Dr. med. Mabuse",
+    "license": "CC BY-SA 3.0",
+    "when": "after",
+    "caption": "חתך הרחוב בוובאן: מדרכה, תעלת מי גשם, מסילת רכבת קלה ודרך צרה"
+   },
+   {
+    "file": "Vaubanallee in Freiburg, Blick gen Osten zum Schlierberg.jpg",
+    "hash": "66",
+    "width": 4000,
+    "height": 3000,
+    "author": "Andreas Schwarzkopf",
+    "license": "CC BY-SA 3.0",
+    "when": "after",
+    "caption": "שדרת וובאן במבט מזרחה"
+   },
+   {
+    "file": "Vauban 2045.jpg",
+    "hash": "99",
+    "width": 5241,
+    "height": 2592,
+    "author": "Sromuald",
+    "license": "CC BY 3.0",
+    "when": "after",
+    "caption": "רחוב בשכונת וובאן, פרייבורג"
+   }
   ]
  },
  {
@@ -3829,6 +4633,38 @@
     "text": "הפחתת הפליטות נאמדה בכ-30 עד 40 אחוז, מתחת ליעד של 50 אחוז.",
     "status": "approx",
     "source": "https://ourworld.unu.edu/en/hammarby-swedens-gold-medal-winning-eco-town"
+   }
+  ],
+  "photos": [
+   {
+    "file": "Hammarby sjöstad June 2025 01.jpg",
+    "hash": "94",
+    "width": 8256,
+    "height": 5160,
+    "author": "ArildV",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "בלוקי מגורים בהמרבי שוסטד"
+   },
+   {
+    "file": "Hammarby sjöstad, flygfoto 2014-09-20.jpg",
+    "hash": "71",
+    "width": 3117,
+    "height": 2220,
+    "author": "Esquilo",
+    "license": "CC BY-SA 3.0",
+    "when": "after",
+    "caption": "מבט אוויר על השכונה, 2014"
+   },
+   {
+    "file": "Hammarby Sjöstad (01).jpg",
+    "hash": "19",
+    "width": 5568,
+    "height": 3712,
+    "author": "Johan Jönsson (Julle)",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "חזית המים של השכונה על אגם המרבי"
    }
   ]
  },
@@ -3953,6 +4789,38 @@
     "text": "ההערכות למספר המשתתפים נעות בין כ-1.5 לכ-2 מיליון בשבוע.",
     "status": "approx",
     "source": "https://development.asia/case-study/car-free-days-can-give-big-cities-room-breathe"
+   }
+  ],
+  "photos": [
+   {
+    "file": "2019 Bogotá - Ciclovía en la calle 26.jpg",
+    "hash": "24",
+    "width": 5158,
+    "height": 3869,
+    "author": "Felipe Restrepo Acosta",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "סיקלוביה של יום ראשון ברחוב 26: הכביש סגור למכוניות ופתוח לרוכבים"
+   },
+   {
+    "file": "2017 Bogotá ciclovía frente al Museo Nacional.jpg",
+    "hash": "73",
+    "width": 5057,
+    "height": 3793,
+    "author": "Felipe Restrepo Acosta",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "הסיקלוביה מול המוזיאון הלאומי"
+   },
+   {
+    "file": "Bogota Ciclovia.JPG",
+    "hash": "c0",
+    "width": 2848,
+    "height": 2144,
+    "author": "Jeremy Ordett",
+    "license": "Public domain",
+    "when": "after",
+    "caption": "רוכבים בסיקלוביה של בוגוטה"
    }
   ]
  },
@@ -4083,6 +4951,38 @@
     "status": "approx",
     "source": "https://www.santepubliquefrance.fr/index.php/docs/article/pontevedra-spain-pedestrians-rule-roads-relegating-cars-sidelines-interview"
    }
+  ],
+  "photos": [
+   {
+    "file": "Calle Marqués de Riestra peatonal - Pontevedra capital.jpg",
+    "hash": "cd",
+    "width": 3968,
+    "height": 2976,
+    "author": "MJSB73MP",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "רחוב מרקס דה ריאסטרה, מדרחוב במרכז פונטוודרה"
+   },
+   {
+    "file": "Pontevedra-Peatonal (10959050904).jpg",
+    "hash": "03",
+    "width": 2560,
+    "height": 1920,
+    "author": "juantiagues",
+    "license": "CC BY-SA 2.0",
+    "when": "after",
+    "caption": "רחוב הולכי רגל בפונטוודרה"
+   },
+   {
+    "file": "Paseo peatonal y carril bici al lado del río Lérez en Pontevedra capital.jpg",
+    "hash": "8b",
+    "width": 4000,
+    "height": 3000,
+    "author": "Domi402",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "שביל הליכה ושביל אופניים לאורך נהר לרס"
+   }
   ]
  },
  {
@@ -4209,6 +5109,38 @@
     "status": "verified",
     "source": "https://www.dezeen.com/2014/01/04/tvk-place-de-la-republique-paris/amp/"
    }
+  ],
+  "photos": [
+   {
+    "file": "Place de la République @ Paris (34411460645).jpg",
+    "hash": "54",
+    "width": 5472,
+    "height": 3648,
+    "author": "Guilhem Vellut",
+    "license": "CC BY 2.0",
+    "when": "after",
+    "caption": "כיכר הרפובליקה אחרי השינוי, להולכי רגל, 2017"
+   },
+   {
+    "file": "Paris Place de la République 500.jpg",
+    "hash": "cc",
+    "width": 4896,
+    "height": 3264,
+    "author": "GFreihalter",
+    "license": "CC BY-SA 3.0",
+    "when": "after",
+    "caption": "כיכר הרפובליקה, 2020"
+   },
+   {
+    "file": "Place de la République Paris 1.jpg",
+    "hash": "a9",
+    "width": 3888,
+    "height": 2592,
+    "author": "ayustety",
+    "license": "CC BY-SA 2.0",
+    "when": "before",
+    "caption": "הכיכר ב-2008, לפני השינוי של 2013"
+   }
   ]
  },
  {
@@ -4315,6 +5247,38 @@
     "text": "הרחבה נחנכה ביולי 2011.",
     "status": "approx",
     "source": "https://vimeo.com/53000609"
+   }
+  ],
+  "photos": [
+   {
+    "file": "Zollhallenplatz mit Markt auf dem früheren Güterbahnhofsgelände in Freiburg.jpg",
+    "hash": "d5",
+    "width": 4000,
+    "height": 3000,
+    "author": "Andreas Schwarzkopf",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "כיכר צולהאלן עם שוק, על מגרש המשא לשעבר"
+   },
+   {
+    "file": "Grünanlage auf dem Zollhallenplatz in Freiburg.jpg",
+    "hash": "b8",
+    "width": 4000,
+    "height": 3000,
+    "author": "Andreas Schwarzkopf",
+    "license": "CC BY-SA 3.0",
+    "when": "after",
+    "caption": "אזור מגונן בכיכר"
+   },
+   {
+    "file": "Flohmarkt auf dem Zollhallenplatz in Freiburg 2.jpg",
+    "hash": "a5",
+    "width": 3949,
+    "height": 2912,
+    "author": "Andreas Schwarzkopf",
+    "license": "CC BY-SA 3.0",
+    "when": "after",
+    "caption": "שוק פשפשים בכיכר"
    }
   ]
  },
@@ -4434,6 +5398,38 @@
     "text": "העבודות נעשו בתוך ימים ספורים, והסוחרים שהתנגדו ביקשו אחר כך להרחיב את האזור.",
     "status": "approx",
     "source": "https://actipedia.org/tag/urban-planning"
+   }
+  ],
+  "photos": [
+   {
+    "file": "Rua XV em Curitiba.jpg",
+    "hash": "23",
+    "width": 4032,
+    "height": 2268,
+    "author": "Boaventuravinicius",
+    "license": "CC BY-SA 3.0",
+    "when": "after",
+    "caption": "מדרחוב רואה XV דה נובמברו, אחר צהריים באוקטובר"
+   },
+   {
+    "file": "Rua XV-Bondinho-paisagem-Urbana.jpg",
+    "hash": "87",
+    "width": 5676,
+    "height": 4000,
+    "author": "Marcos pereirah",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "הרחוב עם קרון החשמלית הישן"
+   },
+   {
+    "file": "Centro-de-curitiba 53492289290 o.jpg",
+    "hash": "dd",
+    "width": 4640,
+    "height": 3472,
+    "author": "Ubonat",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "הרחוב במרכז קוריטיבה, 2023"
    }
   ]
  },
@@ -4565,6 +5561,38 @@
     "text": "את התוכנית הוביל מקס ואן דן ברג, אז בן 24.",
     "status": "verified",
     "source": "https://activelivingresearch.org/sites/activelivingresearch.org/files/3.PrevMed2017_PublicSpaces_Schipperijn.pdf"
+   }
+  ],
+  "photos": [
+   {
+    "file": "Grote Markt Groningen.jpg",
+    "hash": "bb",
+    "width": 5472,
+    "height": 2736,
+    "author": "JoachimKohler-HB",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "הצד הדרומי של הכיכר הגדולה, 2015"
+   },
+   {
+    "file": "Hello Jumbo-Groningen.jpg",
+    "hash": "76",
+    "width": 3826,
+    "height": 2546,
+    "author": "Matthijs van den Berg",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "רוכב אופניים ליד הקורנבורס במרכז העיר"
+   },
+   {
+    "file": "Grote Markt voor het stadhuis van Groningen, Bestanddeelnr 924-3652.jpg",
+    "hash": "0e",
+    "width": 3680,
+    "height": 2453,
+    "author": "Anefo",
+    "license": "CC0",
+    "when": "before",
+    "caption": "הכיכר הגדולה מול בניין העירייה ב-1971, לפני תוכנית התנועה של 1977"
    }
   ]
  },
@@ -4701,6 +5729,28 @@
     "text": "סגן ראש העיר פיליפ ואטאו קיבל איומים על חייו ימים לפני ההפעלה.",
     "status": "verified",
     "source": "https://www.vrt.be/vrtnws/en/2017/03/31/death_threats_oneveofbigmobilityplaninghent-1-2938418/"
+   }
+  ],
+  "photos": [
+   {
+    "file": "Korenmarkt Gent, Oost-Vlaanderen, België 79.jpg",
+    "hash": "a7",
+    "width": 3648,
+    "height": 2736,
+    "author": "Gargarapalvin (Görkem Yavuz)",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "כיכר קורנמרקט במרכז ללא מכוניות, 2023"
+   },
+   {
+    "file": "Gand marché aux grains.jpg",
+    "hash": "89",
+    "width": 4208,
+    "height": 3120,
+    "author": "Tpe.g5.stan",
+    "license": "CC0",
+    "when": "after",
+    "caption": "כיכר קורנמרקט במרכז גנט, 2023"
    }
   ]
  },
@@ -4842,6 +5892,38 @@
     "status": "verified",
     "source": "https://www.thelocal.no/20180924/oslo-dwellers-divided-over-citys-drive-to-get-cars-off-the-streets"
    }
+  ],
+  "photos": [
+   {
+    "file": "Øvre Slottsgate Oslo 2022-08-17 01.jpg",
+    "hash": "03",
+    "width": 8384,
+    "height": 5612,
+    "author": "Leonhard Lenz",
+    "license": "CC0",
+    "when": "after",
+    "caption": "רחוב אוברה סלוטסגאטה, שנבנה מחדש כמדרחוב ב-2019 במסגרת התוכנית"
+   },
+   {
+    "file": "Øvre Slottsgate Oslo 2022-08-17 03.jpg",
+    "hash": "70",
+    "width": 8384,
+    "height": 5612,
+    "author": "Leonhard Lenz",
+    "license": "CC0",
+    "when": "after",
+    "caption": "המדרחוב אוברה סלוטסגאטה, 2022"
+   },
+   {
+    "file": "Øvre Slottsgate, Oslo, 2022.jpg",
+    "hash": "a5",
+    "width": 3862,
+    "height": 2896,
+    "author": "Ssu",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "אוברה סלוטסגאטה, מרץ 2022"
+   }
   ]
  },
  {
@@ -4963,6 +6045,38 @@
     "text": "שירות Kavalir החינמי פועל מאז 2008.",
     "status": "approx",
     "source": "https://www.rtvslo.si/news-in-english/kavalir-has-transported-more-than-a-million-people-across-ljubljana/433154"
+   }
+  ],
+  "photos": [
+   {
+    "file": "Ljubjana, zone piétonne du centre-ville 66 (53437639466).jpg",
+    "hash": "78",
+    "width": 5000,
+    "height": 3333,
+    "author": "RdA Suisse",
+    "license": "CC BY 2.0",
+    "when": "after",
+    "caption": "אזור הולכי רגל במרכז ליובליאנה, סגור לתנועה ממונעת"
+   },
+   {
+    "file": "Ljubljana à pied 2 (53437610211).jpg",
+    "hash": "12",
+    "width": 5000,
+    "height": 3333,
+    "author": "RdA Suisse",
+    "license": "CC BY 2.0",
+    "when": "after",
+    "caption": "רחוב סלובנסקה, דרך של ארבעה נתיבים שהפכה למרחב משותף"
+   },
+   {
+    "file": "Ljubljana - espaces piétions 1 (53437338731).jpg",
+    "hash": "9f",
+    "width": 5000,
+    "height": 3333,
+    "author": "RdA Suisse",
+    "license": "CC BY 2.0",
+    "when": "after",
+    "caption": "מרחב הולכי רגל במרכז העיר, 2023"
    }
   ]
  },
@@ -5094,6 +6208,38 @@
     "status": "verified",
     "source": "https://www.vienna.at/gibt-es-nicht-genuegend-parkplaetze-in-der-seestadt-aspern-in-wien/4209417"
    }
+  ],
+  "photos": [
+   {
+    "file": "Asperner See Vienna 19-20 IMG 2233.jpg",
+    "hash": "4e",
+    "width": 5931,
+    "height": 3942,
+    "author": "Alexander Migl",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "האגם של אספרן והשכונה החדשה סביבו"
+   },
+   {
+    "file": "Jane-Jacobs-Weg, Wien.jpg",
+    "hash": "77",
+    "width": 4032,
+    "height": 3024,
+    "author": "Robot8A",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "רחוב ג'יין ג'ייקובס בשכונה"
+   },
+   {
+    "file": "Lakeside - residential high rise in vienna.jpg",
+    "hash": "c8",
+    "width": 2500,
+    "height": 1723,
+    "author": "lukas schaller",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "בניין מגורים על שפת האגם"
+   }
   ]
  },
  {
@@ -5216,6 +6362,18 @@
     "text": "לפי מחקר UCL, כ-28 אחוז מהנסיעות באופניים, כ-27 אחוז ברגל וכ-34 אחוז ברכב.",
     "status": "approx",
     "source": "https://discovery-pp.ucl.ac.uk/10095989/1/RH_Houten_final_april2020.pdf"
+   }
+  ],
+  "photos": [
+   {
+    "file": "Fietsnet Houten Nederland.jpg",
+    "hash": "51",
+    "width": 2592,
+    "height": 1944,
+    "author": "Antoine",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "חלק מרשת האופניים הפנימית של האוטן"
    }
   ]
  },
@@ -5356,6 +6514,28 @@
     "status": "approx",
     "source": "https://interregeurope.eu/good-practices/bicycle-infrastructure-network-in-seville-urban-mobility"
    }
+  ],
+  "photos": [
+   {
+    "file": "Carril bici, Sevilla Este, Sevilla, España, 2015 01.JPG",
+    "hash": "c1",
+    "width": 4000,
+    "height": 3000,
+    "author": "Benjamín Núñez González",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "שביל אופניים מופרד בסביליה מזרח"
+   },
+   {
+    "file": "Carrilbicipaseopalmera.JPG",
+    "hash": "f6",
+    "width": 2592,
+    "height": 1944,
+    "author": "Frobles",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "שביל אופניים בשדרת לה פלמרה"
+   }
   ]
  },
  {
@@ -5488,6 +6668,38 @@
     "text": "במשאל ב-2025 תמכו כשני שלישים מהמצביעים בהרחבה, בהשתתפות של כ-4 אחוז.",
     "status": "approx",
     "source": "https://www.brut.media/fr/articles/les-parisiens-disent-oui-aux-rues-jardin-une-participation-au-plus-bas"
+   }
+  ],
+  "photos": [
+   {
+    "file": "Rae 75018 flocon vers sud.jpg",
+    "hash": "19",
+    "width": 5184,
+    "height": 3456,
+    "author": "Scarabocchio",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "רחוב פרדינן-פלוקון, רחוב בית ספר שהפך להולכי רגל, הרובע ה-18"
+   },
+   {
+    "file": "Rue Saint Hippolyte - Paris XIII (FR75) - 2025-04-19 - 1.jpg",
+    "hash": "1f",
+    "width": 5712,
+    "height": 4284,
+    "author": "Chabe01",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "רחוב בית הספר סן-איפוליט, הרובע ה-13"
+   },
+   {
+    "file": "Rue Tandou - Paris XIX (FR75) - 2026-04-03 - 1.jpg",
+    "hash": "d4",
+    "width": 5712,
+    "height": 4284,
+    "author": "Chabe01",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "רחוב בית הספר טנדו, הרובע ה-19"
    }
   ]
  },
@@ -5622,6 +6834,38 @@
     "text": "51N4E זכו בתחרות ב-2008, הפרויקט הוקפא ב-2010 וחודש ב-2015.",
     "status": "approx",
     "source": "https://en.wikipedia.org/wiki/Skanderbeg_Square"
+   }
+  ],
+  "photos": [
+   {
+    "file": "Skanderbeg square, Tiranë, Albania .jpg",
+    "hash": "8c",
+    "width": 4096,
+    "height": 2304,
+    "author": "Meriboo",
+    "license": "CC BY-SA 3.0",
+    "when": "after",
+    "caption": "כיכר סקנדרבג ממבט על, 2018, אחרי שהפכה לכיכר הולכי רגל"
+   },
+   {
+    "file": "Skanderbeg Square Tirana 2018.jpg",
+    "hash": "60",
+    "width": 4000,
+    "height": 3000,
+    "author": "Radosław Botev",
+    "license": "CC0",
+    "when": "after",
+    "caption": "הכיכר בגובה העיניים, יוני 2018"
+   },
+   {
+    "file": "Skanderberg Square, Tirana.JPG",
+    "hash": "6f",
+    "width": 5184,
+    "height": 3456,
+    "author": "Claudio Poli",
+    "license": "CC BY-SA 3.0",
+    "when": "before",
+    "caption": "הכיכר ב-2012, לפני השינוי של 2017"
    }
   ]
  },
@@ -5771,6 +7015,38 @@
     "status": "verified",
     "source": "https://oaj.fupress.net/index.php/ri-vista/article/view/2762"
    }
+  ],
+  "photos": [
+   {
+    "file": "Hiriya path.jpg",
+    "hash": "8f",
+    "width": 4320,
+    "height": 3240,
+    "author": "Ar2332",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "שביל על ראש הר חירייה המשוקם, 2016"
+   },
+   {
+    "file": "115771 ariel sharon park PikiWiki Israel.jpg",
+    "hash": "0f",
+    "width": 3428,
+    "height": 1682,
+    "author": "ישראל פרקר",
+    "license": "CC BY 2.5",
+    "when": "after",
+    "caption": "מבט לתל אביב מראש הפארק, 2024"
+   },
+   {
+    "file": "Ariel Sharon Park (8121497464).jpg",
+    "hash": "84",
+    "width": 5184,
+    "height": 3456,
+    "author": "StateofIsrael",
+    "license": "CC BY-SA 2.0",
+    "when": "after",
+    "caption": "פארק אריאל שרון, 2011"
+   }
   ]
  },
  {
@@ -5908,6 +7184,38 @@
     "status": "verified",
     "source": "https://finance.walla.co.il/item/1668078"
    }
+  ],
+  "photos": [
+   {
+    "file": "PikiWiki Israel 42054 Jaffa Slope Park.jpg",
+    "hash": "b9",
+    "width": 5312,
+    "height": 2988,
+    "author": "יהודית קירשבאום",
+    "license": "CC BY 2.5",
+    "when": "after",
+    "caption": "פארק המדרון על חוף יפו, 2015"
+   },
+   {
+    "file": "Jaffa Slope.jpg",
+    "hash": "2d",
+    "width": 4208,
+    "height": 3120,
+    "author": "Nizzan Cohen",
+    "license": "CC BY 4.0",
+    "when": "after",
+    "caption": "פארק המדרון, אוקטובר 2024"
+   },
+   {
+    "file": "PikiWiki Israel 42057 Jaffa Slope Park.jpg",
+    "hash": "34",
+    "width": 5312,
+    "height": 2988,
+    "author": "יהודית קירשבאום",
+    "license": "CC BY 2.5",
+    "when": "after",
+    "caption": "מדשאות ושבילים בפארק, 2015"
+   }
   ]
  },
  {
@@ -6036,6 +7344,38 @@
     "text": "שטח המשטח הציבורי כ-55 אלף מ\"ר.",
     "status": "approx",
     "source": "https://divisare.com/projects/149072-mayslits-kassif-architects-iwan-baan-tel-aviv-port-public-space-regeneration"
+   }
+  ],
+  "photos": [
+   {
+    "file": "94744 tel aviv port promenade PikiWiki Israel.jpg",
+    "hash": "2f",
+    "width": 4000,
+    "height": 2250,
+    "author": "דוידי ורדי",
+    "license": "CC BY 2.5",
+    "when": "after",
+    "caption": "הטיילת בנמל תל אביב, 2023"
+   },
+   {
+    "file": "137876 a visit to tel aviv harbour PikiWiki Israel.jpg",
+    "hash": "c4",
+    "width": 6960,
+    "height": 4226,
+    "author": "הרווי ספיר",
+    "license": "CC BY 2.5",
+    "when": "after",
+    "caption": "המרחב הציבורי בנמל, 2025"
+   },
+   {
+    "file": "94743 tel aviv port PikiWiki Israel.jpg",
+    "hash": "cb",
+    "width": 4000,
+    "height": 2250,
+    "author": "דוידי ורדי",
+    "license": "CC BY 2.5",
+    "when": "after",
+    "caption": "נמל תל אביב, ינואר 2023"
    }
   ]
  },
@@ -6189,6 +7529,38 @@
     "status": "approx",
     "source": "https://www.mako.co.il/travel-israel/Article-48dedbe35c0ba91027.htm"
    }
+  ],
+  "photos": [
+   {
+    "file": "By ovedc - NEW dizengoff - 08.jpg",
+    "hash": "33",
+    "width": 5312,
+    "height": 2988,
+    "author": "Ovedc",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "כיכר דיזנגוף החדשה במפלס הרחוב, ספטמבר 2018"
+   },
+   {
+    "file": "20200211 120444 Dizengoff Square February 2020.jpg",
+    "hash": "05",
+    "width": 4608,
+    "height": 2592,
+    "author": "Rakoon",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "כיכר דיזנגוף, פברואר 2020"
+   },
+   {
+    "file": "Dizengoff square - Tel Aviv (5361582941).jpg",
+    "hash": "7e",
+    "width": 3872,
+    "height": 2592,
+    "author": "TijsB",
+    "license": "CC BY-SA 2.0",
+    "when": "before",
+    "caption": "הכיכר ב-2010, כשעוד הייתה מוגבהת"
+   }
   ]
  },
  {
@@ -6321,6 +7693,38 @@
     "text": "העבודות גרמו לסגירת עסקים ולהפגנות של סוחרים.",
     "status": "verified",
     "source": "https://www.kan.org.il/content/kan-news/economic/278501/"
+   }
+  ],
+  "photos": [
+   {
+    "file": "Jerusalem Light Rail (Red Line) on Jaffa Road, 5 November 2025 03.jpg",
+    "hash": "98",
+    "width": 6240,
+    "height": 4160,
+    "author": "מקף־עברי",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "הקו האדום של הרכבת הקלה ברחוב יפו להולכי רגל, נובמבר 2025"
+   },
+   {
+    "file": "Jerusalem New Light Rail on Jaffa st. - July 11th, 2011 - Israel.jpg",
+    "hash": "49",
+    "width": 4752,
+    "height": 3168,
+    "author": "Navot Miller",
+    "license": "CC BY-SA 3.0",
+    "when": "after",
+    "caption": "הרכבת הקלה החדשה ברחוב יפו, יולי 2011"
+   },
+   {
+    "file": "Jerusalem by Dainis Matisons (3308819074).jpg",
+    "hash": "5c",
+    "width": 3251,
+    "height": 2435,
+    "author": "Dainis Matisons",
+    "license": "CC BY 2.0",
+    "when": "before",
+    "caption": "רחוב יפו ב-2007, לפני הרכבת הקלה"
    }
   ]
  },
@@ -6471,6 +7875,38 @@
     "status": "approx",
     "source": "https://jewishpress.com/news/travel-news/israels-2nd-largest-lake-inaugurated-in-beersheba/2019/10/15"
    }
+  ],
+  "photos": [
+   {
+    "file": "Beersheba Stream Park IMG 7612.jpg",
+    "hash": "b1",
+    "width": 7548,
+    "height": 3842,
+    "author": "שרוך חלוד",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "מבט רחב על פארק נחל באר שבע, אפריל 2021"
+   },
+   {
+    "file": "Beersheba Stream Park IMG 6977 (2).jpg",
+    "hash": "10",
+    "width": 4031,
+    "height": 2382,
+    "author": "שרוך חלוד",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "פארק נחל באר שבע, אפריל 2021"
+   },
+   {
+    "file": "122272 beer sheva river park PikiWiki Israel.jpg",
+    "hash": "27",
+    "width": 2048,
+    "height": 1365,
+    "author": "ענת פרנק גורלי",
+    "license": "CC BY 2.5",
+    "when": "after",
+    "caption": "הפארק לאורך הנחל, נובמבר 2024"
+   }
   ]
  },
  {
@@ -6599,6 +8035,38 @@
     "text": "שוקמו כ-22 מבנים היסטוריים בהשקעה של יותר מ-100 מיליון ש\"ח.",
     "status": "approx",
     "source": "https://m.jpost.com/local-israel/tel-aviv-and-center/all-change-at-jaffa-station"
+   }
+  ],
+  "photos": [
+   {
+    "file": "HaTachana, Tel Aviv's Old Railway Station.jpg",
+    "hash": "d1",
+    "width": 5184,
+    "height": 3456,
+    "author": "Ori lubin",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "מתחם התחנה המשוקם, תחנת הרכבת הישנה של יפו, 2014"
+   },
+   {
+    "file": "90183 tel aviv station complex PikiWiki Israel.jpg",
+    "hash": "e4",
+    "width": 4000,
+    "height": 2834,
+    "author": "Israel Preker",
+    "license": "CC BY 2.5",
+    "when": "after",
+    "caption": "מתחם התחנה, 2022"
+   },
+   {
+    "file": "150227 jaffa - train station PikiWiki Israel.jpg",
+    "hash": "4b",
+    "width": 2100,
+    "height": 1501,
+    "author": "Unknown author",
+    "license": "Public domain",
+    "when": "before",
+    "caption": "תחנת הרכבת של יפו בתצלום היסטורי, 1892"
    }
   ]
  },
@@ -6861,6 +8329,38 @@
     "text": "ארגון Guide Dogs התנגד להסרת אבני השפה.",
     "status": "verified",
     "source": "https://www.mayorwatch.co.uk/guide-dog-owners-to-protest-at-city-hall/"
+   }
+  ],
+  "photos": [
+   {
+    "file": "Exhibition Road - 52003722299.jpg",
+    "hash": "b6",
+    "width": 5914,
+    "height": 3696,
+    "author": "chris.rycroft",
+    "license": "CC BY 2.0",
+    "when": "after",
+    "caption": "המשטח האחיד והמשותף של רחוב אקסיביישן, פברואר 2022"
+   },
+   {
+    "file": "Exhibition Road with Princes Gardens junction in London, spring 2013.JPG",
+    "hash": "e5",
+    "width": 4752,
+    "height": 3168,
+    "author": "Chmee2",
+    "license": "CC BY-SA 3.0",
+    "when": "after",
+    "caption": "הרחוב בצומת פרינסס גרדנס, אביב 2013"
+   },
+   {
+    "file": "Exhibition Road South Kensington.jpg",
+    "hash": "ec",
+    "width": 2560,
+    "height": 1920,
+    "author": "Romazur",
+    "license": "CC BY-SA 3.0",
+    "when": "after",
+    "caption": "המראה החדש של הרחוב בדרום קנזינגטון, 2012"
    }
   ]
  },
@@ -7136,6 +8636,38 @@
     "status": "verified",
     "source": "https://en.wikipedia.org/wiki/Copenhagen_Harbour_Baths"
    }
+  ],
+  "photos": [
+   {
+    "file": "Islands Brygge Havnebad København.jpeg",
+    "hash": "cb",
+    "width": 5083,
+    "height": 3802,
+    "author": "kallerna",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "בריכת הנמל של איילנדס בריגה, יולי 2026"
+   },
+   {
+    "file": "Havnebad Islands Brygge summer Copenhagen.jpg",
+    "hash": "4f",
+    "width": 4990,
+    "height": 3355,
+    "author": "kallerna",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "קופצים למים בבריכת הנמל, אוגוסט 2026"
+   },
+   {
+    "file": "Islandsbrygge waterfront.jpg",
+    "hash": "bd",
+    "width": 3456,
+    "height": 2304,
+    "author": "Jacob Friis Saxberg",
+    "license": "CC BY 2.0",
+    "when": "after",
+    "caption": "חזית המים של איילנדס בריגה ובריכת הנמל, 2008"
+   }
   ]
  },
  {
@@ -7279,6 +8811,38 @@
     "text": "ב-2012 התפרצו מהומות נגד הצפיפות ומחיר הנסיעה, ונהרסו כמה תחנות.",
     "status": "verified",
     "source": "https://planetizen.com/node/55586"
+   }
+  ],
+  "photos": [
+   {
+    "file": "Ave Caracas TransMilenio BOG 03 2018 8526.jpg",
+    "hash": "3a",
+    "width": 2400,
+    "height": 1600,
+    "author": "Mariordo (Mario Roberto Durán Ortiz)",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "אוטובוסים מפרקיים ודו-מפרקיים בנתיב התחבורה הציבורית בשדרת קראקס, 2018"
+   },
+   {
+    "file": "Estacion Calle 72 TransMilenio.jpg",
+    "hash": "64",
+    "width": 4896,
+    "height": 3264,
+    "author": "Nicolas Vigier",
+    "license": "CC0",
+    "when": "after",
+    "caption": "תחנת רחוב 72, 2023"
+   },
+   {
+    "file": "Interseccion Monumento Los Heroes TransMilenio BOG 03 2018 8276.jpg",
+    "hash": "b8",
+    "width": 2599,
+    "height": 1200,
+    "author": "Mariordo (Mario Roberto Durán Ortiz)",
+    "license": "CC BY-SA 4.0",
+    "when": "after",
+    "caption": "אוטובוסים בצומת רחוב 80 ואוטופיסטה נורטה, 2018"
    }
   ]
  }

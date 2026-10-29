@@ -11,6 +11,10 @@ export interface Site {
   /** 1 low, 2 medium, 3 high. */
   budget: 1 | 2 | 3;
   section: Band[];
+  /** Photo of the existing situation, resized to a JPEG data URL. */
+  photo?: string;
+  /** The planner's edits in the solutions document, by field key. */
+  doc?: Record<string, string>;
 }
 
 export const DEFAULT_SITE: Site = {

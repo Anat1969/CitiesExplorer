@@ -50,6 +50,21 @@ export interface Fact {
   source?: string;
 }
 
+/** A freely licensed photo on Wikimedia Commons, hotlinked from its thumbnail server. */
+export interface Photo {
+  /** File title on Commons, without the "File:" prefix. */
+  file: string;
+  /** First two hex digits of the md5 of the file name: the upload server's directory. */
+  hash: string;
+  width: number;
+  height: number;
+  author: string;
+  license: string;
+  when: 'before' | 'after';
+  /** Hebrew caption: what the photo shows. */
+  caption: string;
+}
+
 export interface Case {
   id: string;
   name: string;
@@ -84,6 +99,7 @@ export interface Case {
   keywords: string[];
   sources: { label: string; url: string }[];
   facts: Fact[];
+  photos?: Photo[];
 }
 
 export const CASES = data as unknown as Case[];
