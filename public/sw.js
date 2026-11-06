@@ -1,5 +1,5 @@
 // Pages from the network (fall back to cache offline); images (also the Commons photos), fonts and built assets from the cache.
-const CACHE = 'cities-v3';
+const CACHE = 'cities-v4';
 // The scope is the app's base path: '/' on Vercel, '/CitiesExplorer/' on GitHub Pages.
 const ROOT = new URL(self.registration.scope).pathname;
 
