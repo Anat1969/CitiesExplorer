@@ -142,6 +142,12 @@ present (`?view=present&s=`; keyboard arrows). Print stylesheet for project brie
 
 ## Learned while building
 
+- 06.11.2026: bridge from ארק ובינה (https://arc-and-bina.vercel.app). `index.html` loads its `bridge.js`: a visitor
+  arriving with `?ab_q=...&ab_back=...` sees a bottom bar with the research question and a back button. The router
+  ignores unknown params and case pages do not rewrite the address on load, so the params survive. Incoming links:
+  river to `?case=qunli-stormwater-park`, bee to `?case=medellin-green-corridors`. Mapping on the other side:
+  `BRIDGES` in `src/data.js` of ArcAndBina-GH. `CACHE` in `sw.js` bumped to `cities-v4`.
+
 - 2026-10-24: Vercel's free limit of 100 deployments a day ran out (across all of Anat's projects). Anat asked
   for a direct link through GitHub, so the app is also published on GitHub Pages.
 
